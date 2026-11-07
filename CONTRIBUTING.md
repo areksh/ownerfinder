@@ -30,10 +30,12 @@ Follow the [quick start in the README](README.md#quick-start).
 
   ```sh
   pnpm --filter api exec vitest run test/health.test.ts -t "reports ok"
+  pnpm --filter @ecf/model exec vitest run test/resolve.test.ts -t "cycle"
   ```
 
-- Coverage for the API: `pnpm --filter api test:coverage`. Coverage is a
-  diagnostic, not a target.
+- Coverage: `pnpm --filter api test:coverage` or
+  `pnpm --filter @ecf/model test:coverage`. Coverage is a diagnostic, not
+  a target.
 - Tests never call live external services; external data sources are
   exercised through recorded responses checked in as fixtures.
 

@@ -60,12 +60,13 @@ pnpm --filter web run deploy
 
 ## Repository map
 
-| Path        | What it is                                                                  |
-| ----------- | --------------------------------------------------------------------------- |
-| `apps/api`  | API Worker on Cloudflare, backed by a D1 database                           |
-| `apps/web`  | Website: React Router, server-rendered on Cloudflare Workers                |
-| `docs/`     | Architecture, decisions and project documentation ([index](docs/README.md)) |
-| `docs/adr/` | Architecture decision records                                               |
+| Path             | What it is                                                                                     |
+| ---------------- | ---------------------------------------------------------------------------------------------- |
+| `apps/api`       | API Worker on Cloudflare, backed by a D1 database                                              |
+| `apps/web`       | Website: React Router, server-rendered on Cloudflare Workers                                   |
+| `packages/model` | The data model: record shapes, validation and the lookup resolver ([spec](docs/data-model.md)) |
+| `docs/`          | Architecture, decisions and project documentation ([index](docs/README.md))                    |
+| `docs/adr/`      | Architecture decision records                                                                  |
 
 ## Licences
 
