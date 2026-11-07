@@ -6,7 +6,7 @@
     "dev": "react-router dev",
     "build": "node scripts/copy-dump.ts && react-router build",
     "deploy": "pnpm run build && wrangler deploy",
-    "typecheck": "wrangler types && react-router typegen && tsc -b",
+    "typecheck": "wrangler types --strict-vars=false && react-router typegen && tsc -b",
     "test": "vitest run"
   },
   "dependencies": {

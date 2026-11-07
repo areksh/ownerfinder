@@ -166,3 +166,22 @@ export const PROFILE = {
   listing: "Why it is on the list",
   check: (name: string) => `Check ${name}`,
 };
+
+export const REQUEST = {
+  title: "Request a change",
+  intro:
+    "Ask for a company or brand to be added, or for something to be corrected. Every request needs at least one source.",
+  privacy:
+    "Requests are published as public GitHub issues, so please do not include personal details.",
+  subject: "What is it about? For example, a company or brand name",
+  change: "What should be added or changed?",
+  sources: "Sources: web addresses, one per line",
+  send: "Send the request",
+  thanks: "Thank you",
+  submitted: "Your request is now an issue for the curator to review:",
+  closed: "Requests cannot be taken through this form at the moment.",
+  notVerified: "We could not confirm the request came from a person. Please try again.",
+  failed: "Your request could not be saved. Please try again later.",
+  useGitHub: "The request form is not open yet. Until it is, please",
+  openIssue: "open an issue on GitHub with at least one source",
+};
