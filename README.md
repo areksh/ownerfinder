@@ -38,6 +38,25 @@ pnpm build       # production builds
 See [CONTRIBUTING.md](CONTRIBUTING.md) for running single tests,
 coverage and how to propose changes.
 
+## Deployment
+
+Both apps run on Cloudflare Workers:
+
+- Website: <https://ecf-web.gloaming-worker.workers.dev>
+- API: <https://ecf-api.gloaming-worker.workers.dev/health>
+
+GitHub Actions deploys every push to `master` once lint, type checks,
+tests and builds pass. The workflow needs two repository secrets:
+`CLOUDFLARE_API_TOKEN` (a token limited to Workers Scripts: Edit and D1:
+Edit) and `CLOUDFLARE_ACCOUNT_ID`.
+
+To deploy by hand after `pnpm exec wrangler login`:
+
+```sh
+pnpm --filter api run deploy
+pnpm --filter web run deploy
+```
+
 ## Repository map
 
 | Path        | What it is                                                                  |
