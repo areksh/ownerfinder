@@ -1,6 +1,6 @@
 import { exports } from "cloudflare:workers";
 import { describe, expect, it, vi } from "vitest";
-import worker from "../src/index";
+import worker from "../src/index.ts";
 
 function failingDb(message = "boom"): D1Database {
   const statement = {

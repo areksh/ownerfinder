@@ -9,8 +9,12 @@
     "test": "vitest run",
     "test:coverage": "vitest run --coverage"
   },
+  "dependencies": {
+    "@ecf/model": "workspace:*"
+  },
   "devDependencies": {
     "@cloudflare/vitest-plugin": "1.6.0",
+    "@ecf/data": "workspace:*",
     "@types/node": "22.20.5",
     "@vitest/coverage-istanbul": "5.1.0",
     "vitest": "5.1.0",

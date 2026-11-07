@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./acceptance-fixture": "./test/acceptance/fixture.ts"
   },
   "scripts": {
     "typecheck": "tsc --noEmit",
