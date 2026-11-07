@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+coverage/
+
+# Cloudflare and React Router local state and generated types
+.wrangler/
+.react-router/
+worker-configuration.d.ts
+
+# Secrets and local environment
+.env*
+.dev.vars*
+
+# Logs, OS and editor cruft
+*.log
+.DS_Store
+.vscode/
+.idea/
