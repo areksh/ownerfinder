@@ -191,7 +191,8 @@ can itself be held by another.
 
 **Paths.** The result lists every path from `node` to an ultimate holder.
 Each path is the ordered list of relationships walked and the entities
-reached, with the listed ones marked. An entity counts as listed when its
+on it (starting with the node itself when it is an entity), with the
+listed ones marked. An entity counts as listed when its
 listing has evidence for at least one of the chosen criteria. Each
 relationship type has a strength, strongest first:
 
@@ -219,11 +220,11 @@ the answer could be either way.
 
 **Outcome.**
 
-| Outcome   | When                                                                                |
-| --------- | ----------------------------------------------------------------------------------- |
-| `linked`  | At least one path reaches a listed entity.                                          |
-| `no-link` | The node has at least one path, but none reaches a listed entity.                   |
-| `unknown` | The node is not in the graph, or nothing holds it on that date and in that country. |
+| Outcome   | When                                                                                                              |
+| --------- | ----------------------------------------------------------------------------------------------------------------- |
+| `linked`  | At least one path reaches a listed entity.                                                                        |
+| `no-link` | The node has at least one path, but none reaches a listed entity. An entity with no holders is a path of its own. |
+| `unknown` | The node is not in the graph, or it is a brand that nothing holds on that date and in that country.               |
 
 A lookup on a node that is not in the graph returns `unknown`; it is not
 an error. A malformed query (bad date or country code, negative
