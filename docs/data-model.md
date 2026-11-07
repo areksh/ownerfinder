@@ -240,23 +240,25 @@ list the groups the cases are about (Nestle, Coca-Cola, PepsiCo,
 Unilever, Mars and Ferrero) under one example criterion; the companies
 they hold, and the other holders, are not listed.
 
-| Case                       | Query                                 | Expected                                                                                                                                                |
-| -------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Nestle and L'Oreal         | L'Oreal, 2026                         | `linked` to Nestle through a 20.16% stake.                                                                                                              |
-| Starbucks at home          | Starbucks brand, 2026, GB             | `linked` to Nestle by licence (packaged coffee and foodservice; not shops or ready-to-drink); owned by Starbucks.                                       |
-| Starbucks before the deal  | Starbucks brand, 2018-01, GB          | Owned by Starbucks, `no-link`.                                                                                                                          |
-| Coca-Cola and Monster      | Monster, 2020 and 2026                | `linked` to Coca-Cola through a stake: 16.7% from June 2015, 21% at the end of 2025.                                                                    |
-| Coca-Cola, Costa, Innocent | Costa, Innocent, 2026                 | `owned` by Coca-Cola. Costa not linked before January 2019.                                                                                             |
-| PepsiCo and Tropicana      | Tropicana, 2026, US and GB            | Owned by PAI Partners' company; `linked` to PepsiCo through a 39% stake; in the US also distributed by PepsiCo. Owned by PepsiCo in 2021.               |
-| Persil                     | Persil, 2026, GB, IE, FR and DE       | `linked` to Unilever in GB, IE and FR; owned by Henkel in DE, `no-link`.                                                                                |
-| Ben & Jerry's              | Ben & Jerry's, 2025-11 and 2026       | Owned by Unilever before the demerger of 6 December 2025; afterwards owned by The Magnum Ice Cream Company, `linked` to Unilever through a 19.9% stake. |
-| Kellogg's                  | Kellogg's, 2026, GB and US            | GB: `linked` to Mars, which owns Kellanova, the brand owner. US: also `linked` to Ferrero by licence, through WK Kellogg Co.                            |
-| Kellogg's before Mars      | Kellogg's, 2025-06, GB                | Owned by Kellanova, `no-link`.                                                                                                                          |
-| Thresholds                 | A 3% holding and a passive 7% holding | Ignored by default; included when `minStakePct` is lowered or `includePassive` is set.                                                                  |
-| Unknown                    | A brand not in the graph              | `unknown`.                                                                                                                                              |
+| Case                       | Query                                  | Expected                                                                                                                                                |
+| -------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Nestle and L'Oreal         | L'Oreal, 2026                          | `linked` to Nestle through a 20.16% stake.                                                                                                              |
+| Starbucks at home          | Starbucks brand, 2026, GB              | `linked` to Nestle by licence (packaged coffee and foodservice; not shops or ready-to-drink); owned by Starbucks.                                       |
+| Starbucks before the deal  | Starbucks brand, 2018-01, GB           | Owned by Starbucks, `no-link`.                                                                                                                          |
+| Coca-Cola and Monster      | Monster, 2020 and 2026                 | `linked` to Coca-Cola through a stake: 16.7% from June 2015, 21% at the end of 2025.                                                                    |
+| Coca-Cola, Costa, Innocent | Costa, Innocent, 2026                  | `owned` by Coca-Cola. Costa not linked before January 2019.                                                                                             |
+| PepsiCo and Tropicana      | Tropicana, 2026, US and GB             | Owned by PAI Partners' company; `linked` to PepsiCo through a 39% stake; in the US also distributed by PepsiCo. Owned by PepsiCo in 2021.               |
+| Persil                     | Persil, 2026, GB, IE, FR and DE        | `linked` to Unilever in GB, IE and FR; owned by Henkel in DE, `no-link`.                                                                                |
+| Ben & Jerry's              | Ben & Jerry's, 2025-11 and 2026        | Owned by Unilever before the demerger of 6 December 2025; afterwards owned by The Magnum Ice Cream Company, `linked` to Unilever through a 19.9% stake. |
+| Kellogg's                  | Kellogg's, 2026, GB and US             | GB: `linked` to Mars, which owns Kellanova, the brand owner. US: also `linked` to Ferrero by licence, through WK Kellogg Co.                            |
+| Kellogg's before Mars      | Kellogg's, 2025-06, GB                 | Owned by Kellanova, `no-link`. Approximate during December 2025, the month Mars completed.                                                              |
+| Thresholds                 | L'Oreal, 2026, with `minStakePct` 25   | `no-link`: the 20.16% stake is below the threshold. Passive holdings are pinned by the resolver's own tests.                                            |
+| Unknown                    | A brand not in the graph; Persil in ES | `unknown`: no record, or no recorded owner in that country.                                                                                             |
 
-Figures are as stated in the cited documents and are verified against
-them before they are frozen. Where a source gives a figure at a date
+Figures are as stated in the cited documents and were verified against
+them before they were frozen. Where sources disagree or are incomplete
+(Persil's markets, the year Unilever's Persil rights began), the fixture
+records only what is settled and says so in a `note`. Where a source gives a figure at a date
 rather than a range (Monster's stake rose over time through share
 buy-backs), the fixture records the stated figures and says so in the
 relationship's `note`.
