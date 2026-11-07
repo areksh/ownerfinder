@@ -95,6 +95,12 @@ describe("graphSchema", () => {
     });
   });
 
+  it("rejects a source URL that is not a URL at all", () => {
+    rejects((g) => {
+      g.sources[0] = { ...g.sources[0], url: "example.org/report.pdf" } as never;
+    });
+  });
+
   it("rejects a malformed partial date", () => {
     rejects((g) => {
       g.relationships[0] = { ...g.relationships[0], validFrom: "June 2015" } as never;
