@@ -37,6 +37,11 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-24.04
     timeout-minutes: 15
+    # The Cloudflare secrets live in this environment, which only master may
+    # use, so workflows on other branches cannot read them.
+    environment:
+      name: production
+      url: https://ecf-web.gloaming-worker.workers.dev
     # Deploys run one at a time and are never cancelled half-way.
     concurrency:
       group: deploy

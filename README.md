@@ -46,7 +46,8 @@ Both apps run on Cloudflare Workers:
 - API: <https://ecf-api.gloaming-worker.workers.dev/health>
 
 GitHub Actions deploys every push to `master` once lint, type checks,
-tests and builds pass. The workflow needs two repository secrets:
+tests and builds pass. The deploy job runs in the `production` environment,
+restricted to the `master` branch, which holds two secrets:
 `CLOUDFLARE_API_TOKEN` (a token limited to Workers Scripts: Edit and D1:
 Edit) and `CLOUDFLARE_ACCOUNT_ID`.
 
