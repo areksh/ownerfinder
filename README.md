@@ -65,6 +65,8 @@ pnpm --filter web run deploy
 | `apps/api`       | API Worker on Cloudflare, backed by a D1 database                                              |
 | `apps/web`       | Website: React Router, server-rendered on Cloudflare Workers                                   |
 | `packages/model` | The data model: record shapes, validation and the lookup resolver ([spec](docs/data-model.md)) |
+| `packages/data`  | Data tools: check, build and Wikidata proposals ([guide](docs/data-files.md))                  |
+| `data/`          | The curated ownership data, in YAML                                                            |
 | `docs/`          | Architecture, decisions and project documentation ([index](docs/README.md))                    |
 | `docs/adr/`      | Architecture decision records                                                                  |
 

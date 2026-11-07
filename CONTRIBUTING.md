@@ -17,6 +17,20 @@ Requests are reviewed by the curator. Being requested does not mean a
 company will be listed; listing criteria and evidence are published with
 each company.
 
+## Adding or correcting data
+
+The data lives in `data/` as YAML; [the data files guide](docs/data-files.md)
+explains the layout and the recording conventions.
+
+1. Optionally start from Wikidata: `pnpm data:propose wikidata Q160746`
+   writes `proposals/Q160746.yaml`. Treat it as leads only.
+2. Verify each record against an annual report, filing or register, and
+   cite that source.
+3. Edit the group's file under `data/groups/` and its sources under
+   `data/sources/`.
+4. Run `pnpm data:check`; CI runs it too and refuses any problem, such
+   as a relationship without a source.
+
 ## Setting up
 
 Follow the [quick start in the README](README.md#quick-start).

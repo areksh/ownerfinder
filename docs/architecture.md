@@ -14,24 +14,24 @@ reported as unknown, never as "clean".
 
 ```mermaid
 flowchart LR
-  data["Curated data files<br/>(planned)"] -->|CI: validate and build| d1[("D1 database")]
-  ingest["Ingestion helpers<br/>(planned)"] -->|proposals for review| data
+  ingest["Wikidata proposals<br/>packages/data"] -->|verified by a curator| data["Curated data files<br/>data/"]
+  data -->|CI: data:check, data:build| dump["build/graph.json<br/>(ODbL dump)"]
+  dump -.->|planned| d1[("D1 database")]
   d1 --> api["API Worker<br/>apps/api"]
   api -.->|planned| web["Website<br/>apps/web"]
   api --> mobile["Mobile apps<br/>(planned)"]
-  data -->|ODbL dump| dump["Published data<br/>(planned)"]
 ```
 
-| Component                             | State                           | Decided in                                          |
-| ------------------------------------- | ------------------------------- | --------------------------------------------------- |
-| Website (`apps/web`)                  | Placeholder page                | [ADR 5](adr/0005-react-router-on-workers.md)        |
-| API Worker (`apps/api`)               | Health check against D1         | [ADR 3](adr/0003-cloudflare-workers-and-d1.md)      |
-| D1 database                           | Bound to the API, no schema yet | [ADR 3](adr/0003-cloudflare-workers-and-d1.md)      |
-| Curated data files                    | Planned                         | [ADR 4](adr/0004-curated-data-in-git.md)            |
-| Data model package (`packages/model`) | Built; not yet used by the API  | [ADR 10](adr/0010-relationship-graph-data-model.md) |
-| Ingestion helpers                     | Planned                         | [ADR 4](adr/0004-curated-data-in-git.md)            |
-| Mobile apps                           | Planned                         | [ADR 6](adr/0006-expo-for-mobile.md)                |
-| Published data dump                   | Planned                         | [ADR 9](adr/0009-licence-code-agpl-data-odbl.md)    |
+| Component                             | State                                      | Decided in                                          |
+| ------------------------------------- | ------------------------------------------ | --------------------------------------------------- |
+| Website (`apps/web`)                  | Placeholder page                           | [ADR 5](adr/0005-react-router-on-workers.md)        |
+| API Worker (`apps/api`)               | Health check against D1                    | [ADR 3](adr/0003-cloudflare-workers-and-d1.md)      |
+| D1 database                           | Bound to the API, no schema yet            | [ADR 3](adr/0003-cloudflare-workers-and-d1.md)      |
+| Curated data files (`data/`)          | Ownership for 21 groups; no listings yet   | [ADR 4](adr/0004-curated-data-in-git.md)            |
+| Data model package (`packages/model`) | Used by the data tools; not yet by the API | [ADR 10](adr/0010-relationship-graph-data-model.md) |
+| Data tools (`packages/data`)          | Check, build and Wikidata proposals        | [ADR 4](adr/0004-curated-data-in-git.md)            |
+| Mobile apps                           | Planned                                    | [ADR 6](adr/0006-expo-for-mobile.md)                |
+| Published data dump                   | Planned                                    | [ADR 9](adr/0009-licence-code-agpl-data-odbl.md)    |
 
 The website does not yet call the API; it will once there is data to
 show.
