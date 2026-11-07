@@ -50,6 +50,8 @@ describe("GET /health", () => {
   it("answers HEAD with headers only", async () => {
     const res = await exports.default.fetch("https://api.test/health", { method: "HEAD" });
     expect(res.status).toBe(200);
+    expect(res.headers.get("content-type")).toBe("application/json; charset=utf-8");
+    expect(res.headers.get("cache-control")).toBe("no-store");
     expect(await res.text()).toBe("");
   });
 });
