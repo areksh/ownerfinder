@@ -18,12 +18,18 @@ corepack enable pnpm
 pnpm install
 ```
 
-Run locally:
+Run locally, with the curated data loaded into a local D1:
 
 ```sh
-pnpm --filter api dev   # API Worker on http://localhost:8787 (try /health)
-pnpm --filter web dev   # website on http://localhost:5173
+pnpm data:build                      # writes build/graph.json and build/graph.sql
+pnpm --filter api db:migrate:local   # create the tables
+pnpm --filter api db:load:local      # load the data
+pnpm --filter api dev                # API on http://localhost:8787
+pnpm --filter web dev                # website on http://localhost:5173
 ```
+
+Try `http://localhost:8787/lookup/brand:kitkat?country=US` or
+`/search?q=kell`; the endpoints are described in [docs/api.md](docs/api.md).
 
 Checks:
 
