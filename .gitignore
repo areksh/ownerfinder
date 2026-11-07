@@ -5,12 +5,15 @@ node_modules/
 # dist elsewhere are never silently left out
 /apps/*/build/
 /proposals/
+/apps/web/public/data/
 /apps/*/dist/
 /packages/*/build/
 /proposals/
+/apps/web/public/data/
 /packages/*/dist/
 /build/
 /proposals/
+/apps/web/public/data/
 coverage/
 
 # Cloudflare and React Router local state and generated types

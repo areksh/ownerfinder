@@ -4,8 +4,8 @@
   "type": "module",
   "scripts": {
     "dev": "react-router dev",
-    "build": "react-router build",
-    "deploy": "react-router build && wrangler deploy",
+    "build": "node scripts/copy-dump.ts && react-router build",
+    "deploy": "pnpm run build && wrangler deploy",
     "typecheck": "wrangler types && react-router typegen && tsc -b",
     "test": "vitest run"
   },

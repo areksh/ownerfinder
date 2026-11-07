@@ -126,3 +126,43 @@ export function chain(names: string[]): string {
 
 export const SHARE = (pct: number) =>
   `Indicative share through this path: ${pct}%. It ignores voting rights and share classes.`;
+
+export const TOP_OF_CHAIN = "Top of the chain";
+
+export const NAV = {
+  skip: "Skip to content",
+  home: "Search",
+  methodology: "How it works",
+  data: "Data",
+  request: "Request a change",
+};
+
+export const FOOTER =
+  "A non-profit, open-source project. The data is published under the Open Database License 1.0 and the code under the GNU AGPL 3.0.";
+
+export const SEARCH = {
+  label: "Brand or company",
+  button: "Search",
+  noResults: (q: string) => `Nothing matches "${q}".`,
+  results: (q: string) => `Results for "${q}"`,
+};
+
+export const CHECK = {
+  settings: "Change the question",
+  country: "Country",
+  date: "Date",
+  dateHint: "Leave empty for today.",
+  minStakePct: "Ignore stakes below (per cent)",
+  includePassive: "Include passive holdings, such as index funds",
+  update: "Update the answer",
+  profile: (name: string) => `More about ${name}`,
+  asked: (country: string, date: string) => `For ${country} on ${date}.`,
+};
+
+export const PROFILE = {
+  heldBy: "Held by",
+  holds: "Holds",
+  none: "None recorded.",
+  listing: "Why it is on the list",
+  check: (name: string) => `Check ${name}`,
+};
