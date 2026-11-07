@@ -2,17 +2,18 @@
  * The data tools, run with plain Node (types are stripped natively):
  *
  *   node packages/data/src/cli.ts check [data-dir]
- *   node packages/data/src/cli.ts build [data-dir] [out-file]
+ *   node packages/data/src/cli.ts build [data-dir] [out-file]   (also writes graph.sql beside it)
  *   node packages/data/src/cli.ts propose wikidata <Q-id>
  *
  * Paths default to the repository's data/ and build/ directories.
  */
 import { mkdir, writeFile } from "node:fs/promises";
-import { dirname, relative, resolve } from "node:path";
+import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import type { Graph } from "@ecf/model";
 import { buildDump } from "./build.ts";
 import { checkData, formatProblem } from "./check.ts";
+import { graphSql } from "./sql.ts";
 import { parseProposal, proposalYaml } from "./wikidata.ts";
 import { isQid, proposalQuery, USER_AGENT, WIKIDATA_ENDPOINT } from "./wikidata-query.ts";
 
@@ -45,9 +46,14 @@ async function check(dir: string): Promise<Graph | undefined> {
 async function build(dir: string, out: string): Promise<number> {
   const graph = await check(dir);
   if (graph === undefined) return 1;
+  const dump = buildDump(graph);
+  const sqlOut = join(dirname(out), "graph.sql");
   await mkdir(dirname(out), { recursive: true });
-  await writeFile(out, buildDump(graph));
-  console.log(`Wrote ${relative(process.cwd(), out)}`);
+  await writeFile(out, dump);
+  // From the sorted dump, so the SQL is as reproducible as the JSON.
+  const sorted = (JSON.parse(dump) as { graph: Graph }).graph;
+  await writeFile(sqlOut, `${graphSql(sorted).join(";\n")};\n`);
+  console.log(`Wrote ${relative(process.cwd(), out)} and ${relative(process.cwd(), sqlOut)}`);
   return 0;
 }
 

@@ -15,5 +15,8 @@
     "@types/node": "22.20.5",
     "@vitest/coverage-istanbul": "5.1.0",
     "vitest": "5.1.0"
+  },
+  "exports": {
+    "./sql": "./src/sql.ts"
   }
 }

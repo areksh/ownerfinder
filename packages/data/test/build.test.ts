@@ -59,6 +59,9 @@ describe("data:build command", () => {
     const { stdout } = await run("node", [CLI, "build", dir, out]);
     expect(stdout).toContain("graph.json");
     expect(JSON.parse(await readFile(out, "utf8")).graph.brands).toHaveLength(3);
+    const sql = await readFile(join(dir, "out/graph.sql"), "utf8");
+    expect(sql.startsWith("DELETE FROM search_terms;\n")).toBe(true);
+    expect(sql).toContain("INSERT INTO nodes (id, kind, name, record) VALUES ('brand:apple'");
   });
 
   it("refuses invalid data and writes nothing", async () => {
