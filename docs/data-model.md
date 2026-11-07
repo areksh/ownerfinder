@@ -144,7 +144,8 @@ the claim is, and the summary is worded to match:
 ## Validation
 
 `validateGraph(graph)` returns a list of issues, each with a `code`, the
-offending record's id and a message. An empty list means the graph is
+offending record's id, the collection it is in (`relationships`,
+`listings` and so on) and a message. An empty list means the graph is
 valid. The data build fails on any issue. The rules:
 
 | Code                    | Rule                                                                                            |

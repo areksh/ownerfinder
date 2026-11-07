@@ -10,4 +10,4 @@ export {
 } from "./resolve.ts";
 export * from "./schema.ts";
 export { appliesIn, inForce } from "./scope.ts";
-export { type Issue, type IssueCode, validateGraph } from "./validate.ts";
+export { type Collection, type Issue, type IssueCode, validateGraph } from "./validate.ts";

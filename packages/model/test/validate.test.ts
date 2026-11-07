@@ -41,6 +41,21 @@ describe("validateGraph", () => {
     expect(issues[0]?.message).toContain("validFrom");
   });
 
+  it("says which collection each issue's record is in", () => {
+    const g = base([rel("owns", A, B, { sources: [] })]);
+    const evidence = g.listings[0]?.evidence[0];
+    if (evidence === undefined) throw new Error("fixture");
+    evidence.sources = [];
+    expect(validateGraph(g).map((i) => [i.collection, i.id])).toEqual([
+      ["relationships", "relationship:owns-a-b"],
+      ["listings", A],
+    ]);
+    expect(validateGraph({ ...g, brands: [{ id: "brand:Bad", name: "x" }] })[0]).toMatchObject({
+      code: "shape",
+      collection: "brands",
+    });
+  });
+
   it("reports input that is not a graph at all", () => {
     expect(codes(null)).toEqual(["shape"]);
   });

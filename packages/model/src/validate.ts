@@ -26,8 +26,12 @@ export type IssueCode =
   | "missing-source"
   | "overlapping-duplicate";
 
+export type Collection = keyof Graph;
+
 export interface Issue {
   code: IssueCode;
+  /** Where the offending record is; absent when the input is not a graph. */
+  collection?: Collection;
   /** The offending record's id; for a listing, the listed entity's id. */
   id?: string;
   message: string;
@@ -61,6 +65,7 @@ export function validateGraph(input: unknown): Issue[] {
     }
   };
 
+  let mark = issues.length;
   for (const r of graph.relationships) {
     expectKind(r.id, r.from, "entity", "from");
     const targetKind = kinds.get(r.to);
@@ -97,6 +102,7 @@ export function validateGraph(input: unknown): Issue[] {
     }
   }
 
+  mark = tag(issues, mark, "relationships");
   for (const listing of graph.listings) {
     const id = listing.entity;
     expectKind(id, listing.entity, "entity", "entity");
@@ -113,7 +119,9 @@ export function validateGraph(input: unknown): Issue[] {
     }
   }
 
+  mark = tag(issues, mark, "listings");
   checkOverlaps(graph.relationships, issues);
+  tag(issues, mark, "relationships");
   return issues;
 }
 
@@ -123,7 +131,10 @@ function shapeIssues(input: unknown, error: z.ZodError): Issue[] {
     const id = recordId(input, collection, index);
     const field = rest.length > 0 ? rest.join(".") : issue.path.join(".");
     const message = field === "" ? issue.message : `${field}: ${issue.message}`;
-    return id === undefined ? { code: "shape", message } : { code: "shape", id, message };
+    const shaped: Issue = { code: "shape", message };
+    if (isCollection(collection)) shaped.collection = collection;
+    if (id !== undefined) shaped.id = id;
+    return shaped;
   });
 }
 
@@ -143,7 +154,12 @@ function indexKinds(graph: Graph, issues: Issue[]): Map<string, Kind> {
   const kinds = new Map<string, Kind>();
   const add = (id: string, kind: Kind) => {
     if (kinds.has(id)) {
-      issues.push({ code: "duplicate-id", id, message: `${id} is used more than once` });
+      issues.push({
+        code: "duplicate-id",
+        collection: COLLECTION_OF[kind],
+        id,
+        message: `${id} is used more than once`,
+      });
     } else {
       kinds.set(id, kind);
     }
@@ -159,6 +175,7 @@ function indexKinds(graph: Graph, issues: Issue[]): Map<string, Kind> {
     if (listed.has(listing.entity)) {
       issues.push({
         code: "duplicate-id",
+        collection: "listings",
         id: listing.entity,
         message: `${listing.entity} has more than one listing`,
       });
@@ -226,6 +243,24 @@ function start(text: string): number {
   const date = parsePartialDate(text);
   if (date === undefined) throw new Error(`unchecked date ${text}`);
   return startOf(date);
+}
+
+const COLLECTION_OF: Record<Kind, Collection> = {
+  entity: "entities",
+  brand: "brands",
+  relationship: "relationships",
+  source: "sources",
+  criterion: "criteria",
+};
+
+function isCollection(value: unknown): value is Collection {
+  return typeof value === "string" && Object.hasOwn(graphSchema.shape, value);
+}
+
+/** Records the collection on the issues added since `from`; returns the new mark. */
+function tag(issues: Issue[], from: number, collection: Collection): number {
+  for (const issue of issues.slice(from)) issue.collection = collection;
+  return issues.length;
 }
 
 function article(kind: string): string {
