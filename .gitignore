@@ -1,9 +1,12 @@
 # Dependencies
 node_modules/
 
-# Build output
-dist/
-build/
+# Build output, scoped to package roots so source folders named build or
+# dist elsewhere are never silently left out
+/apps/*/build/
+/apps/*/dist/
+/packages/*/build/
+/packages/*/dist/
 coverage/
 
 # Cloudflare and React Router local state and generated types
