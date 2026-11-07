@@ -6,14 +6,20 @@ node_modules/
 /apps/*/build/
 /proposals/
 /apps/web/public/data/
+/apps/web/test-results/
+/apps/web/playwright-report/
 /apps/*/dist/
 /packages/*/build/
 /proposals/
 /apps/web/public/data/
+/apps/web/test-results/
+/apps/web/playwright-report/
 /packages/*/dist/
 /build/
 /proposals/
 /apps/web/public/data/
+/apps/web/test-results/
+/apps/web/playwright-report/
 coverage/
 
 # Cloudflare and React Router local state and generated types
