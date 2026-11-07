@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { type Query, resolve } from "../src/resolve";
-import type { Graph } from "../src/schema";
-import { graph, rel } from "./builders";
+import { type Query, resolve } from "../src/resolve.ts";
+import type { Graph } from "../src/schema.ts";
+import { graph, rel } from "./builders.ts";
 
 const A = "entity:a";
 const B = "entity:b";

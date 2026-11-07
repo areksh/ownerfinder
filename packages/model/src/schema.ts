@@ -4,8 +4,8 @@
  * `validate.ts`. The specification is docs/data-model.md.
  */
 import { z } from "zod";
-import { isCountryCode } from "./countries";
-import { isPartialDate, parseFullDate } from "./dates";
+import { isCountryCode } from "./countries.ts";
+import { isPartialDate, parseFullDate } from "./dates.ts";
 
 const SLUG = "[a-z0-9]+(?:-[a-z0-9]+)*";
 

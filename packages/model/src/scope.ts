@@ -1,6 +1,6 @@
 /** Whether a relationship applies in a country and on a day. */
-import { endOf, type PartialDate, parsePartialDate, startOf } from "./dates";
-import type { Relationship, Scope } from "./schema";
+import { endOf, type PartialDate, parsePartialDate, startOf } from "./dates.ts";
+import type { Relationship, Scope } from "./schema.ts";
 
 export function appliesIn(scope: Scope, country: string): boolean {
   const included = scope.include === "world" || scope.include.includes(country);

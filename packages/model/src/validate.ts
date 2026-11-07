@@ -4,15 +4,15 @@
  * rules are specified in docs/data-model.md.
  */
 import type { z } from "zod";
-import { COUNTRY_CODES } from "./countries";
-import { parsePartialDate, startOf } from "./dates";
+import { COUNTRY_CODES } from "./countries.ts";
+import { parsePartialDate, startOf } from "./dates.ts";
 import {
   type Graph,
   graphSchema,
   type Relationship,
   type RelationshipType,
   type Scope,
-} from "./schema";
+} from "./schema.ts";
 
 export type IssueCode =
   | "shape"

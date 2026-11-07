@@ -1,4 +1,4 @@
-import type { Graph, Relationship, RelationshipType } from "../src/schema";
+import type { Graph, Relationship, RelationshipType } from "../src/schema.ts";
 
 /** The one source every built relationship and evidence item cites. */
 export const SOURCE_ID = "source:test";

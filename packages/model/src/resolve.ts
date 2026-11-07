@@ -3,10 +3,10 @@
  * a country, to a listed company? The rules are specified in
  * docs/data-model.md. The graph is assumed to have passed validateGraph.
  */
-import { isCountryCode } from "./countries";
-import { parseFullDate, startOf } from "./dates";
-import type { Graph, Relationship, RelationshipType } from "./schema";
-import { appliesIn, inForce } from "./scope";
+import { isCountryCode } from "./countries.ts";
+import { parseFullDate, startOf } from "./dates.ts";
+import type { Graph, Relationship, RelationshipType } from "./schema.ts";
+import { appliesIn, inForce } from "./scope.ts";
 
 export interface Query {
   /** An entity or brand id. */

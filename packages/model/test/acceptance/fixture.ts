@@ -6,7 +6,7 @@
  * its note says so. The listings exist only to make the paths visible:
  * their evidence is a placeholder, not a claim about any company.
  */
-import type { Graph, Relationship } from "../../src/schema";
+import type { Graph, Relationship } from "../../src/schema.ts";
 
 const RETRIEVED = "2026-11-07";
 const EXAMPLE = "criterion:example";

@@ -1,5 +1,5 @@
-export { COUNTRY_CODES, isCountryCode } from "./countries";
-export { isPartialDate, type PartialDate, type Precision, parsePartialDate } from "./dates";
+export { COUNTRY_CODES, isCountryCode } from "./countries.ts";
+export { isPartialDate, type PartialDate, type Precision, parsePartialDate } from "./dates.ts";
 export {
   DEFAULT_MIN_STAKE_PCT,
   type Grade,
@@ -7,7 +7,7 @@ export {
   type Query,
   type Resolution,
   resolve,
-} from "./resolve";
-export * from "./schema";
-export { appliesIn, inForce } from "./scope";
-export { type Issue, type IssueCode, validateGraph } from "./validate";
+} from "./resolve.ts";
+export * from "./schema.ts";
+export { appliesIn, inForce } from "./scope.ts";
+export { type Issue, type IssueCode, validateGraph } from "./validate.ts";

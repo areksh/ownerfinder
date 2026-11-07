@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { COUNTRY_CODES, isCountryCode } from "../src/countries";
-import { graphSchema } from "../src/schema";
+import { COUNTRY_CODES, isCountryCode } from "../src/countries.ts";
+import { graphSchema } from "../src/schema.ts";
 
 function validGraph() {
   return {

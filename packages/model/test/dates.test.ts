@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { endOf, isPartialDate, parseFullDate, parsePartialDate, startOf } from "../src/dates";
+import { endOf, isPartialDate, parseFullDate, parsePartialDate, startOf } from "../src/dates.ts";
 
 function parsed(text: string) {
   const date = parsePartialDate(text);

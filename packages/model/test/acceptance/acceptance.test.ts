@@ -3,9 +3,9 @@
  * fixture graph.
  */
 import { describe, expect, it } from "vitest";
-import { type Query, resolve } from "../../src/resolve";
-import { validateGraph } from "../../src/validate";
-import { fixture } from "./fixture";
+import { type Query, resolve } from "../../src/resolve.ts";
+import { validateGraph } from "../../src/validate.ts";
+import { fixture } from "./fixture.ts";
 
 function ask(node: string, date: string, country = "GB", extra: Partial<Query> = {}) {
   return resolve(fixture, { node, date, country, ...extra });

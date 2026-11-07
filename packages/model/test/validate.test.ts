@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import type { Graph } from "../src/schema";
-import { type IssueCode, validateGraph } from "../src/validate";
-import { graph, rel, SOURCE_ID } from "./builders";
+import type { Graph } from "../src/schema.ts";
+import { type IssueCode, validateGraph } from "../src/validate.ts";
+import { graph, rel, SOURCE_ID } from "./builders.ts";
 
 const A = "entity:a";
 const B = "entity:b";

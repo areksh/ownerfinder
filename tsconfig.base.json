@@ -4,6 +4,7 @@
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
     "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": true,
     "module": "preserve",
     "moduleResolution": "bundler",
     "target": "es2024",

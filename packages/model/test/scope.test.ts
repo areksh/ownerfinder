@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { parseFullDate, startOf } from "../src/dates";
-import { appliesIn, inForce } from "../src/scope";
+import { parseFullDate, startOf } from "../src/dates.ts";
+import { appliesIn, inForce } from "../src/scope.ts";
 
 function day(text: string): number {
   const date = parseFullDate(text);
