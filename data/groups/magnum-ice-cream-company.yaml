@@ -1,0 +1,40 @@
+# The Magnum Ice Cream Company, demerged from Unilever on 6 December 2025.
+
+entities:
+  - { id: entity:magnum-ice-cream-company, name: "The Magnum Ice Cream Company N.V." }
+  - { id: entity:ben-and-jerrys-homemade, name: "Ben & Jerry's Homemade, Inc." }
+
+brands:
+  - { id: brand:walls, name: "Wall's" }
+  - { id: brand:cornetto, name: "Cornetto" }
+  - { id: brand:ben-and-jerrys, name: "Ben & Jerry's" }
+
+relationships:
+  - id: relationship:tmicc-ben-and-jerrys
+    type: owns
+    from: entity:magnum-ice-cream-company
+    to: entity:ben-and-jerrys-homemade
+    validFrom: "2025-12-06"
+    scope: { include: world }
+    sources: [source:tmicc-investor-faq, source:the-star-tmicc-demerger-2025]
+  - id: relationship:ben-and-jerrys-brand
+    type: owns_brand
+    from: entity:ben-and-jerrys-homemade
+    to: brand:ben-and-jerrys
+    validFrom: "1978"
+    scope: { include: world }
+    sources: [source:wikipedia-ben-and-jerrys]
+  - id: relationship:magnum-ice-cream-company-walls
+    type: owns_brand
+    from: entity:magnum-ice-cream-company
+    to: brand:walls
+    validFrom: "2025-12-06"
+    scope: { include: world }
+    sources: [source:the-star-tmicc-demerger-2025]
+  - id: relationship:magnum-ice-cream-company-cornetto
+    type: owns_brand
+    from: entity:magnum-ice-cream-company
+    to: brand:cornetto
+    validFrom: "2025-12-06"
+    scope: { include: world }
+    sources: [source:the-star-tmicc-demerger-2025]

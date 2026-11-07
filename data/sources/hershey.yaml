@@ -1,0 +1,13 @@
+sources:
+  - id: source:hershey-10k-2017
+    url: https://www.sec.gov/Archives/edgar/data/0000047111/000004711118000011/a2017_formx10-kq4.htm
+    title: "Form 10-K for the fiscal year ended December 31, 2017 (licence agreements)"
+    publisher: "The Hershey Company"
+    published: "2018-02"
+    retrieved: "2026-11-07"
+  - id: source:confectionery-news-hershey-2026
+    url: https://www.confectionerynews.com/Article/2026/03/12/hershey-history-strategy-and-growth-opportunities/
+    title: "Hershey: The secret to success and what's next"
+    publisher: "Confectionery News"
+    published: "2026-03-12"
+    retrieved: "2026-11-07"

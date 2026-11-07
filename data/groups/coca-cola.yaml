@@ -1,0 +1,142 @@
+# Coca-Cola. Brands from the company's own brand list.
+
+entities:
+  - { id: entity:coca-cola, name: "The Coca-Cola Company" }
+  - { id: entity:costa, name: "Costa Limited" }
+  - { id: entity:innocent, name: "Fresh Trading Ltd (innocent)" }
+
+brands:
+  - { id: brand:coca-cola, name: "Coca-Cola" }
+  - { id: brand:diet-coke, name: "Diet Coke" }
+  - { id: brand:fanta, name: "Fanta" }
+  - { id: brand:sprite, name: "Sprite" }
+  - { id: brand:powerade, name: "Powerade" }
+  - { id: brand:smartwater, name: "smartwater" }
+  - { id: brand:minute-maid, name: "Minute Maid" }
+  - { id: brand:fairlife, name: "fairlife" }
+  - { id: brand:bodyarmor, name: "BODYARMOR" }
+  - { id: brand:costa-coffee, name: "Costa Coffee" }
+  - { id: brand:innocent, name: "innocent" }
+
+relationships:
+  - id: relationship:coca-cola-costa
+    type: owns
+    from: entity:coca-cola
+    to: entity:costa
+    stakePct: 100
+    validFrom: "2019-01-03"
+    scope: { include: world }
+    sources: [source:coca-cola-costa-2019]
+  - id: relationship:costa-costa-coffee
+    type: owns_brand
+    from: entity:costa
+    to: brand:costa-coffee
+    validFrom: "2019-01-03"
+    scope: { include: world }
+    sources: [source:coca-cola-costa-2019, source:coca-cola-brands]
+  - id: relationship:coca-cola-innocent-2010
+    type: owns
+    from: entity:coca-cola
+    to: entity:innocent
+    stakePct: 58
+    validFrom: "2010-04"
+    validTo: "2013-02"
+    scope: { include: world }
+    sources: [source:marketing-week-innocent-2010]
+  - id: relationship:coca-cola-innocent-2013
+    type: owns
+    from: entity:coca-cola
+    to: entity:innocent
+    validFrom: "2013-02"
+    scope: { include: world }
+    sources: [source:marketing-week-innocent-2013]
+    note: "More than 90 per cent; the report gives 90 to 99 per cent, with the founders keeping a minority."
+  - id: relationship:innocent-innocent
+    type: owns_brand
+    from: entity:innocent
+    to: brand:innocent
+    validFrom: "2010-04"
+    scope: { include: world }
+    sources: [source:marketing-week-innocent-2010, source:coca-cola-brands]
+  - id: relationship:coca-cola-monster-2015
+    type: holds_stake
+    from: entity:coca-cola
+    to: entity:monster
+    stakePct: 16.7
+    validFrom: "2015-06-12"
+    validTo: "2025-12-31"
+    scope: { include: world }
+    sources: [source:monster-8k-2015]
+    note: "16.7% at completion. The stake rose over time as Monster bought back shares; intermediate figures are not recorded here."
+  - id: relationship:coca-cola-monster-2025
+    type: holds_stake
+    from: entity:coca-cola
+    to: entity:monster
+    stakePct: 21
+    validFrom: "2025-12-31"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+    note: "Stated at 31 December 2025."
+  - id: relationship:coca-cola-coca-cola
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:coca-cola
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:coca-cola-brands]
+  - id: relationship:coca-cola-diet-coke
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:diet-coke
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:coca-cola-brands]
+  - id: relationship:coca-cola-fanta
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:fanta
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:coca-cola-brands]
+  - id: relationship:coca-cola-sprite
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:sprite
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:coca-cola-brands]
+  - id: relationship:coca-cola-powerade
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:powerade
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:coca-cola-brands]
+  - id: relationship:coca-cola-smartwater
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:smartwater
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:coca-cola-brands]
+  - id: relationship:coca-cola-minute-maid
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:minute-maid
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:coca-cola-brands]
+  - id: relationship:coca-cola-fairlife
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:fairlife
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:coca-cola-brands]
+  - id: relationship:coca-cola-bodyarmor
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:bodyarmor
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:coca-cola-brands]

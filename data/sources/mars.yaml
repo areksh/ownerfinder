@@ -1,0 +1,12 @@
+sources:
+  - id: source:mars-kellanova-2025
+    url: https://supermarketnews.co.nz/global/mars-completes-acquisition-of-kellanova/
+    title: "Mars Completes Acquisition of Kellanova"
+    publisher: "Supermarket News"
+    published: "2025-12-12"
+    retrieved: "2026-11-07"
+  - id: source:mars-brands
+    url: https://www.mars.com/our-brands
+    title: "Our Brands"
+    publisher: "Mars, Incorporated"
+    retrieved: "2026-11-07"

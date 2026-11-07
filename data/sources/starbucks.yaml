@@ -1,0 +1,7 @@
+sources:
+  - id: source:wikipedia-starbucks
+    url: https://en.wikipedia.org/wiki/Starbucks
+    title: "Starbucks"
+    publisher: "Wikipedia"
+    retrieved: "2026-11-07"
+    licence: CC BY-SA 4.0

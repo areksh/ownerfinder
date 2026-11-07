@@ -1,0 +1,11 @@
+sources:
+  - id: source:henkel-consumer-brands
+    url: https://www.henkel.com/our-businesses/henkel-consumer-brands
+    title: "Henkel Consumer Brands"
+    publisher: "Henkel AG & Co. KGaA"
+    retrieved: "2026-11-07"
+  - id: source:henkel-businesses
+    url: https://www.henkel.com/brands-and-businesses
+    title: "Our Businesses"
+    publisher: "Henkel AG & Co. KGaA"
+    retrieved: "2026-11-07"

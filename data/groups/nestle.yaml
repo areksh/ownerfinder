@@ -1,0 +1,105 @@
+# Nestle. Brands from Nestle's own brand list.
+
+entities:
+  - { id: entity:nestle, name: "Nestlé S.A." }
+
+brands:
+  - { id: brand:nescafe, name: "Nescafé" }
+  - { id: brand:nespresso, name: "Nespresso" }
+  - { id: brand:kitkat, name: "KitKat" }
+  - { id: brand:purina, name: "Purina" }
+  - { id: brand:maggi, name: "Maggi" }
+  - { id: brand:s-pellegrino, name: "S.Pellegrino" }
+  - { id: brand:perrier, name: "Perrier" }
+  - { id: brand:smarties, name: "Smarties" }
+  - { id: brand:aero, name: "Aero" }
+  - { id: brand:felix, name: "Felix" }
+
+relationships:
+  - id: relationship:nestle-loreal
+    type: holds_stake
+    from: entity:nestle
+    to: entity:loreal
+    stakePct: 20.16
+    validFrom: "2025-12-31"
+    scope: { include: world }
+    sources: [source:loreal-urd-2025]
+    note: "Stated at 31 December 2025; earlier percentages are not recorded here."
+  - id: relationship:nestle-starbucks-licence
+    type: licenses_brand
+    from: entity:nestle
+    to: brand:starbucks
+    validFrom: "2018-08-28"
+    scope: { include: world }
+    sources: [source:starbucks-nestle-close-2018]
+    coverage: "Starbucks packaged coffee, tea and foodservice products; not ready-to-drink drinks or anything sold in Starbucks shops."
+  - id: relationship:nestle-nescafe
+    type: owns_brand
+    from: entity:nestle
+    to: brand:nescafe
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:nestle-brands]
+  - id: relationship:nestle-nespresso
+    type: owns_brand
+    from: entity:nestle
+    to: brand:nespresso
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:nestle-brands]
+  - id: relationship:nestle-kitkat
+    type: owns_brand
+    from: entity:nestle
+    to: brand:kitkat
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:nestle-brands]
+  - id: relationship:nestle-purina
+    type: owns_brand
+    from: entity:nestle
+    to: brand:purina
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:nestle-brands]
+  - id: relationship:nestle-maggi
+    type: owns_brand
+    from: entity:nestle
+    to: brand:maggi
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:nestle-brands]
+  - id: relationship:nestle-s-pellegrino
+    type: owns_brand
+    from: entity:nestle
+    to: brand:s-pellegrino
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:nestle-brands]
+  - id: relationship:nestle-perrier
+    type: owns_brand
+    from: entity:nestle
+    to: brand:perrier
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:nestle-brands]
+  - id: relationship:nestle-smarties
+    type: owns_brand
+    from: entity:nestle
+    to: brand:smarties
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:nestle-brands]
+  - id: relationship:nestle-aero
+    type: owns_brand
+    from: entity:nestle
+    to: brand:aero
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:nestle-brands]
+  - id: relationship:nestle-felix
+    type: owns_brand
+    from: entity:nestle
+    to: brand:felix
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:nestle-brands]

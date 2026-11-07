@@ -1,0 +1,114 @@
+# Unilever. Brands from the Power Brands its 2025 20-F names.
+
+entities:
+  - { id: entity:unilever, name: "Unilever PLC" }
+
+brands:
+  - { id: brand:dove, name: "Dove" }
+  - { id: brand:vaseline, name: "Vaseline" }
+  - { id: brand:axe, name: "Axe" }
+  - { id: brand:rexona, name: "Rexona" }
+  - { id: brand:liquid-iv, name: "Liquid I.V." }
+  - { id: brand:hellmanns, name: "Hellmann's" }
+  - { id: brand:knorr, name: "Knorr" }
+  - { id: brand:cif, name: "Cif" }
+  - { id: brand:domestos, name: "Domestos" }
+  - { id: brand:comfort, name: "Comfort" }
+  - { id: brand:persil, name: "Persil" }
+
+relationships:
+  - id: relationship:unilever-persil
+    type: owns_brand
+    from: entity:unilever
+    to: brand:persil
+    validFrom: "1931"
+    scope: { include: [GB, IE, FR] }
+    sources: [source:wikipedia-persil, source:persil-uk-about]
+    note: "The source dates the French and British rights to 1927 and the British to 1931; the later year is used until a primary source settles it. Unilever's other Persil markets are not recorded here."
+  - id: relationship:unilever-ben-and-jerrys
+    type: owns
+    from: entity:unilever
+    to: entity:ben-and-jerrys-homemade
+    validFrom: "2000-04"
+    validTo: "2025-12-06"
+    scope: { include: world }
+    sources: [source:wikipedia-ben-and-jerrys]
+  - id: relationship:unilever-tmicc
+    type: holds_stake
+    from: entity:unilever
+    to: entity:magnum-ice-cream-company
+    stakePct: 19.9
+    validFrom: "2025-12-06"
+    scope: { include: world }
+    sources: [source:tmicc-investor-faq]
+    note: "Retained at the demerger; Unilever intends to sell it down."
+  - id: relationship:unilever-dove
+    type: owns_brand
+    from: entity:unilever
+    to: brand:dove
+    validFrom: "2026-03-12"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-vaseline
+    type: owns_brand
+    from: entity:unilever
+    to: brand:vaseline
+    validFrom: "2026-03-12"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-axe
+    type: owns_brand
+    from: entity:unilever
+    to: brand:axe
+    validFrom: "2026-03-12"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-rexona
+    type: owns_brand
+    from: entity:unilever
+    to: brand:rexona
+    validFrom: "2026-03-12"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-liquid-iv
+    type: owns_brand
+    from: entity:unilever
+    to: brand:liquid-iv
+    validFrom: "2026-03-12"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-hellmanns
+    type: owns_brand
+    from: entity:unilever
+    to: brand:hellmanns
+    validFrom: "2026-03-12"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-knorr
+    type: owns_brand
+    from: entity:unilever
+    to: brand:knorr
+    validFrom: "2026-03-12"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-cif
+    type: owns_brand
+    from: entity:unilever
+    to: brand:cif
+    validFrom: "2026-03-12"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-domestos
+    type: owns_brand
+    from: entity:unilever
+    to: brand:domestos
+    validFrom: "2026-03-12"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-comfort
+    type: owns_brand
+    from: entity:unilever
+    to: brand:comfort
+    validFrom: "2026-03-12"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]

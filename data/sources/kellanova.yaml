@@ -1,0 +1,7 @@
+sources:
+  - id: source:kellogg-brand-agreement-2023
+    url: https://www.sec.gov/Archives/edgar/data/55067/000119312523249062/d517693dex104.htm
+    title: "Master Ownership and License Agreement Regarding Trademarks and Certain Related Intellectual Property (Exhibit 10.4)"
+    publisher: "Kellogg Company"
+    published: "2023-09-29"
+    retrieved: "2026-11-07"

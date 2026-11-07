@@ -1,0 +1,16 @@
+# Monster Beverage, in which Coca-Cola holds a stake.
+
+entities:
+  - { id: entity:monster, name: "Monster Beverage Corporation" }
+
+brands:
+  - { id: brand:monster-energy, name: "Monster Energy" }
+
+relationships:
+  - id: relationship:monster-monster-energy
+    type: owns_brand
+    from: entity:monster
+    to: brand:monster-energy
+    validFrom: "2015-06-12"
+    scope: { include: world }
+    sources: [source:monster-8k-2015]

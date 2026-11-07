@@ -1,0 +1,40 @@
+# Kellanova, part of Mars since December 2025. Kellogg's is licensed to WK Kellogg Co in North America (see wk-kellogg.yaml).
+
+entities:
+  - { id: entity:kellanova, name: "Kellanova" }
+
+brands:
+  - { id: brand:pringles, name: "Pringles" }
+  - { id: brand:pop-tarts, name: "Pop-Tarts" }
+  - { id: brand:cheez-it, name: "Cheez-It" }
+  - { id: brand:kelloggs, name: "Kellogg's" }
+
+relationships:
+  - id: relationship:kellanova-kelloggs
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:kelloggs
+    validFrom: "2023-09-29"
+    scope: { include: world }
+    sources: [source:kellogg-brand-agreement-2023, source:mars-brands]
+  - id: relationship:kellanova-pringles
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:pringles
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mars-brands]
+  - id: relationship:kellanova-pop-tarts
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:pop-tarts
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mars-brands]
+  - id: relationship:kellanova-cheez-it
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:cheez-it
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mars-brands]

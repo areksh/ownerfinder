@@ -1,0 +1,128 @@
+# PepsiCo. Brands from the trademarks PepsiCo's 10-K says it owns, with the markets it excludes.
+
+entities:
+  - { id: entity:pepsico, name: "PepsiCo, Inc." }
+
+brands:
+  - { id: brand:pepsi, name: "Pepsi" }
+  - { id: brand:pepsi-max, name: "Pepsi Max" }
+  - { id: brand:mountain-dew, name: "Mountain Dew" }
+  - { id: brand:gatorade, name: "Gatorade" }
+  - { id: brand:lays, name: "Lay's" }
+  - { id: brand:walkers, name: "Walkers" }
+  - { id: brand:doritos, name: "Doritos" }
+  - { id: brand:cheetos, name: "Cheetos" }
+  - { id: brand:quaker, name: "Quaker" }
+  - { id: brand:sodastream, name: "SodaStream" }
+  - { id: brand:7up, name: "7UP" }
+  - { id: brand:rockstar, name: "Rockstar" }
+
+relationships:
+  - id: relationship:pepsico-tropicana-brand
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:tropicana
+    validFrom: "1998"
+    validTo: "2022-01"
+    scope: { include: world }
+    sources: [source:wikipedia-tropicana]
+  - id: relationship:pepsico-tbg
+    type: holds_stake
+    from: entity:pepsico
+    to: entity:tropicana-brands-group
+    stakePct: 39
+    validFrom: "2022-01"
+    scope: { include: world }
+    sources: [source:pai-tropicana-2021, source:tropicana-brands-group-2022]
+  - id: relationship:pepsico-tropicana-distribution
+    type: distributes
+    from: entity:pepsico
+    to: brand:tropicana
+    validFrom: "2022-01"
+    scope: { include: [US] }
+    sources: [source:pai-tropicana-2021]
+    coverage: "Exclusive US distribution of small-format and foodservice chilled products through PepsiCo's direct-store-delivery system."
+  - id: relationship:pepsico-pepsi
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:pepsi
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-pepsi-max
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:pepsi-max
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-mountain-dew
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:mountain-dew
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-gatorade
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:gatorade
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-lays
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:lays
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-walkers
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:walkers
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-doritos
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:doritos
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-cheetos
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:cheetos
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-quaker
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:quaker
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-sodastream
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:sodastream
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-7up
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:7up
+    validFrom: "2026-02-03"
+    scope: { include: world, exclude: [US] }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-rockstar
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:rockstar
+    validFrom: "2026-02-03"
+    scope: { include: world, exclude: [US, CA] }
+    sources: [source:pepsico-10k-2025]

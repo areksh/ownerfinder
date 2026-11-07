@@ -1,0 +1,72 @@
+# L'Oreal. Brands from L'Oreal's 2024 annual report. Nestle holds a stake (nestle.yaml).
+
+entities:
+  - { id: entity:loreal, name: "L'Oréal S.A." }
+
+brands:
+  - { id: brand:maybelline-new-york, name: "Maybelline New York" }
+  - { id: brand:garnier, name: "Garnier" }
+  - { id: brand:lancome, name: "Lancôme" }
+  - { id: brand:cerave, name: "CeraVe" }
+  - { id: brand:kiehls, name: "Kiehl's" }
+  - { id: brand:la-roche-posay, name: "La Roche-Posay" }
+  - { id: brand:nyx-professional-makeup, name: "NYX Professional Makeup" }
+  - { id: brand:vichy, name: "Vichy" }
+
+relationships:
+  - id: relationship:loreal-maybelline-new-york
+    type: owns_brand
+    from: entity:loreal
+    to: brand:maybelline-new-york
+    validFrom: "2025"
+    scope: { include: world }
+    sources: [source:loreal-annual-report-2024-strategy]
+  - id: relationship:loreal-garnier
+    type: owns_brand
+    from: entity:loreal
+    to: brand:garnier
+    validFrom: "2025"
+    scope: { include: world }
+    sources: [source:loreal-annual-report-2024-strategy]
+  - id: relationship:loreal-lancome
+    type: owns_brand
+    from: entity:loreal
+    to: brand:lancome
+    validFrom: "2025"
+    scope: { include: world }
+    sources: [source:loreal-annual-report-2024-strategy]
+  - id: relationship:loreal-cerave
+    type: owns_brand
+    from: entity:loreal
+    to: brand:cerave
+    validFrom: "2025"
+    scope: { include: world }
+    sources: [source:loreal-annual-report-2024-strategy]
+  - id: relationship:loreal-kiehls
+    type: owns_brand
+    from: entity:loreal
+    to: brand:kiehls
+    validFrom: "2025"
+    scope: { include: world }
+    sources: [source:loreal-annual-report-2024-strategy]
+  - id: relationship:loreal-la-roche-posay
+    type: owns_brand
+    from: entity:loreal
+    to: brand:la-roche-posay
+    validFrom: "2025"
+    scope: { include: world }
+    sources: [source:loreal-annual-report-2024-strategy]
+  - id: relationship:loreal-nyx-professional-makeup
+    type: owns_brand
+    from: entity:loreal
+    to: brand:nyx-professional-makeup
+    validFrom: "2025"
+    scope: { include: world }
+    sources: [source:loreal-annual-report-2024-strategy]
+  - id: relationship:loreal-vichy
+    type: owns_brand
+    from: entity:loreal
+    to: brand:vichy
+    validFrom: "2025"
+    scope: { include: world }
+    sources: [source:loreal-annual-report-2024-strategy]

@@ -1,0 +1,80 @@
+# Henkel. Brands from Henkel's own consumer brands page.
+
+entities:
+  - { id: entity:henkel, name: "Henkel AG & Co. KGaA" }
+
+brands:
+  - { id: brand:schwarzkopf, name: "Schwarzkopf" }
+  - { id: brand:syoss, name: "Syoss" }
+  - { id: brand:got2b, name: "göt2b" }
+  - { id: brand:somat, name: "Somat" }
+  - { id: brand:bref, name: "Bref" }
+  - { id: brand:dixan, name: "Dixan" }
+  - { id: brand:purex, name: "Purex" }
+  - { id: brand:loctite, name: "Loctite" }
+
+relationships:
+  - id: relationship:henkel-persil
+    type: owns_brand
+    from: entity:henkel
+    to: brand:persil
+    validFrom: "1907-06-06"
+    scope: { include: [DE] }
+    sources: [source:wikipedia-persil, source:henkel-consumer-brands]
+    note: "Recorded for Germany only until Henkel's other Persil markets are confirmed."
+  - id: relationship:henkel-schwarzkopf
+    type: owns_brand
+    from: entity:henkel
+    to: brand:schwarzkopf
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:henkel-consumer-brands]
+  - id: relationship:henkel-syoss
+    type: owns_brand
+    from: entity:henkel
+    to: brand:syoss
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:henkel-consumer-brands]
+  - id: relationship:henkel-got2b
+    type: owns_brand
+    from: entity:henkel
+    to: brand:got2b
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:henkel-consumer-brands]
+  - id: relationship:henkel-somat
+    type: owns_brand
+    from: entity:henkel
+    to: brand:somat
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:henkel-consumer-brands]
+  - id: relationship:henkel-bref
+    type: owns_brand
+    from: entity:henkel
+    to: brand:bref
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:henkel-consumer-brands]
+  - id: relationship:henkel-dixan
+    type: owns_brand
+    from: entity:henkel
+    to: brand:dixan
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:henkel-consumer-brands]
+  - id: relationship:henkel-purex
+    type: owns_brand
+    from: entity:henkel
+    to: brand:purex
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:henkel-consumer-brands]
+  - id: relationship:henkel-loctite
+    type: owns_brand
+    from: entity:henkel
+    to: brand:loctite
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:henkel-businesses]

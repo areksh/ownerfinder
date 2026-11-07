@@ -1,0 +1,14 @@
+# WK Kellogg Co, part of Ferrero since September 2025.
+
+entities:
+  - { id: entity:wk-kellogg-co, name: "WK Kellogg Co" }
+
+relationships:
+  - id: relationship:wk-kellogg-kelloggs
+    type: licenses_brand
+    from: entity:wk-kellogg-co
+    to: brand:kelloggs
+    validFrom: "2023-10"
+    scope: { include: [US, CA] }
+    sources: [source:kellogg-brand-agreement-2023]
+    coverage: "Exclusive, perpetual licence of the KELLOGG'S house mark in North America for the food categories set out in the agreement. Caribbean territories are not recorded here."

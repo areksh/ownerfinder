@@ -1,0 +1,30 @@
+sources:
+  - id: source:wikipedia-persil
+    url: https://en.wikipedia.org/wiki/Persil
+    title: "Persil"
+    publisher: "Wikipedia"
+    retrieved: "2026-11-07"
+    licence: CC BY-SA 4.0
+  - id: source:persil-uk-about
+    url: https://www.persil.com/uk/about-persil.html
+    title: "About Persil"
+    publisher: "Unilever"
+    retrieved: "2026-11-07"
+  - id: source:wikipedia-ben-and-jerrys
+    url: https://en.wikipedia.org/wiki/Ben_%26_Jerry%27s
+    title: "Ben & Jerry's"
+    publisher: "Wikipedia"
+    retrieved: "2026-11-07"
+    licence: CC BY-SA 4.0
+  - id: source:tmicc-investor-faq
+    url: https://corporate.magnumicecream.com/en/investors/faq.html
+    title: "Investor FAQ"
+    publisher: "The Magnum Ice Cream Company"
+    retrieved: "2026-11-07"
+  # Read from Unilever's PDF copy of the filing, which it states is an exact copy.
+  - id: source:unilever-20f-2025
+    url: https://www.sec.gov/Archives/edgar/data/217410/000021741026000007/ul-20251231.htm
+    title: "Annual Report on Form 20-F 2025"
+    publisher: "Unilever PLC"
+    published: "2026-03-12"
+    retrieved: "2026-11-07"

@@ -1,0 +1,48 @@
+# Ferrero. Brands from Ferrero's own brand list.
+
+entities:
+  - { id: entity:ferrero, name: "Ferrero International S.A." }
+
+brands:
+  - { id: brand:nutella, name: "Nutella" }
+  - { id: brand:kinder, name: "Kinder" }
+  - { id: brand:ferrero-rocher, name: "Ferrero Rocher" }
+  - { id: brand:tic-tac, name: "Tic Tac" }
+
+relationships:
+  - id: relationship:ferrero-wk-kellogg
+    type: owns
+    from: entity:ferrero
+    to: entity:wk-kellogg-co
+    stakePct: 100
+    validFrom: "2025-09-26"
+    scope: { include: world }
+    sources: [source:ferrero-wk-kellogg-2025]
+  - id: relationship:ferrero-nutella
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:nutella
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:ferrero-brands]
+  - id: relationship:ferrero-kinder
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:kinder
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:ferrero-brands]
+  - id: relationship:ferrero-ferrero-rocher
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:ferrero-rocher
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:ferrero-brands]
+  - id: relationship:ferrero-tic-tac
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:tic-tac
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:ferrero-brands]

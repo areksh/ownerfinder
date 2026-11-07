@@ -1,0 +1,12 @@
+sources:
+  - id: source:ferrero-wk-kellogg-2025
+    url: https://newsroom.wkkellogg.com/2025-09-26-FERRERO-COMPLETES-ACQUISITION-OF-WK-KELLOGG-CO
+    title: "Ferrero Completes Acquisition of WK Kellogg Co"
+    publisher: "WK Kellogg Co"
+    published: "2025-09-26"
+    retrieved: "2026-11-07"
+  - id: source:ferrero-brands
+    url: https://www.ferrero.com/int/en/our-brands
+    title: "Our Brands"
+    publisher: "Ferrero Group"
+    retrieved: "2026-11-07"

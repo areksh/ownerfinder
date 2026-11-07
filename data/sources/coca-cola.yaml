@@ -1,0 +1,37 @@
+sources:
+  - id: source:coca-cola-costa-2019
+    url: https://investors.coca-colacompany.com/news-events/press-releases/detail/958/the-coca-cola-company-completes-acquisition-of-costa-from-whitbread-plc
+    title: "The Coca-Cola Company Completes Acquisition of Costa from Whitbread PLC"
+    publisher: "The Coca-Cola Company"
+    published: "2019-01-03"
+    retrieved: "2026-11-07"
+  - id: source:coca-cola-brands
+    url: https://www.coca-colacompany.com/brands
+    title: "The Coca-Cola Company Brands and Beverage Portfolio"
+    publisher: "The Coca-Cola Company"
+    retrieved: "2026-11-07"
+  - id: source:marketing-week-innocent-2010
+    url: https://www.marketingweek.com/coca-cola-becomes-majority-shareholder-in-innocent/
+    title: "Coca-Cola becomes majority shareholder in Innocent"
+    publisher: "Marketing Week"
+    published: "2010-04"
+    retrieved: "2026-11-07"
+  - id: source:marketing-week-innocent-2013
+    url: https://www.marketingweek.com/coke-increases-stake-in-innocent-to-near-100/
+    title: "Coke increases stake in Innocent to near 100%"
+    publisher: "Marketing Week"
+    published: "2013-02"
+    retrieved: "2026-11-07"
+  - id: source:monster-8k-2015
+    url: https://www.sec.gov/Archives/edgar/data/0000865752/000110465915045160/a15-14058_1ex99d1.htm
+    title: "The Coca-Cola Company and Monster Beverage Corporation Close on Previously Announced Strategic Partnership (Form 8-K, Exhibit 99.1)"
+    publisher: "Monster Beverage Corporation"
+    published: "2015-06-12"
+    retrieved: "2026-11-07"
+  # A copy of the filing; replace with the sec.gov URL when it can be read.
+  - id: source:coca-cola-10k-2025
+    url: https://fortune.com/company-assets/1738/quartr/annual-report-10-k-5249d-2026-02-20-02-30-47.pdf
+    title: "Form 10-K for the fiscal year ended December 31, 2025 (equity method investments)"
+    publisher: "The Coca-Cola Company"
+    published: "2026-02"
+    retrieved: "2026-11-07"

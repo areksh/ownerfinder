@@ -1,0 +1,23 @@
+# Hershey: a counterparty, holding US licences of Nestle and Mondelez brands.
+
+entities:
+  - { id: entity:hershey, name: "The Hershey Company" }
+
+relationships:
+  - id: relationship:hershey-kitkat-licence
+    type: licenses_brand
+    from: entity:hershey
+    to: brand:kitkat
+    validFrom: "2018-02"
+    scope: { include: [US] }
+    sources: [source:hershey-10k-2017, source:confectionery-news-hershey-2026]
+    coverage: "Makes and sells KitKat in the United States under licence from Nestle."
+    note: "The licence dates from 1980 according to Hershey's earlier filings, which are not yet cited."
+  - id: relationship:hershey-cadbury-licence
+    type: licenses_brand
+    from: entity:hershey
+    to: brand:cadbury
+    validFrom: "2018-02"
+    scope: { include: [US] }
+    sources: [source:hershey-10k-2017, source:confectionery-news-hershey-2026]
+    coverage: "Makes and sells Cadbury chocolate in the United States under licence from Cadbury UK Limited, part of Mondelez."

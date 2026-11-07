@@ -1,0 +1,16 @@
+# Starbucks.
+
+entities:
+  - { id: entity:starbucks, name: "Starbucks Corporation" }
+
+brands:
+  - { id: brand:starbucks, name: "Starbucks" }
+
+relationships:
+  - id: relationship:starbucks-starbucks
+    type: owns_brand
+    from: entity:starbucks
+    to: brand:starbucks
+    validFrom: "1971"
+    scope: { include: world }
+    sources: [source:wikipedia-starbucks]

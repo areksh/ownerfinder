@@ -1,0 +1,136 @@
+# Mars. Brands from Mars's own brand list; Kellanova's brands are in kellanova.yaml.
+
+entities:
+  - { id: entity:mars, name: "Mars, Incorporated" }
+
+brands:
+  - { id: brand:m-and-ms, name: "M&M'S" }
+  - { id: brand:snickers, name: "Snickers" }
+  - { id: brand:twix, name: "Twix" }
+  - { id: brand:mars, name: "Mars" }
+  - { id: brand:galaxy, name: "Galaxy" }
+  - { id: brand:dove-chocolate, name: "Dove (chocolate)" }
+  - { id: brand:maltesers, name: "Maltesers" }
+  - { id: brand:bounty-chocolate, name: "Bounty (chocolate)" }
+  - { id: brand:skittles, name: "Skittles" }
+  - { id: brand:extra-gum, name: "Extra (gum)" }
+  - { id: brand:whiskas, name: "Whiskas" }
+  - { id: brand:pedigree, name: "Pedigree" }
+  - { id: brand:royal-canin, name: "Royal Canin" }
+  - { id: brand:sheba, name: "Sheba" }
+  - { id: brand:bens-original, name: "Ben's Original" }
+
+relationships:
+  - id: relationship:mars-kellanova
+    type: owns
+    from: entity:mars
+    to: entity:kellanova
+    validFrom: "2025-12"
+    scope: { include: world }
+    sources: [source:mars-kellanova-2025]
+    note: "Approvals were complete on 8 December 2025 and completion was announced days later."
+  - id: relationship:mars-m-and-ms
+    type: owns_brand
+    from: entity:mars
+    to: brand:m-and-ms
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mars-brands]
+  - id: relationship:mars-snickers
+    type: owns_brand
+    from: entity:mars
+    to: brand:snickers
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mars-brands]
+  - id: relationship:mars-twix
+    type: owns_brand
+    from: entity:mars
+    to: brand:twix
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mars-brands]
+  - id: relationship:mars-mars
+    type: owns_brand
+    from: entity:mars
+    to: brand:mars
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mars-brands]
+  - id: relationship:mars-galaxy
+    type: owns_brand
+    from: entity:mars
+    to: brand:galaxy
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mars-brands]
+  - id: relationship:mars-dove-chocolate
+    type: owns_brand
+    from: entity:mars
+    to: brand:dove-chocolate
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mars-brands]
+  - id: relationship:mars-maltesers
+    type: owns_brand
+    from: entity:mars
+    to: brand:maltesers
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mars-brands]
+  - id: relationship:mars-bounty-chocolate
+    type: owns_brand
+    from: entity:mars
+    to: brand:bounty-chocolate
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mars-brands]
+  - id: relationship:mars-skittles
+    type: owns_brand
+    from: entity:mars
+    to: brand:skittles
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mars-brands]
+  - id: relationship:mars-extra-gum
+    type: owns_brand
+    from: entity:mars
+    to: brand:extra-gum
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mars-brands]
+  - id: relationship:mars-whiskas
+    type: owns_brand
+    from: entity:mars
+    to: brand:whiskas
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mars-brands]
+  - id: relationship:mars-pedigree
+    type: owns_brand
+    from: entity:mars
+    to: brand:pedigree
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mars-brands]
+  - id: relationship:mars-royal-canin
+    type: owns_brand
+    from: entity:mars
+    to: brand:royal-canin
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mars-brands]
+  - id: relationship:mars-sheba
+    type: owns_brand
+    from: entity:mars
+    to: brand:sheba
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mars-brands]
+  - id: relationship:mars-bens-original
+    type: owns_brand
+    from: entity:mars
+    to: brand:bens-original
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mars-brands]

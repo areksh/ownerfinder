@@ -1,0 +1,72 @@
+# Mondelez. Brands from Mondelez's own brand list. Hershey makes Cadbury in the US under licence (hershey.yaml).
+
+entities:
+  - { id: entity:mondelez, name: "Mondelēz International, Inc." }
+
+brands:
+  - { id: brand:cadbury, name: "Cadbury" }
+  - { id: brand:oreo, name: "Oreo" }
+  - { id: brand:milka, name: "Milka" }
+  - { id: brand:toblerone, name: "Toblerone" }
+  - { id: brand:ritz, name: "Ritz" }
+  - { id: brand:belvita, name: "belVita" }
+  - { id: brand:halls, name: "Halls" }
+  - { id: brand:cote-d-or, name: "Côte d'Or" }
+
+relationships:
+  - id: relationship:mondelez-cadbury
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:cadbury
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mondelez-brands]
+  - id: relationship:mondelez-oreo
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:oreo
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mondelez-brands]
+  - id: relationship:mondelez-milka
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:milka
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mondelez-brands]
+  - id: relationship:mondelez-toblerone
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:toblerone
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mondelez-brands]
+  - id: relationship:mondelez-ritz
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:ritz
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mondelez-brands]
+  - id: relationship:mondelez-belvita
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:belvita
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mondelez-brands]
+  - id: relationship:mondelez-halls
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:halls
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mondelez-brands]
+  - id: relationship:mondelez-cote-d-or
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:cote-d-or
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:mondelez-brands]

@@ -1,0 +1,26 @@
+# Tropicana Brands Group, majority-owned by PAI Partners since the sale by PepsiCo.
+
+entities:
+  - { id: entity:tropicana-brands-group, name: "Tropicana Brands Group" }
+  - { id: entity:pai-partners, name: "PAI Partners" }
+
+brands:
+  - { id: brand:tropicana, name: "Tropicana" }
+
+relationships:
+  - id: relationship:pai-tbg
+    type: owns
+    from: entity:pai-partners
+    to: entity:tropicana-brands-group
+    stakePct: 61
+    validFrom: "2022-01"
+    scope: { include: world }
+    sources: [source:pai-tropicana-2021, source:tropicana-brands-group-2022]
+  - id: relationship:tropicana-brands-group-tropicana
+    type: owns_brand
+    from: entity:tropicana-brands-group
+    to: brand:tropicana
+    validFrom: "2022-01"
+    scope: { include: world }
+    sources: [source:tropicana-brands-group-2022]
+    note: "The sale closed at the end of January 2022."

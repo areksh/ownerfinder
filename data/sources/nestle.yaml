@@ -1,0 +1,18 @@
+sources:
+  - id: source:loreal-urd-2025
+    url: https://www.loreal-finance.com/eng/2025-universal-registration-document/en/article/9/
+    title: "2025 Universal Registration Document"
+    publisher: "L'Oréal"
+    published: "2026"
+    retrieved: "2026-11-07"
+  - id: source:starbucks-nestle-close-2018
+    url: https://investor.starbucks.com/news/financial-releases/news-details/2018/Nestl-and-Starbucks-Close-Deal-for-the-Perpetual-Global-License-of-Starbucks-Consumer-Packaged-Goods-and-Foodservice-Products/default.aspx
+    title: "Nestle and Starbucks Close Deal for the Perpetual Global License of Starbucks Consumer Packaged Goods and Foodservice Products"
+    publisher: "Starbucks Corporation"
+    published: "2018-08-28"
+    retrieved: "2026-11-07"
+  - id: source:nestle-brands
+    url: https://www.nestle.com/brands
+    title: "Our portfolio of brands"
+    publisher: "Nestlé S.A."
+    retrieved: "2026-11-07"
