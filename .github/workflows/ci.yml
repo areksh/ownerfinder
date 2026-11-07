@@ -62,5 +62,11 @@ jobs:
           node-version-file: .nvmrc
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      # D1 is a copy of the built graph (ADR 11): build it, apply any new
+      # schema, then replace the data in one atomic import, all before the
+      # Worker that reads it goes live.
+      - run: pnpm data:build
+      - run: pnpm --filter api run db:migrate
+      - run: pnpm --filter api run db:load
       - run: pnpm --filter api run deploy
       - run: pnpm --filter web run deploy

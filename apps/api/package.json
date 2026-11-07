@@ -7,7 +7,11 @@
     "deploy": "wrangler deploy",
     "typecheck": "wrangler types && tsc --noEmit",
     "test": "vitest run",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "db:migrate": "wrangler d1 migrations apply ecf-graph --remote",
+    "db:load": "wrangler d1 execute ecf-graph --remote --yes --file ../../build/graph.sql",
+    "db:migrate:local": "wrangler d1 migrations apply ecf-graph --local",
+    "db:load:local": "wrangler d1 execute ecf-graph --local --yes --file ../../build/graph.sql"
   },
   "dependencies": {
     "@ecf/model": "workspace:*"
