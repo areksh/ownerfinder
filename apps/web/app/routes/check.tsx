@@ -3,7 +3,7 @@ import { data, Form, Link } from "react-router";
 import { apiGet, type LookupAnswer } from "../api.server";
 import { Answer } from "../components/Answer";
 import { cloudflareContext } from "../context";
-import { CHECK, countryLabel, partialDate, SITE_NAME } from "../copy";
+import { CHECK, countryLabel, SITE_NAME } from "../copy";
 import { checkSettings, lookupApiPath } from "../lib/lookup-path";
 import type { Route } from "./+types/check";
 
@@ -30,7 +30,7 @@ export default function Check({ loaderData }: Route.ComponentProps) {
   return (
     <>
       <h1>{name}</h1>
-      <p>{CHECK.asked(countryLabel(answer.query.country), partialDate(answer.query.date))}</p>
+      <p>{CHECK.asked(answer.query.country, answer.query.date)}</p>
       <Answer answer={answer} />
       {answer.node !== null && (
         <p>

@@ -156,7 +156,7 @@ export const CHECK = {
   includePassive: "Include passive holdings, such as index funds",
   update: "Update the answer",
   profile: (name: string) => `More about ${name}`,
-  asked: (country: string, date: string) => `For ${country} on ${date}.`,
+  asked: (country: string, date: string) => `For ${countryName(country)} on ${partialDate(date)}.`,
 };
 
 export const PROFILE = {
