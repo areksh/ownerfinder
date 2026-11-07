@@ -17,7 +17,7 @@ flowchart LR
   data["Curated data files<br/>(planned)"] -->|CI: validate and build| d1[("D1 database")]
   ingest["Ingestion helpers<br/>(planned)"] -->|proposals for review| data
   d1 --> api["API Worker<br/>apps/api"]
-  api --> web["Website<br/>apps/web"]
+  api -.->|planned| web["Website<br/>apps/web"]
   api --> mobile["Mobile apps<br/>(planned)"]
   data -->|ODbL dump| dump["Published data<br/>(planned)"]
 ```
@@ -39,4 +39,5 @@ show.
 ## Hosting
 
 Both Workers run on Cloudflare (ADR 3) and are deployed by GitHub Actions
-from `master` (ADR 8).
+from `master` once all checks pass (ADR 8). Dashed links in the diagram are
+planned, not yet built.
