@@ -54,6 +54,24 @@ relationships:
     sources: [source:persil-uk-about]
 ```
 
+## Recording conventions
+
+- **Start dates.** `validFrom` is when the relationship began if a cited
+  source says so. Otherwise it is the date of the earliest cited source
+  that shows the relationship in force, such as an annual report's filing
+  date or, for an undated web page, the day it was read. A lookup before
+  that date says the relationship is unknown rather than guessing.
+  Finding the real start date is always welcome.
+- **Brand owners.** A brand is recorded against its group's parent
+  company unless a source names the subsidiary that owns it (Costa
+  Coffee under Costa Limited, Kellogg's under Kellanova).
+- **Scope.** A relationship is worldwide unless a source limits it. Where
+  sources disagree about markets, only the settled ones are recorded and
+  a `note` says so.
+- **Same name, different brand.** Brands that share a name get distinct
+  ids and a qualifier in the name, such as `brand:dove` (Unilever) and
+  `brand:dove-chocolate` (Mars).
+
 ## Checking
 
 `pnpm data:check` loads every file, merges the records into one graph and
