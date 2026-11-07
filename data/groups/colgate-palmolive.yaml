@@ -1,0 +1,64 @@
+# Colgate-Palmolive. Brands from the company's own brand list.
+
+entities:
+  - { id: entity:colgate-palmolive, name: "Colgate-Palmolive Company" }
+
+brands:
+  - { id: brand:colgate, name: "Colgate" }
+  - { id: brand:palmolive, name: "Palmolive" }
+  - { id: brand:sanex, name: "Sanex" }
+  - { id: brand:softsoap, name: "Softsoap" }
+  - { id: brand:elmex, name: "Elmex" }
+  - { id: brand:hills-pet-nutrition, name: "Hill's Pet Nutrition" }
+  - { id: brand:toms-of-maine, name: "Tom's of Maine" }
+
+relationships:
+  - id: relationship:colgate-palmolive-colgate
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:colgate
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:colgate-palmolive-brands]
+  - id: relationship:colgate-palmolive-palmolive
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:palmolive
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:colgate-palmolive-brands]
+  - id: relationship:colgate-palmolive-sanex
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:sanex
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:colgate-palmolive-brands]
+  - id: relationship:colgate-palmolive-softsoap
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:softsoap
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:colgate-palmolive-brands]
+  - id: relationship:colgate-palmolive-elmex
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:elmex
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:colgate-palmolive-brands]
+  - id: relationship:colgate-palmolive-hills-pet-nutrition
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:hills-pet-nutrition
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:colgate-palmolive-brands]
+  - id: relationship:colgate-palmolive-toms-of-maine
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:toms-of-maine
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:colgate-palmolive-brands]

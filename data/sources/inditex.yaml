@@ -1,0 +1,6 @@
+sources:
+  - id: source:inditex-brands
+    url: https://www.inditex.com/itxcomweb/en/brands
+    title: "Brands"
+    publisher: "Industria de Diseño Textil, S.A."
+    retrieved: "2026-11-07"

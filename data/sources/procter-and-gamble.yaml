@@ -1,0 +1,6 @@
+sources:
+  - id: source:pg-brands
+    url: https://us.pg.com/brands/
+    title: "Brands"
+    publisher: "The Procter & Gamble Company"
+    retrieved: "2026-11-07"

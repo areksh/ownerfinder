@@ -1,0 +1,6 @@
+sources:
+  - id: source:danone-brands
+    url: https://www.danone.com/brands.html
+    title: "Brands"
+    publisher: "Danone S.A."
+    retrieved: "2026-11-07"

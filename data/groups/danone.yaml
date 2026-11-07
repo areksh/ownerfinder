@@ -1,0 +1,64 @@
+# Danone. Brands from Danone's own brand list.
+
+entities:
+  - { id: entity:danone, name: "Danone S.A." }
+
+brands:
+  - { id: brand:activia, name: "Activia" }
+  - { id: brand:actimel, name: "Actimel" }
+  - { id: brand:alpro, name: "Alpro" }
+  - { id: brand:danone, name: "Danone" }
+  - { id: brand:evian, name: "Evian" }
+  - { id: brand:volvic, name: "Volvic" }
+  - { id: brand:silk, name: "Silk" }
+
+relationships:
+  - id: relationship:danone-activia
+    type: owns_brand
+    from: entity:danone
+    to: brand:activia
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:danone-brands]
+  - id: relationship:danone-actimel
+    type: owns_brand
+    from: entity:danone
+    to: brand:actimel
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:danone-brands]
+  - id: relationship:danone-alpro
+    type: owns_brand
+    from: entity:danone
+    to: brand:alpro
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:danone-brands]
+  - id: relationship:danone-danone
+    type: owns_brand
+    from: entity:danone
+    to: brand:danone
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:danone-brands]
+  - id: relationship:danone-evian
+    type: owns_brand
+    from: entity:danone
+    to: brand:evian
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:danone-brands]
+  - id: relationship:danone-volvic
+    type: owns_brand
+    from: entity:danone
+    to: brand:volvic
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:danone-brands]
+  - id: relationship:danone-silk
+    type: owns_brand
+    from: entity:danone
+    to: brand:silk
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:danone-brands]

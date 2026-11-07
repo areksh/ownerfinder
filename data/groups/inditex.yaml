@@ -1,0 +1,72 @@
+# Inditex. Brands from Inditex's own brand list.
+
+entities:
+  - { id: entity:inditex, name: "Industria de Diseño Textil, S.A." }
+
+brands:
+  - { id: brand:zara, name: "Zara" }
+  - { id: brand:pull-and-bear, name: "Pull&Bear" }
+  - { id: brand:massimo-dutti, name: "Massimo Dutti" }
+  - { id: brand:bershka, name: "Bershka" }
+  - { id: brand:stradivarius, name: "Stradivarius" }
+  - { id: brand:oysho, name: "Oysho" }
+  - { id: brand:zara-home, name: "Zara Home" }
+  - { id: brand:lefties, name: "Lefties" }
+
+relationships:
+  - id: relationship:inditex-zara
+    type: owns_brand
+    from: entity:inditex
+    to: brand:zara
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:inditex-brands]
+  - id: relationship:inditex-pull-and-bear
+    type: owns_brand
+    from: entity:inditex
+    to: brand:pull-and-bear
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:inditex-brands]
+  - id: relationship:inditex-massimo-dutti
+    type: owns_brand
+    from: entity:inditex
+    to: brand:massimo-dutti
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:inditex-brands]
+  - id: relationship:inditex-bershka
+    type: owns_brand
+    from: entity:inditex
+    to: brand:bershka
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:inditex-brands]
+  - id: relationship:inditex-stradivarius
+    type: owns_brand
+    from: entity:inditex
+    to: brand:stradivarius
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:inditex-brands]
+  - id: relationship:inditex-oysho
+    type: owns_brand
+    from: entity:inditex
+    to: brand:oysho
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:inditex-brands]
+  - id: relationship:inditex-zara-home
+    type: owns_brand
+    from: entity:inditex
+    to: brand:zara-home
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:inditex-brands]
+  - id: relationship:inditex-lefties
+    type: owns_brand
+    from: entity:inditex
+    to: brand:lefties
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:inditex-brands]

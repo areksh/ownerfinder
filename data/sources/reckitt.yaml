@@ -1,0 +1,6 @@
+sources:
+  - id: source:reckitt-brands
+    url: https://www.reckitt.com/our-brands/
+    title: "Our Brands"
+    publisher: "Reckitt Benckiser Group plc"
+    retrieved: "2026-11-07"

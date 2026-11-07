@@ -1,0 +1,64 @@
+# Reckitt. Brands from Reckitt's own brand list.
+
+entities:
+  - { id: entity:reckitt, name: "Reckitt Benckiser Group plc" }
+
+brands:
+  - { id: brand:dettol, name: "Dettol" }
+  - { id: brand:lysol, name: "Lysol" }
+  - { id: brand:harpic, name: "Harpic" }
+  - { id: brand:nurofen, name: "Nurofen" }
+  - { id: brand:strepsils, name: "Strepsils" }
+  - { id: brand:gaviscon, name: "Gaviscon" }
+  - { id: brand:mucinex, name: "Mucinex" }
+
+relationships:
+  - id: relationship:reckitt-dettol
+    type: owns_brand
+    from: entity:reckitt
+    to: brand:dettol
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:reckitt-brands]
+  - id: relationship:reckitt-lysol
+    type: owns_brand
+    from: entity:reckitt
+    to: brand:lysol
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:reckitt-brands]
+  - id: relationship:reckitt-harpic
+    type: owns_brand
+    from: entity:reckitt
+    to: brand:harpic
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:reckitt-brands]
+  - id: relationship:reckitt-nurofen
+    type: owns_brand
+    from: entity:reckitt
+    to: brand:nurofen
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:reckitt-brands]
+  - id: relationship:reckitt-strepsils
+    type: owns_brand
+    from: entity:reckitt
+    to: brand:strepsils
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:reckitt-brands]
+  - id: relationship:reckitt-gaviscon
+    type: owns_brand
+    from: entity:reckitt
+    to: brand:gaviscon
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:reckitt-brands]
+  - id: relationship:reckitt-mucinex
+    type: owns_brand
+    from: entity:reckitt
+    to: brand:mucinex
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:reckitt-brands]

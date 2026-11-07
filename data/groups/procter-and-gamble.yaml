@@ -1,0 +1,88 @@
+# Procter & Gamble. Brands from P&G's own brand list.
+
+entities:
+  - { id: entity:procter-and-gamble, name: "The Procter & Gamble Company" }
+
+brands:
+  - { id: brand:pampers, name: "Pampers" }
+  - { id: brand:ariel, name: "Ariel" }
+  - { id: brand:tide, name: "Tide" }
+  - { id: brand:gillette, name: "Gillette" }
+  - { id: brand:oral-b, name: "Oral-B" }
+  - { id: brand:charmin, name: "Charmin" }
+  - { id: brand:pantene, name: "Pantene" }
+  - { id: brand:head-and-shoulders, name: "Head & Shoulders" }
+  - { id: brand:olay, name: "Olay" }
+  - { id: brand:always, name: "Always" }
+
+relationships:
+  - id: relationship:procter-and-gamble-pampers
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:pampers
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:pg-brands]
+  - id: relationship:procter-and-gamble-ariel
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:ariel
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:pg-brands]
+  - id: relationship:procter-and-gamble-tide
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:tide
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:pg-brands]
+  - id: relationship:procter-and-gamble-gillette
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:gillette
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:pg-brands]
+  - id: relationship:procter-and-gamble-oral-b
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:oral-b
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:pg-brands]
+  - id: relationship:procter-and-gamble-charmin
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:charmin
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:pg-brands]
+  - id: relationship:procter-and-gamble-pantene
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:pantene
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:pg-brands]
+  - id: relationship:procter-and-gamble-head-and-shoulders
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:head-and-shoulders
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:pg-brands]
+  - id: relationship:procter-and-gamble-olay
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:olay
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:pg-brands]
+  - id: relationship:procter-and-gamble-always
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:always
+    validFrom: "2026-11-07"
+    scope: { include: world }
+    sources: [source:pg-brands]
