@@ -7,6 +7,7 @@
 - [Data files](data-files.md): how the curated data is laid out, checked,
   built and proposed.
 - [API](api.md): the public JSON endpoints and how D1 is loaded.
+- [Website](website.md): the pages, their wording and the request form.
 - [Architecture decision records](adr/README.md): why the system is built
   the way it is.
 - [Contributing](../CONTRIBUTING.md): set-up, tests, commits, and how to
