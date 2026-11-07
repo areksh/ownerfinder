@@ -39,6 +39,7 @@ pnpm lint        # lint and formatting check (Biome)
 pnpm format      # apply formatting and safe lint fixes
 pnpm typecheck   # TypeScript, after regenerating Worker and route types
 pnpm build       # production builds
+pnpm --filter web test:e2e   # browser and accessibility checks (load local data first)
 ```
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for running single tests,

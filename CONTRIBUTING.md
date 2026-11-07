@@ -53,6 +53,12 @@ Follow the [quick start in the README](README.md#quick-start).
 - Tests never call live external services; external data sources are
   exercised through recorded responses checked in as fixtures.
 
+- Website: `pnpm --filter web test` (components) and
+  `pnpm --filter web test:e2e` (Playwright and axe-core against the built
+  site and API on local data; run `pnpm data:build` and the api's
+  `db:migrate:local` and `db:load:local` first, and
+  `pnpm --filter web exec playwright install chromium` once).
+
 Before opening a pull request, run `pnpm lint`, `pnpm typecheck`,
 `pnpm test` and `pnpm build`. CI runs the same checks.
 

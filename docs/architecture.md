@@ -18,20 +18,20 @@ flowchart LR
   data -->|CI: data:check, data:build| dump["build/graph.json<br/>(ODbL dump)"]
   dump -->|deploy: atomic import| d1[("D1 database")]
   d1 --> api["API Worker<br/>apps/api"]
-  api -.->|planned| web["Website<br/>apps/web"]
-  api --> mobile["Mobile apps<br/>(planned)"]
+  api -->|service binding| web["Website<br/>apps/web"]
+  api -.->|planned| mobile["Mobile apps<br/>(planned)"]
 ```
 
-| Component                             | State                                              | Decided in                                             |
-| ------------------------------------- | -------------------------------------------------- | ------------------------------------------------------ |
-| Website (`apps/web`)                  | Placeholder page                                   | [ADR 5](adr/0005-react-router-on-workers.md)           |
-| API Worker (`apps/api`)               | Search, lookup, nodes and criteria ([API](api.md)) | [ADR 11](adr/0011-d1-as-a-loaded-copy-of-the-graph.md) |
-| D1 database                           | Reloaded from the built graph on every deploy      | [ADR 11](adr/0011-d1-as-a-loaded-copy-of-the-graph.md) |
-| Curated data files (`data/`)          | Ownership for 21 groups; no listings yet           | [ADR 4](adr/0004-curated-data-in-git.md)               |
-| Data model package (`packages/model`) | Used by the data tools and the API                 | [ADR 10](adr/0010-relationship-graph-data-model.md)    |
-| Data tools (`packages/data`)          | Check, build and Wikidata proposals                | [ADR 4](adr/0004-curated-data-in-git.md)               |
-| Mobile apps                           | Planned                                            | [ADR 6](adr/0006-expo-for-mobile.md)                   |
-| Published data dump                   | Planned                                            | [ADR 9](adr/0009-licence-code-agpl-data-odbl.md)       |
+| Component                             | State                                                           | Decided in                                             |
+| ------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------ |
+| Website (`apps/web`)                  | Search, answers, profiles, request form ([website](website.md)) | [ADR 5](adr/0005-react-router-on-workers.md)           |
+| API Worker (`apps/api`)               | Search, lookup, nodes and criteria ([API](api.md))              | [ADR 11](adr/0011-d1-as-a-loaded-copy-of-the-graph.md) |
+| D1 database                           | Reloaded from the built graph on every deploy                   | [ADR 11](adr/0011-d1-as-a-loaded-copy-of-the-graph.md) |
+| Curated data files (`data/`)          | Ownership for 21 groups; no listings yet                        | [ADR 4](adr/0004-curated-data-in-git.md)               |
+| Data model package (`packages/model`) | Used by the data tools and the API                              | [ADR 10](adr/0010-relationship-graph-data-model.md)    |
+| Data tools (`packages/data`)          | Check, build and Wikidata proposals                             | [ADR 4](adr/0004-curated-data-in-git.md)               |
+| Mobile apps                           | Planned                                                         | [ADR 6](adr/0006-expo-for-mobile.md)                   |
+| Published data dump                   | Planned                                                         | [ADR 9](adr/0009-licence-code-agpl-data-odbl.md)       |
 
 The website does not yet call the API; it will once there is data to
 show.

@@ -16,5 +16,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   brands, stakes and licences, checked in CI.
 - Data tools: `pnpm data:check`, `pnpm data:build` (the ODbL dump) and
   `pnpm data:propose wikidata <Q-id>`.
+- Website: search, answers for any country and date with every link and
+  source, company and brand profiles, how it works, data download, and a
+  request form that opens GitHub issues once its keys are set.
 - Public JSON API: `/search`, `/lookup/<id>`, `/nodes/<id>` and `/criteria`,
   answering by date and country with a source for every link.
