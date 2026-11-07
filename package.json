@@ -11,7 +11,8 @@
     "format": "biome check --write .",
     "typecheck": "pnpm -r --if-present run typecheck",
     "test": "pnpm -r --if-present run test",
-    "build": "pnpm -r --if-present run build"
+    "build": "pnpm -r --if-present run build",
+    "data:check": "node packages/data/src/cli.ts check"
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.5",
