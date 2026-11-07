@@ -208,8 +208,9 @@ company in which a listed group holds a stake is `stake`.
 
 A path that includes a stake also carries an **indicative effective
 share**: the product of the percentages along it, treating an `owns` link
-with no percentage as 100. It is labelled indicative because it ignores
-voting rights and share classes.
+with no percentage as 100. Brand links do not count, and a path through
+board control has no share, since control carries none. It is labelled
+indicative because it ignores voting rights and share classes.
 
 A path is **approximate** when the query date falls inside the period of
 an imprecise `validFrom` or `validTo` on one of its links, for example
