@@ -43,9 +43,12 @@ export default function App() {
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   const notFound = isRouteErrorResponse(error) && error.status === 404;
+  const heading = notFound ? "Page not found" : "Something went wrong";
   return (
     <main>
-      <h1>{notFound ? "Page not found" : "Something went wrong"}</h1>
+      {/* React hoists this into <head>; route meta() does not run for errors. */}
+      <title>{heading}</title>
+      <h1>{heading}</h1>
       <p>{notFound ? "The page you asked for does not exist." : "Please try again in a moment."}</p>
     </main>
   );
