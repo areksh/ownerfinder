@@ -37,6 +37,16 @@ describe("GET /health", () => {
     expect(await res.text()).not.toContain("secret detail");
   });
 
+  it("logs the database error for operators", async () => {
+    const log = vi.spyOn(console, "error").mockImplementation(() => {});
+    await fetchWithFailingDb("secret detail");
+    expect(log).toHaveBeenCalledTimes(1);
+    expect(log).toHaveBeenCalledWith(
+      expect.any(String),
+      expect.objectContaining({ message: "secret detail" }),
+    );
+  });
+
   it("answers HEAD with headers only", async () => {
     const res = await exports.default.fetch("https://api.test/health", { method: "HEAD" });
     expect(res.status).toBe(200);
