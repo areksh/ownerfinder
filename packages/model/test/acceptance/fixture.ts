@@ -48,7 +48,7 @@ const sources: Graph["sources"] = [
   },
   {
     id: "source:coca-cola-10k-2025",
-    url: "https://fortune.com/company-assets/1738/quartr/annual-report-10-k-5249d-2026-02-20-02-30-47.pdf",
+    url: "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
     title: "Form 10-K for the fiscal year ended December 31, 2025 (equity method investments)",
     publisher: "The Coca-Cola Company",
     published: "2026-02",

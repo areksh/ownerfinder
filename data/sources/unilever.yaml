@@ -21,7 +21,6 @@ sources:
     title: "Investor FAQ"
     publisher: "The Magnum Ice Cream Company"
     retrieved: "2026-11-07"
-  # Read from Unilever's PDF copy of the filing, which it states is an exact copy.
   - id: source:unilever-20f-2025
     url: https://www.sec.gov/Archives/edgar/data/217410/000021741026000007/ul-20251231.htm
     title: "Annual Report on Form 20-F 2025"
