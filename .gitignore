@@ -4,10 +4,13 @@ node_modules/
 # Build output, scoped to package roots so source folders named build or
 # dist elsewhere are never silently left out
 /apps/*/build/
+/proposals/
 /apps/*/dist/
 /packages/*/build/
+/proposals/
 /packages/*/dist/
 /build/
+/proposals/
 coverage/
 
 # Cloudflare and React Router local state and generated types

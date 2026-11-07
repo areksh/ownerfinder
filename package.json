@@ -13,7 +13,8 @@
     "test": "pnpm -r --if-present run test",
     "build": "pnpm -r --if-present run build",
     "data:check": "node packages/data/src/cli.ts check",
-    "data:build": "node packages/data/src/cli.ts build"
+    "data:build": "node packages/data/src/cli.ts build",
+    "data:propose": "node packages/data/src/cli.ts propose"
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.5",

@@ -3,6 +3,7 @@
  *
  *   node packages/data/src/cli.ts check [data-dir]
  *   node packages/data/src/cli.ts build [data-dir] [out-file]
+ *   node packages/data/src/cli.ts propose wikidata <Q-id>
  *
  * Paths default to the repository's data/ and build/ directories.
  */
@@ -12,6 +13,8 @@ import { fileURLToPath } from "node:url";
 import type { Graph } from "@ecf/model";
 import { buildDump } from "./build.ts";
 import { checkData, formatProblem } from "./check.ts";
+import { parseProposal, proposalYaml } from "./wikidata.ts";
+import { isQid, proposalQuery, USER_AGENT, WIKIDATA_ENDPOINT } from "./wikidata-query.ts";
 
 const ROOT = fileURLToPath(new URL("../../../", import.meta.url));
 
@@ -48,6 +51,32 @@ async function build(dir: string, out: string): Promise<number> {
   return 0;
 }
 
+/** Asks Wikidata live: run by hand, never from tests or loops. */
+async function propose(source: string | undefined, qid: string | undefined): Promise<number> {
+  if (source !== "wikidata" || qid === undefined || !isQid(qid)) {
+    console.error("usage: cli.ts propose wikidata <Q-id>, for example Q160746");
+    return 2;
+  }
+  const url = `${WIKIDATA_ENDPOINT}?${new URLSearchParams({ query: proposalQuery(qid) })}`;
+  const response = await fetch(url, {
+    headers: { accept: "application/sparql-results+json", "user-agent": USER_AGENT },
+    signal: AbortSignal.timeout(90_000),
+  });
+  if (!response.ok) {
+    console.error(`Wikidata answered ${response.status} ${response.statusText}`);
+    return 1;
+  }
+  const today = new Date().toISOString().slice(0, 10);
+  const proposal = parseProposal(qid, await response.json(), today);
+  const out = `${ROOT}proposals/${qid}.yaml`;
+  await mkdir(dirname(out), { recursive: true });
+  await writeFile(out, proposalYaml(proposal));
+  console.log(
+    `Wrote ${relative(process.cwd(), out)}: ${plural(proposal.entities.length, "entity", "entities")}, ${plural(proposal.brands.length, "brand", "brands")}, ${plural(proposal.relationships.length, "relationship", "relationships")} to verify.`,
+  );
+  return 0;
+}
+
 async function main(args: string[]): Promise<number> {
   const [command, dir, out] = args;
   const dataDir = resolve(dir ?? `${ROOT}data`);
@@ -56,8 +85,12 @@ async function main(args: string[]): Promise<number> {
       return (await check(dataDir)) === undefined ? 1 : 0;
     case "build":
       return build(dataDir, resolve(out ?? `${ROOT}build/graph.json`));
+    case "propose":
+      return propose(dir, out);
     default:
-      console.error("usage: cli.ts check [data-dir] | build [data-dir] [out-file]");
+      console.error(
+        "usage: cli.ts check [data-dir] | build [data-dir] [out-file] | propose wikidata <Q-id>",
+      );
       return 2;
   }
 }

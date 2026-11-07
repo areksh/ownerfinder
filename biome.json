@@ -6,7 +6,7 @@
     "useIgnoreFile": true
   },
   "files": {
-    "includes": ["**", "!**/worker-configuration.d.ts", "!**/.react-router"]
+    "includes": ["**", "!**/worker-configuration.d.ts", "!**/.react-router", "!**/test/fixtures"]
   },
   "formatter": {
     "enabled": true,
