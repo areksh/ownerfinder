@@ -7,7 +7,7 @@
 
 The project is non-profit and open source, runs as a public web service,
 and builds on open datasets. Open Food Facts and OpenCorporates publish
-their data under the Open Database Licence (ODbL), which requires
+their data under the Open Database License (ODbL), which requires
 derived databases that are made public to be shared under the same
 licence. Other sources have their own terms.
 
@@ -17,7 +17,7 @@ licence. Other sources have their own terms.
   version 3 (AGPL-3.0). Anyone who runs a modified version as a network
   service must offer its source to that service's users.
 - **Data**, meaning the curated database and its published dumps, is
-  licensed under the Open Database Licence 1.0 (ODbL), with attribution to
+  licensed under the Open Database License 1.0 (ODbL), with attribution to
   the upstream sources.
 - Every source's licence is recorded alongside the data it contributes.
   Data from a source whose terms are incompatible with ODbL republishing

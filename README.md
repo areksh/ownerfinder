@@ -51,5 +51,5 @@ coverage and how to propose changes.
 
 - **Code:** GNU Affero General Public License v3.0, see [LICENSE](LICENSE).
 - **Data:** the curated database will be published under the Open
-  Database Licence 1.0 (ODbL), with attribution to its sources. See
+  Database License 1.0 (ODbL), with attribution to its sources. See
   [ADR 9](docs/adr/0009-licence-code-agpl-data-odbl.md).
