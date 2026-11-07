@@ -20,3 +20,4 @@ worker-configuration.d.ts
 .DS_Store
 .vscode/
 .idea/
+*.tsbuildinfo

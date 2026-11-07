@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    // React Router's generated server-build types declare optional properties
+    // without `| undefined`, which this stricter option rejects.
+    "exactOptionalPropertyTypes": false
+  },
+  "files": [],
+  "references": [{ "path": "./tsconfig.node.json" }, { "path": "./tsconfig.cloudflare.json" }]
+}
