@@ -88,6 +88,11 @@ describe("answers that depend on the country", () => {
     expect(chains("brand:rockstar", "GB")).toEqual(["owned: entity:pepsico"]);
   });
 
+  it("Black Magic is recorded as Nestle's only in the UK and Ireland, where its pages list it", () => {
+    expect(chains("brand:black-magic", "IE", "2026-11-08")).toEqual(["owned: entity:nestle"]);
+    expect(chains("brand:black-magic", "FR", "2026-11-08")).toEqual([]);
+  });
+
   it("Marmite is recorded as Unilever's only in the UK, where its brand page lists it", () => {
     expect(chains("brand:marmite", "GB", "2026-11-08")).toEqual(["owned: entity:unilever"]);
     expect(chains("brand:marmite", "US", "2026-11-08")).toEqual([]);
