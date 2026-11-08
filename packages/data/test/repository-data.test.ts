@@ -110,6 +110,15 @@ describe("answers that depend on the country", () => {
     ]);
   });
 
+  it("Horizon Organic was Danone's until April 2024, then a 30% stake", () => {
+    expect(chains("brand:horizon-organic", "US", "2024-01-15")).toEqual([
+      "owned: entity:horizon-organic-dairy > entity:danone",
+    ]);
+    expect(chains("brand:horizon-organic", "US", "2024-06-01")).toEqual([
+      "stake: entity:horizon-organic-dairy > entity:danone",
+    ]);
+  });
+
   it("Creed is Kering Beaute's, which L'Oreal owns from April 2026", () => {
     expect(chains("brand:creed", "FR", "2026-03-15")).toEqual([
       "owned: entity:kering-beaute > entity:kering",

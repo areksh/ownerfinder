@@ -10,3 +10,15 @@ sources:
     publisher: "ClientEarth"
     published: "2025-02-21"
     retrieved: "2026-11-08"
+  - id: source:danone-urd-2025
+    url: https://www.danone.com/content/dam/corp/global/danonecom/investors/en-all-publications/2026/registrationdocuments/urd2025.pdf
+    title: "Universal Registration Document 2025"
+    publisher: "Danone S.A."
+    published: "2026"
+    retrieved: "2026-11-08"
+  - id: source:danone-subsidiaries-2025
+    url: https://www.danone.com/content/dam/corp/global/danonecom/investors/listofsubsidiaries2025.pdf
+    title: "List of subsidiaries as of December 31, 2025"
+    publisher: "Danone S.A."
+    published: "2026"
+    retrieved: "2026-11-08"

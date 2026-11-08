@@ -1,0 +1,369 @@
+# Danone in depth: brands, acquisitions and disposals from its 2025 Universal Registration Document and subsidiary list.
+
+entities:
+  - { id: entity:kate-farms, name: "Kate Farms, Inc." }
+  - {
+      id: entity:nutritional-medicinals,
+      name: "Nutritional Medicinals LLC (Functional Formularies)",
+    }
+  - { id: entity:the-akkermansia-company, name: "The Akkermansia Company SA" }
+  - { id: entity:fan-milk-plc, name: "Fan Milk PLC" }
+  - { id: entity:horizon-organic-dairy, name: "Horizon Organic Dairy, LLC" }
+  - { id: entity:danone-russia, name: "JSC Danone Russia" }
+  - { id: entity:michel-et-augustin-company, name: "Michel et Augustin" }
+  - { id: entity:danone-dairy-pars, name: "Danone Dairy Pars" }
+
+brands:
+  - { id: brand:aptamil, name: "Aptamil" }
+  - { id: brand:nutricia, name: "Nutricia" }
+  - { id: brand:nutrilon, name: "Nutrilon" }
+  - { id: brand:neocate, name: "Neocate" }
+  - { id: brand:nutridrink, name: "Nutridrink" }
+  - { id: brand:danette, name: "Danette" }
+  - { id: brand:danio, name: "Danio" }
+  - { id: brand:danonino, name: "Danonino" }
+  - { id: brand:yopro, name: "YoPRO" }
+  - { id: brand:aqua-danone, name: "AQUA (Danone water)" }
+  - { id: brand:bledina, name: "Blédina" }
+  - { id: brand:bonafont, name: "Bonafont" }
+  - { id: brand:cow-and-gate, name: "Cow & Gate" }
+  - { id: brand:mizone, name: "Mizone" }
+  - { id: brand:oikos, name: "Oikos" }
+  - { id: brand:danimals, name: "Danimals" }
+  - { id: brand:light-and-fit, name: "Light + Fit" }
+  - { id: brand:too-good, name: "Too Good" }
+  - { id: brand:so-delicious, name: "So Delicious" }
+  - { id: brand:international-delight, name: "International Delight" }
+  - { id: brand:salus-danone, name: "Salus (Danone water)" }
+  - { id: brand:zywiec-zdroj, name: "Żywiec Zdrój" }
+  - { id: brand:real-food-blends, name: "Real Food Blends" }
+  - { id: brand:proviva, name: "Proviva" }
+  - { id: brand:kate-farms, name: "Kate Farms" }
+  - { id: brand:functional-formularies, name: "Functional Formularies" }
+  - { id: brand:horizon-organic, name: "Horizon Organic" }
+  - { id: brand:michel-et-augustin, name: "Michel et Augustin" }
+
+relationships:
+  - id: relationship:danone-aptamil
+    type: owns_brand
+    from: entity:danone
+    to: brand:aptamil
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-nutricia
+    type: owns_brand
+    from: entity:danone
+    to: brand:nutricia
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-nutrilon
+    type: owns_brand
+    from: entity:danone
+    to: brand:nutrilon
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-neocate
+    type: owns_brand
+    from: entity:danone
+    to: brand:neocate
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-nutridrink
+    type: owns_brand
+    from: entity:danone
+    to: brand:nutridrink
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-danette
+    type: owns_brand
+    from: entity:danone
+    to: brand:danette
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025, source:danone-brands]
+  - id: relationship:danone-danio
+    type: owns_brand
+    from: entity:danone
+    to: brand:danio
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-danonino
+    type: owns_brand
+    from: entity:danone
+    to: brand:danonino
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025, source:danone-brands]
+  - id: relationship:danone-yopro
+    type: owns_brand
+    from: entity:danone
+    to: brand:yopro
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025, source:danone-brands]
+  - id: relationship:danone-aqua-danone
+    type: owns_brand
+    from: entity:danone
+    to: brand:aqua-danone
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025, source:danone-brands]
+  - id: relationship:danone-bledina
+    type: owns_brand
+    from: entity:danone
+    to: brand:bledina
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-bonafont
+    type: owns_brand
+    from: entity:danone
+    to: brand:bonafont
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-cow-and-gate
+    type: owns_brand
+    from: entity:danone
+    to: brand:cow-and-gate
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-mizone
+    type: owns_brand
+    from: entity:danone
+    to: brand:mizone
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025, source:danone-brands]
+  - id: relationship:danone-oikos
+    type: owns_brand
+    from: entity:danone
+    to: brand:oikos
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-danimals
+    type: owns_brand
+    from: entity:danone
+    to: brand:danimals
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-light-and-fit
+    type: owns_brand
+    from: entity:danone
+    to: brand:light-and-fit
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-too-good
+    type: owns_brand
+    from: entity:danone
+    to: brand:too-good
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-so-delicious
+    type: owns_brand
+    from: entity:danone
+    to: brand:so-delicious
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-international-delight
+    type: owns_brand
+    from: entity:danone
+    to: brand:international-delight
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-brands]
+  - id: relationship:danone-salus-danone
+    type: owns_brand
+    from: entity:danone
+    to: brand:salus-danone
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025, source:danone-brands]
+  - id: relationship:danone-zywiec-zdroj
+    type: owns_brand
+    from: entity:danone
+    to: brand:zywiec-zdroj
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025, source:danone-brands]
+  - id: relationship:danone-real-food-blends
+    type: owns_brand
+    from: entity:danone
+    to: brand:real-food-blends
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among Danone's brands; when it became Danone's is not recorded."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-proviva
+    type: owns_brand
+    from: entity:danone
+    to: brand:proviva
+    validFrom: "2025-12-31"
+    scope: { include: world }
+    note: "Danone agreed on 18 November 2025 to sell the Proviva brand and the Lunnarp plant in Sweden; they were held for sale at 31 December 2025, and completion is not recorded here."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-owns-kate-farms
+    type: owns
+    from: entity:danone
+    to: entity:kate-farms
+    validFrom: "2025-07"
+    startKnown: true
+    stakePct: 95.55
+    scope: { include: world }
+    note: "Danone announced on 1 July 2025 that it had completed buying a majority stake; the registration document rounds its share to 96%, and the subsidiary list gives 95.55% at 31 December 2025."
+    sources: [source:danone-urd-2025, source:danone-subsidiaries-2025]
+  - id: relationship:kate-farms-kate-farms
+    type: owns_brand
+    from: entity:kate-farms
+    to: brand:kate-farms
+    validFrom: "2025-07"
+    scope: { include: world }
+    note: "Danone describes Kate Farms as a plant-based medical nutrition brand and bought a majority of the company."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-owns-nutritional-medicinals-2024
+    type: owns
+    from: entity:danone
+    to: entity:nutritional-medicinals
+    validFrom: "2024-05"
+    startKnown: true
+    validTo: "2025"
+    stakePct: 100
+    scope: { include: world }
+    note: "Danone acquired Functional Formularies, a whole-foods tube-feeding business, from Swander Pace Capital in May 2024; Nutritional Medicinals was 100% Danone's at the end of 2024."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-owns-nutritional-medicinals
+    type: owns
+    from: entity:danone
+    to: entity:nutritional-medicinals
+    validFrom: "2025-12-31"
+    stakePct: 95.55
+    scope: { include: world }
+    note: "Danone's share at 31 December 2025; when in 2025 it changed from 100% is not recorded."
+    sources: [source:danone-subsidiaries-2025]
+  - id: relationship:nutritional-medicinals-functional-formularies
+    type: owns_brand
+    from: entity:nutritional-medicinals
+    to: brand:functional-formularies
+    validFrom: "2024-05"
+    scope: { include: world }
+    note: "Danone's table lists Nutritional Medicinals as the company consolidated with its Functional Formularies acquisition."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-owns-the-akkermansia-company
+    type: owns
+    from: entity:danone
+    to: entity:the-akkermansia-company
+    validFrom: "2025-06"
+    startKnown: true
+    stakePct: 100
+    scope: { include: world }
+    note: "Danone announced on 25 June 2025 that it had acquired this Belgian biotics company."
+    sources: [source:danone-urd-2025, source:danone-subsidiaries-2025]
+  - id: relationship:danone-owns-fan-milk-plc
+    type: owns
+    from: entity:danone
+    to: entity:fan-milk-plc
+    validFrom: "2025-12-31"
+    stakePct: 62.11
+    scope: { include: world }
+    note: "A listed company in Ghana, fully consolidated by Danone; 62.11% at 31 December 2025."
+    sources: [source:danone-urd-2025, source:danone-subsidiaries-2025]
+  - id: relationship:danone-owns-horizon-organic-dairy
+    type: owns
+    from: entity:danone
+    to: entity:horizon-organic-dairy
+    validFrom: "2023-12-31"
+    validTo: "2024-04"
+    stakePct: 100
+    scope: { include: world }
+    note: "100% at the end of 2023; Danone sold its Horizon Organic and Wallaby businesses in April 2024."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-stake-horizon-organic-dairy
+    type: holds_stake
+    from: entity:danone
+    to: entity:horizon-organic-dairy
+    validFrom: "2024-04"
+    startKnown: true
+    stakePct: 30
+    scope: { include: world }
+    note: "Danone kept 30% of Horizon Organic Dairy after the sale in April 2024; the buyer is not named here."
+    sources: [source:danone-urd-2025]
+  - id: relationship:horizon-organic-dairy-horizon-organic
+    type: owns_brand
+    from: entity:horizon-organic-dairy
+    to: brand:horizon-organic
+    validFrom: "2023-12-31"
+    scope: { include: world }
+    note: "Danone's tables list Horizon Organic Dairy as the company behind its Horizon Organic business."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-owns-danone-russia
+    type: owns
+    from: entity:danone
+    to: entity:danone-russia
+    validFrom: "2023-12-31"
+    validTo: "2024-05"
+    stakePct: 100
+    scope: { include: world }
+    note: "100% at the end of 2023; Danone disposed of its dairy and plant-based business in Russia in May 2024."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-owns-michel-et-augustin
+    type: owns
+    from: entity:danone
+    to: entity:michel-et-augustin-company
+    validFrom: "2023-12-31"
+    validTo: "2024-02-29"
+    stakePct: 100
+    scope: { include: world }
+    note: "Danone announced on 6 December 2023 its intention to sell the French company Michel et Augustin; the sale completed on 29 February 2024."
+    sources: [source:danone-urd-2025]
+  - id: relationship:michel-et-augustin-brand
+    type: owns_brand
+    from: entity:michel-et-augustin-company
+    to: brand:michel-et-augustin
+    validFrom: "2023-12-31"
+    scope: { include: world }
+    note: "The company and the brand share the name; Danone's tables refer to both."
+    sources: [source:danone-urd-2025]
+  - id: relationship:danone-owns-danone-dairy-pars
+    type: owns
+    from: entity:danone
+    to: entity:danone-dairy-pars
+    validFrom: "2024-12-31"
+    validTo: "2025-12"
+    stakePct: 100
+    scope: { include: world }
+    note: "An Iranian company, 100% Danone's at the end of 2024; Danone signed an agreement to sell it on 1 December 2025."
+    sources: [source:danone-urd-2025]
