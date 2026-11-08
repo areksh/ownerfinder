@@ -106,3 +106,8 @@ sources:
     publisher: "Unilever PLC"
     published: "2025-03-13"
     retrieved: "2026-11-08"
+  - id: source:unilever-fr-home-care
+    url: https://wiop.unilever.fr/brands/
+    title: "Rechercher nos produits"
+    publisher: "Unilever France"
+    retrieved: "2026-11-08"

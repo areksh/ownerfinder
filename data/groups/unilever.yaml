@@ -23,8 +23,8 @@ relationships:
     to: brand:persil
     validFrom: "1931"
     scope: { include: [GB, IE, FR] }
-    sources: [source:wikipedia-persil, source:persil-uk-about]
-    note: "The source dates the French and British rights to 1927 and the British to 1931; the later year is used until a primary source settles it. Unilever's other Persil markets are not recorded here."
+    sources: [source:wikipedia-persil, source:persil-uk-about, source:unilever-fr-home-care]
+    note: "Persil's UK page and Unilever France's household products page confirm the UK and France. Ireland and the start rest on Wikipedia, which dates the French and British rights to 1927 and the British to 1931; the later year is used until a primary source settles it. Unilever's other Persil markets are not recorded here."
   - id: relationship:unilever-ben-and-jerrys
     type: owns
     from: entity:unilever

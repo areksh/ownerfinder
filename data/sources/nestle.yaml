@@ -110,3 +110,21 @@ sources:
     title: "Froneri Brands | Froneri Ice Cream"
     publisher: "Froneri International Limited"
     retrieved: "2026-11-08"
+  - id: source:nestle-vitaflo-2010
+    url: https://www.nestle.com/media/pressreleases/allpressreleases/nestl%C3%A9-enter-fast-growing-global-market-clinical-nutrition-products-inherited-metabolic-disorders
+    title: "Nestlé to enter fast-growing global market for clinical nutrition products for people with inherited metabolic disorders"
+    publisher: "Nestlé S.A."
+    published: "2010-08-02"
+    retrieved: "2026-11-08"
+  - id: source:nestle-atrium-2017
+    url: https://www.nestle.com/media/pressreleases/allpressreleases/nestle-acquires-atrium-innovations
+    title: "Nestlé extends consumer healthcare portfolio by agreeing to acquire Atrium Innovations"
+    publisher: "Nestlé S.A."
+    published: "2017-12-05"
+    retrieved: "2026-11-08"
+  - id: source:nestle-orgain-2022
+    url: https://www.nestle.com/media/pressreleases/allpressreleases/nestle-health-science-to-acquire-majority-stake-orgain
+    title: "Nestlé Health Science to acquire majority stake in Orgain"
+    publisher: "Nestlé S.A."
+    published: "2022-02-02"
+    retrieved: "2026-11-08"

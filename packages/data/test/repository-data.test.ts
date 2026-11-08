@@ -103,6 +103,13 @@ describe("answers that depend on the country", () => {
     ]);
   });
 
+  it("Vitaflo is Nestle's from the completion it announced on 2 August 2010", () => {
+    expect(chains("entity:vitaflo", "GB", "2010-08-01")).toEqual(["undefined: entity:vitaflo"]);
+    expect(chains("entity:vitaflo", "GB", "2010-08-02")).toEqual([
+      "owned: entity:vitaflo > entity:nestle",
+    ]);
+  });
+
   it("Horlicks is Unilever's in the Asian markets it bought in 2020, not everywhere", () => {
     expect(chains("brand:horlicks", "IN", "2026-11-08")).toEqual([
       "owned: entity:unilever",
