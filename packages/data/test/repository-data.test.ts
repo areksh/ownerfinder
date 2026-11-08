@@ -110,6 +110,14 @@ describe("answers that depend on the country", () => {
     ]);
   });
 
+  it("Air Wick moved from Reckitt to Advent's company on 31 December 2025, Reckitt keeping 30%", () => {
+    expect(chains("brand:air-wick", "GB", "2025-06-01")).toEqual(["owned: entity:reckitt"]);
+    expect(chains("brand:air-wick", "GB", "2026-11-08")).toEqual([
+      "owned: entity:lavender-dutch-topco > entity:advent-international",
+      "stake: entity:lavender-dutch-topco > entity:reckitt",
+    ]);
+  });
+
   it("Horizon Organic was Danone's until April 2024, then a 30% stake", () => {
     expect(chains("brand:horizon-organic", "US", "2024-01-15")).toEqual([
       "owned: entity:horizon-organic-dairy > entity:danone",

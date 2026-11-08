@@ -16,3 +16,15 @@ sources:
     publisher: "Reckitt Benckiser Group plc"
     published: "2016-09-21"
     retrieved: "2026-11-08"
+  - id: source:reckitt-strategic-report-2025
+    url: https://eu-assets.contentstack.com/v3/assets/blt93c8bc7a598af9f0/bltb53476093e67a7cc/69c29ef155e6b09804815c60/Strategic_Report_2025.pdf
+    title: "Annual Report and Accounts 2025: Strategic Report"
+    publisher: "Reckitt Benckiser Group plc"
+    published: "2026-03"
+    retrieved: "2026-11-08"
+  - id: source:reckitt-financial-statements-2025
+    url: https://eu-assets.contentstack.com/v3/assets/blt93c8bc7a598af9f0/blt40fc5626b7d80783/69c2940477205db1d1f252bc/Financial_Statements_2025.pdf
+    title: "Annual Report and Accounts 2025: Financial Statements"
+    publisher: "Reckitt Benckiser Group plc"
+    published: "2026-03"
+    retrieved: "2026-11-08"

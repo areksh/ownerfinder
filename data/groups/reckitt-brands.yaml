@@ -1,0 +1,196 @@
+# Reckitt in depth: Powerbrands, Mead Johnson Nutrition and the Essential Home sale, from its Annual Report and Accounts 2025.
+
+entities:
+  - { id: entity:lavender-dutch-topco, name: "Lavender Dutch TopCo B.V. (Essential Home)" }
+  - { id: entity:advent-international, name: "Advent International" }
+
+brands:
+  - { id: brand:finish, name: "Finish" }
+  - { id: brand:vanish, name: "Vanish" }
+  - { id: brand:durex, name: "Durex" }
+  - { id: brand:veet, name: "Veet" }
+  - { id: brand:enfamil, name: "Enfamil" }
+  - { id: brand:nutramigen, name: "Nutramigen" }
+  - { id: brand:air-wick, name: "Air Wick" }
+  - { id: brand:calgon, name: "Calgon" }
+  - { id: brand:cillit-bang, name: "Cillit Bang" }
+  - { id: brand:mortein, name: "Mortein" }
+  - { id: brand:easy-off, name: "Easy-Off" }
+  - { id: brand:woolite, name: "Woolite" }
+
+relationships:
+  - id: relationship:reckitt-finish
+    type: owns_brand
+    from: entity:reckitt
+    to: brand:finish
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of Reckitt's Powerbrands; when it became Reckitt's is not recorded."
+    sources: [source:reckitt-strategic-report-2025]
+  - id: relationship:reckitt-vanish
+    type: owns_brand
+    from: entity:reckitt
+    to: brand:vanish
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of Reckitt's Powerbrands; when it became Reckitt's is not recorded."
+    sources: [source:reckitt-strategic-report-2025]
+  - id: relationship:reckitt-durex
+    type: owns_brand
+    from: entity:reckitt
+    to: brand:durex
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of Reckitt's Powerbrands; when it became Reckitt's is not recorded."
+    sources: [source:reckitt-strategic-report-2025]
+  - id: relationship:reckitt-veet
+    type: owns_brand
+    from: entity:reckitt
+    to: brand:veet
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of Reckitt's Powerbrands; when it became Reckitt's is not recorded."
+    sources: [source:reckitt-strategic-report-2025]
+  - id: relationship:reckitt-enfamil
+    type: owns_brand
+    from: entity:reckitt
+    to: brand:enfamil
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "Part of Reckitt's Mead Johnson Nutrition business; which group company owns the brand is not recorded."
+    sources: [source:reckitt-strategic-report-2025, source:reckitt-financial-statements-2025]
+  - id: relationship:reckitt-nutramigen
+    type: owns_brand
+    from: entity:reckitt
+    to: brand:nutramigen
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "Part of Reckitt's Mead Johnson Nutrition business; which group company owns the brand is not recorded."
+    sources: [source:reckitt-strategic-report-2025]
+  - id: relationship:reckitt-air-wick
+    type: owns_brand
+    from: entity:reckitt
+    to: brand:air-wick
+    validFrom: "2025"
+    validTo: "2025-12-31"
+    scope: { include: world }
+    note: "Part of Reckitt's Essential Home business until it was sold on 31 December 2025; when it became Reckitt's is not recorded."
+    sources: [source:reckitt-strategic-report-2025]
+  - id: relationship:lavender-dutch-topco-air-wick
+    type: owns_brand
+    from: entity:lavender-dutch-topco
+    to: brand:air-wick
+    validFrom: "2025-12-31"
+    startKnown: true
+    scope: { include: world }
+    note: "Reckitt sold its Essential Home business, which includes this brand, to Advent's acquisition vehicle on 31 December 2025."
+    sources: [source:reckitt-strategic-report-2025, source:reckitt-financial-statements-2025]
+  - id: relationship:reckitt-calgon
+    type: owns_brand
+    from: entity:reckitt
+    to: brand:calgon
+    validFrom: "2025"
+    validTo: "2025-12-31"
+    scope: { include: world }
+    note: "Part of Reckitt's Essential Home business until it was sold on 31 December 2025; when it became Reckitt's is not recorded."
+    sources: [source:reckitt-strategic-report-2025]
+  - id: relationship:lavender-dutch-topco-calgon
+    type: owns_brand
+    from: entity:lavender-dutch-topco
+    to: brand:calgon
+    validFrom: "2025-12-31"
+    startKnown: true
+    scope: { include: world }
+    note: "Reckitt sold its Essential Home business, which includes this brand, to Advent's acquisition vehicle on 31 December 2025."
+    sources: [source:reckitt-strategic-report-2025, source:reckitt-financial-statements-2025]
+  - id: relationship:reckitt-cillit-bang
+    type: owns_brand
+    from: entity:reckitt
+    to: brand:cillit-bang
+    validFrom: "2025"
+    validTo: "2025-12-31"
+    scope: { include: world }
+    note: "Part of Reckitt's Essential Home business until it was sold on 31 December 2025; when it became Reckitt's is not recorded."
+    sources: [source:reckitt-strategic-report-2025]
+  - id: relationship:lavender-dutch-topco-cillit-bang
+    type: owns_brand
+    from: entity:lavender-dutch-topco
+    to: brand:cillit-bang
+    validFrom: "2025-12-31"
+    startKnown: true
+    scope: { include: world }
+    note: "Reckitt sold its Essential Home business, which includes this brand, to Advent's acquisition vehicle on 31 December 2025."
+    sources: [source:reckitt-strategic-report-2025, source:reckitt-financial-statements-2025]
+  - id: relationship:reckitt-mortein
+    type: owns_brand
+    from: entity:reckitt
+    to: brand:mortein
+    validFrom: "2025"
+    validTo: "2025-12-31"
+    scope: { include: world }
+    note: "Part of Reckitt's Essential Home business until it was sold on 31 December 2025; when it became Reckitt's is not recorded."
+    sources: [source:reckitt-strategic-report-2025]
+  - id: relationship:lavender-dutch-topco-mortein
+    type: owns_brand
+    from: entity:lavender-dutch-topco
+    to: brand:mortein
+    validFrom: "2025-12-31"
+    startKnown: true
+    scope: { include: world }
+    note: "Reckitt sold its Essential Home business, which includes this brand, to Advent's acquisition vehicle on 31 December 2025."
+    sources: [source:reckitt-strategic-report-2025, source:reckitt-financial-statements-2025]
+  - id: relationship:reckitt-easy-off
+    type: owns_brand
+    from: entity:reckitt
+    to: brand:easy-off
+    validFrom: "2025"
+    validTo: "2025-12-31"
+    scope: { include: world }
+    note: "Part of Reckitt's Essential Home business until it was sold on 31 December 2025; when it became Reckitt's is not recorded."
+    sources: [source:reckitt-strategic-report-2025]
+  - id: relationship:lavender-dutch-topco-easy-off
+    type: owns_brand
+    from: entity:lavender-dutch-topco
+    to: brand:easy-off
+    validFrom: "2025-12-31"
+    startKnown: true
+    scope: { include: world }
+    note: "Reckitt sold its Essential Home business, which includes this brand, to Advent's acquisition vehicle on 31 December 2025."
+    sources: [source:reckitt-strategic-report-2025, source:reckitt-financial-statements-2025]
+  - id: relationship:reckitt-woolite
+    type: owns_brand
+    from: entity:reckitt
+    to: brand:woolite
+    validFrom: "2025"
+    validTo: "2025-12-31"
+    scope: { include: world }
+    note: "Part of Reckitt's Essential Home business until it was sold on 31 December 2025; when it became Reckitt's is not recorded."
+    sources: [source:reckitt-strategic-report-2025]
+  - id: relationship:lavender-dutch-topco-woolite
+    type: owns_brand
+    from: entity:lavender-dutch-topco
+    to: brand:woolite
+    validFrom: "2025-12-31"
+    startKnown: true
+    scope: { include: world }
+    note: "Reckitt sold its Essential Home business, which includes this brand, to Advent's acquisition vehicle on 31 December 2025."
+    sources: [source:reckitt-strategic-report-2025, source:reckitt-financial-statements-2025]
+  - id: relationship:advent-international-owns-lavender-dutch-topco
+    type: owns
+    from: entity:advent-international
+    to: entity:lavender-dutch-topco
+    validFrom: "2025-12-31"
+    startKnown: true
+    scope: { include: world }
+    note: "Advent is the controlling shareholder and holds the A shares; its percentage is not given."
+    sources: [source:reckitt-strategic-report-2025, source:reckitt-financial-statements-2025]
+  - id: relationship:reckitt-stake-lavender-dutch-topco
+    type: holds_stake
+    from: entity:reckitt
+    to: entity:lavender-dutch-topco
+    validFrom: "2025-12-31"
+    startKnown: true
+    stakePct: 30
+    scope: { include: world }
+    note: "Reckitt kept a 30% interest, held as B shares, when it sold Essential Home on 31 December 2025; it accounts for it as an associate."
+    sources: [source:reckitt-strategic-report-2025, source:reckitt-financial-statements-2025]
