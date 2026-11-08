@@ -2,6 +2,7 @@ import { env } from "cloudflare:test";
 import { exports } from "cloudflare:workers";
 import { fixture } from "@ecf/model/acceptance-fixture";
 import { beforeEach, describe, expect, it } from "vitest";
+import { withReasons } from "./support/listed.ts";
 import { loadGraph } from "./support/load.ts";
 
 beforeEach(() => loadGraph(env.DB, fixture));
@@ -25,6 +26,7 @@ interface Body {
       coverage?: string;
     }>;
   }>;
+  listings: Array<{ entity: string; evidence: Array<{ criterion: string; summary: string }> }>;
   sources: Record<string, { id: string; url: string }>;
 }
 
@@ -157,6 +159,39 @@ describe("GET /lookup/:id", () => {
       "/lookup/entity:loreal?country=GB&date=2026-11-07&includePassive=true",
     );
     expect(passive.body.query.includePassive).toBe(true);
+  });
+
+  it("gives each listed company on the paths with its reasons and their sources", async () => {
+    await loadGraph(env.DB, withReasons);
+    const { body } = await lookup("/lookup/brand:kelloggs?country=GB&date=2026-11-07");
+    expect(body.listings).toEqual([
+      {
+        entity: "entity:mars",
+        evidence: [
+          expect.objectContaining({ criterion: "criterion:example", summary: "Placeholder A." }),
+          expect.objectContaining({ criterion: "criterion:other", summary: "Placeholder B." }),
+        ],
+      },
+    ]);
+    expect(body.sources).toHaveProperty(["source:reason-a"]);
+    expect(body.sources).toHaveProperty(["source:reason-b"]);
+  });
+
+  it("gives only the reasons that meet the chosen criteria", async () => {
+    await loadGraph(env.DB, withReasons);
+    const { body } = await lookup(
+      "/lookup/brand:kelloggs?country=GB&date=2026-11-07&criteria=criterion:other",
+    );
+    expect(body.listings.map((l) => l.evidence.map((e) => e.criterion))).toEqual([
+      ["criterion:other"],
+    ]);
+    expect(body.sources).not.toHaveProperty(["source:reason-a"]);
+    expect(body.sources).toHaveProperty(["source:reason-b"]);
+  });
+
+  it("gives no listings when nothing listed is reached", async () => {
+    const { body } = await lookup("/lookup/entity:henkel?country=DE&date=2026-11-07");
+    expect(body.listings).toEqual([]);
   });
 
   it("defaults the date to today in UTC", async () => {

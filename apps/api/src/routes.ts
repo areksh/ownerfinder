@@ -5,11 +5,14 @@
  */
 import {
   foldForSearch,
+  type Graph,
   isCountryCode,
+  type Listing,
   type Path,
   parseFullDate,
   type Query,
   type Relationship,
+  type Resolution,
   resolve,
 } from "@ecf/model";
 import {
@@ -69,19 +72,25 @@ export async function lookup(db: D1Database, id: string, url: URL): Promise<unkn
       outcome: "unknown",
       approximate: false,
       paths: [],
+      listings: [],
       sources: {},
     };
   }
   const graph = await subgraphFor(db, id);
   const resolution = resolve(graph, query);
   const names = new Map([...graph.entities, ...graph.brands].map((n) => [n.id, n.name]));
-  const sourceIds = new Set(resolution.paths.flatMap((p) => p.links.flatMap((r) => r.sources)));
+  const listings = reasonsOnPaths(graph, resolution, query.criteria);
+  const sourceIds = new Set([
+    ...resolution.paths.flatMap((p) => p.links.flatMap((r) => r.sources)),
+    ...listings.flatMap((l) => l.evidence.flatMap((e) => e.sources)),
+  ]);
   return {
     query: echo,
     node: { id, kind: node.kind, name: node.record.name },
     outcome: resolution.outcome,
     approximate: resolution.approximate,
     paths: resolution.paths.map((path) => pathJson(path, names)),
+    listings,
     sources: await sourcesByIds(db, [...sourceIds]),
   };
 }
@@ -92,12 +101,17 @@ export async function node(db: D1Database, id: string): Promise<unknown> {
   const { heldBy, holds } = await relationshipsTouching(db, id);
   const all = [...heldBy, ...holds];
   const names = await namesFor(db, [...new Set(all.flatMap((r) => [r.from, r.to]))]);
+  const listing = found.kind === "entity" ? await listingFor(db, id) : null;
+  const sourceIds = [
+    ...all.flatMap((r) => r.sources),
+    ...(listing?.evidence.flatMap((e) => e.sources) ?? []),
+  ];
   return {
     node: { id, kind: found.kind, name: found.record.name },
-    listing: found.kind === "entity" ? await listingFor(db, id) : null,
+    listing,
     heldBy: heldBy.map((r) => linkJson(r, names)),
     holds: holds.map((r) => linkJson(r, names)),
-    sources: await sourcesByIds(db, [...new Set(all.flatMap((r) => r.sources))]),
+    sources: await sourcesByIds(db, [...new Set(sourceIds)]),
   };
 }
 
@@ -168,4 +182,26 @@ function linkJson(r: Relationship, names: Map<string, string>) {
     from: { id: r.from, name: names.get(r.from) ?? r.from },
     to: { id: r.to, name: names.get(r.to) ?? r.to },
   };
+}
+
+/**
+ * The listings of the listed companies an answer's paths reach, keeping
+ * only the evidence for the chosen criteria (all when none are chosen), so
+ * the reasons can be shown beside each company.
+ */
+function reasonsOnPaths(
+  graph: Graph,
+  resolution: Resolution,
+  criteria: readonly string[] | undefined,
+): Listing[] {
+  const listed = new Set(resolution.paths.flatMap((p) => p.listed));
+  return graph.listings
+    .filter((listing) => listed.has(listing.entity))
+    .map((listing) => ({
+      entity: listing.entity,
+      evidence: listing.evidence.filter(
+        (e) => criteria === undefined || criteria.includes(e.criterion),
+      ),
+    }))
+    .filter((listing) => listing.evidence.length > 0);
 }

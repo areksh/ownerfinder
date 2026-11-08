@@ -2,6 +2,7 @@ import { env } from "cloudflare:test";
 import { exports } from "cloudflare:workers";
 import { fixture } from "@ecf/model/acceptance-fixture";
 import { beforeEach, describe, expect, it } from "vitest";
+import { withReasons } from "./support/listed.ts";
 import { loadGraph } from "./support/load.ts";
 
 beforeEach(() => loadGraph(env.DB, fixture));
@@ -61,6 +62,13 @@ describe("GET /nodes/:id", () => {
     });
     expect(body.holds.map((r) => r.id)).toEqual(["relationship:mars-kellanova"]);
     expect(body.sources).toHaveProperty(["source:mars-kellanova-2025"]);
+  });
+
+  it("includes the sources a listing's evidence cites", async () => {
+    await loadGraph(env.DB, withReasons);
+    const { body } = await get("/nodes/entity:mars");
+    expect(body.sources).toHaveProperty(["source:reason-a"]);
+    expect(body.sources).toHaveProperty(["source:reason-b"]);
   });
 
   it("shows a brand", async () => {

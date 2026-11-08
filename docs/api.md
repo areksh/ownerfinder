@@ -73,6 +73,14 @@ records it needs and serialises the result.
       ]
     }
   ],
+  "listings": [
+    {
+      "entity": "entity:mars",
+      "evidence": [
+        { "criterion": "criterion:...", "summary": "...", "status": "found", "...": "..." }
+      ]
+    }
+  ],
   "sources": {
     "source:kellogg-brand-agreement-2023": {
       "id": "source:kellogg-brand-agreement-2023",
@@ -87,7 +95,10 @@ records it needs and serialises the result.
 
 Each link carries the relationship's own fields (type, dates, scope,
 percentage, coverage, note and source ids) with the names of both ends.
-`sources` holds every source the links cite. A path through a stake also
+`listings` gives the listing of each listed company the paths reach, with
+only the evidence for the chosen criteria, so the reasons can be shown
+beside the company. `sources` holds every source the links and that
+evidence cite. A path through a stake also
 has `effectiveSharePct`. An id that is well formed but not in the graph
 gives `200` with `"outcome": "unknown"` and `"node": null`: not being
 recorded is an answer, not an error.
@@ -116,7 +127,8 @@ dates, so its history is visible.
 }
 ```
 
-`listing` is the entity's listing with its evidence, or `null`. An id not
+`listing` is the entity's listing with its evidence, or `null`;
+`sources` includes the sources its evidence cites. An id not
 in the graph gives `404`.
 
 ## `GET /criteria`
