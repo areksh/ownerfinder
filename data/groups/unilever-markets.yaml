@@ -1,0 +1,774 @@
+# Unilever's brands by market, from its global, UK, US and Hindustan Unilever brand pages, read on 2026-11-08.
+
+brands:
+  - { id: brand:dove-men-care, name: "Dove Men+Care" }
+  - { id: brand:omo, name: "OMO" }
+  - { id: brand:bovril, name: "Bovril" }
+  - { id: brand:colmans, name: "Colman's" }
+  - { id: brand:lynx, name: "Lynx" }
+  - { id: brand:maille, name: "Maille" }
+  - { id: brand:marmite, name: "Marmite" }
+  - { id: brand:namdong, name: "Namdong" }
+  - { id: brand:pot-noodle, name: "Pot Noodle" }
+  - { id: brand:radox, name: "Radox" }
+  - { id: brand:sheamoisture, name: "SheaMoisture" }
+  - { id: brand:simple, name: "Simple" }
+  - { id: brand:sure, name: "Sure" }
+  - { id: brand:degree, name: "Degree" }
+  - { id: brand:seventh-generation, name: "Seventh Generation" }
+  - { id: brand:sir-kensingtons, name: "Sir Kensington's" }
+  - { id: brand:active-wheel, name: "Active Wheel 2 in 1" }
+  - { id: brand:boost-hul, name: "Boost (Hindustan Unilever)" }
+  - { id: brand:brooke-bond-3-roses, name: "Brooke Bond 3 Roses" }
+  - { id: brand:brooke-bond-red-label, name: "Brooke Bond Red Label" }
+  - { id: brand:brooke-bond-taaza, name: "Brooke Bond Taaza" }
+  - { id: brand:brooke-bond-taj-mahal, name: "Brooke Bond Taj Mahal" }
+  - { id: brand:bru, name: "Bru" }
+  - { id: brand:clinic-plus, name: "Clinic Plus" }
+  - { id: brand:domex, name: "Domex" }
+  - { id: brand:elle-18, name: "ELLE 18" }
+  - { id: brand:glow-and-handsome, name: "Glow & Handsome" }
+  - { id: brand:glow-and-lovely, name: "Glow & Lovely" }
+  - { id: brand:hamam, name: "Hamam" }
+  - { id: brand:indulekha, name: "Indulekha" }
+  - { id: brand:kissan, name: "Kissan" }
+  - { id: brand:lakme, name: "Lakmé" }
+  - { id: brand:lipton, name: "Lipton" }
+  - { id: brand:liril, name: "Liril" }
+  - { id: brand:love-beauty-and-planet, name: "Love Beauty & Planet" }
+  - { id: brand:moti, name: "Moti" }
+  - { id: brand:novology, name: "Novology" }
+  - { id: brand:oziva, name: "OZiva" }
+  - { id: brand:pears, name: "Pears" }
+  - { id: brand:rin, name: "Rin" }
+  - { id: brand:surf-excel, name: "Surf excel" }
+  - { id: brand:vwash, name: "VWash" }
+  - { id: brand:vim, name: "Vim" }
+
+relationships:
+  - id: relationship:unilever-dove-men-care
+    type: owns_brand
+    from: entity:unilever
+    to: brand:dove-men-care
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:unilever-all-brands]
+  - id: relationship:unilever-omo
+    type: owns_brand
+    from: entity:unilever
+    to: brand:omo
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:unilever-all-brands]
+  - id: relationship:unilever-bovril
+    type: owns_brand
+    from: entity:unilever
+    to: brand:bovril
+    validFrom: "2026-11-08"
+    scope: { include: [GB] }
+    note: "Listed on Unilever's UK brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:unilever-uk-brands]
+  - id: relationship:unilever-colmans
+    type: owns_brand
+    from: entity:unilever
+    to: brand:colmans
+    validFrom: "2026-11-08"
+    scope: { include: [GB] }
+    note: "Listed on Unilever's UK brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:unilever-uk-brands]
+  - id: relationship:unilever-lynx
+    type: owns_brand
+    from: entity:unilever
+    to: brand:lynx
+    validFrom: "2026-11-08"
+    scope: { include: [GB] }
+    note: "Listed on Unilever's UK brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:unilever-uk-brands]
+  - id: relationship:unilever-maille
+    type: owns_brand
+    from: entity:unilever
+    to: brand:maille
+    validFrom: "2026-11-08"
+    scope: { include: [GB, US] }
+    note: "Listed on Unilever's UK and Unilever's US brands pages; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:unilever-uk-brands, source:unilever-usa-brands]
+  - id: relationship:unilever-marmite
+    type: owns_brand
+    from: entity:unilever
+    to: brand:marmite
+    validFrom: "2026-11-08"
+    scope: { include: [GB] }
+    note: "Listed on Unilever's UK brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:unilever-uk-brands]
+  - id: relationship:unilever-namdong
+    type: owns_brand
+    from: entity:unilever
+    to: brand:namdong
+    validFrom: "2026-11-08"
+    scope: { include: [GB] }
+    note: "Listed on Unilever's UK brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:unilever-uk-brands]
+  - id: relationship:unilever-pot-noodle
+    type: owns_brand
+    from: entity:unilever
+    to: brand:pot-noodle
+    validFrom: "2026-11-08"
+    scope: { include: [GB] }
+    note: "Listed on Unilever's UK brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:unilever-uk-brands]
+  - id: relationship:unilever-radox
+    type: owns_brand
+    from: entity:unilever
+    to: brand:radox
+    validFrom: "2026-11-08"
+    scope: { include: [GB] }
+    note: "Listed on Unilever's UK brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:unilever-uk-brands]
+  - id: relationship:unilever-sheamoisture
+    type: owns_brand
+    from: entity:unilever
+    to: brand:sheamoisture
+    validFrom: "2026-11-08"
+    scope: { include: [GB, US] }
+    note: "Listed on Unilever's UK and Unilever's US brands pages; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:unilever-uk-brands, source:unilever-usa-brands]
+  - id: relationship:unilever-simple
+    type: owns_brand
+    from: entity:unilever
+    to: brand:simple
+    validFrom: "2026-11-08"
+    scope: { include: [GB, US, IN] }
+    note: "Listed on Unilever's UK and Unilever's US and Hindustan Unilever's Indian brands pages; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:unilever-uk-brands, source:unilever-usa-brands, source:hul-brands]
+  - id: relationship:unilever-sure
+    type: owns_brand
+    from: entity:unilever
+    to: brand:sure
+    validFrom: "2026-11-08"
+    scope: { include: [GB] }
+    note: "Listed on Unilever's UK brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:unilever-uk-brands]
+  - id: relationship:unilever-degree
+    type: owns_brand
+    from: entity:unilever
+    to: brand:degree
+    validFrom: "2026-11-08"
+    scope: { include: [US] }
+    note: "Listed on Unilever's US brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:unilever-usa-brands]
+  - id: relationship:unilever-seventh-generation
+    type: owns_brand
+    from: entity:unilever
+    to: brand:seventh-generation
+    validFrom: "2026-11-08"
+    scope: { include: [US] }
+    note: "Listed on Unilever's US brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:unilever-usa-brands]
+  - id: relationship:unilever-sir-kensingtons
+    type: owns_brand
+    from: entity:unilever
+    to: brand:sir-kensingtons
+    validFrom: "2026-11-08"
+    scope: { include: [US] }
+    note: "Listed on Unilever's US brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:unilever-usa-brands]
+  - id: relationship:unilever-active-wheel
+    type: owns_brand
+    from: entity:unilever
+    to: brand:active-wheel
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-boost-hul
+    type: owns_brand
+    from: entity:unilever
+    to: brand:boost-hul
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-brooke-bond-3-roses
+    type: owns_brand
+    from: entity:unilever
+    to: brand:brooke-bond-3-roses
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-brooke-bond-red-label
+    type: owns_brand
+    from: entity:unilever
+    to: brand:brooke-bond-red-label
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-brooke-bond-taaza
+    type: owns_brand
+    from: entity:unilever
+    to: brand:brooke-bond-taaza
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-brooke-bond-taj-mahal
+    type: owns_brand
+    from: entity:unilever
+    to: brand:brooke-bond-taj-mahal
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-bru
+    type: owns_brand
+    from: entity:unilever
+    to: brand:bru
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-clinic-plus
+    type: owns_brand
+    from: entity:unilever
+    to: brand:clinic-plus
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-domex
+    type: owns_brand
+    from: entity:unilever
+    to: brand:domex
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-elle-18
+    type: owns_brand
+    from: entity:unilever
+    to: brand:elle-18
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-glow-and-handsome
+    type: owns_brand
+    from: entity:unilever
+    to: brand:glow-and-handsome
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-glow-and-lovely
+    type: owns_brand
+    from: entity:unilever
+    to: brand:glow-and-lovely
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-hamam
+    type: owns_brand
+    from: entity:unilever
+    to: brand:hamam
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-indulekha
+    type: owns_brand
+    from: entity:unilever
+    to: brand:indulekha
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-kissan
+    type: owns_brand
+    from: entity:unilever
+    to: brand:kissan
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-lakme
+    type: owns_brand
+    from: entity:unilever
+    to: brand:lakme
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-lipton
+    type: owns_brand
+    from: entity:unilever
+    to: brand:lipton
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it. Outside India, who owns Lipton is not recorded here."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-liril
+    type: owns_brand
+    from: entity:unilever
+    to: brand:liril
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-love-beauty-and-planet
+    type: owns_brand
+    from: entity:unilever
+    to: brand:love-beauty-and-planet
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-moti
+    type: owns_brand
+    from: entity:unilever
+    to: brand:moti
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-novology
+    type: owns_brand
+    from: entity:unilever
+    to: brand:novology
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-oziva
+    type: owns_brand
+    from: entity:unilever
+    to: brand:oziva
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-pears
+    type: owns_brand
+    from: entity:unilever
+    to: brand:pears
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-rin
+    type: owns_brand
+    from: entity:unilever
+    to: brand:rin
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-surf-excel
+    type: owns_brand
+    from: entity:unilever
+    to: brand:surf-excel
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-vwash
+    type: owns_brand
+    from: entity:unilever
+    to: brand:vwash
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:unilever-vim
+    type: owns_brand
+    from: entity:unilever
+    to: brand:vim
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-axe
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:axe
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-cif
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:cif
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-closeup
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:closeup
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-comfort
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:comfort
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-dermalogica
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:dermalogica
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-dove
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:dove
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-hellmanns
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:hellmanns
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-horlicks
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:horlicks
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-knorr
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:knorr
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-lux
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:lux
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-lifebuoy
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:lifebuoy
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-liquid-iv
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:liquid-iv
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-nexxus
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:nexxus
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-ponds
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:ponds
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-pepsodent
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:pepsodent
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-rexona
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:rexona
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-simple
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:simple
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-sunlight
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:sunlight
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-sunsilk
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:sunsilk
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-tresemme
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:tresemme
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-vaseline
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:vaseline
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-active-wheel
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:active-wheel
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-boost-hul
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:boost-hul
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-brooke-bond-3-roses
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:brooke-bond-3-roses
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-brooke-bond-red-label
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:brooke-bond-red-label
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-brooke-bond-taaza
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:brooke-bond-taaza
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-brooke-bond-taj-mahal
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:brooke-bond-taj-mahal
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-bru
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:bru
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-clinic-plus
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:clinic-plus
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-domex
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:domex
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-elle-18
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:elle-18
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-glow-and-handsome
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:glow-and-handsome
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-glow-and-lovely
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:glow-and-lovely
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-hamam
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:hamam
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-indulekha
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:indulekha
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-kissan
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:kissan
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-lakme
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:lakme
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-lipton
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:lipton
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-liril
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:liril
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-love-beauty-and-planet
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:love-beauty-and-planet
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-moti
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:moti
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-novology
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:novology
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-oziva
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:oziva
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-pears
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:pears
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-rin
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:rin
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-surf-excel
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:surf-excel
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-vwash
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:vwash
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]
+  - id: relationship:hindustan-unilever-sells-vim
+    type: distributes
+    from: entity:hindustan-unilever
+    to: brand:vim
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among Hindustan Unilever's brands in India."
+    sources: [source:hul-brands]

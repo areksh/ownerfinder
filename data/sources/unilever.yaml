@@ -45,3 +45,28 @@ sources:
     publisher: "Unilever PLC"
     published: "2022-03-08"
     retrieved: "2026-11-08"
+  - id: source:unilever-all-brands
+    url: https://www.unilever.com/brands/all-brands/
+    title: "Our brands"
+    publisher: "Unilever PLC"
+    retrieved: "2026-11-08"
+  - id: source:unilever-uk-brands
+    url: https://www.unilever.co.uk/brands/
+    title: "Our brands"
+    publisher: "Unilever UK"
+    retrieved: "2026-11-08"
+  - id: source:unilever-usa-brands
+    url: https://www.unileverusa.com/brands/
+    title: "Our brands"
+    publisher: "Unilever USA"
+    retrieved: "2026-11-08"
+  - id: source:hul-brands
+    url: https://www.hul.co.in/brands/
+    title: "Brands"
+    publisher: "Hindustan Unilever Limited"
+    retrieved: "2026-11-08"
+  - id: source:unilever-ara-2025
+    url: https://www.unilever.com/files/unilever-annual-report-and-accounts-2025.pdf
+    title: "Unilever Annual Report and Accounts 2025"
+    publisher: "Unilever PLC"
+    retrieved: "2026-11-08"

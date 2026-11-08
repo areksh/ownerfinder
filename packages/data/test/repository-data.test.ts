@@ -88,7 +88,20 @@ describe("answers that depend on the country", () => {
     expect(chains("brand:rockstar", "GB")).toEqual(["owned: entity:pepsico"]);
   });
 
-  it("Minimalist is Hindustan Unilever's, which Unilever controls with 62%", () => {
+  it("Marmite is recorded as Unilever's only in the UK, where its brand page lists it", () => {
+    expect(chains("brand:marmite", "GB", "2026-11-08")).toEqual(["owned: entity:unilever"]);
+    expect(chains("brand:marmite", "US", "2026-11-08")).toEqual([]);
+  });
+
+  it("Lipton in India is Unilever's, sold by Hindustan Unilever, and unrecorded elsewhere", () => {
+    expect(chains("brand:lipton", "IN", "2026-11-08")).toEqual([
+      "owned: entity:unilever",
+      "distributed: entity:hindustan-unilever > entity:unilever",
+    ]);
+    expect(chains("brand:lipton", "GB", "2026-11-08")).toEqual([]);
+  });
+
+  it("Minimalist is Hindustan Unilever's, which Unilever controls with 61.9%", () => {
     expect(chains("brand:minimalist", "IN")).toEqual([
       "owned: entity:hindustan-unilever > entity:unilever",
     ]);
