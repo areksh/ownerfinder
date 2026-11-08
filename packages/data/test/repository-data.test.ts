@@ -46,6 +46,10 @@ describe("answers that depend on the country", () => {
     ]);
   });
 
+  it("Marabou is on Mondelez's own brand list", () => {
+    expect(chains("brand:marabou", "SE", "2026-11-08")).toEqual(["owned: entity:mondelez"]);
+  });
+
   it("Ferrero's own brands, its affiliates' brands and WK Kellogg's cereals are told apart", () => {
     expect(chains("brand:butterfinger", "US", "2026-11-08")).toEqual(["owned: entity:ferrero"]);
     expect(chains("brand:nerds", "US", "2026-11-08")).toEqual([

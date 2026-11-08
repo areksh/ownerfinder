@@ -16,3 +16,8 @@ sources:
     publisher: "Mondelez International, Inc."
     published: "2026-02-04"
     retrieved: "2026-11-08"
+  - id: source:mondelez-our-brands
+    url: https://www.mondelezinternational.com/our-brands/
+    title: "Our Brands"
+    publisher: "Mondelez International, Inc."
+    retrieved: "2026-11-08"

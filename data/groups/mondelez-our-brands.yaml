@@ -1,0 +1,221 @@
+# Mondelez's brands from its own brand list, read on 2026-11-08. Philadelphia, Tang and Royal are left out: Mondelez and Kraft Heinz licensed each other brands in jurisdictions the sources do not name.
+
+brands:
+  - { id: brand:5-star, name: "5 Star" }
+  - { id: brand:7days, name: "7Days" }
+  - { id: brand:alpen-gold, name: "Alpen Gold" }
+  - { id: brand:barni, name: "Barni" }
+  - { id: brand:bournvita, name: "Bournvita" }
+  - { id: brand:chips-ahoy, name: "Chips Ahoy!" }
+  - { id: brand:clorets, name: "Clorets" }
+  - { id: brand:club-social, name: "Club Social" }
+  - { id: brand:daim, name: "Daim" }
+  - { id: brand:enjoy-life-foods, name: "Enjoy Life Foods" }
+  - { id: brand:freia, name: "Freia" }
+  - { id: brand:grenade, name: "Grenade" }
+  - { id: brand:honey-maid, name: "Honey Maid" }
+  - { id: brand:hu-chocolate, name: "Hu (chocolate)" }
+  - { id: brand:kinh-do, name: "Kinh Do" }
+  - { id: brand:lacta, name: "Lacta" }
+  - { id: brand:marabou, name: "Marabou" }
+  - { id: brand:maynards-bassetts, name: "Maynards Bassetts" }
+  - { id: brand:mikado-mondelez, name: "Mikado (Mondelez)" }
+  - { id: brand:perfect-snacks, name: "Perfect Snacks" }
+  - { id: brand:prince-biscuits, name: "Prince (biscuits)" }
+  - { id: brand:sour-patch-kids, name: "Sour Patch Kids" }
+  - { id: brand:stride-mondelez, name: "Stride (Mondelez)" }
+  - { id: brand:tiger-biscuits, name: "Tiger (biscuits)" }
+  - { id: brand:triscuit, name: "Triscuit" }
+  - { id: brand:tuc, name: "TUC" }
+  - { id: brand:wheat-thins, name: "Wheat Thins" }
+
+relationships:
+  - id: relationship:mondelez-5-star
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:5-star
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-7days
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:7days
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-alpen-gold
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:alpen-gold
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-barni
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:barni
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-bournvita
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:bournvita
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-chips-ahoy
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:chips-ahoy
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-clorets
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:clorets
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-club-social
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:club-social
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-daim
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:daim
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-enjoy-life-foods
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:enjoy-life-foods
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-freia
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:freia
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-grenade
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:grenade
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-honey-maid
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:honey-maid
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-hu-chocolate
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:hu-chocolate
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-kinh-do
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:kinh-do
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-lacta
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:lacta
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-marabou
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:marabou
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-maynards-bassetts
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:maynards-bassetts
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-mikado-mondelez
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:mikado-mondelez
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-perfect-snacks
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:perfect-snacks
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-prince-biscuits
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:prince-biscuits
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-sour-patch-kids
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:sour-patch-kids
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-stride-mondelez
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:stride-mondelez
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-tiger-biscuits
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:tiger-biscuits
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-triscuit
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:triscuit
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-tuc
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:tuc
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
+  - id: relationship:mondelez-wheat-thins
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:wheat-thins
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mondelez-our-brands]
