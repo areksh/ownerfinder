@@ -64,6 +64,14 @@ describe("answers that depend on the country", () => {
     ]);
   });
 
+  it("Aguila is ABI's, perpetually licensed to Molson Coors in the US", () => {
+    expect(chains("brand:aguila", "US", "2026-11-08")).toEqual([
+      "stake: entity:anheuser-busch-inbev > entity:altria",
+      "stake: entity:anheuser-busch-inbev > entity:stichting-anheuser-busch-inbev",
+      "licensed: entity:molson-coors",
+    ]);
+  });
+
   it("Corona is ABI's outside the US, and Constellation's licence inside it", () => {
     expect(chains("brand:corona", "MX", "2026-11-08")).toEqual([
       "stake: entity:anheuser-busch-inbev > entity:altria",

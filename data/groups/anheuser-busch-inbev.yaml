@@ -13,6 +13,9 @@ entities:
   - { id: entity:abi-sab-group-holding, name: "ABI SAB Group Holding Limited" }
   - { id: entity:constellation-brands, name: "Constellation Brands, Inc." }
   - { id: entity:cerveceria-bucanero, name: "Cervecería Bucanero S.A." }
+  - { id: entity:molson-coors, name: "Molson Coors Brewing Company" }
+  - { id: entity:anadolu-efes, name: "Anadolu Efes" }
+  - { id: entity:ab-inbev-efes, name: "AB InBev Efes" }
 
 brands:
   - { id: brand:budweiser, name: "Budweiser" }
@@ -41,6 +44,10 @@ brands:
   - { id: brand:cass, name: "Cass" }
   - { id: brand:harbin, name: "Harbin" }
   - { id: brand:cutwater, name: "Cutwater" }
+  - { id: brand:castle-lager, name: "Castle Lager" }
+  - { id: brand:cusquena, name: "Cusqueña" }
+  - { id: brand:redds, name: "Redd's" }
+  - { id: brand:bud, name: "Bud" }
 
 relationships:
   - id: relationship:stichting-stake-anheuser-busch-inbev
@@ -112,7 +119,7 @@ relationships:
     to: brand:budweiser
     validFrom: "2026-03-03"
     scope: { include: world }
-    note: "One of ABI's four global brands. Which group company owns the trademark is not stated."
+    note: "One of ABI's four global brands. ABI reports a long-standing dispute with the Czech brewer Budejovicky Budvar over the BUD and BUDWEISER trademarks, with more than 55 cases pending in over 40 countries; the filing does not say where Budvar holds the name, so in some countries this answer may be wrong. Which group company owns the trademark is not stated."
     sources: [source:abi-20f-2025]
   - id: relationship:anheuser-busch-inbev-corona
     type: owns_brand
@@ -128,7 +135,7 @@ relationships:
     to: brand:stella-artois
     validFrom: "2026-03-03"
     scope: { include: world }
-    note: "One of ABI's four global brands. Which group company owns the trademark is not stated."
+    note: "One of ABI's four global brands; licensed to third parties, not named here, in countries including Algeria, Bosnia and Herzegovina, Bulgaria, Croatia, the Czech Republic, Hungary, Israel, Kosovo, Montenegro, New Zealand, Romania, Serbia and Slovakia. Which group company owns the trademark is not stated."
     sources: [source:abi-20f-2025]
   - id: relationship:anheuser-busch-inbev-michelob-ultra
     type: owns_brand
@@ -144,7 +151,7 @@ relationships:
     to: brand:becks
     validFrom: "2026-03-03"
     scope: { include: world }
-    note: "One of ABI's multi-country brands. Which group company owns the trademark is not stated."
+    note: "One of ABI's multi-country brands; licensed to third parties, not named here, in Algeria, Bosnia and Herzegovina, Bulgaria, Croatia, Hungary, Kosovo, Montenegro, New Zealand, Romania, Serbia, Slovakia, Tunisia and Turkey. Which group company owns the trademark is not stated."
     sources: [source:abi-20f-2025]
   - id: relationship:anheuser-busch-inbev-hoegaarden
     type: owns_brand
@@ -314,6 +321,38 @@ relationships:
     scope: { include: world }
     note: "A spirits-based ready-to-drink brand ABI sells in the United States. Which group company owns the trademark is not stated."
     sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-castle-lager
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:castle-lager
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "One of the ABI brands perpetually licensed to Molson Coors in the US. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-cusquena
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:cusquena
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "One of the ABI brands perpetually licensed to Molson Coors in the US. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-redds
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:redds
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "One of the ABI brands perpetually licensed to Molson Coors in the US. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-bud
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:bud
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "ABI's Bud brand, brewed and sold under licence by Anadolu Efes in Turkey. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
   - id: relationship:constellation-brands-licence-corona
     type: licenses_brand
     from: entity:constellation-brands
@@ -323,4 +362,94 @@ relationships:
     scope: { include: [US, GU] }
     coverage: "The exclusive and perpetual right to market and sell Corona in the 50 US states, the District of Columbia and Guam."
     note: "Granted in 2013, when Grupo Modelo sold its US business to Constellation Brands as part of its combination with ABI. The licensor within ABI is not named here."
+    sources: [source:abi-20f-2025]
+  - id: relationship:molson-coors-licence-aguila
+    type: licenses_brand
+    from: entity:molson-coors
+    to: brand:aguila
+    validFrom: "2026-03-03"
+    scope: { include: [US, PR] }
+    coverage: "A perpetual licence for the 50 US states, the District of Columbia and Puerto Rico; ABI keeps the right to brew and distribute it elsewhere."
+    note: "When the licence began is not recorded here."
+    sources: [source:abi-20f-2025]
+  - id: relationship:molson-coors-licence-cristal-beer
+    type: licenses_brand
+    from: entity:molson-coors
+    to: brand:cristal-beer
+    validFrom: "2026-03-03"
+    scope: { include: [US, PR] }
+    coverage: "A perpetual licence for the 50 US states, the District of Columbia and Puerto Rico; ABI keeps the right to brew and distribute it elsewhere."
+    note: "When the licence began is not recorded here."
+    sources: [source:abi-20f-2025]
+  - id: relationship:molson-coors-licence-castle-lager
+    type: licenses_brand
+    from: entity:molson-coors
+    to: brand:castle-lager
+    validFrom: "2026-03-03"
+    scope: { include: [US, PR] }
+    coverage: "A perpetual licence for the 50 US states, the District of Columbia and Puerto Rico; ABI keeps the right to brew and distribute it elsewhere."
+    note: "When the licence began is not recorded here."
+    sources: [source:abi-20f-2025]
+  - id: relationship:molson-coors-licence-cusquena
+    type: licenses_brand
+    from: entity:molson-coors
+    to: brand:cusquena
+    validFrom: "2026-03-03"
+    scope: { include: [US, PR] }
+    coverage: "A perpetual licence for the 50 US states, the District of Columbia and Puerto Rico; ABI keeps the right to brew and distribute it elsewhere."
+    note: "When the licence began is not recorded here."
+    sources: [source:abi-20f-2025]
+  - id: relationship:molson-coors-licence-redds
+    type: licenses_brand
+    from: entity:molson-coors
+    to: brand:redds
+    validFrom: "2026-03-03"
+    scope: { include: [US, PR] }
+    coverage: "A perpetual licence for the 50 US states, the District of Columbia and Puerto Rico; ABI keeps the right to brew and distribute it elsewhere."
+    note: "When the licence began is not recorded here."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anadolu-efes-licence-bud
+    type: licenses_brand
+    from: entity:anadolu-efes
+    to: brand:bud
+    validFrom: "2026-03-03"
+    scope: { include: [TR] }
+    coverage: "The right to brew and sell the brand in Turkey."
+    note: "When the licence began is not recorded here."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anadolu-efes-licence-stella-artois
+    type: licenses_brand
+    from: entity:anadolu-efes
+    to: brand:stella-artois
+    validFrom: "2026-03-03"
+    scope: { include: [TR] }
+    coverage: "The right to brew and sell the brand in Turkey."
+    note: "When the licence began is not recorded here."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anadolu-efes-licence-becks
+    type: licenses_brand
+    from: entity:anadolu-efes
+    to: brand:becks
+    validFrom: "2026-03-03"
+    scope: { include: [TR] }
+    coverage: "The right to brew and sell the brand in Turkey."
+    note: "When the licence began is not recorded here."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-stake-ab-inbev-efes
+    type: holds_stake
+    from: entity:anheuser-busch-inbev
+    to: entity:ab-inbev-efes
+    validFrom: "2018-03-30"
+    startKnown: true
+    stakePct: 50
+    scope: { include: world }
+    note: "A 50% non-controlling stake since ABI's Russian and Ukrainian businesses were merged with Anadolu Efes's on 30 March 2018. ABI announced on 22 April 2022 that it would sell it; the agreed sale did not get the required approvals, and a Russian decree of 30 December 2024 placed the Russian operations under temporary management."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anadolu-efes-owns-ab-inbev-efes
+    type: owns
+    from: entity:anadolu-efes
+    to: entity:ab-inbev-efes
+    validFrom: "2018-03-30"
+    scope: { include: world }
+    note: "ABI calls Anadolu Efes the controlling shareholder of AB InBev Efes; its share is not given."
     sources: [source:abi-20f-2025]
