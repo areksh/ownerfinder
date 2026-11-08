@@ -42,10 +42,21 @@ function answer(partial: Partial<LookupAnswer>): LookupAnswer {
     outcome: "linked",
     approximate: false,
     paths: [],
+    listings: [],
     sources: { [SOURCE.id]: SOURCE },
     ...partial,
   };
 }
+
+const FINDING = {
+  id: "source:finding",
+  url: "https://example.org/finding",
+  title: "Decision",
+  publisher: "A regulator",
+  retrieved: "2026-11-08",
+};
+
+const CRITERIA = [{ id: "criterion:competition", name: "Competition", description: "..." }];
 
 const linked = answer({
   paths: [
@@ -94,6 +105,38 @@ describe("Answer", () => {
         .getAllByRole("listitem")
         .map((li) => li.textContent),
     ).toEqual(["Mars, Incorporated", "Ferrero"]);
+  });
+
+  it("says why each listed company is on the list, citing the evidence's sources", () => {
+    render(
+      <Answer
+        criteria={CRITERIA}
+        answer={{
+          ...linked,
+          listings: [
+            {
+              entity: mars.id,
+              evidence: [
+                {
+                  criterion: "criterion:competition",
+                  summary: "A regulator fined it for restricting trade.",
+                  status: "found",
+                  date: "2024-05",
+                  sources: [FINDING.id],
+                },
+              ],
+            },
+          ],
+          sources: { [SOURCE.id]: SOURCE, [FINDING.id]: FINDING },
+        }}
+      />,
+    );
+    const why = screen.getByRole("region", { name: "Why Mars, Incorporated is on the list" });
+    expect(why.textContent).toContain("Competition: A regulator fined it for restricting trade.");
+    expect(why.textContent).toContain("Found by a court, regulator or official inquiry, May 2024.");
+    expect(within(why).getByRole("link", { name: "Source 2" }).getAttribute("href")).toBe(
+      "#source-2",
+    );
   });
 
   it("describes each link in words, with its dates, scope and coverage", () => {

@@ -28,9 +28,27 @@ describe("checkSettings", () => {
       includePassive: false,
     });
   });
+
+  it("reads the chosen criteria, telling none chosen from no choice made", () => {
+    expect(settings("country=GB").criteria).toBeUndefined();
+    expect(
+      settings("country=GB&criteria=&criteria=criterion%3Aa&criteria=criterion%3Ab").criteria,
+    ).toEqual(["criterion:a", "criterion:b"]);
+    expect(settings("country=GB&criteria=").criteria).toEqual([]);
+  });
 });
 
 describe("lookupApiPath", () => {
+  it("passes the chosen criteria, including an empty choice", () => {
+    const base = { country: "GB", includePassive: false };
+    expect(
+      lookupApiPath("brand:persil", { ...base, criteria: ["criterion:a", "criterion:b"] }),
+    ).toBe("/lookup/brand%3Apersil?country=GB&criteria=criterion%3Aa%2Ccriterion%3Ab");
+    expect(lookupApiPath("brand:persil", { ...base, criteria: [] })).toBe(
+      "/lookup/brand%3Apersil?country=GB&criteria=",
+    );
+  });
+
   it("passes the settings to the API, encoding the id", () => {
     expect(
       lookupApiPath("brand:kelloggs", {

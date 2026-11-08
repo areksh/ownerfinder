@@ -1,3 +1,4 @@
+import type { Criterion } from "@ecf/model";
 import type { LookupAnswer } from "../api.server";
 import {
   APPROXIMATE,
@@ -7,12 +8,20 @@ import {
   SHARE,
   TOP_OF_CHAIN,
   unknownExplanation,
+  whyListed,
 } from "../copy";
 import { LinkItem, numberSources } from "./LinkItem";
+import { Reasons } from "./Reasons";
 import { Sources } from "./Sources";
 
 /** The answer to one lookup: outcome, every path link by link, and the sources. */
-export function Answer({ answer }: { answer: LookupAnswer }) {
+export function Answer({
+  answer,
+  criteria = [],
+}: {
+  answer: LookupAnswer;
+  criteria?: Criterion[];
+}) {
   const outcome = OUTCOME[answer.outcome];
   const sourceNumber = numberSources(answer.sources);
   const listed = [
@@ -21,6 +30,9 @@ export function Answer({ answer }: { answer: LookupAnswer }) {
     ).values(),
   ];
   const name = answer.node?.name ?? answer.query.node;
+  const names = new Map(
+    answer.paths.flatMap((p) => p.entities).map((e) => [e.id, e.name] as const),
+  );
 
   return (
     <section aria-labelledby="outcome">
@@ -37,6 +49,15 @@ export function Answer({ answer }: { answer: LookupAnswer }) {
           ))}
         </ul>
       )}
+      {answer.listings.map((listing) => {
+        const heading = whyListed(names.get(listing.entity) ?? listing.entity);
+        return (
+          <section key={listing.entity} aria-label={heading}>
+            <h3>{heading}</h3>
+            <Reasons evidence={listing.evidence} criteria={criteria} sourceNumber={sourceNumber} />
+          </section>
+        );
+      })}
       {answer.approximate && <p>{APPROXIMATE}</p>}
 
       {answer.paths.map((path) => {

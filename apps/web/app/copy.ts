@@ -32,6 +32,16 @@ export const GRADE: Record<NonNullable<LookupAnswer["paths"][number]["grade"]>, 
   distributed: "Distribution",
 };
 
+/** How established a piece of evidence is (docs/listings.md). */
+export const STATUS = {
+  alleged: "Alleged; not established",
+  found: "Found by a court, regulator or official inquiry",
+  settled: "Settled without admission",
+  admitted: "Admitted by the company",
+} as const;
+
+export const whyListed = (name: string) => `Why ${name} is on the list`;
+
 export const APPROXIMATE =
   "Some dates in the sources are only known to the month or year, so this answer may differ close to those dates.";
 
@@ -154,6 +164,7 @@ export const CHECK = {
   dateHint: "Leave empty for today.",
   minStakePct: "Ignore stakes below (per cent)",
   includePassive: "Include passive holdings, such as index funds",
+  criteria: "Reasons for listing to count",
   update: "Update the answer",
   profile: (name: string) => `More about ${name}`,
   asked: (country: string, date: string) => `For ${countryName(country)} on ${partialDate(date)}.`,

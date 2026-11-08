@@ -1,6 +1,6 @@
 import { COUNTRY_CODES } from "@ecf/model";
 import { data, Form, Link } from "react-router";
-import { apiGet, type LookupAnswer } from "../api.server";
+import { apiGet, type CriteriaAnswer, type LookupAnswer } from "../api.server";
 import { Answer } from "../components/Answer";
 import { cloudflareContext } from "../context";
 import { CHECK, countryLabel, SITE_NAME } from "../copy";
@@ -14,9 +14,12 @@ const COUNTRIES = [...COUNTRY_CODES]
 export async function loader({ request, params, context }: Route.LoaderArgs) {
   const { env, country } = context.get(cloudflareContext);
   const settings = checkSettings(new URL(request.url).searchParams, country);
-  const result = await apiGet<LookupAnswer>(env.API, lookupApiPath(params.id, settings));
+  const [result, criteria] = await Promise.all([
+    apiGet<LookupAnswer>(env.API, lookupApiPath(params.id, settings)),
+    apiGet<CriteriaAnswer>(env.API, "/criteria"),
+  ]);
   if (!result.ok) throw data(result.message, { status: result.status === 400 ? 400 : 502 });
-  return { answer: result.body, settings };
+  return { answer: result.body, settings, criteria: criteria.ok ? criteria.body.criteria : [] };
 }
 
 export function meta({ loaderData: loaded }: Route.MetaArgs) {
@@ -25,13 +28,13 @@ export function meta({ loaderData: loaded }: Route.MetaArgs) {
 }
 
 export default function Check({ loaderData }: Route.ComponentProps) {
-  const { answer, settings } = loaderData;
+  const { answer, settings, criteria } = loaderData;
   const name = answer.node?.name ?? answer.query.node;
   return (
     <>
       <h1>{name}</h1>
       <p>{CHECK.asked(answer.query.country, answer.query.date)}</p>
-      <Answer answer={answer} />
+      <Answer answer={answer} criteria={criteria} />
       {answer.node !== null && (
         <p>
           <Link to={`/profile/${encodeURIComponent(answer.node.id)}`}>{CHECK.profile(name)}</Link>
@@ -81,6 +84,29 @@ export default function Check({ loaderData }: Route.ComponentProps) {
           />{" "}
           <label htmlFor="includePassive">{CHECK.includePassive}</label>
         </p>
+        {criteria.length > 0 && (
+          <fieldset>
+            <legend>{CHECK.criteria}</legend>
+            {/* Sent even when no box is ticked, so "none" is not read as "all". */}
+            <input type="hidden" name="criteria" value="" />
+            {criteria.map((c) => (
+              <p key={c.id}>
+                <input
+                  id={c.id}
+                  name="criteria"
+                  type="checkbox"
+                  value={c.id}
+                  defaultChecked={
+                    settings.criteria === undefined || settings.criteria.includes(c.id)
+                  }
+                  aria-describedby={`${c.id}-about`}
+                />{" "}
+                <label htmlFor={c.id}>{c.name}</label>{" "}
+                <span id={`${c.id}-about`}>{c.description}</span>
+              </p>
+            ))}
+          </fieldset>
+        )}
         <button type="submit">{CHECK.update}</button>
       </Form>
     </>

@@ -19,7 +19,8 @@ on the request form.
 | `/request`      | A form to request a company, brand or correction, which opens a GitHub issue for the curator.                                                                  |
 
 The check page takes the API's lookup parameters in its query string
-(`country`, `date`, `minStakePct`, `includePassive`, `criteria`), so every
+(`country`, `date`, `minStakePct`, `includePassive`, and `criteria`
+repeated once per chosen criterion), so every
 answer has a shareable URL. Without `country`, it uses the visitor's
 country as Cloudflare reports it for the request, falling back to `GB`;
 the chosen country is always shown and can be changed.
@@ -34,6 +35,20 @@ does not support:
 | `linked`  | "Linked to a listed company"        | which listed companies, and how, link by link with sources.                |
 | `no-link` | "No link to a listed company found" | "This means none is recorded, not that none exists." and the owners found. |
 | `unknown` | "Not in our records"                | that nothing is recorded for that country and date, and how to request it. |
+
+Beside a linked answer, each listed company it reaches has a "Why ... is
+on the list" section: every piece of evidence for the chosen criteria,
+named by criterion, with its status in words and its sources cited by
+number (docs/listings.md). Company profiles show the same evidence. The
+check page offers one checkbox per criterion; ticking none counts no
+criterion, so nothing is listed.
+
+| Status     | Shown as                                          |
+| ---------- | ------------------------------------------------- |
+| `alleged`  | "Alleged; not established"                        |
+| `found`    | "Found by a court, regulator or official inquiry" |
+| `settled`  | "Settled without admission"                       |
+| `admitted` | "Admitted by the company"                         |
 
 Each link is described in plain words from its type: owns, holds a stake
 of N% in, controls the board of, owns the brand, makes or sells it under

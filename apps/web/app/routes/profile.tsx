@@ -1,20 +1,24 @@
 import { data, Link } from "react-router";
-import { apiGet, type NodeAnswer } from "../api.server";
+import { apiGet, type CriteriaAnswer, type NodeAnswer } from "../api.server";
 import { LinkItem, numberSources } from "../components/LinkItem";
+import { Reasons } from "../components/Reasons";
 import { Sources } from "../components/Sources";
 import { cloudflareContext } from "../context";
-import { PROFILE, partialDate, SITE_NAME } from "../copy";
+import { PROFILE, SITE_NAME } from "../copy";
 import type { Route } from "./+types/profile";
 
 export async function loader({ params, context }: Route.LoaderArgs) {
   const { env } = context.get(cloudflareContext);
-  const result = await apiGet<NodeAnswer>(env.API, `/nodes/${encodeURIComponent(params.id)}`);
+  const [result, criteria] = await Promise.all([
+    apiGet<NodeAnswer>(env.API, `/nodes/${encodeURIComponent(params.id)}`),
+    apiGet<CriteriaAnswer>(env.API, "/criteria"),
+  ]);
   if (!result.ok) {
     throw data(result.message, {
       status: result.status === 400 || result.status === 404 ? result.status : 502,
     });
   }
-  return result.body;
+  return { ...result.body, criteria: criteria.ok ? criteria.body.criteria : [] };
 }
 
 export function meta({ loaderData: answer }: Route.MetaArgs) {
@@ -22,7 +26,7 @@ export function meta({ loaderData: answer }: Route.MetaArgs) {
 }
 
 export default function Profile({ loaderData }: Route.ComponentProps) {
-  const { node, listing, heldBy, holds, sources } = loaderData;
+  const { node, listing, heldBy, holds, sources, criteria } = loaderData;
   const sourceNumber = numberSources(sources);
   const section = (title: string, links: typeof heldBy) => (
     <section aria-labelledby={title}>
@@ -47,13 +51,7 @@ export default function Profile({ loaderData }: Route.ComponentProps) {
       {listing !== null && (
         <section aria-labelledby="listing">
           <h2 id="listing">{PROFILE.listing}</h2>
-          <ul>
-            {listing.evidence.map((e) => (
-              <li key={`${e.criterion}-${e.date}-${e.summary}`}>
-                {e.summary} ({e.status}, {partialDate(e.date)})
-              </li>
-            ))}
-          </ul>
+          <Reasons evidence={listing.evidence} criteria={criteria} sourceNumber={sourceNumber} />
         </section>
       )}
       {section(PROFILE.heldBy, heldBy)}

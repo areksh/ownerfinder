@@ -32,6 +32,7 @@ export interface LookupAnswer {
   outcome: "linked" | "no-link" | "unknown";
   approximate: boolean;
   paths: LookupPath[];
+  listings: Listing[];
   sources: Record<string, Source>;
 }
 
