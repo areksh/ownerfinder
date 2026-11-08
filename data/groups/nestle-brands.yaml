@@ -1,0 +1,791 @@
+# Nestlé's brands from its global A-Z list, its UK brand pages and Purina's US brand page. Joint-venture and licensed brands on those lists are recorded with their own owners (Cereal Partners, Froneri, General Mills).
+
+entities:
+  - { id: entity:societe-des-produits-nestle, name: "Société des Produits Nestlé S.A." }
+
+brands:
+  - { id: brand:adventuros, name: "Adventuros" }
+  - { id: brand:after-eight, name: "After Eight" }
+  - { id: brand:alfamino, name: "Alfamino" }
+  - { id: brand:baci-perugina, name: "Baci Perugina" }
+  - { id: brand:bakers, name: "Bakers" }
+  - { id: brand:bear-brand, name: "Bear Brand" }
+  - { id: brand:beta, name: "BETA" }
+  - { id: brand:black-magic, name: "Black Magic" }
+  - { id: brand:blue-riband, name: "Blue Riband" }
+  - { id: brand:bonio, name: "Bonio" }
+  - { id: brand:breeze, name: "Breeze" }
+  - { id: brand:busy, name: "Busy" }
+  - { id: brand:busy-bone, name: "Busy Bone" }
+  - { id: brand:buxton, name: "Buxton" }
+  - { id: brand:cailler, name: "Cailler" }
+  - { id: brand:carnation, name: "Carnation" }
+  - { id: brand:cerelac, name: "Cerelac" }
+  - { id: brand:contrex, name: "Contrex" }
+  - { id: brand:crunch, name: "Crunch" }
+  - { id: brand:dairy-box, name: "Dairy Box" }
+  - { id: brand:damak, name: "Damak" }
+  - { id: brand:dentalife, name: "Dentalife" }
+  - { id: brand:erikli, name: "Erikli" }
+  - { id: brand:garden-gourmet, name: "Garden Gourmet" }
+  - { id: brand:garoto, name: "Garoto" }
+  - { id: brand:go-cat, name: "Go-Cat" }
+  - { id: brand:gourmet, name: "Gourmet" }
+  - { id: brand:harvest-gourmet, name: "Harvest Gourmet" }
+  - { id: brand:henniez, name: "HENNIEZ" }
+  - { id: brand:hepar, name: "Hépar" }
+  - { id: brand:hot-pockets, name: "Hot Pockets" }
+  - { id: brand:hsu-fu-chi, name: "Hsu Fu Chi" }
+  - { id: brand:kit-and-kaboodle, name: "Kit & Kaboodle" }
+  - { id: brand:la-lechera, name: "La Lechera" }
+  - { id: brand:lean-cuisine, name: "Lean Cuisine" }
+  - { id: brand:levissima, name: "Levissima" }
+  - { id: brand:life-cuisine, name: "Life Cuisine" }
+  - { id: brand:lilys-kitchen, name: "Lily's Kitchen" }
+  - { id: brand:lion, name: "Lion" }
+  - { id: brand:little-steps, name: "Little Steps" }
+  - { id: brand:materna, name: "Materna" }
+  - { id: brand:meritene, name: "Meritene" }
+  - { id: brand:milkybar, name: "Milkybar" }
+  - { id: brand:milo, name: "Milo" }
+  - { id: brand:minami, name: "Minami" }
+  - { id: brand:minors, name: "Minor's" }
+  - { id: brand:modulen-ibd, name: "Modulen IBD" }
+  - { id: brand:moist-and-meaty, name: "Moist & Meaty" }
+  - { id: brand:molico, name: "Molico" }
+  - { id: brand:munch, name: "Munch" }
+  - { id: brand:munchies, name: "Munchies" }
+  - { id: brand:naeczowianka, name: "Nałęczowianka" }
+  - { id: brand:nancare, name: "Nancare" }
+  - { id: brand:nescafe-dolce-gusto, name: "Nescafé Dolce Gusto" }
+  - { id: brand:nestea, name: "Nestea" }
+  - { id: brand:nestle-pure-life, name: "Nestlé Pure Life" }
+  - { id: brand:nestle-vital, name: "Nestlé Vital" }
+  - { id: brand:nestum, name: "Nestum" }
+  - { id: brand:nido, name: "Nido" }
+  - { id: brand:optifibre, name: "Optifibre" }
+  - { id: brand:petivity, name: "Petivity" }
+  - { id: brand:polo, name: "Polo" }
+  - { id: brand:princes-gate, name: "Princes Gate" }
+  - { id: brand:pro-plan-veterinary-diets, name: "Pro Plan Veterinary Diets" }
+  - { id: brand:puppy-chow, name: "Puppy Chow" }
+  - { id: brand:quality-street, name: "Quality Street" }
+  - { id: brand:rolo, name: "Rolo" }
+  - { id: brand:rowntrees, name: "Rowntree's" }
+  - { id: brand:sahne-nuss, name: "Sahne Nuss" }
+  - { id: brand:sma, name: "SMA" }
+  - { id: brand:stouffers, name: "Stouffer's" }
+  - { id: brand:supercoat, name: "Supercoat" }
+  - { id: brand:terra-canis, name: "Terra Canis" }
+  - { id: brand:thomy, name: "Thomy" }
+  - { id: brand:toffee-crisp, name: "Toffee Crisp" }
+  - { id: brand:vittel, name: "Vittel" }
+  - { id: brand:walnut-whip, name: "Walnut Whip" }
+  - { id: brand:whisker-lickins, name: "Whisker Lickin's" }
+  - { id: brand:winalot, name: "Winalot" }
+  - { id: brand:yiyang, name: "Yiyang" }
+  - { id: brand:yorkie, name: "Yorkie" }
+
+relationships:
+  - id: relationship:nestle-societe-des-produits-nestle
+    type: owns
+    from: entity:nestle
+    to: entity:societe-des-produits-nestle
+    validFrom: "2026-02"
+    stakePct: 100
+    scope: { include: world }
+    sources: [source:nestle-financial-statements-2025]
+  - id: relationship:nestle-adventuros
+    type: owns_brand
+    from: entity:nestle
+    to: brand:adventuros
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-pet-food]
+  - id: relationship:nestle-after-eight
+    type: owns_brand
+    from: entity:nestle
+    to: brand:after-eight
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-confectionery]
+  - id: relationship:nestle-alfamino
+    type: owns_brand
+    from: entity:nestle
+    to: brand:alfamino
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-brands-a-z, source:nestle-uk-vitamins]
+  - id: relationship:spn-alpo
+    type: owns_brand
+    from: entity:societe-des-produits-nestle
+    to: brand:alpo
+    validFrom: "2026-06-18"
+    scope: { include: world }
+    note: "The page says Nestlé Purina trademarks are owned by Société des Produits Nestlé S.A. or used with permission."
+    sources: [source:purina-us-brands]
+  - id: relationship:nestle-baci-perugina
+    type: owns_brand
+    from: entity:nestle
+    to: brand:baci-perugina
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-bakers
+    type: owns_brand
+    from: entity:nestle
+    to: brand:bakers
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-brands-a-z, source:nestle-uk-pet-food]
+  - id: relationship:nestle-bear-brand
+    type: owns_brand
+    from: entity:nestle
+    to: brand:bear-brand
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:spn-beggin
+    type: owns_brand
+    from: entity:societe-des-produits-nestle
+    to: brand:beggin
+    validFrom: "2026-06-18"
+    scope: { include: world }
+    note: "The page says Nestlé Purina trademarks are owned by Société des Produits Nestlé S.A. or used with permission."
+    sources: [source:purina-us-brands]
+  - id: relationship:spn-beneful
+    type: owns_brand
+    from: entity:societe-des-produits-nestle
+    to: brand:beneful
+    validFrom: "2026-06-18"
+    scope: { include: world }
+    note: "The page says Nestlé Purina trademarks are owned by Société des Produits Nestlé S.A. or used with permission."
+    sources: [source:purina-us-brands]
+  - id: relationship:nestle-beta
+    type: owns_brand
+    from: entity:nestle
+    to: brand:beta
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-pet-food]
+  - id: relationship:nestle-black-magic
+    type: owns_brand
+    from: entity:nestle
+    to: brand:black-magic
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-confectionery]
+  - id: relationship:nestle-blue-riband
+    type: owns_brand
+    from: entity:nestle
+    to: brand:blue-riband
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-confectionery]
+  - id: relationship:nestle-bonio
+    type: owns_brand
+    from: entity:nestle
+    to: brand:bonio
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-pet-food]
+  - id: relationship:spn-breeze
+    type: owns_brand
+    from: entity:societe-des-produits-nestle
+    to: brand:breeze
+    validFrom: "2026-06-18"
+    scope: { include: world }
+    note: "The page says Nestlé Purina trademarks are owned by Société des Produits Nestlé S.A. or used with permission."
+    sources: [source:purina-us-brands]
+  - id: relationship:spn-busy
+    type: owns_brand
+    from: entity:societe-des-produits-nestle
+    to: brand:busy
+    validFrom: "2026-06-18"
+    scope: { include: world }
+    note: "The page says Nestlé Purina trademarks are owned by Société des Produits Nestlé S.A. or used with permission."
+    sources: [source:purina-us-brands]
+  - id: relationship:nestle-busy-bone
+    type: owns_brand
+    from: entity:nestle
+    to: brand:busy-bone
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-buxton
+    type: owns_brand
+    from: entity:nestle
+    to: brand:buxton
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-brands-a-z, source:nestle-uk-water]
+  - id: relationship:nestle-cailler
+    type: owns_brand
+    from: entity:nestle
+    to: brand:cailler
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-carnation
+    type: owns_brand
+    from: entity:nestle
+    to: brand:carnation
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-brands-a-z, source:nestle-uk-food-and-dairy]
+  - id: relationship:spn-cat-chow
+    type: owns_brand
+    from: entity:societe-des-produits-nestle
+    to: brand:cat-chow
+    validFrom: "2026-06-18"
+    scope: { include: world }
+    note: "The page says Nestlé Purina trademarks are owned by Société des Produits Nestlé S.A. or used with permission."
+    sources: [source:purina-us-brands]
+  - id: relationship:nestle-cerelac
+    type: owns_brand
+    from: entity:nestle
+    to: brand:cerelac
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-contrex
+    type: owns_brand
+    from: entity:nestle
+    to: brand:contrex
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-crunch
+    type: owns_brand
+    from: entity:nestle
+    to: brand:crunch
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-confectionery]
+  - id: relationship:nestle-dairy-box
+    type: owns_brand
+    from: entity:nestle
+    to: brand:dairy-box
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-confectionery]
+  - id: relationship:nestle-damak
+    type: owns_brand
+    from: entity:nestle
+    to: brand:damak
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:spn-dentalife
+    type: owns_brand
+    from: entity:societe-des-produits-nestle
+    to: brand:dentalife
+    validFrom: "2026-06-18"
+    scope: { include: world }
+    note: "The page says Nestlé Purina trademarks are owned by Société des Produits Nestlé S.A. or used with permission."
+    sources: [source:purina-us-brands]
+  - id: relationship:spn-dog-chow
+    type: owns_brand
+    from: entity:societe-des-produits-nestle
+    to: brand:dog-chow
+    validFrom: "2026-06-18"
+    scope: { include: world }
+    note: "The page says Nestlé Purina trademarks are owned by Société des Produits Nestlé S.A. or used with permission."
+    sources: [source:purina-us-brands]
+  - id: relationship:nestle-erikli
+    type: owns_brand
+    from: entity:nestle
+    to: brand:erikli
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:spn-fancy-feast
+    type: owns_brand
+    from: entity:societe-des-produits-nestle
+    to: brand:fancy-feast
+    validFrom: "2026-06-18"
+    scope: { include: world }
+    note: "The page says Nestlé Purina trademarks are owned by Société des Produits Nestlé S.A. or used with permission."
+    sources: [source:purina-us-brands]
+  - id: relationship:spn-friskies
+    type: owns_brand
+    from: entity:societe-des-produits-nestle
+    to: brand:friskies
+    validFrom: "2026-06-18"
+    scope: { include: world }
+    note: "The page says Nestlé Purina trademarks are owned by Société des Produits Nestlé S.A. or used with permission."
+    sources: [source:purina-us-brands]
+  - id: relationship:nestle-garden-gourmet
+    type: owns_brand
+    from: entity:nestle
+    to: brand:garden-gourmet
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-garoto
+    type: owns_brand
+    from: entity:nestle
+    to: brand:garoto
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-go-cat
+    type: owns_brand
+    from: entity:nestle
+    to: brand:go-cat
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-pet-food]
+  - id: relationship:nestle-gourmet
+    type: owns_brand
+    from: entity:nestle
+    to: brand:gourmet
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-brands-a-z, source:nestle-uk-pet-food]
+  - id: relationship:nestle-harvest-gourmet
+    type: owns_brand
+    from: entity:nestle
+    to: brand:harvest-gourmet
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-henniez
+    type: owns_brand
+    from: entity:nestle
+    to: brand:henniez
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-hepar
+    type: owns_brand
+    from: entity:nestle
+    to: brand:hepar
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-hot-pockets
+    type: owns_brand
+    from: entity:nestle
+    to: brand:hot-pockets
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-hsu-fu-chi
+    type: owns_brand
+    from: entity:nestle
+    to: brand:hsu-fu-chi
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:spn-kit-and-kaboodle
+    type: owns_brand
+    from: entity:societe-des-produits-nestle
+    to: brand:kit-and-kaboodle
+    validFrom: "2026-06-18"
+    scope: { include: world }
+    note: "The page says Nestlé Purina trademarks are owned by Société des Produits Nestlé S.A. or used with permission."
+    sources: [source:purina-us-brands]
+  - id: relationship:nestle-la-lechera
+    type: owns_brand
+    from: entity:nestle
+    to: brand:la-lechera
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-lean-cuisine
+    type: owns_brand
+    from: entity:nestle
+    to: brand:lean-cuisine
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-levissima
+    type: owns_brand
+    from: entity:nestle
+    to: brand:levissima
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-life-cuisine
+    type: owns_brand
+    from: entity:nestle
+    to: brand:life-cuisine
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-lilys-kitchen
+    type: owns_brand
+    from: entity:nestle
+    to: brand:lilys-kitchen
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-lion
+    type: owns_brand
+    from: entity:nestle
+    to: brand:lion
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-confectionery]
+  - id: relationship:nestle-little-steps
+    type: owns_brand
+    from: entity:nestle
+    to: brand:little-steps
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-infant-formula]
+  - id: relationship:nestle-materna
+    type: owns_brand
+    from: entity:nestle
+    to: brand:materna
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-meritene
+    type: owns_brand
+    from: entity:nestle
+    to: brand:meritene
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-vitamins]
+  - id: relationship:nestle-milkybar
+    type: owns_brand
+    from: entity:nestle
+    to: brand:milkybar
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-brands-a-z, source:nestle-uk-confectionery]
+  - id: relationship:nestle-milo
+    type: owns_brand
+    from: entity:nestle
+    to: brand:milo
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-minami
+    type: owns_brand
+    from: entity:nestle
+    to: brand:minami
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-vitamins]
+  - id: relationship:nestle-minors
+    type: owns_brand
+    from: entity:nestle
+    to: brand:minors
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-modulen-ibd
+    type: owns_brand
+    from: entity:nestle
+    to: brand:modulen-ibd
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-vitamins]
+  - id: relationship:spn-moist-and-meaty
+    type: owns_brand
+    from: entity:societe-des-produits-nestle
+    to: brand:moist-and-meaty
+    validFrom: "2026-06-18"
+    scope: { include: world }
+    note: "The page says Nestlé Purina trademarks are owned by Société des Produits Nestlé S.A. or used with permission."
+    sources: [source:purina-us-brands]
+  - id: relationship:nestle-molico
+    type: owns_brand
+    from: entity:nestle
+    to: brand:molico
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-munch
+    type: owns_brand
+    from: entity:nestle
+    to: brand:munch
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-munchies
+    type: owns_brand
+    from: entity:nestle
+    to: brand:munchies
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-confectionery]
+  - id: relationship:nestle-naeczowianka
+    type: owns_brand
+    from: entity:nestle
+    to: brand:naeczowianka
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-nancare
+    type: owns_brand
+    from: entity:nestle
+    to: brand:nancare
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-nescafe-dolce-gusto
+    type: owns_brand
+    from: entity:nestle
+    to: brand:nescafe-dolce-gusto
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-brands-a-z, source:nestle-uk-coffee]
+  - id: relationship:nestle-nestea
+    type: owns_brand
+    from: entity:nestle
+    to: brand:nestea
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-nestle-pure-life
+    type: owns_brand
+    from: entity:nestle
+    to: brand:nestle-pure-life
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-brands-a-z, source:nestle-uk-water]
+  - id: relationship:nestle-nestle-vital
+    type: owns_brand
+    from: entity:nestle
+    to: brand:nestle-vital
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-nestum
+    type: owns_brand
+    from: entity:nestle
+    to: brand:nestum
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-nido
+    type: owns_brand
+    from: entity:nestle
+    to: brand:nido
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-optifibre
+    type: owns_brand
+    from: entity:nestle
+    to: brand:optifibre
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-vitamins]
+  - id: relationship:spn-petivity
+    type: owns_brand
+    from: entity:societe-des-produits-nestle
+    to: brand:petivity
+    validFrom: "2026-06-18"
+    scope: { include: world }
+    note: "The page says Nestlé Purina trademarks are owned by Société des Produits Nestlé S.A. or used with permission."
+    sources: [source:purina-us-brands]
+  - id: relationship:nestle-polo
+    type: owns_brand
+    from: entity:nestle
+    to: brand:polo
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-confectionery]
+  - id: relationship:nestle-princes-gate
+    type: owns_brand
+    from: entity:nestle
+    to: brand:princes-gate
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-water]
+  - id: relationship:spn-pro-plan
+    type: owns_brand
+    from: entity:societe-des-produits-nestle
+    to: brand:pro-plan
+    validFrom: "2026-06-18"
+    scope: { include: world }
+    note: "The page says Nestlé Purina trademarks are owned by Société des Produits Nestlé S.A. or used with permission."
+    sources: [source:purina-us-brands]
+  - id: relationship:spn-pro-plan-veterinary-diets
+    type: owns_brand
+    from: entity:societe-des-produits-nestle
+    to: brand:pro-plan-veterinary-diets
+    validFrom: "2026-06-18"
+    scope: { include: world }
+    note: "The page says Nestlé Purina trademarks are owned by Société des Produits Nestlé S.A. or used with permission."
+    sources: [source:purina-us-brands]
+  - id: relationship:spn-puppy-chow
+    type: owns_brand
+    from: entity:societe-des-produits-nestle
+    to: brand:puppy-chow
+    validFrom: "2026-06-18"
+    scope: { include: world }
+    note: "The page says Nestlé Purina trademarks are owned by Société des Produits Nestlé S.A. or used with permission."
+    sources: [source:purina-us-brands]
+  - id: relationship:spn-purina-one
+    type: owns_brand
+    from: entity:societe-des-produits-nestle
+    to: brand:purina-one
+    validFrom: "2026-06-18"
+    scope: { include: world }
+    note: "The page says Nestlé Purina trademarks are owned by Société des Produits Nestlé S.A. or used with permission."
+    sources: [source:purina-us-brands]
+  - id: relationship:nestle-quality-street
+    type: owns_brand
+    from: entity:nestle
+    to: brand:quality-street
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-brands-a-z, source:nestle-uk-confectionery]
+  - id: relationship:nestle-rolo
+    type: owns_brand
+    from: entity:nestle
+    to: brand:rolo
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-confectionery]
+  - id: relationship:nestle-rowntrees
+    type: owns_brand
+    from: entity:nestle
+    to: brand:rowntrees
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-confectionery]
+  - id: relationship:nestle-sahne-nuss
+    type: owns_brand
+    from: entity:nestle
+    to: brand:sahne-nuss
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-sma
+    type: owns_brand
+    from: entity:nestle
+    to: brand:sma
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-infant-formula]
+  - id: relationship:nestle-stouffers
+    type: owns_brand
+    from: entity:nestle
+    to: brand:stouffers
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-supercoat
+    type: owns_brand
+    from: entity:nestle
+    to: brand:supercoat
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-terra-canis
+    type: owns_brand
+    from: entity:nestle
+    to: brand:terra-canis
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-thomy
+    type: owns_brand
+    from: entity:nestle
+    to: brand:thomy
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:spn-tidy-cats
+    type: owns_brand
+    from: entity:societe-des-produits-nestle
+    to: brand:tidy-cats
+    validFrom: "2026-06-18"
+    scope: { include: world }
+    note: "The page says Nestlé Purina trademarks are owned by Société des Produits Nestlé S.A. or used with permission."
+    sources: [source:purina-us-brands]
+  - id: relationship:nestle-toffee-crisp
+    type: owns_brand
+    from: entity:nestle
+    to: brand:toffee-crisp
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-confectionery]
+  - id: relationship:nestle-vittel
+    type: owns_brand
+    from: entity:nestle
+    to: brand:vittel
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-walnut-whip
+    type: owns_brand
+    from: entity:nestle
+    to: brand:walnut-whip
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-confectionery]
+  - id: relationship:spn-whisker-lickins
+    type: owns_brand
+    from: entity:societe-des-produits-nestle
+    to: brand:whisker-lickins
+    validFrom: "2026-06-18"
+    scope: { include: world }
+    note: "The page says Nestlé Purina trademarks are owned by Société des Produits Nestlé S.A. or used with permission."
+    sources: [source:purina-us-brands]
+  - id: relationship:nestle-winalot
+    type: owns_brand
+    from: entity:nestle
+    to: brand:winalot
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-pet-food]
+  - id: relationship:nestle-yiyang
+    type: owns_brand
+    from: entity:nestle
+    to: brand:yiyang
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands; that list also includes brands sold through joint ventures and licences, which are recorded with their own owners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:nestle-yorkie
+    type: owns_brand
+    from: entity:nestle
+    to: brand:yorkie
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-uk-confectionery]

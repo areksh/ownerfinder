@@ -45,3 +45,68 @@ sources:
     publisher: "Nestlé Holdings, Inc."
     published: "2026-03"
     retrieved: "2026-11-08"
+  - id: source:nestle-brands-a-z
+    url: https://www.nestle.com/brands/brandssearchlist
+    title: "Nestlé Brands List from A-Z"
+    publisher: "Nestlé S.A."
+    retrieved: "2026-11-08"
+  - id: source:purina-us-brands
+    url: https://www.purina.com/brands
+    title: "Our Brands | Purina US"
+    publisher: "Nestlé Purina PetCare Company"
+    published: "2026-06-18"
+    retrieved: "2026-11-08"
+    archiveUrl: https://web.archive.org/web/20260618105140/https://www.purina.com/brands
+  - id: source:nestle-uk-coffee
+    url: https://www.nestle.co.uk/en-gb/brands/coffee-brands-new
+    title: "Coffee Brands | Nestlé UK & Ireland"
+    publisher: "Nestlé UK & Ireland"
+    retrieved: "2026-11-08"
+  - id: source:nestle-uk-confectionery
+    url: https://www.nestle.co.uk/en-gb/brands/confectionery
+    title: "Confectionery | Nestlé UK & Ireland"
+    publisher: "Nestlé UK & Ireland"
+    retrieved: "2026-11-08"
+  - id: source:nestle-uk-food-and-dairy
+    url: https://www.nestle.co.uk/en-gb/brands/food-and-dairy
+    title: "Food and Dairy | Nestlé UK & Ireland"
+    publisher: "Nestlé UK & Ireland"
+    retrieved: "2026-11-08"
+  - id: source:nestle-uk-infant-formula
+    url: https://www.nestle.co.uk/en-gb/brands/infant-formula
+    title: "Infant Formula | Nestlé UK & Ireland"
+    publisher: "Nestlé UK & Ireland"
+    retrieved: "2026-11-08"
+  - id: source:nestle-uk-pet-food
+    url: https://www.nestle.co.uk/en-gb/brands/pet-food
+    title: "Pet Food | Nestlé UK & Ireland"
+    publisher: "Nestlé UK & Ireland"
+    retrieved: "2026-11-08"
+  - id: source:nestle-uk-vitamins
+    url: https://www.nestle.co.uk/en-gb/brands/vitamins-and-supplements
+    title: "Vitamins and Supplements | Nestlé UK & Ireland"
+    publisher: "Nestlé UK & Ireland"
+    retrieved: "2026-11-08"
+  - id: source:nestle-uk-water
+    url: https://www.nestle.co.uk/en-gb/brands/water
+    title: "Water Brands | Nestlé UK & Ireland"
+    publisher: "Nestlé UK & Ireland"
+    retrieved: "2026-11-08"
+  - id: source:general-mills-10k-2026
+    url: https://www.sec.gov/Archives/edgar/data/40704/000162828026046466/gis-20260531.htm
+    title: "General Mills, Inc., Form 10-K for the fiscal year ended May 31, 2026"
+    publisher: "General Mills, Inc."
+    published: "2026-07-01"
+    retrieved: "2026-11-08"
+  - id: source:cpw-about-2026
+    url: https://www.nestle-cereals.com/uk/our-promises/about-cpw
+    title: "About Cereal Partners Worldwide (CPW) | Nestlé Cereals"
+    publisher: "Cereal Partners Worldwide"
+    published: "2026-10-28"
+    retrieved: "2026-11-08"
+    archiveUrl: https://web.archive.org/web/20261028050628/https://www.nestle-cereals.com/uk/our-promises/about-cpw
+  - id: source:froneri-brands
+    url: https://www.froneri.com/brands/
+    title: "Froneri Brands | Froneri Ice Cream"
+    publisher: "Froneri International Limited"
+    retrieved: "2026-11-08"

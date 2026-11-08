@@ -148,80 +148,10 @@ relationships:
     validFrom: "2026-03"
     scope: { include: world }
     sources: [source:nestle-holdings-fs-2025]
-  - id: relationship:nestle-dog-chow
-    type: owns_brand
-    from: entity:nestle
-    to: brand:dog-chow
-    validFrom: "2026-03"
-    scope: { include: world }
-    sources: [source:nestle-holdings-fs-2025]
-  - id: relationship:nestle-cat-chow
-    type: owns_brand
-    from: entity:nestle
-    to: brand:cat-chow
-    validFrom: "2026-03"
-    scope: { include: world }
-    sources: [source:nestle-holdings-fs-2025]
-  - id: relationship:nestle-pro-plan
-    type: owns_brand
-    from: entity:nestle
-    to: brand:pro-plan
-    validFrom: "2026-03"
-    scope: { include: world }
-    sources: [source:nestle-holdings-fs-2025]
-  - id: relationship:nestle-beneful
-    type: owns_brand
-    from: entity:nestle
-    to: brand:beneful
-    validFrom: "2026-03"
-    scope: { include: world }
-    sources: [source:nestle-holdings-fs-2025]
-  - id: relationship:nestle-friskies
-    type: owns_brand
-    from: entity:nestle
-    to: brand:friskies
-    validFrom: "2026-03"
-    scope: { include: world }
-    sources: [source:nestle-holdings-fs-2025]
-  - id: relationship:nestle-alpo
-    type: owns_brand
-    from: entity:nestle
-    to: brand:alpo
-    validFrom: "2026-03"
-    scope: { include: world }
-    sources: [source:nestle-holdings-fs-2025]
-  - id: relationship:nestle-purina-one
-    type: owns_brand
-    from: entity:nestle
-    to: brand:purina-one
-    validFrom: "2026-03"
-    scope: { include: world }
-    sources: [source:nestle-holdings-fs-2025]
-  - id: relationship:nestle-fancy-feast
-    type: owns_brand
-    from: entity:nestle
-    to: brand:fancy-feast
-    validFrom: "2026-03"
-    scope: { include: world }
-    sources: [source:nestle-holdings-fs-2025]
   - id: relationship:nestle-beyond-pet-food
     type: owns_brand
     from: entity:nestle
     to: brand:beyond-pet-food
-    validFrom: "2026-03"
-    scope: { include: world }
-    sources: [source:nestle-holdings-fs-2025]
-  - id: relationship:nestle-beggin
-    type: owns_brand
-    from: entity:nestle
-    to: brand:beggin
-    validFrom: "2026-03"
-    scope: { include: world }
-    sources: [source:nestle-holdings-fs-2025]
-  - id: relationship:nestle-tidy-cats
-    type: owns_brand
-    from: entity:nestle
-    to: brand:tidy-cats
     validFrom: "2026-03"
     scope: { include: world }
     sources: [source:nestle-holdings-fs-2025]

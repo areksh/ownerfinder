@@ -11,9 +11,9 @@ import { checkData } from "../src/check.ts";
 
 const { graph, problems } = await checkData(join(import.meta.dirname, "../../../data"));
 
-function chains(node: string, country: string) {
+function chains(node: string, country: string, date = "2026-11-07") {
   if (graph === undefined) throw new Error("data/ is invalid");
-  return resolve(graph, { node, date: "2026-11-07", country }).paths.map(
+  return resolve(graph, { node, date, country }).paths.map(
     (p) => `${p.grade}: ${p.entities.join(" > ")}`,
   );
 }
@@ -60,6 +60,23 @@ describe("answers that depend on the country", () => {
     expect(chains("brand:digiorno", "US")).toEqual([
       "owned: entity:nestle",
       "distributed: entity:nestle-usa > entity:nestle-holdings > entity:nimco-us > entity:nestle",
+    ]);
+  });
+
+  it("Cheerios is General Mills', made by Nestle's joint venture outside North America", () => {
+    expect(chains("brand:cheerios", "GB")).toEqual([
+      "owned: entity:general-mills",
+      "licensed: entity:cereal-partners-worldwide > entity:nestle",
+    ]);
+    expect(chains("brand:cheerios", "US")).toEqual(["owned: entity:general-mills"]);
+  });
+
+  it("Haagen-Dazs is General Mills', under licence to Nestle and made by Froneri in the US", () => {
+    // Froneri's brand page was read on 8 November 2026, so its link is known from then.
+    expect(chains("brand:haagen-dazs", "US", "2026-11-08")).toEqual([
+      "owned: entity:general-mills",
+      "licensed: entity:nestle",
+      "distributed: entity:froneri > entity:nestle",
     ]);
   });
 

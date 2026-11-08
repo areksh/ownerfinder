@@ -1,0 +1,393 @@
+# Nestlé's joint ventures, Cereal Partners Worldwide (with General Mills) and Froneri, and General Mills as owner of the cereal and ice cream brands they use. General Mills is not listed.
+
+entities:
+  - { id: entity:general-mills, name: "General Mills, Inc." }
+  - { id: entity:cereal-partners-worldwide, name: "Cereal Partners Worldwide" }
+  - { id: entity:froneri, name: "Froneri Holdco Sàrl" }
+
+brands:
+  - { id: brand:cheerios, name: "Cheerios" }
+  - { id: brand:cookie-crisp, name: "Cookie Crisp" }
+  - { id: brand:golden-grahams, name: "Golden Grahams" }
+  - { id: brand:trix, name: "Trix" }
+  - { id: brand:haagen-dazs, name: "Häagen-Dazs" }
+  - { id: brand:cinnamon-toast-crunch, name: "Cinnamon Toast Crunch" }
+  - { id: brand:lucky-charms, name: "Lucky Charms" }
+  - { id: brand:chex, name: "Chex" }
+  - { id: brand:nature-valley, name: "Nature Valley" }
+  - { id: brand:old-el-paso, name: "Old El Paso" }
+  - { id: brand:pillsbury, name: "Pillsbury" }
+  - { id: brand:betty-crocker, name: "Betty Crocker" }
+  - { id: brand:blue-buffalo, name: "Blue Buffalo" }
+  - { id: brand:progresso, name: "Progresso" }
+  - { id: brand:totinos, name: "Totino's" }
+  - { id: brand:annies, name: "Annie's" }
+  - { id: brand:fiber-one, name: "Fiber One" }
+  - { id: brand:wheaties, name: "Wheaties" }
+  - { id: brand:larabar, name: "Lärabar" }
+  - { id: brand:kitkat-cereal, name: "KitKat Cereal" }
+  - { id: brand:lion-cereal, name: "Lion Cereal" }
+  - { id: brand:nesquik-cereal, name: "Nesquik Cereal" }
+  - { id: brand:shreddies, name: "Shreddies" }
+  - { id: brand:shredded-wheat, name: "Shredded Wheat" }
+  - { id: brand:curiously-cinnamon, name: "Curiously Cinnamon" }
+  - { id: brand:golden-nuggets, name: "Golden Nuggets" }
+  - { id: brand:go-free, name: "Go Free" }
+  - { id: brand:extreme, name: "Extrême" }
+  - { id: brand:drumstick, name: "Drumstick" }
+  - { id: brand:nuii, name: "Nuii" }
+  - { id: brand:outshine, name: "Outshine" }
+  - { id: brand:lotus-biscoff, name: "Lotus Biscoff" }
+
+relationships:
+  - id: relationship:general-mills-cheerios
+    type: owns_brand
+    from: entity:general-mills
+    to: brand:cheerios
+    validFrom: "2026-07-01"
+    scope: { include: world }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:general-mills-cookie-crisp
+    type: owns_brand
+    from: entity:general-mills
+    to: brand:cookie-crisp
+    validFrom: "2026-07-01"
+    scope: { include: world }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:general-mills-golden-grahams
+    type: owns_brand
+    from: entity:general-mills
+    to: brand:golden-grahams
+    validFrom: "2026-07-01"
+    scope: { include: world }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:general-mills-trix
+    type: owns_brand
+    from: entity:general-mills
+    to: brand:trix
+    validFrom: "2026-07-01"
+    scope: { include: world }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:general-mills-haagen-dazs
+    type: owns_brand
+    from: entity:general-mills
+    to: brand:haagen-dazs
+    validFrom: "2026-07-01"
+    scope: { include: world }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:general-mills-cinnamon-toast-crunch
+    type: owns_brand
+    from: entity:general-mills
+    to: brand:cinnamon-toast-crunch
+    validFrom: "2026-07-01"
+    scope: { include: world }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:general-mills-lucky-charms
+    type: owns_brand
+    from: entity:general-mills
+    to: brand:lucky-charms
+    validFrom: "2026-07-01"
+    scope: { include: world }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:general-mills-chex
+    type: owns_brand
+    from: entity:general-mills
+    to: brand:chex
+    validFrom: "2026-07-01"
+    scope: { include: world }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:general-mills-nature-valley
+    type: owns_brand
+    from: entity:general-mills
+    to: brand:nature-valley
+    validFrom: "2026-07-01"
+    scope: { include: world }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:general-mills-old-el-paso
+    type: owns_brand
+    from: entity:general-mills
+    to: brand:old-el-paso
+    validFrom: "2026-07-01"
+    scope: { include: world }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:general-mills-pillsbury
+    type: owns_brand
+    from: entity:general-mills
+    to: brand:pillsbury
+    validFrom: "2026-07-01"
+    scope: { include: world }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:general-mills-betty-crocker
+    type: owns_brand
+    from: entity:general-mills
+    to: brand:betty-crocker
+    validFrom: "2026-07-01"
+    scope: { include: world }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:general-mills-blue-buffalo
+    type: owns_brand
+    from: entity:general-mills
+    to: brand:blue-buffalo
+    validFrom: "2026-07-01"
+    scope: { include: world }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:general-mills-progresso
+    type: owns_brand
+    from: entity:general-mills
+    to: brand:progresso
+    validFrom: "2026-07-01"
+    scope: { include: world }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:general-mills-totinos
+    type: owns_brand
+    from: entity:general-mills
+    to: brand:totinos
+    validFrom: "2026-07-01"
+    scope: { include: world }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:general-mills-annies
+    type: owns_brand
+    from: entity:general-mills
+    to: brand:annies
+    validFrom: "2026-07-01"
+    scope: { include: world }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:general-mills-fiber-one
+    type: owns_brand
+    from: entity:general-mills
+    to: brand:fiber-one
+    validFrom: "2026-07-01"
+    scope: { include: world }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:general-mills-wheaties
+    type: owns_brand
+    from: entity:general-mills
+    to: brand:wheaties
+    validFrom: "2026-07-01"
+    scope: { include: world }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:general-mills-larabar
+    type: owns_brand
+    from: entity:general-mills
+    to: brand:larabar
+    validFrom: "2026-07-01"
+    scope: { include: world }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:nestle-cereal-partners-worldwide
+    type: holds_stake
+    from: entity:nestle
+    to: entity:cereal-partners-worldwide
+    validFrom: "2026-02"
+    stakePct: 50
+    scope: { include: world }
+    note: "A joint venture with General Mills (its 10-K). Nestlé's list of group companies gives 50% for each Cereal Partners company it lists: France, Poland, the UK and Australia."
+    sources: [source:nestle-financial-statements-2025, source:general-mills-10k-2026]
+  - id: relationship:nestle-froneri
+    type: holds_stake
+    from: entity:nestle
+    to: entity:froneri
+    validFrom: "2026-02"
+    stakePct: 48.2
+    scope: { include: world }
+    note: "Nestlé's voting power is 50% and control is joint; in January 2026 Nestlé began talks with Froneri to sell it its remaining ice cream businesses."
+    sources: [source:nestle-financial-statements-2025]
+  - id: relationship:nestle-haagen-dazs-licence
+    type: licenses_brand
+    from: entity:nestle
+    to: brand:haagen-dazs
+    validFrom: "2026-07-01"
+    scope: { include: [US, CA] }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:cereal-partners-worldwide-cheerios
+    type: licenses_brand
+    from: entity:cereal-partners-worldwide
+    to: brand:cheerios
+    validFrom: "2026-07-01"
+    scope: { include: world, exclude: [US, CA, MX] }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:cereal-partners-worldwide-cookie-crisp
+    type: licenses_brand
+    from: entity:cereal-partners-worldwide
+    to: brand:cookie-crisp
+    validFrom: "2026-07-01"
+    scope: { include: world, exclude: [US, CA, MX] }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:cereal-partners-worldwide-golden-grahams
+    type: licenses_brand
+    from: entity:cereal-partners-worldwide
+    to: brand:golden-grahams
+    validFrom: "2026-07-01"
+    scope: { include: world, exclude: [US, CA, MX] }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:cereal-partners-worldwide-trix
+    type: licenses_brand
+    from: entity:cereal-partners-worldwide
+    to: brand:trix
+    validFrom: "2026-07-01"
+    scope: { include: world, exclude: [US, CA, MX] }
+    sources: [source:general-mills-10k-2026]
+  - id: relationship:nestle-kitkat-cereal
+    type: owns_brand
+    from: entity:nestle
+    to: brand:kitkat-cereal
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands and named after a Nestlé brand; made by Cereal Partners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:cereal-partners-worldwide-kitkat-cereal
+    type: licenses_brand
+    from: entity:cereal-partners-worldwide
+    to: brand:kitkat-cereal
+    validFrom: "2026-10-28"
+    scope: { include: [GB] }
+    sources: [source:cpw-about-2026, source:general-mills-10k-2026]
+  - id: relationship:nestle-lion-cereal
+    type: owns_brand
+    from: entity:nestle
+    to: brand:lion-cereal
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands and named after a Nestlé brand; made by Cereal Partners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:cereal-partners-worldwide-lion-cereal
+    type: licenses_brand
+    from: entity:cereal-partners-worldwide
+    to: brand:lion-cereal
+    validFrom: "2026-10-28"
+    scope: { include: [GB] }
+    sources: [source:cpw-about-2026, source:general-mills-10k-2026]
+  - id: relationship:nestle-nesquik-cereal
+    type: owns_brand
+    from: entity:nestle
+    to: brand:nesquik-cereal
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among Nestlé's brands and named after a Nestlé brand; made by Cereal Partners."
+    sources: [source:nestle-brands-a-z]
+  - id: relationship:cereal-partners-worldwide-nesquik-cereal
+    type: licenses_brand
+    from: entity:cereal-partners-worldwide
+    to: brand:nesquik-cereal
+    validFrom: "2026-10-28"
+    scope: { include: [GB] }
+    sources: [source:cpw-about-2026, source:general-mills-10k-2026]
+  - id: relationship:cereal-partners-worldwide-shreddies
+    type: distributes
+    from: entity:cereal-partners-worldwide
+    to: brand:shreddies
+    validFrom: "2026-10-28"
+    scope: { include: [GB] }
+    note: "Made and sold by Cereal Partners in the UK according to its site; the trademark owner is not named in our sources."
+    sources: [source:cpw-about-2026]
+  - id: relationship:cereal-partners-worldwide-shredded-wheat
+    type: distributes
+    from: entity:cereal-partners-worldwide
+    to: brand:shredded-wheat
+    validFrom: "2026-10-28"
+    scope: { include: [GB] }
+    note: "Made and sold by Cereal Partners in the UK according to its site; the trademark owner is not named in our sources."
+    sources: [source:cpw-about-2026]
+  - id: relationship:cereal-partners-worldwide-curiously-cinnamon
+    type: distributes
+    from: entity:cereal-partners-worldwide
+    to: brand:curiously-cinnamon
+    validFrom: "2026-10-28"
+    scope: { include: [GB] }
+    note: "Made and sold by Cereal Partners in the UK according to its site; the trademark owner is not named in our sources."
+    sources: [source:cpw-about-2026]
+  - id: relationship:cereal-partners-worldwide-golden-nuggets
+    type: distributes
+    from: entity:cereal-partners-worldwide
+    to: brand:golden-nuggets
+    validFrom: "2026-10-28"
+    scope: { include: [GB] }
+    note: "Made and sold by Cereal Partners in the UK according to its site; the trademark owner is not named in our sources."
+    sources: [source:cpw-about-2026]
+  - id: relationship:cereal-partners-worldwide-go-free
+    type: distributes
+    from: entity:cereal-partners-worldwide
+    to: brand:go-free
+    validFrom: "2026-10-28"
+    scope: { include: [GB] }
+    note: "Made and sold by Cereal Partners in the UK according to its site; the trademark owner is not named in our sources."
+    sources: [source:cpw-about-2026]
+  - id: relationship:froneri-extreme
+    type: distributes
+    from: entity:froneri
+    to: brand:extreme
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Froneri lists it among its ice cream brands; the markets and the trademark owner are not given."
+    sources: [source:froneri-brands]
+  - id: relationship:froneri-drumstick
+    type: distributes
+    from: entity:froneri
+    to: brand:drumstick
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Froneri lists it among its ice cream brands; the markets and the trademark owner are not given."
+    sources: [source:froneri-brands]
+  - id: relationship:froneri-nuii
+    type: distributes
+    from: entity:froneri
+    to: brand:nuii
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Froneri lists it among its ice cream brands; the markets and the trademark owner are not given."
+    sources: [source:froneri-brands]
+  - id: relationship:froneri-outshine
+    type: distributes
+    from: entity:froneri
+    to: brand:outshine
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Froneri lists it among its ice cream brands; the markets and the trademark owner are not given."
+    sources: [source:froneri-brands]
+  - id: relationship:froneri-lotus-biscoff
+    type: distributes
+    from: entity:froneri
+    to: brand:lotus-biscoff
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Froneri lists it among its ice cream brands; the markets and the trademark owner are not given."
+    sources: [source:froneri-brands]
+  - id: relationship:froneri-rowntrees
+    type: distributes
+    from: entity:froneri
+    to: brand:rowntrees
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Froneri lists it among its ice cream brands; the markets and the trademark owner are not given."
+    sources: [source:froneri-brands]
+  - id: relationship:froneri-oreo
+    type: distributes
+    from: entity:froneri
+    to: brand:oreo
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Ice cream under this brand, which Froneri lists among its brands; the markets are not given."
+    sources: [source:froneri-brands]
+  - id: relationship:froneri-cadbury
+    type: distributes
+    from: entity:froneri
+    to: brand:cadbury
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Ice cream under this brand, which Froneri lists among its brands; the markets are not given."
+    sources: [source:froneri-brands]
+  - id: relationship:froneri-milka
+    type: distributes
+    from: entity:froneri
+    to: brand:milka
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Ice cream under this brand, which Froneri lists among its brands; the markets are not given."
+    sources: [source:froneri-brands]
+  - id: relationship:froneri-haagen-dazs
+    type: distributes
+    from: entity:froneri
+    to: brand:haagen-dazs
+    validFrom: "2026-11-08"
+    scope: { include: [US, CA] }
+    note: "Froneri lists the brand; General Mills licenses it to Nestlé and authorised sublicensees for the US and Canada, so it is recorded there only."
+    sources: [source:froneri-brands, source:general-mills-10k-2026]
