@@ -88,6 +88,12 @@ describe("answers that depend on the country", () => {
     expect(chains("brand:rockstar", "GB")).toEqual(["owned: entity:pepsico"]);
   });
 
+  it("Minimalist is Hindustan Unilever's, which Unilever controls with 62%", () => {
+    expect(chains("brand:minimalist", "IN")).toEqual([
+      "owned: entity:hindustan-unilever > entity:unilever",
+    ]);
+  });
+
   it("Persil is Unilever's in France and Henkel's in Germany", () => {
     expect(chains("brand:persil", "FR")).toEqual(["owned: entity:unilever"]);
     expect(chains("brand:persil", "DE")).toEqual(["owned: entity:henkel"]);

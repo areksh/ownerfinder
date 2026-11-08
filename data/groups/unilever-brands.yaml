@@ -1,0 +1,293 @@
+# Unilever's Power Brands and 2025 acquisitions, and its significant subsidiaries, from its Annual Report on Form 20-F 2025.
+
+entities:
+  - { id: entity:hindustan-unilever, name: "Hindustan Unilever Limited" }
+  - { id: entity:pt-unilever-indonesia, name: "PT Unilever Indonesia Tbk" }
+  - { id: entity:unilever-pakistan, name: "Unilever Pakistan Limited" }
+  - { id: entity:conopco, name: "Conopco, Inc." }
+  - { id: entity:the-liv-group, name: "The LIV Group, Inc." }
+  - { id: entity:nutraceutical-wellness, name: "Nutraceutical Wellness, Inc." }
+  - { id: entity:paulas-choice-inc, name: "Paula's Choice, Inc." }
+  - { id: entity:yeti-parent-holdings, name: "Yeti Parent Holdings, LLC (Dr. Squatch)" }
+  - { id: entity:uprising-science, name: "Uprising Science Private Limited (Minimalist)" }
+  - { id: entity:wild-cosmetics, name: "Wild Cosmetics Limited" }
+
+brands:
+  - { id: brand:clear, name: "Clear" }
+  - { id: brand:dermalogica, name: "Dermalogica" }
+  - { id: brand:hourglass, name: "Hourglass" }
+  - { id: brand:k18, name: "K18" }
+  - { id: brand:nexxus, name: "Nexxus" }
+  - { id: brand:nutrafol, name: "Nutrafol" }
+  - { id: brand:olly, name: "OLLY" }
+  - { id: brand:paulas-choice, name: "Paula’s Choice" }
+  - { id: brand:ponds, name: "Pond’s" }
+  - { id: brand:sunsilk, name: "Sunsilk" }
+  - { id: brand:tresemme, name: "TRESemmé" }
+  - { id: brand:closeup, name: "Closeup" }
+  - { id: brand:lifebuoy, name: "Lifebuoy" }
+  - { id: brand:lux, name: "Lux" }
+  - { id: brand:pepsodent, name: "Pepsodent" }
+  - { id: brand:dirt-is-good, name: "Dirt Is Good" }
+  - { id: brand:radiant, name: "Radiant" }
+  - { id: brand:sunlight, name: "Sunlight" }
+  - { id: brand:surf, name: "Surf" }
+  - { id: brand:horlicks, name: "Horlicks" }
+  - { id: brand:dr-squatch, name: "Dr. Squatch" }
+  - { id: brand:wild, name: "Wild" }
+  - { id: brand:minimalist, name: "Minimalist" }
+
+relationships:
+  - id: relationship:unilever-clear
+    type: owns_brand
+    from: entity:unilever
+    to: brand:clear
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-dermalogica
+    type: owns_brand
+    from: entity:unilever
+    to: brand:dermalogica
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-hourglass
+    type: owns_brand
+    from: entity:unilever
+    to: brand:hourglass
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-k18
+    type: owns_brand
+    from: entity:unilever
+    to: brand:k18
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-nexxus
+    type: owns_brand
+    from: entity:unilever
+    to: brand:nexxus
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-nutrafol
+    type: owns_brand
+    from: entity:unilever
+    to: brand:nutrafol
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-olly
+    type: owns_brand
+    from: entity:unilever
+    to: brand:olly
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-paulas-choice
+    type: owns_brand
+    from: entity:unilever
+    to: brand:paulas-choice
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-ponds
+    type: owns_brand
+    from: entity:unilever
+    to: brand:ponds
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-sunsilk
+    type: owns_brand
+    from: entity:unilever
+    to: brand:sunsilk
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-tresemme
+    type: owns_brand
+    from: entity:unilever
+    to: brand:tresemme
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-closeup
+    type: owns_brand
+    from: entity:unilever
+    to: brand:closeup
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-lifebuoy
+    type: owns_brand
+    from: entity:unilever
+    to: brand:lifebuoy
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-lux
+    type: owns_brand
+    from: entity:unilever
+    to: brand:lux
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-pepsodent
+    type: owns_brand
+    from: entity:unilever
+    to: brand:pepsodent
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-dirt-is-good
+    type: owns_brand
+    from: entity:unilever
+    to: brand:dirt-is-good
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-radiant
+    type: owns_brand
+    from: entity:unilever
+    to: brand:radiant
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-sunlight
+    type: owns_brand
+    from: entity:unilever
+    to: brand:sunlight
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-surf
+    type: owns_brand
+    from: entity:unilever
+    to: brand:surf
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-horlicks
+    type: owns_brand
+    from: entity:unilever
+    to: brand:horlicks
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-dr-squatch
+    type: owns_brand
+    from: entity:unilever
+    to: brand:dr-squatch
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-wild
+    type: owns_brand
+    from: entity:unilever
+    to: brand:wild
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-owns-hindustan-unilever
+    type: owns
+    from: entity:unilever
+    to: entity:hindustan-unilever
+    validFrom: "2025-12-31"
+    stakePct: 62
+    scope: { include: world }
+    note: "Unilever's aggregate direct and indirect share at 31 December 2025; the companies in between are not named."
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-owns-pt-unilever-indonesia
+    type: owns
+    from: entity:unilever
+    to: entity:pt-unilever-indonesia
+    validFrom: "2025-12-31"
+    stakePct: 85
+    scope: { include: world }
+    note: "Unilever's aggregate direct and indirect share at 31 December 2025; the companies in between are not named."
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-owns-unilever-pakistan
+    type: owns
+    from: entity:unilever
+    to: entity:unilever-pakistan
+    validFrom: "2025-12-31"
+    stakePct: 99
+    scope: { include: world }
+    note: "Unilever's aggregate direct and indirect share at 31 December 2025; the companies in between are not named."
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-owns-conopco
+    type: owns
+    from: entity:unilever
+    to: entity:conopco
+    validFrom: "2025-12-31"
+    stakePct: 100
+    scope: { include: world }
+    note: "Unilever's aggregate direct and indirect share at 31 December 2025; the companies in between are not named."
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-owns-the-liv-group
+    type: owns
+    from: entity:unilever
+    to: entity:the-liv-group
+    validFrom: "2025-12-31"
+    stakePct: 100
+    scope: { include: world }
+    note: "Unilever's aggregate direct and indirect share at 31 December 2025; the companies in between are not named."
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-owns-nutraceutical-wellness
+    type: owns
+    from: entity:unilever
+    to: entity:nutraceutical-wellness
+    validFrom: "2025-12-31"
+    stakePct: 100
+    scope: { include: world }
+    note: "Unilever's aggregate direct and indirect share at 31 December 2025; the companies in between are not named."
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-owns-paulas-choice-inc
+    type: owns
+    from: entity:unilever
+    to: entity:paulas-choice-inc
+    validFrom: "2025-12-31"
+    stakePct: 100
+    scope: { include: world }
+    note: "Unilever's aggregate direct and indirect share at 31 December 2025; the companies in between are not named."
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-owns-yeti-parent-holdings
+    type: owns
+    from: entity:unilever
+    to: entity:yeti-parent-holdings
+    validFrom: "2025"
+    startKnown: true
+    scope: { include: world }
+    note: "Acquired in 2025. Unilever's notes record a minority interest remaining after the purchase; the share is not given."
+    sources: [source:unilever-20f-2025]
+  - id: relationship:unilever-owns-wild-cosmetics
+    type: owns
+    from: entity:unilever
+    to: entity:wild-cosmetics
+    validFrom: "2025"
+    startKnown: true
+    scope: { include: world }
+    note: "Acquired in 2025. The share is not given."
+    sources: [source:unilever-20f-2025]
+  - id: relationship:hindustan-unilever-owns-uprising-science
+    type: owns
+    from: entity:hindustan-unilever
+    to: entity:uprising-science
+    validFrom: "2025"
+    startKnown: true
+    scope: { include: world }
+    note: "Acquired by Hindustan Unilever in 2025. Unilever's notes record a minority interest remaining after the purchase; the share is not given."
+    sources: [source:unilever-20f-2025]
+  - id: relationship:hindustan-unilever-minimalist
+    type: owns_brand
+    from: entity:hindustan-unilever
+    to: brand:minimalist
+    validFrom: "2025"
+    startKnown: true
+    scope: { include: world }
+    note: "Unilever's 20-F describes Hindustan Unilever's acquisition of the brand Minimalist."
+    sources: [source:unilever-20f-2025]
