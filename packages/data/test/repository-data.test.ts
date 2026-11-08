@@ -125,4 +125,10 @@ describe("answers that depend on the country", () => {
     expect(chains("brand:persil", "FR")).toEqual(["owned: entity:unilever"]);
     expect(chains("brand:persil", "DE")).toEqual(["owned: entity:henkel"]);
   });
+
+  it("Persil is Henkel's in the other markets Henkel runs Persil sites for", () => {
+    expect(chains("brand:persil", "PL", "2026-11-08")).toEqual(["owned: entity:henkel"]);
+    expect(chains("brand:persil", "US", "2026-11-08")).toEqual(["owned: entity:henkel"]);
+    expect(chains("brand:persil", "GB", "2026-11-08")).toEqual(["owned: entity:unilever"]);
+  });
 });

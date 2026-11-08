@@ -9,3 +9,13 @@ sources:
     title: "Our Businesses"
     publisher: "Henkel AG & Co. KGaA"
     retrieved: "2026-11-07"
+  - id: source:henkel-persil
+    url: https://www.henkel.com/our-businesses/persil-26564
+    title: "Persil - Laundry Detergent Products"
+    publisher: "Henkel AG & Co. KGaA"
+    retrieved: "2026-11-08"
+  - id: source:henkel-history
+    url: https://www.henkel.com/company/150-years-of-henkel/henkel-history
+    title: "Henkel history"
+    publisher: "Henkel AG & Co. KGaA"
+    retrieved: "2026-11-08"

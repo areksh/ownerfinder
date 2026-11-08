@@ -18,11 +18,49 @@ relationships:
     type: owns_brand
     from: entity:henkel
     to: brand:persil
-    validFrom: "1907-06-06"
+    validFrom: "1907"
     startKnown: true
     scope: { include: [DE] }
-    sources: [source:wikipedia-persil, source:henkel-consumer-brands]
-    note: "Recorded for Germany only until Henkel's other Persil markets are confirmed."
+    sources: [source:henkel-history, source:henkel-persil]
+    note: "Henkel launched Persil in 1907; its other markets are recorded separately."
+  - id: relationship:henkel-persil-markets
+    type: owns_brand
+    from: entity:henkel
+    to: brand:persil
+    validFrom: "2026-11-08"
+    scope:
+      {
+        include:
+          [
+            AT,
+            AZ,
+            BE,
+            BG,
+            HR,
+            CY,
+            CZ,
+            EE,
+            HU,
+            KZ,
+            MX,
+            NL,
+            LV,
+            LT,
+            PL,
+            PT,
+            RO,
+            RS,
+            SK,
+            SI,
+            CH,
+            TW,
+            TR,
+            UA,
+            US,
+          ],
+      }
+    sources: [source:henkel-persil]
+    note: "Henkel's Persil page links a Persil website for each of these countries; when Henkel began selling Persil in each is not recorded."
   - id: relationship:henkel-schwarzkopf
     type: owns_brand
     from: entity:henkel
