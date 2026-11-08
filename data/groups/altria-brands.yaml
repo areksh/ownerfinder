@@ -1,0 +1,274 @@
+# Altria's other US brands and operating companies, its joint venture with Japan Tobacco and its stakes in ABI and Cronos, from its 10-K for 2025.
+
+entities:
+  - { id: entity:john-middleton, name: "John Middleton Co." }
+  - { id: entity:ust, name: "UST LLC" }
+  - { id: entity:us-smokeless-tobacco, name: "U.S. Smokeless Tobacco Company LLC" }
+  - { id: entity:helix-innovations, name: "Helix Innovations LLC" }
+  - { id: entity:njoy, name: "NJOY, LLC" }
+  - { id: entity:horizon-innovations, name: "Horizon Innovations LLC" }
+  - { id: entity:jti-us-holding, name: "JTI (US) Holding, Inc." }
+  - { id: entity:anheuser-busch-inbev, name: "Anheuser-Busch InBev SA/NV" }
+  - { id: entity:cronos, name: "Cronos Group Inc." }
+
+brands:
+  - { id: brand:virginia-slims, name: "Virginia Slims" }
+  - { id: brand:basic-cigarettes, name: "Basic (cigarettes)" }
+  - { id: brand:black-and-mild, name: "Black & Mild" }
+  - { id: brand:copenhagen, name: "Copenhagen" }
+  - { id: brand:skoal, name: "Skoal" }
+  - { id: brand:red-seal, name: "Red Seal" }
+  - { id: brand:on-nicotine, name: "on! (nicotine pouches)" }
+  - { id: brand:njoy, name: "NJOY" }
+
+relationships:
+  - id: relationship:philip-morris-usa-owns-john-middleton
+    type: owns
+    from: entity:philip-morris-usa
+    to: entity:john-middleton
+    validFrom: "2026-02-25"
+    stakePct: 100
+    scope: { include: world }
+    note: "Altria says Middleton is a wholly owned subsidiary of PM USA."
+    sources: [source:altria-10k-2025]
+  - id: relationship:altria-owns-ust
+    type: owns
+    from: entity:altria
+    to: entity:ust
+    validFrom: "2026-02-25"
+    stakePct: 100
+    scope: { include: world }
+    note: "Named by Altria as a wholly owned subsidiary."
+    sources: [source:altria-10k-2025]
+  - id: relationship:ust-owns-us-smokeless-tobacco
+    type: owns
+    from: entity:ust
+    to: entity:us-smokeless-tobacco
+    validFrom: "2026-02-25"
+    stakePct: 100
+    scope: { include: world }
+    note: "Altria says USSTC is UST's wholly owned subsidiary."
+    sources: [source:altria-10k-2025]
+  - id: relationship:altria-owns-helix-innovations
+    type: owns
+    from: entity:altria
+    to: entity:helix-innovations
+    validFrom: "2026-02-25"
+    stakePct: 100
+    scope: { include: world }
+    note: "Named by Altria as a wholly owned subsidiary."
+    sources: [source:altria-10k-2025]
+  - id: relationship:altria-owns-njoy
+    type: owns
+    from: entity:altria
+    to: entity:njoy
+    validFrom: "2023"
+    startKnown: true
+    stakePct: 100
+    scope: { include: world }
+    note: "Altria acquired NJOY Holdings in 2023; NJOY, LLC is named as a wholly owned subsidiary."
+    sources: [source:altria-10k-2025]
+  - id: relationship:altria-owns-horizon-innovations
+    type: owns
+    from: entity:altria
+    to: entity:horizon-innovations
+    validFrom: "2025-12-31"
+    stakePct: 75
+    scope: { include: world }
+    note: "A 75% economic interest at 31 December 2025, in a joint venture with JTI (US) Holding for heated tobacco sticks in the US."
+    sources: [source:altria-10k-2025]
+  - id: relationship:jti-us-holding-stake-horizon-innovations
+    type: holds_stake
+    from: entity:jti-us-holding
+    to: entity:horizon-innovations
+    validFrom: "2025-12-31"
+    stakePct: 25
+    scope: { include: world }
+    note: "The other 25% economic interest in Altria's heated tobacco joint venture."
+    sources: [source:altria-10k-2025]
+  - id: relationship:japan-tobacco-owns-jti-us-holding
+    type: owns
+    from: entity:japan-tobacco
+    to: entity:jti-us-holding
+    validFrom: "2025-12-31"
+    scope: { include: world }
+    note: "Altria describes JTI (US) Holding as a subsidiary of Japan Tobacco; the share is not given."
+    sources: [source:altria-10k-2025]
+  - id: relationship:altria-stake-anheuser-busch-inbev
+    type: holds_stake
+    from: entity:altria
+    to: entity:anheuser-busch-inbev
+    validFrom: "2025-12-31"
+    stakePct: 8.2
+    scope: { include: world }
+    note: "About 8.2% at 31 December 2025, mostly unlisted restricted shares; Altria has the right to select nominees for ABI's board."
+    sources: [source:altria-10k-2025]
+  - id: relationship:altria-stake-cronos
+    type: holds_stake
+    from: entity:altria
+    to: entity:cronos
+    validFrom: "2025-12-31"
+    stakePct: 41.0
+    scope: { include: world }
+    note: "About 41.0% at 31 December 2025, in this Canadian cannabis company."
+    sources: [source:altria-10k-2025]
+  - id: relationship:altria-parliament
+    type: owns_brand
+    from: entity:altria
+    to: brand:parliament
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    note: "Altria's brand in the US; which group company owns the trademark is not stated."
+    sources: [source:altria-10k-2025]
+  - id: relationship:philip-morris-usa-sells-parliament
+    type: distributes
+    from: entity:philip-morris-usa
+    to: brand:parliament
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    note: "Cigarettes manufactured and sold by PM USA."
+    sources: [source:altria-10k-2025]
+  - id: relationship:altria-l-and-m
+    type: owns_brand
+    from: entity:altria
+    to: brand:l-and-m
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    note: "Altria's brand in the US; which group company owns the trademark is not stated."
+    sources: [source:altria-10k-2025]
+  - id: relationship:philip-morris-usa-sells-l-and-m
+    type: distributes
+    from: entity:philip-morris-usa
+    to: brand:l-and-m
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    note: "Cigarettes manufactured and sold by PM USA."
+    sources: [source:altria-10k-2025]
+  - id: relationship:altria-virginia-slims
+    type: owns_brand
+    from: entity:altria
+    to: brand:virginia-slims
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    note: "Altria's brand in the US; which group company owns the trademark is not stated."
+    sources: [source:altria-10k-2025]
+  - id: relationship:philip-morris-usa-sells-virginia-slims
+    type: distributes
+    from: entity:philip-morris-usa
+    to: brand:virginia-slims
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    note: "Cigarettes manufactured and sold by PM USA."
+    sources: [source:altria-10k-2025]
+  - id: relationship:altria-basic-cigarettes
+    type: owns_brand
+    from: entity:altria
+    to: brand:basic-cigarettes
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    note: "Altria's brand in the US; which group company owns the trademark is not stated."
+    sources: [source:altria-10k-2025]
+  - id: relationship:philip-morris-usa-sells-basic-cigarettes
+    type: distributes
+    from: entity:philip-morris-usa
+    to: brand:basic-cigarettes
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    note: "Cigarettes manufactured and sold by PM USA."
+    sources: [source:altria-10k-2025]
+  - id: relationship:altria-black-and-mild
+    type: owns_brand
+    from: entity:altria
+    to: brand:black-and-mild
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    note: "Altria's brand in the US; which group company owns the trademark is not stated."
+    sources: [source:altria-10k-2025]
+  - id: relationship:john-middleton-sells-black-and-mild
+    type: distributes
+    from: entity:john-middleton
+    to: brand:black-and-mild
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    note: "Middleton's principal cigar brand."
+    sources: [source:altria-10k-2025]
+  - id: relationship:altria-copenhagen
+    type: owns_brand
+    from: entity:altria
+    to: brand:copenhagen
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    note: "Altria's brand in the US; which group company owns the trademark is not stated."
+    sources: [source:altria-10k-2025]
+  - id: relationship:us-smokeless-tobacco-sells-copenhagen
+    type: distributes
+    from: entity:us-smokeless-tobacco
+    to: brand:copenhagen
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    note: "Moist smokeless tobacco sold by USSTC."
+    sources: [source:altria-10k-2025]
+  - id: relationship:altria-skoal
+    type: owns_brand
+    from: entity:altria
+    to: brand:skoal
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    note: "Altria's brand in the US; which group company owns the trademark is not stated."
+    sources: [source:altria-10k-2025]
+  - id: relationship:us-smokeless-tobacco-sells-skoal
+    type: distributes
+    from: entity:us-smokeless-tobacco
+    to: brand:skoal
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    note: "Moist smokeless tobacco sold by USSTC."
+    sources: [source:altria-10k-2025]
+  - id: relationship:altria-red-seal
+    type: owns_brand
+    from: entity:altria
+    to: brand:red-seal
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    note: "Altria's brand in the US; which group company owns the trademark is not stated."
+    sources: [source:altria-10k-2025]
+  - id: relationship:us-smokeless-tobacco-sells-red-seal
+    type: distributes
+    from: entity:us-smokeless-tobacco
+    to: brand:red-seal
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    note: "Moist smokeless tobacco sold by USSTC."
+    sources: [source:altria-10k-2025]
+  - id: relationship:altria-on-nicotine
+    type: owns_brand
+    from: entity:altria
+    to: brand:on-nicotine
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    note: "Altria's brand in the US; which group company owns the trademark is not stated."
+    sources: [source:altria-10k-2025]
+  - id: relationship:helix-innovations-sells-on-nicotine
+    type: distributes
+    from: entity:helix-innovations
+    to: brand:on-nicotine
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    note: "Oral nicotine pouches sold by Helix."
+    sources: [source:altria-10k-2025]
+  - id: relationship:altria-njoy
+    type: owns_brand
+    from: entity:altria
+    to: brand:njoy
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    note: "Altria's brand in the US; which group company owns the trademark is not stated."
+    sources: [source:altria-10k-2025]
+  - id: relationship:njoy-sells-njoy
+    type: distributes
+    from: entity:njoy
+    to: brand:njoy
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    note: "E-vapor products manufactured and sold by NJOY."
+    sources: [source:altria-10k-2025]

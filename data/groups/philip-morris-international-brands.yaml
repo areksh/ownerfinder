@@ -1,0 +1,107 @@
+# Philip Morris International's other leading and local brands, Swedish Match, and the end of Altria's US rights to IQOS, from PMI's 10-K for 2025.
+
+entities:
+  - { id: entity:swedish-match, name: "Swedish Match AB" }
+
+brands:
+  - { id: brand:parliament, name: "Parliament" }
+  - { id: brand:chesterfield, name: "Chesterfield" }
+  - { id: brand:l-and-m, name: "L&M" }
+  - { id: brand:philip-morris-cigarettes, name: "Philip Morris (cigarettes)" }
+  - { id: brand:dji-sam-soe, name: "Dji Sam Soe" }
+  - { id: brand:sampoerna-a, name: "Sampoerna A" }
+  - { id: brand:fortune-pmi, name: "Fortune (PMI cigarettes)" }
+  - { id: brand:jackpot-pmi, name: "Jackpot (PMI cigarettes)" }
+  - { id: brand:iqos-iluma, name: "IQOS ILUMA" }
+
+relationships:
+  - id: relationship:philip-morris-international-parliament
+    type: owns_brand
+    from: entity:philip-morris-international
+    to: brand:parliament
+    validFrom: "2026-02-06"
+    scope: { include: world, exclude: [US] }
+    note: "One of PMI's leading international cigarette brands; in the US the name is sold by Altria's PM USA."
+    sources: [source:pmi-10k-2025]
+  - id: relationship:philip-morris-international-chesterfield
+    type: owns_brand
+    from: entity:philip-morris-international
+    to: brand:chesterfield
+    validFrom: "2026-02-06"
+    scope: { include: world, exclude: [US] }
+    note: "One of PMI's leading international cigarette brands; PMI does not sell cigarettes in the US, and the US is not recorded here."
+    sources: [source:pmi-10k-2025]
+  - id: relationship:philip-morris-international-l-and-m
+    type: owns_brand
+    from: entity:philip-morris-international
+    to: brand:l-and-m
+    validFrom: "2026-02-06"
+    scope: { include: world, exclude: [US] }
+    note: "One of PMI's leading international cigarette brands; in the US the name is sold by Altria's PM USA."
+    sources: [source:pmi-10k-2025]
+  - id: relationship:philip-morris-international-philip-morris-cigarettes
+    type: owns_brand
+    from: entity:philip-morris-international
+    to: brand:philip-morris-cigarettes
+    validFrom: "2026-02-06"
+    scope: { include: world, exclude: [US] }
+    note: "One of PMI's leading international cigarette brands; the US is not recorded here."
+    sources: [source:pmi-10k-2025]
+  - id: relationship:philip-morris-international-dji-sam-soe
+    type: owns_brand
+    from: entity:philip-morris-international
+    to: brand:dji-sam-soe
+    validFrom: "2026-02-06"
+    scope: { include: [ID] }
+    note: "A local cigarette brand PMI owns in Indonesia."
+    sources: [source:pmi-10k-2025]
+  - id: relationship:philip-morris-international-sampoerna-a
+    type: owns_brand
+    from: entity:philip-morris-international
+    to: brand:sampoerna-a
+    validFrom: "2026-02-06"
+    scope: { include: [ID] }
+    note: "A local cigarette brand PMI owns in Indonesia."
+    sources: [source:pmi-10k-2025]
+  - id: relationship:philip-morris-international-fortune-pmi
+    type: owns_brand
+    from: entity:philip-morris-international
+    to: brand:fortune-pmi
+    validFrom: "2026-02-06"
+    scope: { include: [PH] }
+    note: "A local cigarette brand PMI owns in the Philippines."
+    sources: [source:pmi-10k-2025]
+  - id: relationship:philip-morris-international-jackpot-pmi
+    type: owns_brand
+    from: entity:philip-morris-international
+    to: brand:jackpot-pmi
+    validFrom: "2026-02-06"
+    scope: { include: [PH] }
+    note: "A local cigarette brand PMI owns in the Philippines."
+    sources: [source:pmi-10k-2025]
+  - id: relationship:philip-morris-international-iqos-iluma
+    type: owns_brand
+    from: entity:philip-morris-international
+    to: brand:iqos-iluma
+    validFrom: "2026-02-06"
+    scope: { include: world }
+    note: "One of PMI's principal brands, whose trademark rights it says it owns."
+    sources: [source:pmi-10k-2025]
+  - id: relationship:philip-morris-international-owns-swedish-match
+    type: owns
+    from: entity:philip-morris-international
+    to: entity:swedish-match
+    validFrom: "2022-11"
+    startKnown: true
+    scope: { include: world }
+    note: "PMI acquired Swedish Match, a leader in oral nicotine and the company behind ZYN, in November 2022."
+    sources: [source:pmi-10k-2025]
+  - id: relationship:altria-sells-iqos
+    type: distributes
+    from: entity:altria
+    to: brand:iqos
+    validFrom: "2022-10-20"
+    validTo: "2024-04-30"
+    scope: { include: [US] }
+    note: "Altria held the US commercialisation rights for IQOS until 30 April 2024, under an agreement announced on 20 October 2022 to end the relationship; when the rights began is not recorded here."
+    sources: [source:pmi-10k-2025, source:altria-10k-2025]

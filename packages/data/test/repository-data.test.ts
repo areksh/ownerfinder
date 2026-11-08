@@ -46,6 +46,16 @@ describe("answers that depend on the country", () => {
     ]);
   });
 
+  it("Parliament is PMI's outside the US, and Altria's inside it, made by PM USA", () => {
+    expect(chains("brand:parliament", "GB", "2026-11-08")).toEqual([
+      "owned: entity:philip-morris-international",
+    ]);
+    expect(chains("brand:parliament", "US", "2026-11-08")).toEqual([
+      "owned: entity:altria",
+      "distributed: entity:philip-morris-usa > entity:altria",
+    ]);
+  });
+
   it("Hotel Chocolat is on Mars's own brand list", () => {
     expect(chains("brand:hotel-chocolat", "GB", "2026-11-08")).toEqual(["owned: entity:mars"]);
   });
