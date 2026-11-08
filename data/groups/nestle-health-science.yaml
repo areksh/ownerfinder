@@ -1,0 +1,169 @@
+# Nestlé Health Science. Brands from its brand page, owned by the group parent because no source names a subsidiary as owner; companies and Nestlé's shares from its list of group companies (Financial Statements 2025).
+
+entities:
+  - { id: entity:garden-of-life, name: "Garden of Life LLC" }
+  - { id: entity:pure-encapsulations, name: "Pure Encapsulations, LLC" }
+  - { id: entity:vital-proteins, name: "Vital Proteins LLC" }
+  - { id: entity:vitaflo, name: "Vitaflo (International) Ltd" }
+  - { id: entity:orgain, name: "Orgain, LLC" }
+
+brands:
+  - { id: brand:garden-of-life, name: "Garden of Life" }
+  - { id: brand:pure-encapsulations, name: "Pure Encapsulations" }
+  - { id: brand:vital-proteins, name: "Vital Proteins" }
+  - { id: brand:vitaflo, name: "Vitaflo" }
+  - { id: brand:orgain, name: "Orgain" }
+  - { id: brand:peptamen, name: "Peptamen" }
+  - { id: brand:isosource, name: "Isosource" }
+  - { id: brand:althera, name: "Althéra" }
+  - { id: brand:resource-nutrition, name: "Resource" }
+  - { id: brand:compleat, name: "Compleat" }
+  - { id: brand:natures-bounty, name: "Nature's Bounty" }
+  - { id: brand:boost-nutrition, name: "BOOST" }
+  - { id: brand:solgar, name: "Solgar" }
+  - { id: brand:nuun, name: "Nuun" }
+
+relationships:
+  - id: relationship:nestle-owns-garden-of-life
+    type: owns
+    from: entity:nestle
+    to: entity:garden-of-life
+    validFrom: "2026-02"
+    stakePct: 100
+    scope: { include: world }
+    note: "Held indirectly; Nestlé's list of group companies gives the ultimate shareholding but not the companies in between."
+    sources: [source:nestle-financial-statements-2025]
+  - id: relationship:nestle-owns-pure-encapsulations
+    type: owns
+    from: entity:nestle
+    to: entity:pure-encapsulations
+    validFrom: "2026-02"
+    stakePct: 100
+    scope: { include: world }
+    note: "Held indirectly; Nestlé's list of group companies gives the ultimate shareholding but not the companies in between."
+    sources: [source:nestle-financial-statements-2025]
+  - id: relationship:nestle-owns-vital-proteins
+    type: owns
+    from: entity:nestle
+    to: entity:vital-proteins
+    validFrom: "2026-02"
+    stakePct: 100
+    scope: { include: world }
+    note: "Held indirectly; Nestlé's list of group companies gives the ultimate shareholding but not the companies in between."
+    sources: [source:nestle-financial-statements-2025]
+  - id: relationship:nestle-owns-vitaflo
+    type: owns
+    from: entity:nestle
+    to: entity:vitaflo
+    validFrom: "2026-02"
+    stakePct: 100
+    scope: { include: world }
+    note: "Held indirectly; Nestlé's list of group companies gives the ultimate shareholding but not the companies in between."
+    sources: [source:nestle-financial-statements-2025]
+  - id: relationship:nestle-owns-orgain
+    type: owns
+    from: entity:nestle
+    to: entity:orgain
+    validFrom: "2026-02"
+    stakePct: 91.1
+    scope: { include: world }
+    note: "Held indirectly; Nestlé's list of group companies gives the ultimate shareholding but not the companies in between."
+    sources: [source:nestle-financial-statements-2025]
+  - id: relationship:nestle-garden-of-life
+    type: owns_brand
+    from: entity:nestle
+    to: brand:garden-of-life
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-health-science-brands]
+  - id: relationship:nestle-pure-encapsulations
+    type: owns_brand
+    from: entity:nestle
+    to: brand:pure-encapsulations
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-health-science-brands]
+  - id: relationship:nestle-vital-proteins
+    type: owns_brand
+    from: entity:nestle
+    to: brand:vital-proteins
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-health-science-brands]
+  - id: relationship:nestle-vitaflo
+    type: owns_brand
+    from: entity:nestle
+    to: brand:vitaflo
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-health-science-brands]
+  - id: relationship:nestle-orgain
+    type: owns_brand
+    from: entity:nestle
+    to: brand:orgain
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-health-science-brands]
+  - id: relationship:nestle-peptamen
+    type: owns_brand
+    from: entity:nestle
+    to: brand:peptamen
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-health-science-brands]
+  - id: relationship:nestle-isosource
+    type: owns_brand
+    from: entity:nestle
+    to: brand:isosource
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-health-science-brands]
+  - id: relationship:nestle-althera
+    type: owns_brand
+    from: entity:nestle
+    to: brand:althera
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-health-science-brands]
+  - id: relationship:nestle-resource-nutrition
+    type: owns_brand
+    from: entity:nestle
+    to: brand:resource-nutrition
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-health-science-brands]
+  - id: relationship:nestle-compleat
+    type: owns_brand
+    from: entity:nestle
+    to: brand:compleat
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-health-science-brands]
+  - id: relationship:nestle-natures-bounty
+    type: owns_brand
+    from: entity:nestle
+    to: brand:natures-bounty
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-health-science-brands]
+  - id: relationship:nestle-boost-nutrition
+    type: owns_brand
+    from: entity:nestle
+    to: brand:boost-nutrition
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-health-science-brands]
+  - id: relationship:nestle-solgar
+    type: owns_brand
+    from: entity:nestle
+    to: brand:solgar
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-health-science-brands]
+  - id: relationship:nestle-nuun
+    type: owns_brand
+    from: entity:nestle
+    to: brand:nuun
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:nestle-health-science-brands]

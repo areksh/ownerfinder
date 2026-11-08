@@ -1,0 +1,457 @@
+# Nestlé in the US, from Nestlé Holdings, Inc.'s 2025 summarised accounts: the holding chain and the brands each company sells.
+
+entities:
+  - { id: entity:nimco-us, name: "NIMCO US, Inc." }
+  - { id: entity:nestle-holdings, name: "Nestlé Holdings, Inc." }
+  - { id: entity:nestle-usa, name: "Nestlé USA, Inc." }
+  - { id: entity:nestle-purina-petcare, name: "Nestlé Purina PetCare Company" }
+  - { id: entity:gerber-products, name: "Gerber Products Company" }
+  - { id: entity:nestle-healthcare-nutrition, name: "Nestlé HealthCare Nutrition, Inc." }
+  - { id: entity:nespresso-usa, name: "Nespresso USA, Inc." }
+
+brands:
+  - { id: brand:nesquik, name: "Nesquik" }
+  - { id: brand:coffee-mate, name: "Coffee mate" }
+  - { id: brand:chef-mate, name: "Chef-Mate" }
+  - { id: brand:digiorno, name: "DiGiorno" }
+  - { id: brand:tombstone, name: "Tombstone" }
+  - { id: brand:toll-house, name: "Toll House" }
+  - { id: brand:acqua-panna, name: "Acqua Panna" }
+  - { id: brand:essentia, name: "Essentia" }
+  - { id: brand:dog-chow, name: "Dog Chow" }
+  - { id: brand:cat-chow, name: "Cat Chow" }
+  - { id: brand:pro-plan, name: "Pro Plan" }
+  - { id: brand:beneful, name: "Beneful" }
+  - { id: brand:friskies, name: "Friskies" }
+  - { id: brand:alpo, name: "Alpo" }
+  - { id: brand:purina-one, name: "Purina ONE" }
+  - { id: brand:fancy-feast, name: "Fancy Feast" }
+  - { id: brand:beyond-pet-food, name: "Beyond" }
+  - { id: brand:beggin, name: "Beggin'" }
+  - { id: brand:tidy-cats, name: "Tidy Cats" }
+  - { id: brand:merrick, name: "Merrick" }
+  - { id: brand:gerber, name: "Gerber" }
+
+relationships:
+  - id: relationship:nestle-nimco-us
+    type: owns
+    from: entity:nestle
+    to: entity:nimco-us
+    validFrom: "2026-03"
+    stakePct: 100
+    scope: { include: world }
+    note: "An indirect wholly owned subsidiary of Nestlé S.A.; the companies in between are not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nimco-us-nestle-holdings
+    type: owns
+    from: entity:nimco-us
+    to: entity:nestle-holdings
+    validFrom: "2026-03"
+    stakePct: 100
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-holdings-nestle-usa
+    type: owns
+    from: entity:nestle-holdings
+    to: entity:nestle-usa
+    validFrom: "2026-03"
+    stakePct: 100
+    scope: { include: world }
+    note: "A direct or indirect subsidiary of Nestlé Holdings; the accounts do not say which."
+    sources: [source:nestle-holdings-fs-2025, source:nestle-financial-statements-2025]
+  - id: relationship:nestle-holdings-nestle-purina-petcare
+    type: owns
+    from: entity:nestle-holdings
+    to: entity:nestle-purina-petcare
+    validFrom: "2026-03"
+    stakePct: 100
+    scope: { include: world }
+    note: "A direct or indirect subsidiary of Nestlé Holdings; the accounts do not say which."
+    sources: [source:nestle-holdings-fs-2025, source:nestle-financial-statements-2025]
+  - id: relationship:nestle-holdings-gerber-products
+    type: owns
+    from: entity:nestle-holdings
+    to: entity:gerber-products
+    validFrom: "2026-03"
+    stakePct: 100
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025, source:nestle-financial-statements-2025]
+  - id: relationship:nestle-holdings-nestle-healthcare-nutrition
+    type: owns
+    from: entity:nestle-holdings
+    to: entity:nestle-healthcare-nutrition
+    validFrom: "2026-03"
+    stakePct: 100
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025, source:nestle-financial-statements-2025]
+  - id: relationship:nestle-holdings-nespresso-usa
+    type: owns
+    from: entity:nestle-holdings
+    to: entity:nespresso-usa
+    validFrom: "2026-03"
+    stakePct: 100
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025, source:nestle-financial-statements-2025]
+  - id: relationship:nestle-nesquik
+    type: owns_brand
+    from: entity:nestle
+    to: brand:nesquik
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-coffee-mate
+    type: owns_brand
+    from: entity:nestle
+    to: brand:coffee-mate
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-chef-mate
+    type: owns_brand
+    from: entity:nestle
+    to: brand:chef-mate
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-digiorno
+    type: owns_brand
+    from: entity:nestle
+    to: brand:digiorno
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-tombstone
+    type: owns_brand
+    from: entity:nestle
+    to: brand:tombstone
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-toll-house
+    type: owns_brand
+    from: entity:nestle
+    to: brand:toll-house
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-acqua-panna
+    type: owns_brand
+    from: entity:nestle
+    to: brand:acqua-panna
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-essentia
+    type: owns_brand
+    from: entity:nestle
+    to: brand:essentia
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-dog-chow
+    type: owns_brand
+    from: entity:nestle
+    to: brand:dog-chow
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-cat-chow
+    type: owns_brand
+    from: entity:nestle
+    to: brand:cat-chow
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-pro-plan
+    type: owns_brand
+    from: entity:nestle
+    to: brand:pro-plan
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-beneful
+    type: owns_brand
+    from: entity:nestle
+    to: brand:beneful
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-friskies
+    type: owns_brand
+    from: entity:nestle
+    to: brand:friskies
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-alpo
+    type: owns_brand
+    from: entity:nestle
+    to: brand:alpo
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-purina-one
+    type: owns_brand
+    from: entity:nestle
+    to: brand:purina-one
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-fancy-feast
+    type: owns_brand
+    from: entity:nestle
+    to: brand:fancy-feast
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-beyond-pet-food
+    type: owns_brand
+    from: entity:nestle
+    to: brand:beyond-pet-food
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-beggin
+    type: owns_brand
+    from: entity:nestle
+    to: brand:beggin
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-tidy-cats
+    type: owns_brand
+    from: entity:nestle
+    to: brand:tidy-cats
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-merrick
+    type: owns_brand
+    from: entity:nestle
+    to: brand:merrick
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-gerber
+    type: owns_brand
+    from: entity:nestle
+    to: brand:gerber
+    validFrom: "2026-03"
+    scope: { include: world }
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-usa-sells-nescafe
+    type: distributes
+    from: entity:nestle-usa
+    to: brand:nescafe
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-usa-sells-nesquik
+    type: distributes
+    from: entity:nestle-usa
+    to: brand:nesquik
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-usa-sells-coffee-mate
+    type: distributes
+    from: entity:nestle-usa
+    to: brand:coffee-mate
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-usa-sells-chef-mate
+    type: distributes
+    from: entity:nestle-usa
+    to: brand:chef-mate
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-usa-sells-digiorno
+    type: distributes
+    from: entity:nestle-usa
+    to: brand:digiorno
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-usa-sells-tombstone
+    type: distributes
+    from: entity:nestle-usa
+    to: brand:tombstone
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-usa-sells-toll-house
+    type: distributes
+    from: entity:nestle-usa
+    to: brand:toll-house
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-usa-sells-perrier
+    type: distributes
+    from: entity:nestle-usa
+    to: brand:perrier
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-usa-sells-s-pellegrino
+    type: distributes
+    from: entity:nestle-usa
+    to: brand:s-pellegrino
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-usa-sells-acqua-panna
+    type: distributes
+    from: entity:nestle-usa
+    to: brand:acqua-panna
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-usa-sells-essentia
+    type: distributes
+    from: entity:nestle-usa
+    to: brand:essentia
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-purina-petcare-sells-purina
+    type: distributes
+    from: entity:nestle-purina-petcare
+    to: brand:purina
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-purina-petcare-sells-dog-chow
+    type: distributes
+    from: entity:nestle-purina-petcare
+    to: brand:dog-chow
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-purina-petcare-sells-cat-chow
+    type: distributes
+    from: entity:nestle-purina-petcare
+    to: brand:cat-chow
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-purina-petcare-sells-pro-plan
+    type: distributes
+    from: entity:nestle-purina-petcare
+    to: brand:pro-plan
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-purina-petcare-sells-beneful
+    type: distributes
+    from: entity:nestle-purina-petcare
+    to: brand:beneful
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-purina-petcare-sells-friskies
+    type: distributes
+    from: entity:nestle-purina-petcare
+    to: brand:friskies
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-purina-petcare-sells-alpo
+    type: distributes
+    from: entity:nestle-purina-petcare
+    to: brand:alpo
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-purina-petcare-sells-purina-one
+    type: distributes
+    from: entity:nestle-purina-petcare
+    to: brand:purina-one
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-purina-petcare-sells-fancy-feast
+    type: distributes
+    from: entity:nestle-purina-petcare
+    to: brand:fancy-feast
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-purina-petcare-sells-beyond-pet-food
+    type: distributes
+    from: entity:nestle-purina-petcare
+    to: brand:beyond-pet-food
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-purina-petcare-sells-beggin
+    type: distributes
+    from: entity:nestle-purina-petcare
+    to: brand:beggin
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-purina-petcare-sells-tidy-cats
+    type: distributes
+    from: entity:nestle-purina-petcare
+    to: brand:tidy-cats
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-purina-petcare-sells-merrick
+    type: distributes
+    from: entity:nestle-purina-petcare
+    to: brand:merrick
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:gerber-products-sells-gerber
+    type: distributes
+    from: entity:gerber-products
+    to: brand:gerber
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nestle-healthcare-nutrition-sells-vital-proteins
+    type: distributes
+    from: entity:nestle-healthcare-nutrition
+    to: brand:vital-proteins
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]
+  - id: relationship:nespresso-usa-sells-nespresso
+    type: distributes
+    from: entity:nespresso-usa
+    to: brand:nespresso
+    validFrom: "2026-03"
+    scope: { include: [US] }
+    note: "Manufactured and sold in the US by this company, according to Nestlé Holdings' accounts; the brand's owner within the group is not named."
+    sources: [source:nestle-holdings-fs-2025]

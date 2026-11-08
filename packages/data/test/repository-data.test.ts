@@ -56,6 +56,13 @@ describe("answers that depend on the country", () => {
     expect(chains("brand:camel", "US")).toEqual([]);
   });
 
+  it("DiGiorno shows Nestle's ownership and every company it is sold through in the US", () => {
+    expect(chains("brand:digiorno", "US")).toEqual([
+      "owned: entity:nestle",
+      "distributed: entity:nestle-usa > entity:nestle-holdings > entity:nimco-us > entity:nestle",
+    ]);
+  });
+
   it("Persil is Unilever's in France and Henkel's in Germany", () => {
     expect(chains("brand:persil", "FR")).toEqual(["owned: entity:unilever"]);
     expect(chains("brand:persil", "DE")).toEqual(["owned: entity:henkel"]);
