@@ -52,3 +52,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   and Bottega Veneta through Kering Beauté, bought in April 2026), its
   stakes in Galderma, Sanofi, Amouage and Jacquemus, and the Nestlé
   companies that hold Nestlé's 20.16% of L'Oréal.
+- Danone, Reckitt and Mars in depth: Danone's brands with its recent
+  purchases and sales (Kate Farms, Horizon Organic, its Russian
+  business); Reckitt's Powerbrands and the Essential Home sale, which
+  moved Air Wick, Calgon, Cillit Bang and others to an Advent company
+  on 31 December 2025; and Kellanova's trademarks, with the cereal
+  brands WK Kellogg Co makes under licence in North America.
