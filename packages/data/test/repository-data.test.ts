@@ -31,9 +31,9 @@ describe("answers that depend on the country", () => {
     ]);
   });
 
-  it("7UP is PepsiCo's outside the US, and not recorded inside it", () => {
+  it("7UP is PepsiCo's outside the US, and Keurig Dr Pepper's inside it", () => {
     expect(chains("brand:7up", "GB")).toEqual(["owned: entity:pepsico"]);
-    expect(chains("brand:7up", "US")).toEqual([]);
+    expect(chains("brand:7up", "US")).toEqual(["owned: entity:keurig-dr-pepper"]);
   });
 
   it("Kellogg's is Mars's through Kellanova, and Ferrero's licence in the US", () => {

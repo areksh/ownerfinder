@@ -68,9 +68,9 @@ test("a listed company's profile gives its reasons with their sources", async ({
 });
 
 test("a brand not recorded in a country says so", async ({ page }) => {
-  await page.goto("/check/brand%3A7up?country=US");
+  await page.goto("/check/brand%3Anewport?country=GB");
   await expect(page.getByRole("heading", { level: 2, name: "Not in our records" })).toBeVisible();
-  await expect(page.getByText("in the United States on")).toBeVisible();
+  await expect(page.getByText("in the United Kingdom on")).toBeVisible();
 });
 
 test.describe("without JavaScript", () => {

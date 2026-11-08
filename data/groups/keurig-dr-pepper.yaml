@@ -1,0 +1,70 @@
+# Keurig Dr Pepper. Not listed; recorded so that 7UP and its other brands have an owner in North America. Brands from its 10-K for 2025.
+
+entities:
+  - { id: entity:keurig-dr-pepper, name: "Keurig Dr Pepper Inc." }
+
+brands:
+  - { id: brand:dr-pepper, name: "Dr Pepper" }
+  - { id: brand:canada-dry, name: "Canada Dry" }
+  - { id: brand:motts, name: "Mott's" }
+  - { id: brand:a-and-w, name: "A&W" }
+  - { id: brand:snapple, name: "Snapple" }
+  - { id: brand:green-mountain-coffee-roasters, name: "Green Mountain Coffee Roasters" }
+
+relationships:
+  - id: relationship:keurig-dr-pepper-dr-pepper
+    type: owns_brand
+    from: entity:keurig-dr-pepper
+    to: brand:dr-pepper
+    validFrom: "2026-02-24"
+    scope: { include: [US, CA, MX] }
+    note: "KDP's filing covers North America; other markets are not sourced, and Coca-Cola owns Dr Pepper in some countries outside North America."
+    sources: [source:kdp-10k-2025]
+  - id: relationship:keurig-dr-pepper-canada-dry
+    type: owns_brand
+    from: entity:keurig-dr-pepper
+    to: brand:canada-dry
+    validFrom: "2026-02-24"
+    scope: { include: [US, CA, MX] }
+    note: "KDP's filing covers North America; other markets are not sourced, and Coca-Cola owns Dr Pepper in some countries outside North America."
+    sources: [source:kdp-10k-2025]
+  - id: relationship:keurig-dr-pepper-motts
+    type: owns_brand
+    from: entity:keurig-dr-pepper
+    to: brand:motts
+    validFrom: "2026-02-24"
+    scope: { include: [US, CA, MX] }
+    note: "KDP's filing covers North America; other markets are not sourced, and Coca-Cola owns Dr Pepper in some countries outside North America."
+    sources: [source:kdp-10k-2025]
+  - id: relationship:keurig-dr-pepper-a-and-w
+    type: owns_brand
+    from: entity:keurig-dr-pepper
+    to: brand:a-and-w
+    validFrom: "2026-02-24"
+    scope: { include: [US, CA, MX] }
+    note: "KDP's filing covers North America; other markets are not sourced, and Coca-Cola owns Dr Pepper in some countries outside North America."
+    sources: [source:kdp-10k-2025]
+  - id: relationship:keurig-dr-pepper-snapple
+    type: owns_brand
+    from: entity:keurig-dr-pepper
+    to: brand:snapple
+    validFrom: "2026-02-24"
+    scope: { include: [US, CA, MX] }
+    note: "KDP's filing covers North America; other markets are not sourced, and Coca-Cola owns Dr Pepper in some countries outside North America."
+    sources: [source:kdp-10k-2025]
+  - id: relationship:keurig-dr-pepper-green-mountain-coffee-roasters
+    type: owns_brand
+    from: entity:keurig-dr-pepper
+    to: brand:green-mountain-coffee-roasters
+    validFrom: "2026-02-24"
+    scope: { include: [US, CA, MX] }
+    note: "KDP's filing covers North America; other markets are not sourced, and Coca-Cola owns Dr Pepper in some countries outside North America."
+    sources: [source:kdp-10k-2025]
+  - id: relationship:keurig-dr-pepper-7up
+    type: owns_brand
+    from: entity:keurig-dr-pepper
+    to: brand:7up
+    validFrom: "2026-02-24"
+    scope: { include: [US] }
+    note: "PepsiCo owns 7UP outside the US (its 10-K), so KDP's portfolio brand is recorded for the US only."
+    sources: [source:kdp-10k-2025]

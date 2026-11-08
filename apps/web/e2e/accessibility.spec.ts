@@ -5,7 +5,7 @@ const PAGES = [
   "/",
   "/search?q=kell",
   "/check/brand%3Akelloggs?country=US",
-  "/check/brand%3A7up?country=US",
+  "/check/brand%3Anewport?country=GB",
   "/profile/entity%3Ahershey",
   "/check/brand%3Akitkat?country=GB",
   "/profile/entity%3Amondelez",

@@ -1,0 +1,7 @@
+sources:
+  - id: source:kdp-10k-2025
+    url: https://www.sec.gov/Archives/edgar/data/1418135/000141813526000016/kdp-20251231.htm
+    title: "Keurig Dr Pepper Inc., Form 10-K for the fiscal year ended December 31, 2025"
+    publisher: "Keurig Dr Pepper Inc."
+    published: "2026-02-24"
+    retrieved: "2026-11-08"
