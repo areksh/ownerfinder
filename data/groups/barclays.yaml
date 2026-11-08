@@ -1,0 +1,24 @@
+# Barclays. Brands from its Annual Report on Form 20-F for 2025.
+
+entities:
+  - { id: entity:barclays, name: "Barclays PLC" }
+
+brands:
+  - { id: brand:barclays, name: "Barclays" }
+  - { id: brand:barclaycard, name: "Barclaycard" }
+
+relationships:
+  - id: relationship:barclays-barclays
+    type: owns_brand
+    from: entity:barclays
+    to: brand:barclays
+    validFrom: "2026-02-10"
+    scope: { include: world }
+    sources: [source:barclays-20f-2025]
+  - id: relationship:barclays-barclaycard
+    type: owns_brand
+    from: entity:barclays
+    to: brand:barclaycard
+    validFrom: "2026-02-10"
+    scope: { include: world }
+    sources: [source:barclays-20f-2025]

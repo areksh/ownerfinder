@@ -1,0 +1,32 @@
+# ExxonMobil. Names from its 10-K for 2025.
+
+entities:
+  - { id: entity:exxonmobil, name: "Exxon Mobil Corporation" }
+
+brands:
+  - { id: brand:exxon, name: "Exxon" }
+  - { id: brand:esso, name: "Esso" }
+  - { id: brand:mobil, name: "Mobil" }
+
+relationships:
+  - id: relationship:exxonmobil-exxon
+    type: owns_brand
+    from: entity:exxonmobil
+    to: brand:exxon
+    validFrom: "2026-02-18"
+    scope: { include: world }
+    sources: [source:exxonmobil-10k-2025]
+  - id: relationship:exxonmobil-esso
+    type: owns_brand
+    from: entity:exxonmobil
+    to: brand:esso
+    validFrom: "2026-02-18"
+    scope: { include: world }
+    sources: [source:exxonmobil-10k-2025]
+  - id: relationship:exxonmobil-mobil
+    type: owns_brand
+    from: entity:exxonmobil
+    to: brand:mobil
+    validFrom: "2026-02-18"
+    scope: { include: world }
+    sources: [source:exxonmobil-10k-2025]

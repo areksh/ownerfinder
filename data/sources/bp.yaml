@@ -1,0 +1,13 @@
+sources:
+  - id: source:bp-20f-2025
+    url: https://www.sec.gov/Archives/edgar/data/313807/000031380726000006/bp-20251231.htm
+    title: "BP p.l.c., Annual Report and Form 20-F 2025"
+    publisher: "BP p.l.c."
+    published: "2026-03-06"
+    retrieved: "2026-11-08"
+  - id: source:bp-20f-2012
+    url: https://www.sec.gov/Archives/edgar/data/0000313807/000119312513093347/d441093d20f.htm
+    title: "BP p.l.c., Annual Report and Form 20-F 2012"
+    publisher: "BP p.l.c."
+    published: "2013-03"
+    retrieved: "2026-11-08"

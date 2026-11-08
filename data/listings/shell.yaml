@@ -1,0 +1,12 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:shell
+evidence:
+  - criterion: criterion:climate
+    status: admitted
+    date: "2026-03-12"
+    summary: >-
+      In its annual report for 2025, Shell reported oil and gas
+      production available for sale of 2.8 million barrels of oil
+      equivalent a day.
+    sources: [source:shell-20f-2025]

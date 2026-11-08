@@ -1,0 +1,13 @@
+sources:
+  - id: source:barclays-20f-2025
+    url: https://www.sec.gov/Archives/edgar/data/312069/000031206926000004/bcs-20251231.htm
+    title: "Barclays PLC, Annual Report on Form 20-F for the year ended December 31, 2025"
+    publisher: "Barclays PLC"
+    published: "2026-02-10"
+    retrieved: "2026-11-08"
+  - id: source:banktrack-bocc-2025
+    url: https://www.banktrack.org/article/banks_fossil_fuel_finance_totals_869_billion_in_2024_a_dramatic_increase_in_financing
+    title: "Banks fossil fuel finance totals $869 billion in 2024, a dramatic increase in financing"
+    publisher: "BankTrack"
+    published: "2025-06-17"
+    retrieved: "2026-11-08"

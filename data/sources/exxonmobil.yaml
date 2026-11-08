@@ -1,0 +1,7 @@
+sources:
+  - id: source:exxonmobil-10k-2025
+    url: https://www.sec.gov/Archives/edgar/data/34088/000003408826000045/xom-20251231.htm
+    title: "Exxon Mobil Corporation, Form 10-K for the fiscal year ended December 31, 2025"
+    publisher: "Exxon Mobil Corporation"
+    published: "2026-02-18"
+    retrieved: "2026-11-08"

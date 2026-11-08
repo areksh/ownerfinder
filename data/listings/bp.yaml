@@ -1,0 +1,23 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:bp
+evidence:
+  - criterion: criterion:climate
+    status: admitted
+    date: "2026-03-06"
+    summary: >-
+      In its annual report for 2025, BP reported upstream production of
+      2.3 million barrels of oil equivalent a day.
+    sources: [source:bp-20f-2025]
+  - criterion: criterion:environment
+    status: admitted
+    date: "2013-01-29"
+    summary: >-
+      BP's subsidiary BP Exploration & Production pleaded guilty in the
+      US to 11 felony counts of misconduct or neglect of ships' officers
+      relating to the loss of 11 lives in the 2010 Deepwater Horizon
+      explosion and oil spill, and to further counts including one under
+      the Clean Water Act. The court accepted the pleas in January 2013;
+      BP agreed to pay $4 billion, including $1.256 billion in criminal
+      fines.
+    sources: [source:bp-20f-2012]

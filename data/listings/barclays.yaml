@@ -1,0 +1,14 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:barclays
+evidence:
+  - criterion: criterion:climate
+    status: alleged
+    date: "2025-06-17"
+    summary: >-
+      The Banking on Climate Chaos 2025 report, by Rainforest Action
+      Network, BankTrack and other environmental organisations, says
+      that Barclays was Europe's largest financier of fossil fuel
+      companies in 2024, committing $35.4 billion in lending and
+      underwriting.
+    sources: [source:banktrack-bocc-2025]

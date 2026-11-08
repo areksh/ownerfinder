@@ -1,0 +1,7 @@
+sources:
+  - id: source:cnil-shein-2025
+    url: https://www.cnil.fr/sites/default/files/2025-09/cnil_sanction_shein_en.pdf
+    title: "Deliberation of the restricted committee No SAN-2025-005 of 1 September 2025 concerning the company Infinite Styles Services Co. Limited"
+    publisher: "Commission nationale de l'informatique et des libertés (CNIL)"
+    published: "2025-09-01"
+    retrieved: "2026-11-08"

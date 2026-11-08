@@ -1,0 +1,24 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:3m
+evidence:
+  - criterion: criterion:environment
+    status: settled
+    date: "2023-06"
+    summary: >-
+      In June 2023 3M entered into a class-action settlement with US
+      public water suppliers to resolve a wide range of drinking water
+      claims relating to PFAS, under which it will pay $10.5 billion to
+      $12.5 billion. The settlement provides that 3M does not admit any
+      liability or wrongdoing.
+    sources: [source:3m-10k-2025]
+  - criterion: criterion:consumer-protection
+    status: settled
+    date: "2023"
+    summary: >-
+      3M agreed in 2023 to contribute up to $6.0 billion between 2023
+      and 2029 to settle claims over the Combat Arms Earplugs that it
+      and its subsidiary Aearo Technologies sold. The settlement
+      provides that 3M does not admit liability or wrongdoing, and 3M
+      says the earplugs were effective and safe when used properly.
+    sources: [source:3m-10k-2025]

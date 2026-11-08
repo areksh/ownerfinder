@@ -1,0 +1,26 @@
+# Shein. The CNIL's 2025 decision names Roadget Business Pte. Ltd. as the parent of the group that sells the SHEIN brand.
+
+entities:
+  - { id: entity:roadget-business, name: "Roadget Business Pte. Ltd." }
+  - { id: entity:infinite-styles-services, name: "Infinite Styles Services Co. Limited" }
+
+brands:
+  - { id: brand:shein, name: "SHEIN" }
+
+relationships:
+  - id: relationship:roadget-business-shein
+    type: owns_brand
+    from: entity:roadget-business
+    to: brand:shein
+    validFrom: "2025-09-01"
+    scope: { include: world }
+    note: "The decision calls SHEIN the group's brand; the trademark owner is not yet sourced."
+    sources: [source:cnil-shein-2025]
+  - id: relationship:roadget-business-infinite-styles-services
+    type: owns
+    from: entity:roadget-business
+    to: entity:infinite-styles-services
+    validFrom: "2025-09-01"
+    stakePct: 100
+    scope: { include: world }
+    sources: [source:cnil-shein-2025]

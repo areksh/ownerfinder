@@ -1,0 +1,16 @@
+# Shell. Brand from its Annual Report and Form 20-F for 2025.
+
+entities:
+  - { id: entity:shell, name: "Shell plc" }
+
+brands:
+  - { id: brand:shell, name: "Shell" }
+
+relationships:
+  - id: relationship:shell-shell
+    type: owns_brand
+    from: entity:shell
+    to: brand:shell
+    validFrom: "2026-03-12"
+    scope: { include: world }
+    sources: [source:shell-20f-2025]

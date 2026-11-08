@@ -1,0 +1,56 @@
+# 3M. Brands from its 10-K for 2025.
+
+entities:
+  - { id: entity:3m, name: "3M Company" }
+
+brands:
+  - { id: brand:post-it, name: "Post-it" }
+  - { id: brand:scotch, name: "Scotch" }
+  - { id: brand:scotch-brite, name: "Scotch-Brite" }
+  - { id: brand:command, name: "Command" }
+  - { id: brand:filtrete, name: "Filtrete" }
+  - { id: brand:scotchgard, name: "Scotchgard" }
+
+relationships:
+  - id: relationship:3m-post-it
+    type: owns_brand
+    from: entity:3m
+    to: brand:post-it
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:3m-10k-2025]
+  - id: relationship:3m-scotch
+    type: owns_brand
+    from: entity:3m
+    to: brand:scotch
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:3m-10k-2025]
+  - id: relationship:3m-scotch-brite
+    type: owns_brand
+    from: entity:3m
+    to: brand:scotch-brite
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:3m-10k-2025]
+  - id: relationship:3m-command
+    type: owns_brand
+    from: entity:3m
+    to: brand:command
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:3m-10k-2025]
+  - id: relationship:3m-filtrete
+    type: owns_brand
+    from: entity:3m
+    to: brand:filtrete
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:3m-10k-2025]
+  - id: relationship:3m-scotchgard
+    type: owns_brand
+    from: entity:3m
+    to: brand:scotchgard
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:3m-10k-2025]

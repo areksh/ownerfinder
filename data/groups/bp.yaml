@@ -1,0 +1,16 @@
+# BP. Brands from its Annual Report and Form 20-F for 2025; Castrol is left out while BP divests 65% of it.
+
+entities:
+  - { id: entity:bp, name: "BP p.l.c." }
+
+brands:
+  - { id: brand:bp, name: "bp" }
+
+relationships:
+  - id: relationship:bp-bp
+    type: owns_brand
+    from: entity:bp
+    to: brand:bp
+    validFrom: "2026-03-06"
+    scope: { include: world }
+    sources: [source:bp-20f-2025]

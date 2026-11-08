@@ -1,0 +1,14 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:roadget-business
+evidence:
+  - criterion: criterion:privacy
+    status: found
+    date: "2025-09-01"
+    summary: >-
+      France's data protection authority (CNIL) fined Infinite Styles
+      Services, a subsidiary of Shein's parent company Roadget Business,
+      €150 million in September 2025 for placing cookies on the devices
+      of visitors to shein.com without valid consent and for failing to
+      respect visitors who refused them.
+    sources: [source:cnil-shein-2025]

@@ -1,0 +1,11 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:chevron
+evidence:
+  - criterion: criterion:climate
+    status: admitted
+    date: "2026-02-24"
+    summary: >-
+      In its annual report for 2025, Chevron reported worldwide net oil-
+      equivalent production of 3.7 million barrels a day that year.
+    sources: [source:chevron-10k-2025]

@@ -1,0 +1,11 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:exxonmobil
+evidence:
+  - criterion: criterion:climate
+    status: admitted
+    date: "2026-02-18"
+    summary: >-
+      In its annual report for 2025, ExxonMobil reported oil-equivalent
+      production of 4.7 million barrels a day that year.
+    sources: [source:exxonmobil-10k-2025]

@@ -1,0 +1,32 @@
+# Chevron. Principal brands from its 10-K for 2025.
+
+entities:
+  - { id: entity:chevron, name: "Chevron Corporation" }
+
+brands:
+  - { id: brand:chevron, name: "Chevron" }
+  - { id: brand:texaco, name: "Texaco" }
+  - { id: brand:caltex, name: "Caltex" }
+
+relationships:
+  - id: relationship:chevron-chevron
+    type: owns_brand
+    from: entity:chevron
+    to: brand:chevron
+    validFrom: "2026-02-24"
+    scope: { include: world }
+    sources: [source:chevron-10k-2025]
+  - id: relationship:chevron-texaco
+    type: owns_brand
+    from: entity:chevron
+    to: brand:texaco
+    validFrom: "2026-02-24"
+    scope: { include: world }
+    sources: [source:chevron-10k-2025]
+  - id: relationship:chevron-caltex
+    type: owns_brand
+    from: entity:chevron
+    to: brand:caltex
+    validFrom: "2026-02-24"
+    scope: { include: world }
+    sources: [source:chevron-10k-2025]
