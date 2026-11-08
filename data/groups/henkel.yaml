@@ -19,6 +19,7 @@ relationships:
     from: entity:henkel
     to: brand:persil
     validFrom: "1907-06-06"
+    startKnown: true
     scope: { include: [DE] }
     sources: [source:wikipedia-persil, source:henkel-consumer-brands]
     note: "Recorded for Germany only until Henkel's other Persil markets are confirmed."

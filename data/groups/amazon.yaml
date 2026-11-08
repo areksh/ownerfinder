@@ -23,6 +23,7 @@ relationships:
     from: entity:amazon
     to: entity:whole-foods-market
     validFrom: "2017-08-28"
+    startKnown: true
     stakePct: 100
     scope: { include: world }
     sources: [source:amazon-whole-foods-8k-2017]

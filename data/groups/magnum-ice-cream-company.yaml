@@ -15,6 +15,7 @@ relationships:
     from: entity:magnum-ice-cream-company
     to: entity:ben-and-jerrys-homemade
     validFrom: "2025-12-06"
+    startKnown: true
     scope: { include: world }
     sources: [source:tmicc-investor-faq, source:the-star-tmicc-demerger-2025]
   - id: relationship:ben-and-jerrys-brand
@@ -22,6 +23,7 @@ relationships:
     from: entity:ben-and-jerrys-homemade
     to: brand:ben-and-jerrys
     validFrom: "1978"
+    startKnown: true
     scope: { include: world }
     sources: [source:wikipedia-ben-and-jerrys]
   - id: relationship:magnum-ice-cream-company-walls
@@ -29,6 +31,7 @@ relationships:
     from: entity:magnum-ice-cream-company
     to: brand:walls
     validFrom: "2025-12-06"
+    startKnown: true
     scope: { include: world }
     sources: [source:the-star-tmicc-demerger-2025]
   - id: relationship:magnum-ice-cream-company-cornetto
@@ -36,5 +39,6 @@ relationships:
     from: entity:magnum-ice-cream-company
     to: brand:cornetto
     validFrom: "2025-12-06"
+    startKnown: true
     scope: { include: world }
     sources: [source:the-star-tmicc-demerger-2025]

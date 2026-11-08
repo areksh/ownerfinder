@@ -25,6 +25,7 @@ relationships:
     to: entity:costa
     stakePct: 100
     validFrom: "2019-01-03"
+    startKnown: true
     scope: { include: world }
     sources: [source:coca-cola-costa-2019]
   - id: relationship:costa-costa-coffee
@@ -40,6 +41,7 @@ relationships:
     to: entity:innocent
     stakePct: 58
     validFrom: "2010-04"
+    startKnown: true
     validTo: "2013-02"
     scope: { include: world }
     sources: [source:marketing-week-innocent-2010]
@@ -48,6 +50,7 @@ relationships:
     from: entity:coca-cola
     to: entity:innocent
     validFrom: "2013-02"
+    startKnown: true
     scope: { include: world }
     sources: [source:marketing-week-innocent-2013]
     note: "More than 90 per cent; the report gives 90 to 99 per cent, with the founders keeping a minority."
@@ -64,6 +67,7 @@ relationships:
     to: entity:monster
     stakePct: 16.7
     validFrom: "2015-06-12"
+    startKnown: true
     validTo: "2025-12-31"
     scope: { include: world }
     sources: [source:monster-8k-2015]

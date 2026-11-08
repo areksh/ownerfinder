@@ -9,6 +9,7 @@ relationships:
     from: entity:wk-kellogg-co
     to: brand:kelloggs
     validFrom: "2023-10"
+    startKnown: true
     scope: { include: [US, CA] }
     sources: [source:kellogg-brand-agreement-2023]
     coverage: "Exclusive, perpetual licence of the KELLOGG'S house mark in North America for the food categories set out in the agreement. Caribbean territories are not recorded here."

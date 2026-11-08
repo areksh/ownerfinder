@@ -30,6 +30,7 @@ relationships:
     from: entity:nestle
     to: brand:starbucks
     validFrom: "2018-08-28"
+    startKnown: true
     scope: { include: world }
     sources: [source:starbucks-nestle-close-2018]
     coverage: "Starbucks packaged coffee, tea and foodservice products; not ready-to-drink drinks or anything sold in Starbucks shops."

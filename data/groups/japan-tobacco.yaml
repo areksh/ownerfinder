@@ -16,6 +16,7 @@ relationships:
     from: entity:japan-tobacco
     to: brand:camel
     validFrom: "1999"
+    startKnown: true
     scope: { include: world, exclude: [US] }
     note: "Acquired with RJR Nabisco's non-US tobacco business; the US rights stayed with the US business."
     sources: [source:jt-integrated-report-2026]
@@ -24,6 +25,7 @@ relationships:
     from: entity:japan-tobacco
     to: brand:winston
     validFrom: "1999"
+    startKnown: true
     scope: { include: world, exclude: [US] }
     note: "Acquired with RJR Nabisco's non-US tobacco business; the US rights stayed with the US business."
     sources: [source:jt-integrated-report-2026]

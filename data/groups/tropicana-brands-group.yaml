@@ -14,6 +14,7 @@ relationships:
     to: entity:tropicana-brands-group
     stakePct: 61
     validFrom: "2022-01"
+    startKnown: true
     scope: { include: world }
     sources: [source:pai-tropicana-2021, source:tropicana-brands-group-2022]
   - id: relationship:tropicana-brands-group-tropicana
@@ -21,6 +22,7 @@ relationships:
     from: entity:tropicana-brands-group
     to: brand:tropicana
     validFrom: "2022-01"
+    startKnown: true
     scope: { include: world }
     sources: [source:tropicana-brands-group-2022]
     note: "The sale closed at the end of January 2022."

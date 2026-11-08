@@ -16,6 +16,7 @@ relationships:
     to: entity:wk-kellogg-co
     stakePct: 100
     validFrom: "2025-09-26"
+    startKnown: true
     scope: { include: world }
     sources: [source:ferrero-wk-kellogg-2025]
   - id: relationship:ferrero-nutella

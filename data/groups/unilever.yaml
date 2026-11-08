@@ -30,6 +30,7 @@ relationships:
     from: entity:unilever
     to: entity:ben-and-jerrys-homemade
     validFrom: "2000-05-16"
+    startKnown: true
     validTo: "2025-12-06"
     scope: { include: world }
     note: "Unilever's purchaser bought about 91% in its tender offer, accepted on 16 May 2000; the merger that followed was the second and final step."
@@ -45,6 +46,7 @@ relationships:
     to: entity:magnum-ice-cream-company
     stakePct: 19.9
     validFrom: "2025-12-06"
+    startKnown: true
     scope: { include: world }
     sources: [source:tmicc-investor-faq]
     note: "Retained at the demerger; Unilever intends to sell it down."

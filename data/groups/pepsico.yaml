@@ -23,6 +23,7 @@ relationships:
     from: entity:pepsico
     to: brand:tropicana
     validFrom: "1998-08"
+    startKnown: true
     validTo: "2022-01"
     scope: { include: world }
     sources: [source:pepsico-10k-1998, source:tropicana-brands-group-2022]
@@ -32,6 +33,7 @@ relationships:
     to: entity:tropicana-brands-group
     stakePct: 39
     validFrom: "2022-01"
+    startKnown: true
     scope: { include: world }
     sources: [source:pai-tropicana-2021, source:tropicana-brands-group-2022]
   - id: relationship:pepsico-tropicana-distribution
@@ -39,6 +41,7 @@ relationships:
     from: entity:pepsico
     to: brand:tropicana
     validFrom: "2022-01"
+    startKnown: true
     scope: { include: [US] }
     sources: [source:pai-tropicana-2021]
     coverage: "Exclusive US distribution of small-format and foodservice chilled products through PepsiCo's direct-store-delivery system."
