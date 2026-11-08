@@ -46,3 +46,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   Spirit, Grizzly, Vuse and Velo, and its 22.91% stake in ITC, with
   about 50 of ITC's Indian brands such as Aashirvaad, Sunfeast,
   Bingo!, Classmate and Gold Flake.
+- L'Oréal in depth: about 35 more brands with the year each was
+  acquired, the fashion houses whose beauty lines it makes under
+  licence (Armani, Prada, Valentino, Miu Miu, Jacquemus, and Balenciaga
+  and Bottega Veneta through Kering Beauté, bought in April 2026), its
+  stakes in Galderma, Sanofi, Amouage and Jacquemus, and the Nestlé
+  companies that hold Nestlé's 20.16% of L'Oréal.
