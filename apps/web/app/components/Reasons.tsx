@@ -1,5 +1,6 @@
 import type { Criterion, Evidence } from "@ecf/model";
 import { partialDate, STATUS } from "../copy";
+import { SourceLinks } from "./LinkItem";
 
 /**
  * Why a company is on the list: each piece of evidence under its
@@ -21,12 +22,7 @@ export function Reasons({
       {evidence.map((e) => (
         <li key={`${e.criterion} ${e.date} ${e.summary}`}>
           {names.get(e.criterion) ?? e.criterion}: {e.summary} {STATUS[e.status]},{" "}
-          {partialDate(e.date)}.{" "}
-          {e.sources.map((s) => (
-            <a key={s} href={`#source-${sourceNumber.get(s)}`}>
-              Source {sourceNumber.get(s)}
-            </a>
-          ))}
+          {partialDate(e.date)}. <SourceLinks ids={e.sources} sourceNumber={sourceNumber} />
         </li>
       ))}
     </ul>

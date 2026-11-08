@@ -29,6 +29,22 @@ describe("Reasons", () => {
     expect(screen.getByRole("listitem").textContent).toContain(words);
   });
 
+  it("separates the sources a piece of evidence cites", () => {
+    render(
+      <Reasons
+        evidence={[{ ...evidence("found"), sources: ["source:a", "source:b"] }]}
+        criteria={[]}
+        sourceNumber={
+          new Map([
+            ["source:a", 1],
+            ["source:b", 2],
+          ])
+        }
+      />,
+    );
+    expect(screen.getByRole("listitem").textContent).toContain("Source 1, Source 2");
+  });
+
   it("names the criterion, falling back to its id when the name is unknown", () => {
     const sourceNumber = new Map([["source:a", 1]]);
     render(

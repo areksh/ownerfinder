@@ -14,13 +14,25 @@ export function LinkItem({
       {linkSentence(link)}, {when(link)}, {where(link.scope)}.
       {link.coverage !== undefined && <> {link.coverage}</>}
       {link.note !== undefined && <> Note: {link.note}</>}{" "}
-      {link.sources.map((s) => (
-        <a key={s} href={`#source-${sourceNumber.get(s)}`}>
-          Source {sourceNumber.get(s)}
-        </a>
-      ))}
+      <SourceLinks ids={link.sources} sourceNumber={sourceNumber} />
     </li>
   );
+}
+
+/** Citations to the numbered source list, separated by commas. */
+export function SourceLinks({
+  ids,
+  sourceNumber,
+}: {
+  ids: readonly string[];
+  sourceNumber: Map<string, number>;
+}) {
+  return ids.map((s, i) => (
+    <span key={s}>
+      {i > 0 && ", "}
+      <a href={`#source-${sourceNumber.get(s)}`}>Source {sourceNumber.get(s)}</a>
+    </span>
+  ));
 }
 
 export function numberSources(sources: Record<string, unknown>): Map<string, number> {

@@ -189,6 +189,31 @@ describe("Answer", () => {
     );
   });
 
+  it("separates the sources a link cites", () => {
+    const two = answer({
+      paths: [
+        {
+          grade: "owned",
+          approximate: false,
+          entities: [{ ...kellanova, listed: false }],
+          links: [
+            link({
+              type: "owns_brand",
+              from: kellanova,
+              to: kelloggs,
+              sources: [SOURCE.id, FINDING.id],
+            }),
+          ],
+        },
+      ],
+      sources: { [SOURCE.id]: SOURCE, [FINDING.id]: FINDING },
+    });
+    render(<Answer answer={two} />);
+    expect(within(screen.getByRole("article")).getByRole("listitem").textContent).toContain(
+      "Source 1, Source 2",
+    );
+  });
+
   it("says no link found without implying there is none", () => {
     render(
       <Answer
