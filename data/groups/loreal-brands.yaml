@@ -1,0 +1,463 @@
+# L'Oréal in depth: brands, licences and stakes from its 2025 Universal Registration Document and 2026 half-year results.
+
+entities:
+  - { id: entity:kering, name: "Kering S.A." }
+  - { id: entity:kering-beaute, name: "Kering Beauté" }
+  - { id: entity:coty, name: "Coty Inc." }
+  - { id: entity:gowoonsesang-cosmetics, name: "Gowoonsesang Cosmetics Co., Ltd. (Dr.G)" }
+  - { id: entity:medik8, name: "Medik8" }
+  - { id: entity:amouage, name: "Amouage SAOC" }
+  - { id: entity:galderma, name: "Galderma Group AG" }
+  - { id: entity:sanofi, name: "Sanofi" }
+  - { id: entity:skinspirit, name: "SkinSpirit" }
+  - { id: entity:jacquemus, name: "Jacquemus" }
+
+brands:
+  - { id: brand:biotherm, name: "Biotherm" }
+  - { id: brand:redken, name: "Redken" }
+  - { id: brand:matrix, name: "Matrix" }
+  - { id: brand:shu-uemura, name: "Shu Uemura" }
+  - { id: brand:essie, name: "Essie" }
+  - { id: brand:urban-decay, name: "Urban Decay" }
+  - { id: brand:it-cosmetics, name: "IT Cosmetics" }
+  - { id: brand:stylenanda, name: "Stylenanda" }
+  - { id: brand:pulp-riot, name: "Pulp Riot" }
+  - { id: brand:takami, name: "Takami" }
+  - { id: brand:youth-to-the-people, name: "Youth To The People" }
+  - { id: brand:skinbetter-science, name: "Skinbetter Science" }
+  - { id: brand:loreal-paris, name: "L'Oréal Paris" }
+  - { id: brand:loreal-professionnel, name: "L'Oréal Professionnel" }
+  - { id: brand:kerastase, name: "Kérastase" }
+  - { id: brand:pureology, name: "PureOlogy" }
+  - { id: brand:mixa, name: "Mixa" }
+  - { id: brand:helena-rubinstein, name: "Helena Rubinstein" }
+  - { id: brand:skinceuticals, name: "SkinCeuticals" }
+  - { id: brand:aesop, name: "Aēsop" }
+  - { id: brand:thayers, name: "Thayers" }
+  - { id: brand:dr-g, name: "Dr.G" }
+  - { id: brand:color-wow, name: "Color Wow" }
+  - { id: brand:medik8, name: "Medik8" }
+  - { id: brand:creed, name: "Creed" }
+  - { id: brand:gucci, name: "Gucci" }
+  - { id: brand:balenciaga, name: "Balenciaga" }
+  - { id: brand:bottega-veneta, name: "Bottega Veneta" }
+  - { id: brand:armani-beauty, name: "Armani Beauty" }
+  - { id: brand:valentino-beauty, name: "Valentino (beauty)" }
+  - { id: brand:prada-beauty, name: "Prada (beauty)" }
+  - { id: brand:miu-miu-beauty, name: "Miu Miu (beauty)" }
+  - { id: brand:jacquemus-beauty, name: "Jacquemus (beauty)" }
+  - { id: brand:amouage, name: "Amouage" }
+
+relationships:
+  - id: relationship:loreal-biotherm
+    type: owns_brand
+    from: entity:loreal
+    to: brand:biotherm
+    validFrom: "1970"
+    startKnown: true
+    scope: { include: world }
+    note: "Listed among L'Oréal's acquisitions for 1970."
+    sources: [source:loreal-urd-2025-history, source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-redken
+    type: owns_brand
+    from: entity:loreal
+    to: brand:redken
+    validFrom: "1993"
+    startKnown: true
+    scope: { include: world }
+    note: "Listed among L'Oréal's acquisitions for 1993."
+    sources: [source:loreal-urd-2025-history, source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-matrix
+    type: owns_brand
+    from: entity:loreal
+    to: brand:matrix
+    validFrom: "2000"
+    startKnown: true
+    scope: { include: world }
+    note: "Listed among L'Oréal's acquisitions for 2000."
+    sources: [source:loreal-urd-2025-history, source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-shu-uemura
+    type: owns_brand
+    from: entity:loreal
+    to: brand:shu-uemura
+    validFrom: "2003"
+    startKnown: true
+    scope: { include: world }
+    note: "L'Oréal acquired majority control in 2003."
+    sources: [source:loreal-urd-2025-history, source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-essie
+    type: owns_brand
+    from: entity:loreal
+    to: brand:essie
+    validFrom: "2010"
+    startKnown: true
+    scope: { include: world }
+    note: "Listed among L'Oréal's acquisitions for 2010."
+    sources: [source:loreal-urd-2025-history, source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-urban-decay
+    type: owns_brand
+    from: entity:loreal
+    to: brand:urban-decay
+    validFrom: "2012"
+    startKnown: true
+    scope: { include: world }
+    note: "Listed among L'Oréal's acquisitions for 2012."
+    sources: [source:loreal-urd-2025-history, source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-it-cosmetics
+    type: owns_brand
+    from: entity:loreal
+    to: brand:it-cosmetics
+    validFrom: "2016"
+    startKnown: true
+    scope: { include: world }
+    note: "Listed among L'Oréal's acquisitions for 2016."
+    sources: [source:loreal-urd-2025-history, source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-stylenanda
+    type: owns_brand
+    from: entity:loreal
+    to: brand:stylenanda
+    validFrom: "2018"
+    startKnown: true
+    scope: { include: world }
+    note: "Listed among L'Oréal's acquisitions for 2018."
+    sources: [source:loreal-urd-2025-history, source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-pulp-riot
+    type: owns_brand
+    from: entity:loreal
+    to: brand:pulp-riot
+    validFrom: "2018"
+    startKnown: true
+    scope: { include: world }
+    note: "Listed among L'Oréal's acquisitions for 2018."
+    sources: [source:loreal-urd-2025-history]
+  - id: relationship:loreal-takami
+    type: owns_brand
+    from: entity:loreal
+    to: brand:takami
+    validFrom: "2021"
+    startKnown: true
+    scope: { include: world }
+    note: "Listed among L'Oréal's acquisitions for 2021."
+    sources: [source:loreal-urd-2025-history, source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-youth-to-the-people
+    type: owns_brand
+    from: entity:loreal
+    to: brand:youth-to-the-people
+    validFrom: "2021"
+    startKnown: true
+    scope: { include: world }
+    note: "Listed among L'Oréal's acquisitions for 2021."
+    sources: [source:loreal-urd-2025-history]
+  - id: relationship:loreal-skinbetter-science
+    type: owns_brand
+    from: entity:loreal
+    to: brand:skinbetter-science
+    validFrom: "2022"
+    startKnown: true
+    scope: { include: world }
+    note: "Listed among L'Oréal's acquisitions for 2022."
+    sources: [source:loreal-urd-2025-history, source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-loreal-paris
+    type: owns_brand
+    from: entity:loreal
+    to: brand:loreal-paris
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named in one of L'Oréal's divisions' brand portfolios; when it became L'Oréal's is not recorded."
+    sources: [source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-loreal-professionnel
+    type: owns_brand
+    from: entity:loreal
+    to: brand:loreal-professionnel
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named in one of L'Oréal's divisions' brand portfolios; when it became L'Oréal's is not recorded."
+    sources: [source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-kerastase
+    type: owns_brand
+    from: entity:loreal
+    to: brand:kerastase
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named in one of L'Oréal's divisions' brand portfolios; when it became L'Oréal's is not recorded."
+    sources: [source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-pureology
+    type: owns_brand
+    from: entity:loreal
+    to: brand:pureology
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named in one of L'Oréal's divisions' brand portfolios; when it became L'Oréal's is not recorded."
+    sources: [source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-mixa
+    type: owns_brand
+    from: entity:loreal
+    to: brand:mixa
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named in one of L'Oréal's divisions' brand portfolios; when it became L'Oréal's is not recorded."
+    sources: [source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-helena-rubinstein
+    type: owns_brand
+    from: entity:loreal
+    to: brand:helena-rubinstein
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named in one of L'Oréal's divisions' brand portfolios; when it became L'Oréal's is not recorded."
+    sources: [source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-skinceuticals
+    type: owns_brand
+    from: entity:loreal
+    to: brand:skinceuticals
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named in one of L'Oréal's divisions' brand portfolios; when it became L'Oréal's is not recorded."
+    sources: [source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-aesop
+    type: owns_brand
+    from: entity:loreal
+    to: brand:aesop
+    validFrom: "2023-08-30"
+    startKnown: true
+    scope: { include: world }
+    note: "L'Oréal agreed to buy Aēsop from Natura & Co on 3 April 2023 and completed on 30 August 2023."
+    sources: [source:loreal-urd-2025-acquisitions-2023, source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-thayers
+    type: owns_brand
+    from: entity:loreal
+    to: brand:thayers
+    validFrom: "2026-07"
+    scope: { include: world }
+    note: "Named among L'Oréal's smaller brands in its 2026 half-year results."
+    sources: [source:loreal-h1-2026]
+  - id: relationship:loreal-owns-gowoonsesang-cosmetics
+    type: owns
+    from: entity:loreal
+    to: entity:gowoonsesang-cosmetics
+    validFrom: "2025-03-25"
+    startKnown: true
+    scope: { include: world }
+    note: "Bought from Migros; the acquisition was finalised on 25 March 2025."
+    sources: [source:loreal-urd-2025-acquisitions]
+  - id: relationship:gowoonsesang-cosmetics-dr-g
+    type: owns_brand
+    from: entity:gowoonsesang-cosmetics
+    to: brand:dr-g
+    validFrom: "2025-03-25"
+    scope: { include: world }
+    note: "L'Oréal describes Gowoonsesang Cosmetics as including Dr.G."
+    sources: [source:loreal-urd-2025-acquisitions]
+  - id: relationship:loreal-color-wow
+    type: owns_brand
+    from: entity:loreal
+    to: brand:color-wow
+    validFrom: "2025-09-09"
+    startKnown: true
+    scope: { include: world }
+    note: "Acquisition finalised on 9 September 2025."
+    sources: [source:loreal-urd-2025-acquisitions]
+  - id: relationship:loreal-owns-medik8
+    type: owns
+    from: entity:loreal
+    to: entity:medik8
+    validFrom: "2025-09-10"
+    startKnown: true
+    stakePct: 77.4
+    scope: { include: world }
+    note: "A 77.4% majority stake, finalised on 10 September 2025; Inflexion remains a minority shareholder, and L'Oréal can buy the rest in 2029."
+    sources: [source:loreal-urd-2025-acquisitions]
+  - id: relationship:medik8-medik8
+    type: owns_brand
+    from: entity:medik8
+    to: brand:medik8
+    validFrom: "2025-09-10"
+    scope: { include: world }
+    note: "L'Oréal calls Medik8 a British skincare brand and bought a majority of its company."
+    sources: [source:loreal-urd-2025-acquisitions]
+  - id: relationship:kering-owns-kering-beaute
+    type: owns
+    from: entity:kering
+    to: entity:kering-beaute
+    validFrom: "2025-10-19"
+    validTo: "2026-04"
+    stakePct: 100
+    scope: { include: world }
+    note: "L'Oréal agreed on 19 October 2025 to buy 100% of Kering Beauté from Kering; when Kering's ownership began is not recorded."
+    sources: [source:loreal-urd-2025-commitments, source:loreal-h1-2026]
+  - id: relationship:loreal-owns-kering-beaute
+    type: owns
+    from: entity:loreal
+    to: entity:kering-beaute
+    validFrom: "2026-04"
+    startKnown: true
+    stakePct: 100
+    scope: { include: world }
+    note: "L'Oréal bought 100% of Kering Beauté; its brands have been consolidated since the beginning of April 2026."
+    sources: [source:loreal-urd-2025-commitments, source:loreal-h1-2026]
+  - id: relationship:kering-beaute-creed
+    type: owns_brand
+    from: entity:kering-beaute
+    to: brand:creed
+    validFrom: "2025-10-19"
+    scope: { include: world }
+    note: "L'Oréal describes Kering Beauté as the owner of the House of Creed."
+    sources: [source:loreal-urd-2025-commitments]
+  - id: relationship:kering-gucci
+    type: owns_brand
+    from: entity:kering
+    to: brand:gucci
+    validFrom: "2025-10-19"
+    scope: { include: world }
+    note: "L'Oréal names it as one of Kering's houses."
+    sources: [source:loreal-urd-2025-commitments]
+  - id: relationship:kering-balenciaga
+    type: owns_brand
+    from: entity:kering
+    to: brand:balenciaga
+    validFrom: "2025-10-19"
+    scope: { include: world }
+    note: "L'Oréal names it as one of Kering's houses."
+    sources: [source:loreal-urd-2025-commitments]
+  - id: relationship:kering-bottega-veneta
+    type: owns_brand
+    from: entity:kering
+    to: brand:bottega-veneta
+    validFrom: "2025-10-19"
+    scope: { include: world }
+    note: "L'Oréal names it as one of Kering's houses."
+    sources: [source:loreal-urd-2025-commitments]
+  - id: relationship:kering-beaute-licence-balenciaga
+    type: licenses_brand
+    from: entity:kering-beaute
+    to: brand:balenciaga
+    validFrom: "2026-04"
+    startKnown: true
+    scope: { include: world }
+    coverage: "Fragrances and beauty products."
+    note: "Licensed from Kering for fifty years from the completion of L'Oréal's purchase of Kering Beauté."
+    sources: [source:loreal-urd-2025-commitments, source:loreal-h1-2026]
+  - id: relationship:kering-beaute-licence-bottega-veneta
+    type: licenses_brand
+    from: entity:kering-beaute
+    to: brand:bottega-veneta
+    validFrom: "2026-04"
+    startKnown: true
+    scope: { include: world }
+    coverage: "Fragrances and beauty products."
+    note: "Licensed from Kering for fifty years from the completion of L'Oréal's purchase of Kering Beauté."
+    sources: [source:loreal-urd-2025-commitments, source:loreal-h1-2026]
+  - id: relationship:coty-licence-gucci
+    type: licenses_brand
+    from: entity:coty
+    to: brand:gucci
+    validFrom: "2025-10-19"
+    scope: { include: world }
+    coverage: "Fragrances and beauty products."
+    note: "Coty holds the current Gucci beauty licence. Kering announced its early redemption on 7 July 2026, and L'Oréal's fifty-year licence is due to take effect on 1 July 2027, subject to regulatory approvals."
+    sources: [source:loreal-urd-2025-commitments, source:loreal-gucci-licence-2026]
+  - id: relationship:loreal-licence-armani-beauty
+    type: licenses_brand
+    from: entity:loreal
+    to: brand:armani-beauty
+    validFrom: "1988"
+    startKnown: true
+    scope: { include: world }
+    coverage: "Fragrances and beauty products."
+    note: "L'Oréal took the Armani licence in 1988 and renewed it in 2018; the licensor is not named here."
+    sources: [source:loreal-urd-2025-history, source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-licence-valentino-beauty
+    type: licenses_brand
+    from: entity:loreal
+    to: brand:valentino-beauty
+    validFrom: "2018"
+    startKnown: true
+    scope: { include: world }
+    coverage: "Fragrances and beauty products."
+    note: "L'Oréal took the Valentino licence in 2018; the licensor is not named here."
+    sources: [source:loreal-urd-2025-history, source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-licence-prada-beauty
+    type: licenses_brand
+    from: entity:loreal
+    to: brand:prada-beauty
+    validFrom: "2019"
+    startKnown: true
+    scope: { include: world }
+    coverage: "Fragrances and beauty products."
+    note: "L'Oréal took the Prada licence in 2019; the licensor is not named here."
+    sources: [source:loreal-urd-2025-history, source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-licence-miu-miu-beauty
+    type: licenses_brand
+    from: entity:loreal
+    to: brand:miu-miu-beauty
+    validFrom: "2025-01"
+    startKnown: true
+    scope: { include: world }
+    coverage: "Fragrances and beauty products."
+    note: "L'Oréal's Miu Miu licence entered into force in January 2025; the licensor is not named here."
+    sources: [source:loreal-urd-2025-history]
+  - id: relationship:loreal-licence-jacquemus-beauty
+    type: licenses_brand
+    from: entity:loreal
+    to: brand:jacquemus-beauty
+    validFrom: "2025"
+    startKnown: true
+    scope: { include: world }
+    coverage: "Fragrances and beauty products."
+    note: "Part of a long-term exclusive beauty partnership announced on 7 February 2025; the licensor is not named here."
+    sources: [source:loreal-urd-2025-history, source:loreal-urd-2025-acquisitions-2023]
+  - id: relationship:loreal-stake-jacquemus
+    type: holds_stake
+    from: entity:loreal
+    to: entity:jacquemus
+    validFrom: "2025-04-10"
+    startKnown: true
+    stakePct: 14.8
+    scope: { include: world }
+    note: "A minority investment finalised on 10 April 2025, alongside L'Oréal's beauty partnership with Jacquemus."
+    sources: [source:loreal-urd-2025-acquisitions-2023]
+  - id: relationship:loreal-stake-amouage
+    type: holds_stake
+    from: entity:loreal
+    to: entity:amouage
+    validFrom: "2024"
+    startKnown: true
+    stakePct: 25
+    scope: { include: world }
+    note: "Acquired in the third quarter of 2024; Amouage SAOC is controlled by SABCO Group LLC."
+    sources: [source:loreal-urd-2025-associates, source:loreal-urd-2025-acquisitions]
+  - id: relationship:amouage-amouage
+    type: owns_brand
+    from: entity:amouage
+    to: brand:amouage
+    validFrom: "2024"
+    scope: { include: world }
+    note: "L'Oréal describes Amouage SAOC as the Oman-based haute parfumerie house Amouage."
+    sources: [source:loreal-urd-2025-acquisitions]
+  - id: relationship:loreal-stake-galderma
+    type: holds_stake
+    from: entity:loreal
+    to: entity:galderma
+    validFrom: "2024-08-05"
+    startKnown: true
+    stakePct: 10
+    scope: { include: world }
+    note: "L'Oréal announced on 5 August 2024 that it had acquired 10%, and still held 10.0% at 31 December 2025. On 8 December 2025 it announced buying another 10%, to 20%; its completion is not recorded here."
+    sources: [source:loreal-urd-2025-galderma-2024, source:loreal-urd-2025-financial-assets]
+  - id: relationship:loreal-stake-sanofi
+    type: holds_stake
+    from: entity:loreal
+    to: entity:sanofi
+    validFrom: "2025-12-31"
+    stakePct: 7.27
+    scope: { include: world }
+    note: "7.27% of the share capital at 31 December 2025, with 13.1% of the voting rights, after selling shares back to Sanofi in 2025."
+    sources: [source:loreal-urd-2025-financial-assets, source:loreal-urd-2025-acquisitions-2023]
+  - id: relationship:loreal-stake-skinspirit
+    type: holds_stake
+    from: entity:loreal
+    to: entity:skinspirit
+    validFrom: "2025"
+    stakePct: 36.13
+    scope: { include: world }
+    note: "Acquired in the first half of 2025: 36.13% of the interests and 38.37% of the voting rights in this US network of aesthetic clinics."
+    sources: [source:loreal-urd-2025-acquisitions, source:loreal-urd-2025-associates]

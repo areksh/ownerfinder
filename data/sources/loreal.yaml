@@ -11,3 +11,63 @@ sources:
     publisher: "LexBlog"
     published: "2023-10-18"
     retrieved: "2026-11-08"
+  - id: source:loreal-urd-2025-history
+    url: https://www.loreal-finance.com/eng/2025-universal-registration-document/en/article/16/
+    title: "2025 Universal Registration Document, 1.1.5 Significant dates in the Group's development"
+    publisher: "L'Oréal"
+    published: "2026"
+    retrieved: "2026-11-08"
+  - id: source:loreal-urd-2025-acquisitions
+    url: https://www.loreal-finance.com/eng/2025-universal-registration-document/en/article/297/
+    title: "2025 Universal Registration Document, note 2.1 Changes in the scope of consolidation"
+    publisher: "L'Oréal"
+    published: "2026"
+    retrieved: "2026-11-08"
+  - id: source:loreal-urd-2025-acquisitions-2023
+    url: https://www.loreal-finance.com/eng/2025-universal-registration-document/en/article/298/
+    title: "2025 Universal Registration Document, note 2.1.3 and 2.3 (2023 acquisitions and 2025 highlights)"
+    publisher: "L'Oréal"
+    published: "2026"
+    retrieved: "2026-11-08"
+  - id: source:loreal-urd-2025-galderma-2024
+    url: https://www.loreal-finance.com/eng/2025-universal-registration-document/en/article/299/
+    title: "2025 Universal Registration Document, note 2.3.2 (Galderma, 2024)"
+    publisher: "L'Oréal"
+    published: "2026"
+    retrieved: "2026-11-08"
+  - id: source:loreal-urd-2025-divisions
+    url: https://www.loreal-finance.com/eng/2025-universal-registration-document/en/article/300/
+    title: "2025 Universal Registration Document, note 3.1.1 Information by business segment"
+    publisher: "L'Oréal"
+    published: "2026"
+    retrieved: "2026-11-08"
+  - id: source:loreal-urd-2025-associates
+    url: https://www.loreal-finance.com/eng/2025-universal-registration-document/en/article/326/
+    title: "2025 Universal Registration Document, note 8 Equity-accounted investments"
+    publisher: "L'Oréal"
+    published: "2026"
+    retrieved: "2026-11-08"
+  - id: source:loreal-urd-2025-financial-assets
+    url: https://www.loreal-finance.com/eng/2025-universal-registration-document/en/article/331/
+    title: "2025 Universal Registration Document, note 9.3 Non-current financial assets"
+    publisher: "L'Oréal"
+    published: "2026"
+    retrieved: "2026-11-08"
+  - id: source:loreal-urd-2025-commitments
+    url: https://www.loreal-finance.com/eng/2025-universal-registration-document/en/article/347/
+    title: "2025 Universal Registration Document, notes 17 and 18 (Kering partnership, subsequent events)"
+    publisher: "L'Oréal"
+    published: "2026"
+    retrieved: "2026-11-08"
+  - id: source:loreal-h1-2026
+    url: https://www.loreal.com/en/press-release/finance/2026-half-year-results/
+    title: "2026 half-year results"
+    publisher: "L'Oréal"
+    published: "2026-07"
+    retrieved: "2026-11-08"
+  - id: source:loreal-gucci-licence-2026
+    url: https://www.loreal.com/en/press-release/group/l-oreal-enters-a-50-year-exclusive-worldwide-beauty-licence-with-kering--for-the-gucci-brand/
+    title: "L'Oréal enters a 50-year exclusive worldwide beauty licence with Kering for the Gucci brand"
+    publisher: "L'Oréal"
+    published: "2026-07-07"
+    retrieved: "2026-11-08"

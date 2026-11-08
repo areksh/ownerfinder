@@ -2,6 +2,8 @@
 
 entities:
   - { id: entity:nestle, name: "Nestlé S.A." }
+  - { id: entity:nestle-equity-holdings, name: "Nestlé Equity Holdings Limited" }
+  - { id: entity:ntc-europe, name: "NTC Europe S.A." }
 
 brands:
   - { id: brand:nescafe, name: "Nescafé" }
@@ -16,15 +18,40 @@ brands:
   - { id: brand:felix, name: "Felix" }
 
 relationships:
-  - id: relationship:nestle-loreal
+  - id: relationship:nestle-equity-holdings-loreal
     type: holds_stake
-    from: entity:nestle
+    from: entity:nestle-equity-holdings
     to: entity:loreal
     stakePct: 20.16
     validFrom: "2025-12-31"
     scope: { include: world }
     sources: [source:loreal-urd-2025]
-    note: "Stated at 31 December 2025; earlier percentages are not recorded here."
+    note: "Stated at 31 December 2025; earlier percentages are not recorded here. L'Oréal says Nestlé's shareholding is held by this company."
+  - id: relationship:ntc-europe-owns-nestle-equity-holdings
+    type: owns
+    from: entity:ntc-europe
+    to: entity:nestle-equity-holdings
+    validFrom: "2025-12-31"
+    scope: { include: world }
+    sources: [source:loreal-urd-2025]
+    note: "L'Oréal says Nestlé Equity Holdings is owned by NTC Europe and Société des Produits Nestlé; the split is not given."
+  - id: relationship:spn-owns-nestle-equity-holdings
+    type: owns
+    from: entity:societe-des-produits-nestle
+    to: entity:nestle-equity-holdings
+    validFrom: "2025-12-31"
+    scope: { include: world }
+    sources: [source:loreal-urd-2025]
+    note: "L'Oréal says Nestlé Equity Holdings is owned by NTC Europe and Société des Produits Nestlé; the split is not given."
+  - id: relationship:nestle-owns-ntc-europe
+    type: owns
+    from: entity:nestle
+    to: entity:ntc-europe
+    validFrom: "2025-12-31"
+    stakePct: 100
+    scope: { include: world }
+    sources: [source:loreal-urd-2025]
+    note: "L'Oréal says NTC Europe is directly or indirectly 100%-owned by Nestlé; any companies in between are not named."
   - id: relationship:nestle-starbucks-licence
     type: licenses_brand
     from: entity:nestle

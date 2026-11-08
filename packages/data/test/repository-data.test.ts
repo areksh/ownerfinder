@@ -110,6 +110,23 @@ describe("answers that depend on the country", () => {
     ]);
   });
 
+  it("Creed is Kering Beaute's, which L'Oreal owns from April 2026", () => {
+    expect(chains("brand:creed", "FR", "2026-03-15")).toEqual([
+      "owned: entity:kering-beaute > entity:kering",
+    ]);
+    expect(chains("brand:creed", "FR", "2026-11-08")).toEqual([
+      "stake: entity:kering-beaute > entity:loreal > entity:nestle-equity-holdings > entity:ntc-europe > entity:nestle",
+      "stake: entity:kering-beaute > entity:loreal > entity:nestle-equity-holdings > entity:societe-des-produits-nestle > entity:nestle",
+    ]);
+  });
+
+  it("Gucci beauty is still Coty's licence, not L'Oreal's", () => {
+    expect(chains("brand:gucci", "FR", "2026-11-08")).toEqual([
+      "owned: entity:kering",
+      "licensed: entity:coty",
+    ]);
+  });
+
   it("Orgain is Nestle's from its majority purchase on 1 April 2022", () => {
     expect(chains("entity:orgain", "US", "2022-03-31")).toEqual(["undefined: entity:orgain"]);
     expect(chains("entity:orgain", "US", "2023-06-01")).toEqual([

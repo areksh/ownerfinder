@@ -1,4 +1,4 @@
-# L'Oreal. Brands from L'Oreal's 2024 annual report. Nestle holds a stake (nestle.yaml).
+# L'Oreal. Brands from L'Oreal's 2024 annual report, dated from its 2025 Universal Registration Document; more in loreal-brands.yaml. Nestle holds a stake (nestle.yaml).
 
 entities:
   - { id: entity:loreal, name: "L'Oréal S.A." }
@@ -18,51 +18,65 @@ relationships:
     type: owns_brand
     from: entity:loreal
     to: brand:maybelline-new-york
-    validFrom: "2025"
+    validFrom: "1996"
+    startKnown: true
     scope: { include: world }
-    sources: [source:loreal-annual-report-2024-strategy]
+    note: "Listed among L'Oréal's acquisitions for 1996."
+    sources: [source:loreal-annual-report-2024-strategy, source:loreal-urd-2025-history]
   - id: relationship:loreal-garnier
     type: owns_brand
     from: entity:loreal
     to: brand:garnier
-    validFrom: "2025"
+    validFrom: "1965"
+    startKnown: true
     scope: { include: world }
-    sources: [source:loreal-annual-report-2024-strategy]
+    note: "Listed among L'Oréal's acquisitions for 1965."
+    sources: [source:loreal-annual-report-2024-strategy, source:loreal-urd-2025-history]
   - id: relationship:loreal-lancome
     type: owns_brand
     from: entity:loreal
     to: brand:lancome
-    validFrom: "2025"
+    validFrom: "1964"
+    startKnown: true
     scope: { include: world }
-    sources: [source:loreal-annual-report-2024-strategy]
+    note: "Listed among L'Oréal's acquisitions for 1964."
+    sources: [source:loreal-annual-report-2024-strategy, source:loreal-urd-2025-history]
   - id: relationship:loreal-cerave
     type: owns_brand
     from: entity:loreal
     to: brand:cerave
-    validFrom: "2025"
+    validFrom: "2017"
+    startKnown: true
     scope: { include: world }
-    sources: [source:loreal-annual-report-2024-strategy]
+    note: "Listed among L'Oréal's acquisitions for 2017."
+    sources: [source:loreal-annual-report-2024-strategy, source:loreal-urd-2025-history]
   - id: relationship:loreal-kiehls
     type: owns_brand
     from: entity:loreal
     to: brand:kiehls
-    validFrom: "2025"
+    validFrom: "2000"
+    startKnown: true
     scope: { include: world }
-    sources: [source:loreal-annual-report-2024-strategy]
+    note: "Listed among L'Oréal's acquisitions for 2000."
+    sources: [source:loreal-annual-report-2024-strategy, source:loreal-urd-2025-history]
   - id: relationship:loreal-la-roche-posay
     type: owns_brand
     from: entity:loreal
     to: brand:la-roche-posay
-    validFrom: "2025"
+    validFrom: "1989"
+    startKnown: true
     scope: { include: world }
-    sources: [source:loreal-annual-report-2024-strategy]
+    note: "Listed among L'Oréal's acquisitions for 1989."
+    sources: [source:loreal-annual-report-2024-strategy, source:loreal-urd-2025-history]
   - id: relationship:loreal-nyx-professional-makeup
     type: owns_brand
     from: entity:loreal
     to: brand:nyx-professional-makeup
-    validFrom: "2025"
+    validFrom: "2014"
+    startKnown: true
     scope: { include: world }
-    sources: [source:loreal-annual-report-2024-strategy]
+    note: "Listed among L'Oréal's acquisitions for 2014."
+    sources: [source:loreal-annual-report-2024-strategy, source:loreal-urd-2025-history]
   - id: relationship:loreal-vichy
     type: owns_brand
     from: entity:loreal
