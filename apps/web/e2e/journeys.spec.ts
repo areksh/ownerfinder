@@ -6,7 +6,7 @@ test("search for a brand, then see who owns and licenses it in another country",
   await page.goto("/");
   await page.getByLabel("Brand or company").fill("kitkat");
   await page.getByRole("button", { name: "Search" }).click();
-  await page.getByRole("link", { name: "KitKat" }).click();
+  await page.getByRole("link", { name: "KitKat", exact: true }).click();
 
   await expect(page.getByRole("heading", { level: 1, name: "KitKat" })).toBeVisible();
   await page.getByLabel("Country").selectOption("GB");
