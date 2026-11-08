@@ -1,0 +1,326 @@
+# Anheuser-Busch InBev: its controlling shareholder, main subsidiaries and brands, from its 20-F for 2025. Altria's stake is in altria-brands.yaml.
+
+entities:
+  - { id: entity:anheuser-busch-inbev, name: "Anheuser-Busch InBev SA/NV" }
+  - { id: entity:stichting-anheuser-busch-inbev, name: "Stichting Anheuser-Busch InBev" }
+  - { id: entity:anheuser-busch-companies, name: "Anheuser-Busch Companies, LLC" }
+  - { id: entity:ambev, name: "Ambev S.A." }
+  - { id: entity:budweiser-apac, name: "Budweiser Brewing Company APAC Limited" }
+  - {
+      id: entity:cerveceria-modelo-de-mexico,
+      name: "Cervecería Modelo de México, S. de R.L. de C.V.",
+    }
+  - { id: entity:abi-sab-group-holding, name: "ABI SAB Group Holding Limited" }
+  - { id: entity:constellation-brands, name: "Constellation Brands, Inc." }
+  - { id: entity:cerveceria-bucanero, name: "Cervecería Bucanero S.A." }
+
+brands:
+  - { id: brand:budweiser, name: "Budweiser" }
+  - { id: brand:corona, name: "Corona" }
+  - { id: brand:stella-artois, name: "Stella Artois" }
+  - { id: brand:michelob-ultra, name: "Michelob ULTRA" }
+  - { id: brand:becks, name: "Beck's" }
+  - { id: brand:hoegaarden, name: "Hoegaarden" }
+  - { id: brand:leffe, name: "Leffe" }
+  - { id: brand:modelo, name: "Modelo" }
+  - { id: brand:flying-fish, name: "Flying Fish" }
+  - { id: brand:bud-light, name: "Bud Light" }
+  - { id: brand:busch-light, name: "Busch Light" }
+  - { id: brand:modelo-especial, name: "Modelo Especial" }
+  - { id: brand:victoria-beer, name: "Victoria (beer)" }
+  - { id: brand:pacifico, name: "Pacifico" }
+  - { id: brand:brahma, name: "Brahma" }
+  - { id: brand:skol-beer, name: "Skol (beer)" }
+  - { id: brand:antarctica, name: "Antarctica" }
+  - { id: brand:aguila, name: "Aguila" }
+  - { id: brand:poker-beer, name: "Poker (beer)" }
+  - { id: brand:cristal-beer, name: "Cristal (beer)" }
+  - { id: brand:pilsen-callao, name: "Pilsen Callao" }
+  - { id: brand:quilmes, name: "Quilmes" }
+  - { id: brand:jupiler, name: "Jupiler" }
+  - { id: brand:cass, name: "Cass" }
+  - { id: brand:harbin, name: "Harbin" }
+  - { id: brand:cutwater, name: "Cutwater" }
+
+relationships:
+  - id: relationship:stichting-stake-anheuser-busch-inbev
+    type: holds_stake
+    from: entity:stichting-anheuser-busch-inbev
+    to: entity:anheuser-busch-inbev
+    validFrom: "2025-12-31"
+    stakePct: 33.99
+    scope: { include: world }
+    note: "ABI's controlling shareholder: a Dutch foundation representing the founding Belgian families of Interbrew and the Brazilian families who controlled Ambev; 33.99% of the voting rights at 31 December 2025, 39.50% with the entities acting in concert with it."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-owns-anheuser-busch-companies
+    type: owns
+    from: entity:anheuser-busch-inbev
+    to: entity:anheuser-busch-companies
+    validFrom: "2025-12-31"
+    stakePct: 100
+    scope: { include: world }
+    note: "One of ABI's most significant subsidiaries; the share is ABI's ownership interest at 31 December 2025."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-owns-ambev
+    type: owns
+    from: entity:anheuser-busch-inbev
+    to: entity:ambev
+    validFrom: "2025-12-31"
+    stakePct: 61.73
+    scope: { include: world }
+    note: "One of ABI's most significant subsidiaries; the share is ABI's ownership interest at 31 December 2025."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-owns-budweiser-apac
+    type: owns
+    from: entity:anheuser-busch-inbev
+    to: entity:budweiser-apac
+    validFrom: "2025-12-31"
+    stakePct: 87.22
+    scope: { include: world }
+    note: "One of ABI's most significant subsidiaries; the share is ABI's ownership interest at 31 December 2025."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-owns-cerveceria-modelo-de-mexico
+    type: owns
+    from: entity:anheuser-busch-inbev
+    to: entity:cerveceria-modelo-de-mexico
+    validFrom: "2025-12-31"
+    stakePct: 100
+    scope: { include: world }
+    note: "One of ABI's most significant subsidiaries; the share is ABI's ownership interest at 31 December 2025."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-owns-abi-sab-group-holding
+    type: owns
+    from: entity:anheuser-busch-inbev
+    to: entity:abi-sab-group-holding
+    validFrom: "2025-12-31"
+    stakePct: 100
+    scope: { include: world }
+    note: "One of ABI's most significant subsidiaries; the share is ABI's ownership interest at 31 December 2025."
+    sources: [source:abi-20f-2025]
+  - id: relationship:ambev-stake-cerveceria-bucanero
+    type: holds_stake
+    from: entity:ambev
+    to: entity:cerveceria-bucanero
+    validFrom: "2025-12-31"
+    stakePct: 50
+    scope: { include: world }
+    note: "Held through Ambev's subsidiary Cerbuco Brewing; the other 50% is owned indirectly by the Government of Cuba. Cerbuco appoints the general manager."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-budweiser
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:budweiser
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "One of ABI's four global brands. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-corona
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:corona
+    validFrom: "2026-03-03"
+    scope: { include: world, exclude: [US, GU] }
+    note: "One of ABI's four global brands, sold by ABI everywhere except the United States, where Constellation Brands has the exclusive, perpetual right. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-stella-artois
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:stella-artois
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "One of ABI's four global brands. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-michelob-ultra
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:michelob-ultra
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "One of ABI's four global brands. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-becks
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:becks
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "One of ABI's multi-country brands. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-hoegaarden
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:hoegaarden
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "One of ABI's multi-country brands. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-leffe
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:leffe
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "One of ABI's multi-country brands. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-modelo
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:modelo
+    validFrom: "2026-03-03"
+    scope: { include: world, exclude: [US, GU] }
+    note: "A Grupo Modelo brand. ABI granted Constellation Brands the exclusive, perpetual right to sell Corona and certain other Grupo Modelo brands in the US and Guam; which others is not stated, so the US is not recorded here. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-flying-fish
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:flying-fish
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "One of ABI's multi-country brands. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-bud-light
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:bud-light
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "One of ABI's local champions, distributed mainly in the United States. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-busch-light
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:busch-light
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "One of ABI's local champions. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-modelo-especial
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:modelo-especial
+    validFrom: "2026-03-03"
+    scope: { include: world, exclude: [US, GU] }
+    note: "A Grupo Modelo brand. ABI granted Constellation Brands the exclusive, perpetual right to sell Corona and certain other Grupo Modelo brands in the US and Guam; which others is not stated, so the US is not recorded here. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-victoria-beer
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:victoria-beer
+    validFrom: "2026-03-03"
+    scope: { include: world, exclude: [US, GU] }
+    note: "A Grupo Modelo brand. ABI granted Constellation Brands the exclusive, perpetual right to sell Corona and certain other Grupo Modelo brands in the US and Guam; which others is not stated, so the US is not recorded here. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-pacifico
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:pacifico
+    validFrom: "2026-03-03"
+    scope: { include: world, exclude: [US, GU] }
+    note: "A Grupo Modelo brand. ABI granted Constellation Brands the exclusive, perpetual right to sell Corona and certain other Grupo Modelo brands in the US and Guam; which others is not stated, so the US is not recorded here. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-brahma
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:brahma
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "One of ABI's local champions, distributed mainly in Brazil. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-skol-beer
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:skol-beer
+    validFrom: "2026-03-03"
+    scope: { include: [BR] }
+    note: "One of ABI's local champions in Brazil; ABI's other Skol markets are not recorded here. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-antarctica
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:antarctica
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "Distributed mainly in Brazil. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-aguila
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:aguila
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "Distributed mainly in Colombia. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-poker-beer
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:poker-beer
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "Distributed mainly in Colombia. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-cristal-beer
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:cristal-beer
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "Distributed mainly in Peru. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-pilsen-callao
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:pilsen-callao
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "Distributed mainly in Peru. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-quilmes
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:quilmes
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "Distributed mainly in Argentina. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-jupiler
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:jupiler
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "Distributed mainly in Belgium. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-cass
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:cass
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "One of ABI's local champions. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-harbin
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:harbin
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "One of ABI's local champions. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:anheuser-busch-inbev-cutwater
+    type: owns_brand
+    from: entity:anheuser-busch-inbev
+    to: brand:cutwater
+    validFrom: "2026-03-03"
+    scope: { include: world }
+    note: "A spirits-based ready-to-drink brand ABI sells in the United States. Which group company owns the trademark is not stated."
+    sources: [source:abi-20f-2025]
+  - id: relationship:constellation-brands-licence-corona
+    type: licenses_brand
+    from: entity:constellation-brands
+    to: brand:corona
+    validFrom: "2013"
+    startKnown: true
+    scope: { include: [US, GU] }
+    coverage: "The exclusive and perpetual right to market and sell Corona in the 50 US states, the District of Columbia and Guam."
+    note: "Granted in 2013, when Grupo Modelo sold its US business to Constellation Brands as part of its combination with ABI. The licensor within ABI is not named here."
+    sources: [source:abi-20f-2025]

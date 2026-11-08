@@ -8,7 +8,6 @@ entities:
   - { id: entity:njoy, name: "NJOY, LLC" }
   - { id: entity:horizon-innovations, name: "Horizon Innovations LLC" }
   - { id: entity:jti-us-holding, name: "JTI (US) Holding, Inc." }
-  - { id: entity:anheuser-busch-inbev, name: "Anheuser-Busch InBev SA/NV" }
   - { id: entity:cronos, name: "Cronos Group Inc." }
 
 brands:

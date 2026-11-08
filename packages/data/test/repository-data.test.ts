@@ -46,6 +46,16 @@ describe("answers that depend on the country", () => {
     ]);
   });
 
+  it("Corona is ABI's outside the US, and Constellation's licence inside it", () => {
+    expect(chains("brand:corona", "MX", "2026-11-08")).toEqual([
+      "stake: entity:anheuser-busch-inbev > entity:altria",
+      "stake: entity:anheuser-busch-inbev > entity:stichting-anheuser-busch-inbev",
+    ]);
+    expect(chains("brand:corona", "US", "2026-11-08")).toEqual([
+      "licensed: entity:constellation-brands",
+    ]);
+  });
+
   it("Parliament is PMI's outside the US, and Altria's inside it, made by PM USA", () => {
     expect(chains("brand:parliament", "GB", "2026-11-08")).toEqual([
       "owned: entity:philip-morris-international",

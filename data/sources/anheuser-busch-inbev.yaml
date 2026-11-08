@@ -1,0 +1,9 @@
+# Anheuser-Busch InBev's own filings.
+
+sources:
+  - id: source:abi-20f-2025
+    url: https://www.sec.gov/Archives/edgar/data/1668717/000119312526088105/d65314d20f.htm
+    title: "Anheuser-Busch InBev SA/NV, Annual Report on Form 20-F for 2025"
+    publisher: "Anheuser-Busch InBev SA/NV"
+    published: "2026-03-03"
+    retrieved: "2026-11-08"
