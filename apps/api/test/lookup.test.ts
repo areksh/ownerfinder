@@ -27,6 +27,7 @@ interface Body {
     }>;
   }>;
   listings: Array<{ entity: string; evidence: Array<{ criterion: string; summary: string }> }>;
+  earliestRecord?: string;
   sources: Record<string, { id: string; url: string }>;
 }
 
@@ -139,6 +140,27 @@ describe("GET /lookup/:id", () => {
     const { status, body } = await lookup("/lookup/brand%3Akelloggs?country=GB&date=2026-11-07");
     expect(status).toBe(200);
     expect(body.node?.id).toBe("brand:kelloggs");
+  });
+
+  it("gives the earliest later record when nothing is recorded on the date asked", async () => {
+    const { body } = await lookup("/lookup/brand:kelloggs?country=GB&date=2020-01-01");
+    expect(body.outcome).toBe("unknown");
+    expect(body.earliestRecord).toBe("2023-09-29");
+  });
+
+  it("takes the earliest later record only from links that apply in the country", async () => {
+    // Henkel's German Persil (1907) must not count for France, where Unilever's starts in 1931.
+    const { body } = await lookup("/lookup/brand:persil?country=FR&date=1900-01-01");
+    expect(body.earliestRecord).toBe("1931");
+  });
+
+  it("gives no earliest record when the answer is known or nothing is recorded at all", async () => {
+    expect(
+      (await lookup("/lookup/brand:kelloggs?country=GB&date=2026-11-07")).body,
+    ).not.toHaveProperty("earliestRecord");
+    expect((await lookup("/lookup/brand:not-recorded?country=GB")).body).not.toHaveProperty(
+      "earliestRecord",
+    );
   });
 
   it("answers unknown, not an error, for an id that is not recorded", async () => {

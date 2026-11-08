@@ -101,7 +101,11 @@ beside the company. `sources` holds every source the links and that
 evidence cite. A path through a stake also
 has `effectiveSharePct`. An id that is well formed but not in the graph
 gives `200` with `"outcome": "unknown"` and `"node": null`: not being
-recorded is an answer, not an error.
+recorded is an answer, not an error. When a recorded node has no answer
+on the date asked but something holds it there later, the answer adds
+`earliestRecord`, the earliest such `validFrom`. Most start dates are only
+when a relationship was first known (`startKnown` absent), so this tells a
+client the gap may be in the records rather than in the world.
 
 ## `GET /nodes/<id>`
 

@@ -4,12 +4,14 @@
  * ownership answer itself comes from the data model's resolver.
  */
 import {
+  appliesIn,
   foldForSearch,
   type Graph,
   isCountryCode,
   type Listing,
   type Path,
   parseFullDate,
+  parsePartialDate,
   type Query,
   type Relationship,
   type Resolution,
@@ -91,6 +93,9 @@ export async function lookup(db: D1Database, id: string, url: URL): Promise<unkn
     approximate: resolution.approximate,
     paths: resolution.paths.map((path) => pathJson(path, names)),
     listings,
+    ...(resolution.outcome === "unknown"
+      ? optional("earliestRecord", earliestRecord(graph, id, query.country, query.date))
+      : {}),
     sources: await sourcesByIds(db, [...sourceIds]),
   };
 }
@@ -204,4 +209,32 @@ function reasonsOnPaths(
       ),
     }))
     .filter((listing) => listing.evidence.length > 0);
+}
+
+/**
+ * For an unknown answer: the earliest date, after the one asked about, from
+ * which something is recorded as holding the node in that country. Most
+ * start dates are only when a relationship was first known, so an earlier
+ * question can still deserve this pointer (docs/api.md).
+ */
+function earliestRecord(
+  graph: Graph,
+  id: string,
+  country: string,
+  date: string,
+): string | undefined {
+  const asked = dayOf(date);
+  return graph.relationships
+    .filter((r) => r.to === id && appliesIn(r.scope, country) && dayOf(r.validFrom) > asked)
+    .map((r) => r.validFrom)
+    .sort((a, b) => dayOf(a) - dayOf(b))[0];
+}
+
+function dayOf(text: string): number {
+  const date = parsePartialDate(text);
+  return date === undefined ? Number.NaN : Date.UTC(date.year, date.month - 1, date.day);
+}
+
+function optional<K extends string, V>(key: K, value: V | undefined): Partial<Record<K, V>> {
+  return value === undefined ? {} : ({ [key]: value } as Record<K, V>);
 }
