@@ -1,0 +1,334 @@
+# Kellanova's trademarks from its last 10-K, and the North American licences it granted WK Kellogg Co.
+
+brands:
+  - { id: brand:eggo, name: "Eggo" }
+  - { id: brand:morningstar-farms, name: "MorningStar Farms" }
+  - { id: brand:rxbar, name: "RXBAR" }
+  - { id: brand:kashi, name: "Kashi" }
+  - { id: brand:austin, name: "Austin" }
+  - { id: brand:club-kellanova, name: "Club (Kellanova crackers)" }
+  - { id: brand:town-house, name: "Town House" }
+  - { id: brand:zesta, name: "Zesta" }
+  - { id: brand:toasteds, name: "Toasteds" }
+  - { id: brand:parati, name: "Parati" }
+  - { id: brand:bisco, name: "Bisco" }
+  - { id: brand:minueto, name: "Minueto" }
+  - { id: brand:zoo-cartoon, name: "Zoo Cartoon" }
+  - { id: brand:nutri-grain, name: "Nutri-Grain" }
+  - { id: brand:rice-krispies-treats, name: "Rice Krispies Treats" }
+  - { id: brand:crunchy-nut, name: "Crunchy Nut" }
+  - { id: brand:special-k, name: "Special K" }
+  - { id: brand:coco-pops, name: "Coco Pops" }
+  - { id: brand:frosties, name: "Frosties" }
+  - { id: brand:krave, name: "Krave" }
+  - { id: brand:choco-krispis, name: "Choco Krispis" }
+  - { id: brand:zucaritas, name: "Zucaritas" }
+  - { id: brand:sucrilhos, name: "Sucrilhos" }
+  - { id: brand:rice-bubbles, name: "Rice Bubbles" }
+  - { id: brand:sultana-bran, name: "Sultana Bran" }
+  - { id: brand:just-right, name: "Just Right" }
+  - { id: brand:incogmeato, name: "Incogmeato" }
+  - { id: brand:gardenburger, name: "Gardenburger" }
+  - { id: brand:froot-loops, name: "Froot Loops" }
+  - { id: brand:frosted-flakes, name: "Kellogg's Frosted Flakes" }
+  - { id: brand:rice-krispies, name: "Rice Krispies" }
+  - { id: brand:carrs, name: "Carr's" }
+
+relationships:
+  - id: relationship:kellanova-eggo
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:eggo
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-morningstar-farms
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:morningstar-farms
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-rxbar
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:rxbar
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-kashi
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:kashi
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-austin
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:austin
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-club-kellanova
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:club-kellanova
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-town-house
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:town-house
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-zesta
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:zesta
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-toasteds
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:toasteds
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-parati
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:parati
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-bisco
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:bisco
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-minueto
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:minueto
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-zoo-cartoon
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:zoo-cartoon
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-nutri-grain
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:nutri-grain
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-rice-krispies-treats
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:rice-krispies-treats
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-crunchy-nut
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:crunchy-nut
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-special-k
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:special-k
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "Kellanova owns it and licenses it to WK Kellogg Co for its North American business."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-coco-pops
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:coco-pops
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-frosties
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:frosties
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-krave
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:krave
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-choco-krispis
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:choco-krispis
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-zucaritas
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:zucaritas
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-sucrilhos
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:sucrilhos
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-rice-bubbles
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:rice-bubbles
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-sultana-bran
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:sultana-bran
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-just-right
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:just-right
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-incogmeato
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:incogmeato
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-gardenburger
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:gardenburger
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "One of Kellanova's trademarks in its last 10-K; when it became Kellanova's is not recorded."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-froot-loops
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:froot-loops
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "Kellanova owns it and licenses it to WK Kellogg Co for its North American business."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-frosted-flakes
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:frosted-flakes
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "Kellanova owns it and licenses it to WK Kellogg Co for its North American business."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-rice-krispies
+    type: owns_brand
+    from: entity:kellanova
+    to: brand:rice-krispies
+    validFrom: "2025-02-21"
+    scope: { include: world }
+    note: "Kellanova owns it and licenses it to WK Kellogg Co for its North American business."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:wk-kellogg-special-k
+    type: licenses_brand
+    from: entity:wk-kellogg-co
+    to: brand:special-k
+    validFrom: "2023-10"
+    startKnown: true
+    scope: { include: [US, CA] }
+    coverage: "Perpetual, exclusive, royalty-free licence for WK Kellogg Co's business in North America."
+    note: "Granted under the trademark agreement made when WK Kellogg Co was separated from Kellanova; Caribbean territories are not recorded here."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:wk-kellogg-froot-loops
+    type: licenses_brand
+    from: entity:wk-kellogg-co
+    to: brand:froot-loops
+    validFrom: "2023-10"
+    startKnown: true
+    scope: { include: [US, CA] }
+    coverage: "Perpetual, exclusive, royalty-free licence for WK Kellogg Co's business in North America."
+    note: "Granted under the trademark agreement made when WK Kellogg Co was separated from Kellanova; Caribbean territories are not recorded here."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:wk-kellogg-frosted-flakes
+    type: licenses_brand
+    from: entity:wk-kellogg-co
+    to: brand:frosted-flakes
+    validFrom: "2023-10"
+    startKnown: true
+    scope: { include: [US, CA] }
+    coverage: "Perpetual, exclusive, royalty-free licence for WK Kellogg Co's business in North America."
+    note: "Granted under the trademark agreement made when WK Kellogg Co was separated from Kellanova; Caribbean territories are not recorded here."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:wk-kellogg-rice-krispies
+    type: licenses_brand
+    from: entity:wk-kellogg-co
+    to: brand:rice-krispies
+    validFrom: "2023-10"
+    startKnown: true
+    scope: { include: [US, CA] }
+    coverage: "Perpetual, exclusive, royalty-free licence for WK Kellogg Co's business in North America."
+    note: "Granted under the trademark agreement made when WK Kellogg Co was separated from Kellanova; Caribbean territories are not recorded here."
+    sources: [source:kellanova-10k-2024]
+  - id: relationship:kellanova-licence-carrs
+    type: licenses_brand
+    from: entity:kellanova
+    to: brand:carrs
+    validFrom: "2025-02-21"
+    scope: { include: [US] }
+    coverage: "Carr's crackers in the United States."
+    note: "A Kellanova subsidiary is the exclusive US licensee of the Carr's cracker line; the licensor is not named here."
+    sources: [source:kellanova-10k-2024]

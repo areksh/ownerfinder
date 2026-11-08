@@ -17,3 +17,15 @@ sources:
     published: "2022-03-10"
     retrieved: "2026-11-08"
     archiveUrl: https://web.archive.org/web/20220311005057/https://www.mars.com/news-and-stories/press-releases-statements/mars-update-russia-and-ukraine
+  - id: source:kellanova-8k-merger-2025
+    url: https://www.sec.gov/Archives/edgar/data/55067/000119312525315130/d90636d8k.htm
+    title: "Kellanova, Form 8-K: completion of the merger with Mars"
+    publisher: "Kellanova"
+    published: "2025-12-11"
+    retrieved: "2026-11-08"
+  - id: source:kellanova-10k-2024
+    url: https://www.sec.gov/Archives/edgar/data/55067/000162828025007118/k-20241228.htm
+    title: "Kellanova, Form 10-K for the fiscal year ended December 28, 2024"
+    publisher: "Kellanova"
+    published: "2025-02-21"
+    retrieved: "2026-11-08"

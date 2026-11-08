@@ -2,6 +2,7 @@
 
 entities:
   - { id: entity:mars, name: "Mars, Incorporated" }
+  - { id: entity:acquiror-10vb8, name: "Acquiror 10VB8, LLC" }
 
 brands:
   - { id: brand:m-and-ms, name: "M&M'S" }
@@ -21,15 +22,24 @@ brands:
   - { id: brand:bens-original, name: "Ben's Original" }
 
 relationships:
-  - id: relationship:mars-kellanova
+  - id: relationship:acquiror-10vb8-owns-kellanova
+    type: owns
+    from: entity:acquiror-10vb8
+    to: entity:kellanova
+    validFrom: "2025-12-11"
+    startKnown: true
+    stakePct: 100
+    scope: { include: world }
+    note: "Kellanova merged with Acquiror's subsidiary on 11 December 2025 and became a wholly owned subsidiary of Acquiror."
+    sources: [source:kellanova-8k-merger-2025, source:mars-kellanova-2025]
+  - id: relationship:mars-owns-acquiror-10vb8
     type: owns
     from: entity:mars
-    to: entity:kellanova
-    validFrom: "2025-12"
-    startKnown: true
+    to: entity:acquiror-10vb8
+    validFrom: "2025-12-11"
     scope: { include: world }
-    sources: [source:mars-kellanova-2025]
-    note: "Approvals were complete on 8 December 2025 and completion was announced days later."
+    note: "The merger agreement names Mars as Acquiror's parent; its share and any companies in between are not stated."
+    sources: [source:kellanova-8k-merger-2025]
   - id: relationship:mars-m-and-ms
     type: owns_brand
     from: entity:mars

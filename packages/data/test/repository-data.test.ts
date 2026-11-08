@@ -37,9 +37,21 @@ describe("answers that depend on the country", () => {
   });
 
   it("Kellogg's is Mars's through Kellanova, and Ferrero's licence in the US", () => {
-    expect(chains("brand:kelloggs", "GB")).toEqual(["owned: entity:kellanova > entity:mars"]);
+    expect(chains("brand:kelloggs", "GB")).toEqual([
+      "owned: entity:kellanova > entity:acquiror-10vb8 > entity:mars",
+    ]);
     expect(chains("brand:kelloggs", "US")).toEqual([
-      "owned: entity:kellanova > entity:mars",
+      "owned: entity:kellanova > entity:acquiror-10vb8 > entity:mars",
+      "licensed: entity:wk-kellogg-co > entity:ferrero",
+    ]);
+  });
+
+  it("Froot Loops is Kellanova's, licensed to WK Kellogg in North America", () => {
+    expect(chains("brand:froot-loops", "GB", "2026-11-08")).toEqual([
+      "owned: entity:kellanova > entity:acquiror-10vb8 > entity:mars",
+    ]);
+    expect(chains("brand:froot-loops", "CA", "2026-11-08")).toEqual([
+      "owned: entity:kellanova > entity:acquiror-10vb8 > entity:mars",
       "licensed: entity:wk-kellogg-co > entity:ferrero",
     ]);
   });
