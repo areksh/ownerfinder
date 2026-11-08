@@ -1,0 +1,1043 @@
+# PepsiCo's trademarks from its 10-K for 2025, with the companies it bought in 2024 and 2025, Celsius's brands it distributes, and brands it makes under licence from Keurig Dr Pepper.
+
+entities:
+  - { id: entity:sabra-dipping-company, name: "Sabra Dipping Company, LLC" }
+  - { id: entity:garza-food-ventures, name: "Garza Food Ventures LLC (Siete)" }
+  - { id: entity:vngr-beverage, name: "VNGR Beverage, LLC (poppi)" }
+  - { id: entity:celsius-holdings, name: "Celsius Holdings, Inc." }
+
+brands:
+  - { id: brand:7up-free, name: "7UP Free" }
+  - { id: brand:adrenaline-rush, name: "Adrenaline Rush" }
+  - { id: brand:agusha, name: "Agusha" }
+  - { id: brand:alani-nu, name: "Alani Nu" }
+  - { id: brand:amp-energy, name: "Amp Energy" }
+  - { id: brand:aqua-minerale, name: "Aqua Minerale" }
+  - { id: brand:aquafina, name: "Aquafina" }
+  - { id: brand:aquafina-flavorsplash, name: "Aquafina Flavorsplash" }
+  - { id: brand:arto-lifewtr, name: "Arto Lifewtr" }
+  - { id: brand:baicaowei, name: "BaiCaoWei" }
+  - { id: brand:baja-blast, name: "Baja Blast" }
+  - { id: brand:bare, name: "Bare" }
+  - { id: brand:bokomo, name: "Bokomo" }
+  - { id: brand:bubly, name: "Bubly" }
+  - { id: brand:capn-crunch, name: "Cap’n Crunch" }
+  - { id: brand:celsius, name: "Celsius" }
+  - { id: brand:ceres, name: "Ceres" }
+  - { id: brand:chesters, name: "Chester’s" }
+  - { id: brand:chipsy, name: "Chipsy" }
+  - { id: brand:chokis, name: "Chokis" }
+  - { id: brand:chudo, name: "Chudo" }
+  - { id: brand:cracker-jack, name: "Cracker Jack" }
+  - { id: brand:crunchy, name: "Crunchy" }
+  - { id: brand:crush, name: "Crush" }
+  - { id: brand:diet-7up, name: "Diet 7UP" }
+  - { id: brand:diet-mountain-dew, name: "Diet Mountain Dew" }
+  - { id: brand:diet-mug, name: "Diet Mug" }
+  - { id: brand:diet-pepsi, name: "Diet Pepsi" }
+  - { id: brand:domik-v-derevne, name: "Domik v Derevne" }
+  - { id: brand:duyvis, name: "Duyvis" }
+  - { id: brand:elma-chips, name: "Elma Chips" }
+  - { id: brand:emperador, name: "Emperador" }
+  - { id: brand:evolve, name: "Evolve" }
+  - { id: brand:fast-twitch, name: "Fast Twitch" }
+  - { id: brand:frito-lay, name: "Frito-Lay" }
+  - { id: brand:fritos, name: "Fritos" }
+  - { id: brand:fruktovy-sad, name: "Fruktovy Sad" }
+  - { id: brand:futurelife, name: "Futurelife" }
+  - { id: brand:g2, name: "G2" }
+  - { id: brand:gamesa, name: "Gamesa" }
+  - { id: brand:gatorade-fit, name: "Gatorade Fit" }
+  - { id: brand:gatorade-zero, name: "Gatorade Zero" }
+  - { id: brand:gatorlyte, name: "Gatorlyte" }
+  - { id: brand:grandmas, name: "Grandma’s" }
+  - { id: brand:h2oh, name: "H2oh!" }
+  - { id: brand:hard-mtn-dew, name: "Hard MTN Dew" }
+  - { id: brand:health-warrior, name: "Health Warrior" }
+  - { id: brand:imunele, name: "Imunele" }
+  - { id: brand:j7, name: "J7" }
+  - { id: brand:kas, name: "Kas" }
+  - { id: brand:kurkure, name: "Kurkure" }
+  - { id: brand:life, name: "Life" }
+  - { id: brand:lifewtr, name: "Lifewtr" }
+  - { id: brand:liquifruit, name: "Liquifruit" }
+  - { id: brand:lubimy, name: "Lubimy" }
+  - { id: brand:manzanita-sol, name: "Manzanita Sol" }
+  - { id: brand:marias-gamesa, name: "Marias Gamesa" }
+  - { id: brand:matutano, name: "Matutano" }
+  - { id: brand:mirinda, name: "Mirinda" }
+  - { id: brand:miss-vickies, name: "Miss Vickie’s" }
+  - { id: brand:moirs, name: "Moirs" }
+  - { id: brand:mothers, name: "Mother’s" }
+  - { id: brand:mountain-dew-code-red, name: "Mountain Dew Code Red" }
+  - { id: brand:mountain-dew-game-fuel, name: "Mountain Dew Game Fuel" }
+  - { id: brand:mountain-dew-kickstart, name: "Mountain Dew Kickstart" }
+  - { id: brand:mountain-dew-zero-sugar, name: "Mountain Dew Zero Sugar" }
+  - { id: brand:mug, name: "Mug" }
+  - { id: brand:munchies-pepsico, name: "Munchies (PepsiCo snacks)" }
+  - { id: brand:muscle-milk, name: "Muscle Milk" }
+  - { id: brand:near-east, name: "Near East" }
+  - { id: brand:obela, name: "Obela" }
+  - { id: brand:off-the-eaten-path, name: "Off the Eaten Path" }
+  - { id: brand:paso-de-los-toros, name: "Paso de los Toros" }
+  - { id: brand:pasta-roni, name: "Pasta Roni" }
+  - { id: brand:pearl-milling-company, name: "Pearl Milling Company" }
+  - { id: brand:pepsi-black, name: "Pepsi Black" }
+  - { id: brand:pepsi-wild-cherry, name: "Pepsi Wild Cherry" }
+  - { id: brand:pepsi-zero-sugar, name: "Pepsi Zero Sugar" }
+  - { id: brand:popcorners, name: "PopCorners" }
+  - { id: brand:poppi, name: "Poppi" }
+  - { id: brand:pronutro, name: "Pronutro" }
+  - { id: brand:propel, name: "Propel" }
+  - { id: brand:quaker-chewy, name: "Quaker Chewy" }
+  - { id: brand:quaker-simply-granola, name: "Quaker Simply Granola" }
+  - { id: brand:rice-a-roni, name: "Rice- A-Roni" }
+  - { id: brand:rold-gold, name: "Rold Gold" }
+  - { id: brand:ruffles, name: "Ruffles" }
+  - { id: brand:sabra, name: "Sabra" }
+  - { id: brand:sabritas, name: "Sabritas" }
+  - { id: brand:safari, name: "Safari" }
+  - { id: brand:sakata, name: "Sakata" }
+  - { id: brand:saladitas-gamesa, name: "Saladitas Gamesa" }
+  - { id: brand:san-carlos, name: "San Carlos" }
+  - { id: brand:sandora, name: "Sandora" }
+  - { id: brand:santitas, name: "Santitas" }
+  - { id: brand:sasko, name: "Sasko" }
+  - { id: brand:schweppes, name: "Schweppes" }
+  - { id: brand:siete, name: "Siete" }
+  - { id: brand:simba, name: "Simba" }
+  - { id: brand:smartfood, name: "Smartfood" }
+  - { id: brand:smiths, name: "Smith’s" }
+  - { id: brand:snack-a-jacks, name: "Snack a Jacks" }
+  - { id: brand:sobe, name: "SoBe" }
+  - { id: brand:sonrics, name: "Sonric’s" }
+  - { id: brand:spekko, name: "Spekko" }
+  - { id: brand:stacys, name: "Stacy’s" }
+  - { id: brand:starry, name: "Starry" }
+  - { id: brand:starry-zero-sugar, name: "Starry Zero Sugar" }
+  - { id: brand:sting-energy, name: "Sting Energy" }
+  - { id: brand:stubborn-soda, name: "Stubborn Soda" }
+  - { id: brand:sunchips, name: "SunChips" }
+  - { id: brand:toddy, name: "Toddy" }
+  - { id: brand:toddynho, name: "Toddynho" }
+  - { id: brand:tostitos, name: "Tostitos" }
+  - { id: brand:vesely-molochnik, name: "Vesely Molochnik" }
+  - { id: brand:weetbix, name: "Weetbix" }
+  - { id: brand:white-star, name: "White Star" }
+  - { id: brand:ya, name: "Ya" }
+  - { id: brand:yachak, name: "Yachak" }
+
+relationships:
+  - id: relationship:pepsico-adrenaline-rush
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:adrenaline-rush
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-agusha
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:agusha
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-amp-energy
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:amp-energy
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-aquafina
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:aquafina
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-aquafina-flavorsplash
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:aquafina-flavorsplash
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-aqua-minerale
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:aqua-minerale
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-arto-lifewtr
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:arto-lifewtr
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-baja-blast
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:baja-blast
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-baicaowei
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:baicaowei
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-bare
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:bare
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-bokomo
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:bokomo
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-bubly
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:bubly
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-capn-crunch
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:capn-crunch
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-ceres
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:ceres
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-chesters
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:chesters
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-chipsy
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:chipsy
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-chokis
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:chokis
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-chudo
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:chudo
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-cracker-jack
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:cracker-jack
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-crunchy
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:crunchy
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-diet-mountain-dew
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:diet-mountain-dew
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-diet-mug
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:diet-mug
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-diet-pepsi
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:diet-pepsi
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-diet-7up
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:diet-7up
+    validFrom: "2026-02-03"
+    scope: { include: world, exclude: [US] }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-domik-v-derevne
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:domik-v-derevne
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-duyvis
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:duyvis
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-elma-chips
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:elma-chips
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-emperador
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:emperador
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-evolve
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:evolve
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-fast-twitch
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:fast-twitch
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-frito-lay
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:frito-lay
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-fritos
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:fritos
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-fruktovy-sad
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:fruktovy-sad
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-futurelife
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:futurelife
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-g2
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:g2
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-gamesa
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:gamesa
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-gatorade-fit
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:gatorade-fit
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-gatorade-zero
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:gatorade-zero
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-gatorlyte
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:gatorlyte
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-grandmas
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:grandmas
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-h2oh
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:h2oh
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-hard-mtn-dew
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:hard-mtn-dew
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-health-warrior
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:health-warrior
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-imunele
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:imunele
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-j7
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:j7
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-kas
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:kas
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-kurkure
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:kurkure
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-life
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:life
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-lifewtr
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:lifewtr
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-liquifruit
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:liquifruit
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-lubimy
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:lubimy
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-manzanita-sol
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:manzanita-sol
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-marias-gamesa
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:marias-gamesa
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-matutano
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:matutano
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-mirinda
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:mirinda
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-miss-vickies
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:miss-vickies
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-moirs
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:moirs
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-mothers
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:mothers
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-mountain-dew-code-red
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:mountain-dew-code-red
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-mountain-dew-game-fuel
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:mountain-dew-game-fuel
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-mountain-dew-kickstart
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:mountain-dew-kickstart
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-mountain-dew-zero-sugar
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:mountain-dew-zero-sugar
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-mug
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:mug
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-munchies-pepsico
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:munchies-pepsico
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-muscle-milk
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:muscle-milk
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-near-east
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:near-east
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-obela
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:obela
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-off-the-eaten-path
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:off-the-eaten-path
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-paso-de-los-toros
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:paso-de-los-toros
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-pasta-roni
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:pasta-roni
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-pearl-milling-company
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:pearl-milling-company
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-pepsi-black
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:pepsi-black
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-pepsi-wild-cherry
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:pepsi-wild-cherry
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-pepsi-zero-sugar
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:pepsi-zero-sugar
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-popcorners
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:popcorners
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-poppi
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:poppi
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-pronutro
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:pronutro
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-propel
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:propel
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-quaker-chewy
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:quaker-chewy
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-quaker-simply-granola
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:quaker-simply-granola
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-rice-a-roni
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:rice-a-roni
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-rold-gold
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:rold-gold
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-ruffles
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:ruffles
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-sabra
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:sabra
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-sabritas
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:sabritas
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-safari
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:safari
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-sakata
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:sakata
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-saladitas-gamesa
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:saladitas-gamesa
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-san-carlos
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:san-carlos
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-sandora
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:sandora
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-santitas
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:santitas
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-sasko
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:sasko
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-7up-free
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:7up-free
+    validFrom: "2026-02-03"
+    scope: { include: world, exclude: [US] }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-siete
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:siete
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-simba
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:simba
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-smartfood
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:smartfood
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-smiths
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:smiths
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-snack-a-jacks
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:snack-a-jacks
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-sobe
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:sobe
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-sonrics
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:sonrics
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-spekko
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:spekko
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-stacys
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:stacys
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-starry
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:starry
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-starry-zero-sugar
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:starry-zero-sugar
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-sting-energy
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:sting-energy
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-stubborn-soda
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:stubborn-soda
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-sunchips
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:sunchips
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-toddy
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:toddy
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-toddynho
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:toddynho
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-tostitos
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:tostitos
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-vesely-molochnik
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:vesely-molochnik
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-weetbix
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:weetbix
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-white-star
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:white-star
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-ya
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:ya
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-yachak
+    type: owns_brand
+    from: entity:pepsico
+    to: brand:yachak
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-sabra-dipping-company
+    type: owns
+    from: entity:pepsico
+    to: entity:sabra-dipping-company
+    validFrom: "2024-12"
+    stakePct: 100
+    scope: { include: world }
+    note: "Wholly owned after PepsiCo bought the Strauss Group's 50% in December 2024; it was a 50:50 joint venture before."
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-garza-food-ventures
+    type: owns
+    from: entity:pepsico
+    to: entity:garza-food-ventures
+    validFrom: "2025-01-17"
+    stakePct: 100
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-vngr-beverage
+    type: owns
+    from: entity:pepsico
+    to: entity:vngr-beverage
+    validFrom: "2025-05-19"
+    stakePct: 100
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:celsius-holdings-rockstar
+    type: owns_brand
+    from: entity:celsius-holdings
+    to: brand:rockstar
+    validFrom: "2025-08-28"
+    scope: { include: [US, CA] }
+    note: "PepsiCo transferred the Rockstar brand in the US and Canada to Celsius on 28 August 2025."
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-distributes-rockstar
+    type: distributes
+    from: entity:pepsico
+    to: brand:rockstar
+    validFrom: "2026-02-03"
+    scope: { include: [US, CA] }
+    note: "In certain channels, as distributor for Celsius."
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:celsius-holdings-celsius
+    type: owns_brand
+    from: entity:celsius-holdings
+    to: brand:celsius
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-distributes-celsius
+    type: distributes
+    from: entity:pepsico
+    to: brand:celsius
+    validFrom: "2026-02-03"
+    scope: { include: [US, CA] }
+    note: "In certain channels, as distributor for Celsius."
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:celsius-holdings-alani-nu
+    type: owns_brand
+    from: entity:celsius-holdings
+    to: brand:alani-nu
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-distributes-alani-nu
+    type: distributes
+    from: entity:pepsico
+    to: brand:alani-nu
+    validFrom: "2026-02-03"
+    scope: { include: [US, CA] }
+    note: "In certain channels, as distributor for Celsius."
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-licence-dr-pepper
+    type: licenses_brand
+    from: entity:pepsico
+    to: brand:dr-pepper
+    validFrom: "2026-02-03"
+    scope: { include: [US, CA] }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:keurig-dr-pepper-crush
+    type: owns_brand
+    from: entity:keurig-dr-pepper
+    to: brand:crush
+    validFrom: "2026-02-03"
+    scope: { include: [US, CA] }
+    note: "PepsiCo's 10-K says it licenses this brand from Keurig Dr Pepper for North America; other markets are not recorded here."
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-licence-crush
+    type: licenses_brand
+    from: entity:pepsico
+    to: brand:crush
+    validFrom: "2026-02-03"
+    scope: { include: [US, CA] }
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:keurig-dr-pepper-schweppes
+    type: owns_brand
+    from: entity:keurig-dr-pepper
+    to: brand:schweppes
+    validFrom: "2026-02-03"
+    scope: { include: [US, CA] }
+    note: "PepsiCo's 10-K says it licenses this brand from Keurig Dr Pepper for North America; other markets are not recorded here."
+    sources: [source:pepsico-10k-2025]
+  - id: relationship:pepsico-licence-schweppes
+    type: licenses_brand
+    from: entity:pepsico
+    to: brand:schweppes
+    validFrom: "2026-02-03"
+    scope: { include: [US, CA] }
+    sources: [source:pepsico-10k-2025]

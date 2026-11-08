@@ -80,6 +80,14 @@ describe("answers that depend on the country", () => {
     ]);
   });
 
+  it("Rockstar is Celsius's in the US, distributed by PepsiCo, and PepsiCo's elsewhere", () => {
+    expect(chains("brand:rockstar", "US")).toEqual([
+      "owned: entity:celsius-holdings",
+      "distributed: entity:pepsico",
+    ]);
+    expect(chains("brand:rockstar", "GB")).toEqual(["owned: entity:pepsico"]);
+  });
+
   it("Persil is Unilever's in France and Henkel's in Germany", () => {
     expect(chains("brand:persil", "FR")).toEqual(["owned: entity:unilever"]);
     expect(chains("brand:persil", "DE")).toEqual(["owned: entity:henkel"]);

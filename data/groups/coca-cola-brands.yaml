@@ -1,0 +1,187 @@
+# Coca-Cola's further brands and brand companies, from its 10-K for 2025 and its list of subsidiaries (Exhibit 21.1).
+
+entities:
+  - { id: entity:ba-sports-nutrition, name: "BA Sports Nutrition, LLC" }
+  - { id: entity:fairlife-llc, name: "fairlife, LLC" }
+
+brands:
+  - { id: brand:coca-cola-zero-sugar, name: "Coca-Cola Zero Sugar" }
+  - { id: brand:fresca, name: "Fresca" }
+  - { id: brand:thums-up, name: "Thums Up" }
+  - { id: brand:aquarius, name: "Aquarius" }
+  - { id: brand:ayataka, name: "Ayataka" }
+  - { id: brand:ciel, name: "Ciel" }
+  - { id: brand:crystal-water, name: "Crystal" }
+  - { id: brand:dasani, name: "Dasani" }
+  - { id: brand:fuze-tea, name: "Fuze Tea" }
+  - { id: brand:georgia-coffee, name: "Georgia" }
+  - { id: brand:vitaminwater, name: "glacéau vitaminwater" }
+  - { id: brand:gold-peak, name: "Gold Peak" }
+  - { id: brand:i-lohas, name: "I LOHAS" }
+  - { id: brand:topo-chico, name: "Topo Chico" }
+  - { id: brand:core-power, name: "Core Power" }
+  - { id: brand:del-valle, name: "Del Valle" }
+  - { id: brand:maaza, name: "Maaza" }
+  - { id: brand:minute-maid-pulpy, name: "Minute Maid Pulpy" }
+  - { id: brand:santa-clara, name: "Santa Clara" }
+  - { id: brand:simply, name: "Simply" }
+
+relationships:
+  - id: relationship:coca-cola-coca-cola-zero-sugar
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:coca-cola-zero-sugar
+    validFrom: "2026-02"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+  - id: relationship:coca-cola-fresca
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:fresca
+    validFrom: "2026-02"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+  - id: relationship:coca-cola-thums-up
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:thums-up
+    validFrom: "2026-02"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+  - id: relationship:coca-cola-aquarius
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:aquarius
+    validFrom: "2026-02"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+  - id: relationship:coca-cola-ayataka
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:ayataka
+    validFrom: "2026-02"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+  - id: relationship:coca-cola-ciel
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:ciel
+    validFrom: "2026-02"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+  - id: relationship:coca-cola-crystal-water
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:crystal-water
+    validFrom: "2026-02"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+  - id: relationship:coca-cola-dasani
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:dasani
+    validFrom: "2026-02"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+  - id: relationship:coca-cola-fuze-tea
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:fuze-tea
+    validFrom: "2026-02"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+  - id: relationship:coca-cola-georgia-coffee
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:georgia-coffee
+    validFrom: "2026-02"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+  - id: relationship:coca-cola-vitaminwater
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:vitaminwater
+    validFrom: "2026-02"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+  - id: relationship:coca-cola-gold-peak
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:gold-peak
+    validFrom: "2026-02"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+  - id: relationship:coca-cola-i-lohas
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:i-lohas
+    validFrom: "2026-02"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+  - id: relationship:coca-cola-topo-chico
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:topo-chico
+    validFrom: "2026-02"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+  - id: relationship:coca-cola-core-power
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:core-power
+    validFrom: "2026-02"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+  - id: relationship:coca-cola-del-valle
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:del-valle
+    validFrom: "2026-02"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+  - id: relationship:coca-cola-maaza
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:maaza
+    validFrom: "2026-02"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+  - id: relationship:coca-cola-minute-maid-pulpy
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:minute-maid-pulpy
+    validFrom: "2026-02"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+  - id: relationship:coca-cola-santa-clara
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:santa-clara
+    validFrom: "2026-02"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+  - id: relationship:coca-cola-simply
+    type: owns_brand
+    from: entity:coca-cola
+    to: brand:simply
+    validFrom: "2026-02"
+    scope: { include: world }
+    sources: [source:coca-cola-10k-2025]
+  - id: relationship:coca-cola-ba-sports-nutrition
+    type: owns
+    from: entity:coca-cola
+    to: entity:ba-sports-nutrition
+    validFrom: "2021-11"
+    startKnown: true
+    stakePct: 100
+    scope: { include: world }
+    note: "Coca-Cola bought the remaining 85% in November 2021; BA Sports Nutrition offers the BODYARMOR drinks."
+    sources: [source:coca-cola-10k-2025, source:coca-cola-exhibit-21-2025]
+  - id: relationship:coca-cola-fairlife-llc
+    type: owns
+    from: entity:coca-cola
+    to: entity:fairlife-llc
+    validFrom: "2026-02"
+    scope: { include: world }
+    note: "A subsidiary through which Coca-Cola earns most of its dairy revenue; the filing does not give the share."
+    sources: [source:coca-cola-10k-2025, source:coca-cola-exhibit-21-2025]
