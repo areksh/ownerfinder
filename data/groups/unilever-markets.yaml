@@ -90,8 +90,13 @@ relationships:
     to: brand:maille
     validFrom: "2026-11-08"
     scope: { include: [GB, US] }
-    note: "Listed on Unilever's UK and Unilever's US brands pages; the page does not say which group company owns the brand, or where else Unilever owns it."
-    sources: [source:unilever-uk-brands, source:unilever-usa-brands]
+    note: "Listed on Unilever's UK and US brands pages; the pages do not say which group company owns the brand, or where else Unilever owns it. Unilever agreed on 31 March 2026 to combine its Foods business, which it says includes this brand, with McCormick; completion is expected by mid-2027, subject to approvals. Its foods business in India, Nepal and Portugal is excluded."
+    sources:
+      [
+        source:unilever-uk-brands,
+        source:unilever-usa-brands,
+        source:unilever-mccormick-announcement,
+      ]
   - id: relationship:unilever-marmite
     type: owns_brand
     from: entity:unilever
@@ -130,7 +135,7 @@ relationships:
     to: brand:sheamoisture
     validFrom: "2026-11-08"
     scope: { include: [GB, US] }
-    note: "Listed on Unilever's UK and Unilever's US brands pages; the page does not say which group company owns the brand, or where else Unilever owns it."
+    note: "Listed on Unilever's UK and US brands pages; the pages do not say which group company owns the brand, or where else Unilever owns it."
     sources: [source:unilever-uk-brands, source:unilever-usa-brands]
   - id: relationship:unilever-simple
     type: owns_brand
@@ -138,7 +143,7 @@ relationships:
     to: brand:simple
     validFrom: "2026-11-08"
     scope: { include: [GB, US, IN] }
-    note: "Listed on Unilever's UK and Unilever's US and Hindustan Unilever's Indian brands pages; the page does not say which group company owns the brand, or where else Unilever owns it."
+    note: "Listed on Unilever's UK and US brands pages and Hindustan Unilever's Indian one; the pages do not say which group company owns the brand, or where else Unilever owns it."
     sources: [source:unilever-uk-brands, source:unilever-usa-brands, source:hul-brands]
   - id: relationship:unilever-sure
     type: owns_brand

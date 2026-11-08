@@ -91,14 +91,16 @@ relationships:
     to: brand:hellmanns
     validFrom: "2026-03-12"
     scope: { include: world }
-    sources: [source:unilever-20f-2025]
+    note: "Unilever agreed on 31 March 2026 to combine its Foods business, which it says includes this brand, with McCormick; completion is expected by mid-2027, subject to approvals. Its foods business in India, Nepal and Portugal is excluded."
+    sources: [source:unilever-20f-2025, source:unilever-mccormick-announcement]
   - id: relationship:unilever-knorr
     type: owns_brand
     from: entity:unilever
     to: brand:knorr
     validFrom: "2026-03-12"
     scope: { include: world }
-    sources: [source:unilever-20f-2025]
+    note: "Unilever agreed on 31 March 2026 to combine its Foods business, which it says includes this brand, with McCormick; completion is expected by mid-2027, subject to approvals. Its foods business in India, Nepal and Portugal is excluded."
+    sources: [source:unilever-20f-2025, source:unilever-mccormick-announcement]
   - id: relationship:unilever-cif
     type: owns_brand
     from: entity:unilever

@@ -70,3 +70,9 @@ sources:
     title: "Unilever Annual Report and Accounts 2025"
     publisher: "Unilever PLC"
     retrieved: "2026-11-08"
+  - id: source:unilever-mccormick-announcement
+    url: https://www.unilever.com/news/press-and-media/press-releases/2026/unilever-announces-the-combination-of-unilever-foods-with-mccormick/
+    title: "Unilever announces the combination of Unilever Foods with McCormick to create a global flavour powerhouse with a superior growth profile"
+    publisher: "Unilever PLC"
+    published: "2026-03-31"
+    retrieved: "2026-11-08"
