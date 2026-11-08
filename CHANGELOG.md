@@ -36,3 +36,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   more brands, and its joint ventures, Cereal Partners Worldwide and
   Froneri, with General Mills as owner of the brands they make under
   licence.
+- More brands from Coca-Cola's, PepsiCo's, P&G's, Colgate's and
+  Mondelez's annual reports, with their territory limits, and Unilever
+  in depth: its Power Brands, its 2025 purchases, its main subsidiaries
+  and the brands on its UK, US and Hindustan Unilever pages, each scoped
+  to the market its page covers.
