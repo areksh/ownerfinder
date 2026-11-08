@@ -71,3 +71,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   recorded: Ferrero's group brands and the WK Kellogg cereals it makes
   in North America, Mondelez's own brand list, Japan Tobacco's US
   business through Vector Group, and more JBS and Tyson brands.
+- Fuel brands: BP's Aral, ARCO, Amoco, Thorntons, TravelCenters of
+  America and Castrol (whose 65% sale to Stonepeak is noted); Chevron's
+  markets for Chevron, Texaco and Caltex, its Hess, GS Caltex and CPChem
+  interests; ExxonMobil's 69.6% of Imperial Oil and Mobil 1; and Shell's
+  Pennzoil-Quaker State, 44% of Raízen and Nature Energy.
