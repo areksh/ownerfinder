@@ -1,0 +1,22 @@
+# Altria. Owns Marlboro in the US through its wholly owned subsidiary PM USA (10-K for 2025).
+
+entities:
+  - { id: entity:altria, name: "Altria Group, Inc." }
+  - { id: entity:philip-morris-usa, name: "Philip Morris USA Inc." }
+
+relationships:
+  - id: relationship:altria-philip-morris-usa
+    type: owns
+    from: entity:altria
+    to: entity:philip-morris-usa
+    validFrom: "2026-02-25"
+    stakePct: 100
+    scope: { include: world }
+    sources: [source:altria-10k-2025]
+  - id: relationship:philip-morris-usa-marlboro
+    type: owns_brand
+    from: entity:philip-morris-usa
+    to: brand:marlboro
+    validFrom: "2026-02-25"
+    scope: { include: [US] }
+    sources: [source:altria-10k-2025]

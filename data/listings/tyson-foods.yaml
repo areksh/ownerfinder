@@ -1,0 +1,14 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:tyson-foods
+evidence:
+  - criterion: criterion:competition
+    status: settled
+    date: "2021-01-19"
+    summary: >-
+      Tyson Foods agreed to pay $221.5 million to settle class actions
+      brought by purchasers of broiler chickens, which alleged that
+      Tyson, other poultry processors and an information service
+      provider had violated antitrust and unfair competition laws. The
+      court approved the settlements in 2021 and 2022.
+    sources: [source:tyson-10k-2025]

@@ -1,0 +1,66 @@
+# JBS. Brands from JBS N.V.'s 20-F for 2025; JBS N.V. became the holding company of JBS S.A. in June 2025.
+
+entities:
+  - { id: entity:jbs, name: "JBS N.V." }
+  - { id: entity:pilgrims-pride-corporation, name: "Pilgrim's Pride Corporation" }
+
+brands:
+  - { id: brand:swift, name: "Swift" }
+  - { id: brand:friboi, name: "Friboi" }
+  - { id: brand:seara, name: "Seara" }
+  - { id: brand:pilgrims-pride, name: "Pilgrim's Pride" }
+  - { id: brand:moy-park, name: "Moy Park" }
+  - { id: brand:primo, name: "Primo" }
+
+relationships:
+  - id: relationship:jbs-pilgrims-pride-corporation
+    type: owns
+    from: entity:jbs
+    to: entity:pilgrims-pride-corporation
+    validFrom: "2026-02-12"
+    stakePct: 82.28
+    scope: { include: world }
+    note: "Held through JBS's indirect wholly owned subsidiaries."
+    sources: [source:pilgrims-10k-2025, source:jbs-20f-2025]
+  - id: relationship:jbs-swift
+    type: owns_brand
+    from: entity:jbs
+    to: brand:swift
+    validFrom: "2026-03-25"
+    scope: { include: world }
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-friboi
+    type: owns_brand
+    from: entity:jbs
+    to: brand:friboi
+    validFrom: "2026-03-25"
+    scope: { include: world }
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-seara
+    type: owns_brand
+    from: entity:jbs
+    to: brand:seara
+    validFrom: "2026-03-25"
+    scope: { include: world }
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-pilgrims-pride
+    type: owns_brand
+    from: entity:jbs
+    to: brand:pilgrims-pride
+    validFrom: "2026-03-25"
+    scope: { include: world }
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-moy-park
+    type: owns_brand
+    from: entity:jbs
+    to: brand:moy-park
+    validFrom: "2026-03-25"
+    scope: { include: world }
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-primo
+    type: owns_brand
+    from: entity:jbs
+    to: brand:primo
+    validFrom: "2026-03-25"
+    scope: { include: world }
+    sources: [source:jbs-20f-2025]

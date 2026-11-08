@@ -1,0 +1,65 @@
+# British American Tobacco. Brands from its 20-F for 2025.
+
+entities:
+  - { id: entity:british-american-tobacco, name: "British American Tobacco p.l.c." }
+
+brands:
+  - { id: brand:vuse, name: "Vuse" }
+  - { id: brand:velo, name: "Velo" }
+  - { id: brand:glo, name: "glo" }
+  - { id: brand:dunhill, name: "Dunhill" }
+  - { id: brand:kent, name: "Kent" }
+  - { id: brand:lucky-strike, name: "Lucky Strike" }
+  - { id: brand:newport, name: "Newport" }
+
+relationships:
+  - id: relationship:british-american-tobacco-vuse
+    type: owns_brand
+    from: entity:british-american-tobacco
+    to: brand:vuse
+    validFrom: "2026-02-13"
+    scope: { include: world }
+    sources: [source:bat-20f-2025]
+  - id: relationship:british-american-tobacco-velo
+    type: owns_brand
+    from: entity:british-american-tobacco
+    to: brand:velo
+    validFrom: "2026-02-13"
+    scope: { include: world }
+    sources: [source:bat-20f-2025]
+  - id: relationship:british-american-tobacco-glo
+    type: owns_brand
+    from: entity:british-american-tobacco
+    to: brand:glo
+    validFrom: "2026-02-13"
+    scope: { include: world }
+    sources: [source:bat-20f-2025]
+  - id: relationship:british-american-tobacco-dunhill
+    type: owns_brand
+    from: entity:british-american-tobacco
+    to: brand:dunhill
+    validFrom: "2026-02-13"
+    scope: { include: world }
+    sources: [source:bat-20f-2025]
+  - id: relationship:british-american-tobacco-kent
+    type: owns_brand
+    from: entity:british-american-tobacco
+    to: brand:kent
+    validFrom: "2026-02-13"
+    scope: { include: world }
+    sources: [source:bat-20f-2025]
+  - id: relationship:british-american-tobacco-lucky-strike
+    type: owns_brand
+    from: entity:british-american-tobacco
+    to: brand:lucky-strike
+    validFrom: "2026-02-13"
+    scope: { include: world }
+    sources: [source:bat-20f-2025]
+  - id: relationship:british-american-tobacco-newport
+    type: owns_brand
+    from: entity:british-american-tobacco
+    to: brand:newport
+    validFrom: "2026-02-13"
+    scope: { include: [US] }
+    note: "The 20-F describes Newport as the leading US menthol brand, acquired with Reynolds American; other markets are not yet sourced."
+    sources: [source:bat-20f-2025]

@@ -1,0 +1,7 @@
+sources:
+  - id: source:pmi-10k-2025
+    url: https://www.sec.gov/Archives/edgar/data/1413329/000162828026005939/pm-20251231.htm
+    title: "Philip Morris International Inc., Form 10-K for the fiscal year ended December 31, 2025"
+    publisher: "Philip Morris International Inc."
+    published: "2026-02-06"
+    retrieved: "2026-11-08"

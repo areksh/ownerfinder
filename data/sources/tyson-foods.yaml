@@ -1,0 +1,7 @@
+sources:
+  - id: source:tyson-10k-2025
+    url: https://www.sec.gov/Archives/edgar/data/100493/000010049325000095/tsn-20250927.htm
+    title: "Tyson Foods, Inc., Form 10-K for the fiscal year ended September 27, 2025"
+    publisher: "Tyson Foods, Inc."
+    published: "2025-11-10"
+    retrieved: "2026-11-08"

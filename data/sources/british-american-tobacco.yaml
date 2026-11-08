@@ -1,0 +1,13 @@
+sources:
+  - id: source:bat-20f-2025
+    url: https://www.sec.gov/Archives/edgar/data/1303523/000130352326000017/bti-20251231.htm
+    title: "British American Tobacco p.l.c., Form 20-F for the fiscal year ended December 31, 2025"
+    publisher: "British American Tobacco p.l.c."
+    published: "2026-02-13"
+    retrieved: "2026-11-08"
+  - id: source:bat-half-year-2026
+    url: https://www.sec.gov/Archives/edgar/data/0001303523/000095015726000830/ex99-8.htm
+    title: "BAT Half-Year Report for the six months to 30 June 2026"
+    publisher: "British American Tobacco p.l.c."
+    published: "2026-07-30"
+    retrieved: "2026-11-08"

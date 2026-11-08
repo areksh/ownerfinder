@@ -1,0 +1,17 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:british-american-tobacco
+evidence:
+  - criterion: criterion:sanctions
+    status: admitted
+    date: "2023-04-25"
+    summary: >-
+      In April 2023 BAT agreed with the US Department of Justice and the
+      Treasury's Office of Foreign Assets Control to resolve
+      investigations into breaches of sanctions relating to North Korea
+      between 2007 and 2017, with fines totalling US$635 million plus
+      interest. A BAT subsidiary in Singapore pleaded guilty, and BAT
+      entered a three-year deferred prosecution agreement; in May 2026,
+      after BAT had complied with it, the proceedings against BAT were
+      dismissed.
+    sources: [source:bat-20f-2025, source:bat-half-year-2026]

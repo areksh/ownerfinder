@@ -1,0 +1,56 @@
+# Philip Morris International. Brands from its 10-K for 2025, which says it owns Marlboro outside the US.
+
+entities:
+  - { id: entity:philip-morris-international, name: "Philip Morris International Inc." }
+
+brands:
+  - { id: brand:marlboro, name: "Marlboro" }
+  - { id: brand:iqos, name: "IQOS" }
+  - { id: brand:heets, name: "HEETS" }
+  - { id: brand:terea, name: "TEREA" }
+  - { id: brand:veev, name: "VEEV" }
+  - { id: brand:zyn, name: "ZYN" }
+
+relationships:
+  - id: relationship:philip-morris-international-marlboro
+    type: owns_brand
+    from: entity:philip-morris-international
+    to: brand:marlboro
+    validFrom: "2026-02-06"
+    scope: { include: world, exclude: [US] }
+    sources: [source:pmi-10k-2025]
+  - id: relationship:philip-morris-international-iqos
+    type: owns_brand
+    from: entity:philip-morris-international
+    to: brand:iqos
+    validFrom: "2026-02-06"
+    scope: { include: world }
+    sources: [source:pmi-10k-2025]
+  - id: relationship:philip-morris-international-heets
+    type: owns_brand
+    from: entity:philip-morris-international
+    to: brand:heets
+    validFrom: "2026-02-06"
+    scope: { include: world }
+    sources: [source:pmi-10k-2025]
+  - id: relationship:philip-morris-international-terea
+    type: owns_brand
+    from: entity:philip-morris-international
+    to: brand:terea
+    validFrom: "2026-02-06"
+    scope: { include: world }
+    sources: [source:pmi-10k-2025]
+  - id: relationship:philip-morris-international-veev
+    type: owns_brand
+    from: entity:philip-morris-international
+    to: brand:veev
+    validFrom: "2026-02-06"
+    scope: { include: world }
+    sources: [source:pmi-10k-2025]
+  - id: relationship:philip-morris-international-zyn
+    type: owns_brand
+    from: entity:philip-morris-international
+    to: brand:zyn
+    validFrom: "2026-02-06"
+    scope: { include: world }
+    sources: [source:pmi-10k-2025]

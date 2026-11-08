@@ -1,0 +1,64 @@
+# Tyson Foods. Brands from its 10-K for the year to September 2025.
+
+entities:
+  - { id: entity:tyson-foods, name: "Tyson Foods, Inc." }
+
+brands:
+  - { id: brand:tyson, name: "Tyson" }
+  - { id: brand:jimmy-dean, name: "Jimmy Dean" }
+  - { id: brand:hillshire-farm, name: "Hillshire Farm" }
+  - { id: brand:ball-park, name: "Ball Park" }
+  - { id: brand:wright, name: "Wright" }
+  - { id: brand:state-fair, name: "State Fair" }
+  - { id: brand:aidells, name: "Aidells" }
+
+relationships:
+  - id: relationship:tyson-foods-tyson
+    type: owns_brand
+    from: entity:tyson-foods
+    to: brand:tyson
+    validFrom: "2025-11-10"
+    scope: { include: world }
+    sources: [source:tyson-10k-2025]
+  - id: relationship:tyson-foods-jimmy-dean
+    type: owns_brand
+    from: entity:tyson-foods
+    to: brand:jimmy-dean
+    validFrom: "2025-11-10"
+    scope: { include: world }
+    sources: [source:tyson-10k-2025]
+  - id: relationship:tyson-foods-hillshire-farm
+    type: owns_brand
+    from: entity:tyson-foods
+    to: brand:hillshire-farm
+    validFrom: "2025-11-10"
+    scope: { include: world }
+    sources: [source:tyson-10k-2025]
+  - id: relationship:tyson-foods-ball-park
+    type: owns_brand
+    from: entity:tyson-foods
+    to: brand:ball-park
+    validFrom: "2025-11-10"
+    scope: { include: world }
+    sources: [source:tyson-10k-2025]
+  - id: relationship:tyson-foods-wright
+    type: owns_brand
+    from: entity:tyson-foods
+    to: brand:wright
+    validFrom: "2025-11-10"
+    scope: { include: world }
+    sources: [source:tyson-10k-2025]
+  - id: relationship:tyson-foods-state-fair
+    type: owns_brand
+    from: entity:tyson-foods
+    to: brand:state-fair
+    validFrom: "2025-11-10"
+    scope: { include: world }
+    sources: [source:tyson-10k-2025]
+  - id: relationship:tyson-foods-aidells
+    type: owns_brand
+    from: entity:tyson-foods
+    to: brand:aidells
+    validFrom: "2025-11-10"
+    scope: { include: world }
+    sources: [source:tyson-10k-2025]

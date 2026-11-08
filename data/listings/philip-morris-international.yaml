@@ -1,0 +1,20 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:philip-morris-international
+evidence:
+  - criterion: criterion:public-health
+    status: admitted
+    date: "2026-02-06"
+    summary: >-
+      Philip Morris International sells cigarettes, and in its annual
+      report for 2025 it said that it recognises that smoking cigarettes
+      causes serious diseases.
+    sources: [source:pmi-10k-2025]
+  - criterion: criterion:russia
+    status: admitted
+    date: "2026-02-06"
+    summary: >-
+      In its annual report for 2025, Philip Morris International said
+      that Russia accounted for around 6% of its net revenues that year,
+      and that one of its largest manufacturing facilities is in Russia.
+    sources: [source:pmi-10k-2025]

@@ -1,0 +1,13 @@
+sources:
+  - id: source:jbs-20f-2025
+    url: https://www.sec.gov/Archives/edgar/data/1791942/000121390026034213/ea0282342-20f_jbsnv.htm
+    title: "JBS N.V., Form 20-F for the fiscal year ended December 31, 2025"
+    publisher: "JBS N.V."
+    published: "2026-03-25"
+    retrieved: "2026-11-08"
+  - id: source:pilgrims-10k-2025
+    url: https://www.sec.gov/Archives/edgar/data/802481/000080248126000011/ppc-20251228.htm
+    title: "Pilgrim's Pride Corporation, Form 10-K for the fiscal year ended December 28, 2025"
+    publisher: "Pilgrim's Pride Corporation"
+    published: "2026-02-12"
+    retrieved: "2026-11-08"

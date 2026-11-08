@@ -44,6 +44,13 @@ describe("answers that depend on the country", () => {
     ]);
   });
 
+  it("Marlboro is Philip Morris International's outside the US, and Altria's inside it", () => {
+    expect(chains("brand:marlboro", "GB")).toEqual(["owned: entity:philip-morris-international"]);
+    expect(chains("brand:marlboro", "US")).toEqual([
+      "owned: entity:philip-morris-usa > entity:altria",
+    ]);
+  });
+
   it("Persil is Unilever's in France and Henkel's in Germany", () => {
     expect(chains("brand:persil", "FR")).toEqual(["owned: entity:unilever"]);
     expect(chains("brand:persil", "DE")).toEqual(["owned: entity:henkel"]);

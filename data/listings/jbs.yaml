@@ -1,0 +1,26 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:jbs
+evidence:
+  - criterion: criterion:bribery
+    status: settled
+    date: "2020"
+    summary: >-
+      In 2020 JBS S.A., J&F Investimentos (a Brazilian company
+      controlled by the same shareholders) and those controlling
+      shareholders settled with the US Securities and Exchange
+      Commission over payments covered by agreements they had made with
+      Brazilian authorities in 2017. They undertook to improve their
+      anti-bribery compliance and to pay disgorgement and civil
+      penalties.
+    sources: [source:pilgrims-10k-2025]
+  - criterion: criterion:bribery
+    status: admitted
+    date: "2020"
+    summary: >-
+      J&F Investimentos, a Brazilian company controlled by JBS's
+      controlling shareholders, pleaded guilty in the US in 2020 to one
+      count of conspiracy to violate the Foreign Corrupt Practices Act,
+      in relation to the same payments, and agreed to a criminal penalty
+      of US$256.5 million.
+    sources: [source:pilgrims-10k-2025]
