@@ -1,0 +1,26 @@
+# ExxonMobil's Imperial Oil interest and the Mobil 1 brand, from its 10-K for 2025.
+
+entities:
+  - { id: entity:imperial-oil, name: "Imperial Oil Limited" }
+
+brands:
+  - { id: brand:mobil-1, name: "Mobil 1" }
+
+relationships:
+  - id: relationship:exxonmobil-owns-imperial-oil
+    type: owns
+    from: entity:exxonmobil
+    to: entity:imperial-oil
+    validFrom: "2025-12-31"
+    stakePct: 69.6
+    scope: { include: world }
+    note: "ExxonMobil's interest at the end of 2025 in this Canadian company."
+    sources: [source:exxonmobil-10k-2025]
+  - id: relationship:exxonmobil-mobil-1
+    type: owns_brand
+    from: entity:exxonmobil
+    to: brand:mobil-1
+    validFrom: "2026-02"
+    scope: { include: world }
+    note: "Named by ExxonMobil as one of its world-class lubricant brands; which affiliate owns the trademark is not stated."
+    sources: [source:exxonmobil-10k-2025]

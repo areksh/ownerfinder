@@ -1,0 +1,59 @@
+# BP's other retail and lubricant brands, from its 20-F for 2025.
+
+brands:
+  - { id: brand:aral, name: "Aral" }
+  - { id: brand:arco, name: "ARCO" }
+  - { id: brand:amoco, name: "Amoco" }
+  - { id: brand:thorntons-fuel, name: "Thorntons (fuel)" }
+  - { id: brand:travelcenters-of-america, name: "TravelCenters of America" }
+  - { id: brand:castrol, name: "Castrol" }
+
+relationships:
+  - id: relationship:bp-aral
+    type: owns_brand
+    from: entity:bp
+    to: brand:aral
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands BP's retail sites are primarily branded with; BP's charging business there trades as Aral pulse in Germany. BP says retail sites can move to and from its brands as fuel supply or brand licence agreements with site operators change. Which group company owns the trademark is not stated."
+    sources: [source:bp-20f-2025]
+  - id: relationship:bp-arco
+    type: owns_brand
+    from: entity:bp
+    to: brand:arco
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands BP's retail sites are primarily branded with. BP says retail sites can move to and from its brands as fuel supply or brand licence agreements with site operators change. Which group company owns the trademark is not stated."
+    sources: [source:bp-20f-2025]
+  - id: relationship:bp-amoco
+    type: owns_brand
+    from: entity:bp
+    to: brand:amoco
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands BP's retail sites are primarily branded with. BP says retail sites can move to and from its brands as fuel supply or brand licence agreements with site operators change. Which group company owns the trademark is not stated."
+    sources: [source:bp-20f-2025]
+  - id: relationship:bp-thorntons-fuel
+    type: owns_brand
+    from: entity:bp
+    to: brand:thorntons-fuel
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands BP's retail sites are primarily branded with. BP says retail sites can move to and from its brands as fuel supply or brand licence agreements with site operators change. Which group company owns the trademark is not stated."
+    sources: [source:bp-20f-2025]
+  - id: relationship:bp-travelcenters-of-america
+    type: owns_brand
+    from: entity:bp
+    to: brand:travelcenters-of-america
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands BP's retail sites are primarily branded with; BP treated the business as a newly acquired asset to the end of 2025. BP says retail sites can move to and from its brands as fuel supply or brand licence agreements with site operators change. Which group company owns the trademark is not stated."
+    sources: [source:bp-20f-2025]
+  - id: relationship:bp-castrol
+    type: owns_brand
+    from: entity:bp
+    to: brand:castrol
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "BP's lubricants business. In December 2025 BP's board approved selling a 65% shareholding in Castrol to Stonepeak; its completion is not recorded here."
+    sources: [source:bp-20f-2025]

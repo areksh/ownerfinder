@@ -1,0 +1,47 @@
+# Chevron's Hess, GS Caltex and CPChem interests and its Nexbase brand, from its 10-K for 2025.
+
+entities:
+  - { id: entity:hess, name: "Hess Corporation" }
+  - { id: entity:gs-caltex, name: "GS Caltex Corporation" }
+  - { id: entity:chevron-phillips-chemical, name: "Chevron Phillips Chemical Company LLC" }
+
+brands:
+  - { id: brand:nexbase, name: "Nexbase" }
+
+relationships:
+  - id: relationship:chevron-owns-hess
+    type: owns
+    from: entity:chevron
+    to: entity:hess
+    validFrom: "2025"
+    startKnown: true
+    stakePct: 100
+    scope: { include: world }
+    note: "Chevron acquired Hess in a business combination in 2025; Hess is a wholly owned subsidiary."
+    sources: [source:chevron-10k-2025]
+  - id: relationship:chevron-stake-gs-caltex
+    type: holds_stake
+    from: entity:chevron
+    to: entity:gs-caltex
+    validFrom: "2025-12-31"
+    stakePct: 50
+    scope: { include: world }
+    note: "A 50%-owned affiliate through which Chevron operates in South Korea, including the Yeosu refinery."
+    sources: [source:chevron-10k-2025]
+  - id: relationship:chevron-stake-chevron-phillips-chemical
+    type: holds_stake
+    from: entity:chevron
+    to: entity:chevron-phillips-chemical
+    validFrom: "2025-12-31"
+    stakePct: 50
+    scope: { include: world }
+    note: "A 50% interest in this chemicals company."
+    sources: [source:chevron-10k-2025]
+  - id: relationship:chevron-nexbase
+    type: owns_brand
+    from: entity:chevron
+    to: brand:nexbase
+    validFrom: "2026-02-24"
+    scope: { include: world }
+    note: "Chevron markets base oil globally under the Chevron and Nexbase brands."
+    sources: [source:chevron-10k-2025]

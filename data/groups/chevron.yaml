@@ -15,6 +15,7 @@ relationships:
     to: brand:chevron
     validFrom: "2026-02-24"
     scope: { include: world }
+    note: "Chevron markets fuel under the Chevron and Texaco brands in the US and Latin America, and lubricants under the Chevron, Texaco and Caltex brands."
     sources: [source:chevron-10k-2025]
   - id: relationship:chevron-texaco
     type: owns_brand
@@ -22,6 +23,7 @@ relationships:
     to: brand:texaco
     validFrom: "2026-02-24"
     scope: { include: world }
+    note: "Chevron markets fuel under the Chevron and Texaco brands in the US and Latin America, and lubricants under the Chevron, Texaco and Caltex brands; other markets for Texaco are not recorded here."
     sources: [source:chevron-10k-2025]
   - id: relationship:chevron-caltex
     type: owns_brand
@@ -29,4 +31,5 @@ relationships:
     to: brand:caltex
     validFrom: "2026-02-24"
     scope: { include: world }
+    note: "Chevron markets fuel under the Caltex brand in the Asia-Pacific region, and lubricants under the Chevron, Texaco and Caltex brands."
     sources: [source:chevron-10k-2025]

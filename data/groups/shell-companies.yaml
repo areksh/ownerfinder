@@ -1,0 +1,34 @@
+# Shell's lubricants company, its Raizen joint venture and Nature Energy, from its 20-F for 2025.
+
+entities:
+  - { id: entity:pennzoil-quaker-state, name: "Pennzoil-Quaker State Company" }
+  - { id: entity:raizen, name: "Raízen S.A." }
+  - { id: entity:nature-energy, name: "Nature Energy" }
+
+relationships:
+  - id: relationship:shell-owns-pennzoil-quaker-state
+    type: owns
+    from: entity:shell
+    to: entity:pennzoil-quaker-state
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "Shell describes it as its lubricants business in the Marketing segment, based largely in North America; the share and the brands it owns are not given."
+    sources: [source:shell-20f-2025]
+  - id: relationship:shell-stake-raizen
+    type: holds_stake
+    from: entity:shell
+    to: entity:raizen
+    validFrom: "2025-12-31"
+    stakePct: 44
+    scope: { include: world }
+    note: "A non-operated joint venture in Brazil, Shell interest 44%, one of the world's largest blenders and distributors of ethanol."
+    sources: [source:shell-20f-2025]
+  - id: relationship:shell-owns-nature-energy
+    type: owns
+    from: entity:shell
+    to: entity:nature-energy
+    validFrom: "2023"
+    startKnown: true
+    scope: { include: world }
+    note: "Acquired in 2023; the share is not given."
+    sources: [source:shell-20f-2025]

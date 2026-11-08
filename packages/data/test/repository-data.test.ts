@@ -46,6 +46,10 @@ describe("answers that depend on the country", () => {
     ]);
   });
 
+  it("Aral is BP's", () => {
+    expect(chains("brand:aral", "DE", "2026-11-08")).toEqual(["owned: entity:bp"]);
+  });
+
   it("Marabou is on Mondelez's own brand list", () => {
     expect(chains("brand:marabou", "SE", "2026-11-08")).toEqual(["owned: entity:mondelez"]);
   });
