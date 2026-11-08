@@ -16,3 +16,15 @@ sources:
     title: "Our portfolio of brands"
     publisher: "Nestlé S.A."
     retrieved: "2026-11-07"
+  - id: source:france24-nestle-waters-2024
+    url: https://www.france24.com/en/live-news/20240131-french-prosecutors-probe-nestle-over-mineral-water-treatments
+    title: "French prosecutors probe Nestle over mineral water treatments"
+    publisher: "France 24 (AFP)"
+    published: "2024-01-31"
+    retrieved: "2026-11-08"
+  - id: source:nestle-three-month-sales-2022
+    url: https://www.nestle.com/sites/default/files/2022-04/three-month-sales-2022-press-release-en.pdf
+    title: "Nestlé reports three-month sales for 2022"
+    publisher: "Nestlé S.A."
+    published: "2022-04-21"
+    retrieved: "2026-11-08"

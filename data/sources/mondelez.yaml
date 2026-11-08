@@ -4,3 +4,15 @@ sources:
     title: "Our Brands"
     publisher: "Mondelēz International, Inc."
     retrieved: "2026-11-07"
+  - id: source:ec-mondelez-2024
+    url: https://ec.europa.eu/commission/presscorner/detail/en/ip_24_2727
+    title: "Commission fines Mondelēz €337.5 million for cross-border trade restrictions"
+    publisher: "European Commission"
+    published: "2024-05-23"
+    retrieved: "2026-11-08"
+  - id: source:mondelez-10k-2025
+    url: https://www.sec.gov/Archives/edgar/data/1103982/000162828026005345/mdlz-20251231.htm
+    title: "Mondelez International, Inc., Form 10-K for the fiscal year ended December 31, 2025"
+    publisher: "Mondelez International, Inc."
+    published: "2026-02-04"
+    retrieved: "2026-11-08"

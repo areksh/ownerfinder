@@ -1,0 +1,15 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:coca-cola
+evidence:
+  - criterion: criterion:tax
+    status: found
+    date: "2024-08-02"
+    summary: >-
+      In a transfer-pricing dispute over 2007 to 2009, the US Tax Court
+      mostly sided with the Internal Revenue Service and in August 2024
+      entered a decision for $2.7 billion of additional federal income
+      tax. Coca-Cola, which says the claims are without merit, paid $6.0
+      billion including interest and appealed to the Eleventh Circuit in
+      October 2024.
+    sources: [source:coca-cola-10k-2025]

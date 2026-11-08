@@ -4,3 +4,15 @@ sources:
     title: "Our Brands"
     publisher: "Reckitt Benckiser Group plc"
     retrieved: "2026-11-07"
+  - id: source:accc-nurofen-2016
+    url: https://www.accc.gov.au/media-release/full-federal-court-orders-6-million-penalty-for-nurofen-specific-pain-products
+    title: "Full Federal Court orders $6 million penalty for Nurofen Specific Pain products"
+    publisher: "Australian Competition and Consumer Commission"
+    published: "2016-12-16"
+    retrieved: "2026-11-08"
+  - id: source:reckitt-oxy-apology-2016
+    url: https://reckitt.com/news/rb-global-ceo-apologises-to-the-victims-and-families-affected-by-oxy-hs-product-in-korea/
+    title: "RB global CEO apologises to the victims and families affected by Oxy HS product in Korea"
+    publisher: "Reckitt Benckiser Group plc"
+    published: "2016-09-21"
+    retrieved: "2026-11-08"

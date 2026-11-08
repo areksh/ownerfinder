@@ -1,0 +1,24 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:reckitt
+evidence:
+  - criterion: criterion:consumer-protection
+    status: found
+    date: "2016-12-16"
+    summary: >-
+      Australia's Full Federal Court ordered Reckitt Benckiser
+      (Australia) to pay a penalty of A$6 million for misleading
+      consumers by presenting its Nurofen Specific Pain products as each
+      made to treat a particular type of pain, when each contained the
+      same active ingredient. Reckitt had admitted the conduct, which
+      ran from 2011 to 2015.
+    sources: [source:accc-nurofen-2016]
+  - criterion: criterion:consumer-protection
+    status: admitted
+    date: "2016-09-21"
+    summary: >-
+      Reckitt's chief executive apologised for the injury and deaths of
+      Korean consumers resulting from humidifier sanitiser products of
+      its Korean subsidiary, Oxy RB, which had announced a compensation
+      plan for victims.
+    sources: [source:reckitt-oxy-apology-2016]

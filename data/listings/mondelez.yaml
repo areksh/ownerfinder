@@ -1,0 +1,25 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:mondelez
+evidence:
+  - criterion: criterion:competition
+    status: found
+    date: "2024-05-23"
+    summary: >-
+      The European Commission fined Mondelēz €337.5 million for
+      hindering cross-border trade in chocolate, biscuit and coffee
+      products between EU member states. It found anticompetitive
+      agreements or practices between 2006 and 2020, and an abuse of a
+      dominant position between 2015 and 2019. Mondelēz cooperated and
+      acknowledged its liability, which reduced the fine by 15%.
+    sources: [source:ec-mondelez-2024]
+  - criterion: criterion:russia
+    status: admitted
+    date: "2026-02-04"
+    summary: >-
+      In its annual report for 2025, Mondelēz said it had suspended new
+      capital investment and advertising in Russia but had not ceased
+      operations there, saying that as a food company with more than
+      2,500 employees in the country it plays a role in the continuity
+      of the food supply.
+    sources: [source:mondelez-10k-2025]

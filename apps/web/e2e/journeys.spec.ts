@@ -34,6 +34,39 @@ test("a company's profile shows what it holds", async ({ page }) => {
   ).toBeVisible();
 });
 
+test("a linked answer says why the company is listed, and the reader chooses what counts", async ({
+  page,
+}) => {
+  await page.goto("/check/brand%3Akitkat?country=GB");
+  await expect(
+    page.getByRole("heading", { level: 2, name: "Linked to a listed company" }),
+  ).toBeVisible();
+  const why = page.getByRole("region", { name: "Why Nestlé S.A. is on the list" });
+  await expect(why.getByText("Admitted by the company").first()).toBeVisible();
+
+  for (const name of ["Consumer protection", "Business in Russia"]) {
+    await page.getByRole("checkbox", { name }).uncheck();
+  }
+  await page.getByRole("button", { name: "Update the answer" }).click();
+  await expect(
+    page.getByRole("heading", { level: 2, name: "No link to a listed company found" }),
+  ).toBeVisible();
+  await expect(page.getByRole("checkbox", { name: "Business in Russia" })).not.toBeChecked();
+  await expect(page.getByRole("checkbox", { name: "Competition" })).toBeChecked();
+});
+
+test("a listed company's profile gives its reasons with their sources", async ({ page }) => {
+  await page.goto("/profile/entity%3Amondelez");
+  const listing = page.getByRole("region", { name: "Why it is on the list" });
+  await expect(listing.getByText(/^Competition: The European Commission fined/)).toBeVisible();
+  const cited = listing.getByRole("link", { name: /^Source \d+$/ }).first();
+  const target = await cited.getAttribute("href");
+  await expect(page.locator(target ?? "#missing").getByRole("link")).toHaveAttribute(
+    "href",
+    /^https:\/\/ec\.europa\.eu\//,
+  );
+});
+
 test("a brand not recorded in a country says so", async ({ page }) => {
   await page.goto("/check/brand%3A7up?country=US");
   await expect(page.getByRole("heading", { level: 2, name: "Not in our records" })).toBeVisible();

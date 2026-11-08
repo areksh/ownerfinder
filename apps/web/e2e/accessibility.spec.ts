@@ -7,6 +7,8 @@ const PAGES = [
   "/check/brand%3Akelloggs?country=US",
   "/check/brand%3A7up?country=US",
   "/profile/entity%3Ahershey",
+  "/check/brand%3Akitkat?country=GB",
+  "/profile/entity%3Amondelez",
   "/methodology",
   "/data",
   "/request",

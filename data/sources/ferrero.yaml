@@ -10,3 +10,15 @@ sources:
     title: "Our Brands"
     publisher: "Ferrero Group"
     retrieved: "2026-11-07"
+  - id: source:spf-kinder-arlon-2022
+    url: https://www.santepubliquefrance.fr/presse/2022/rappel-de-l-entierete-des-produits-kinder-fabriques-a-l-usine-d-arlon-fermee-par-les-autorites-belges
+    title: "Rappel de l’entièreté des produits Kinder fabriqués à l’usine d’Arlon, fermée par les autorités belges"
+    publisher: "Santé publique France"
+    published: "2022-04-08"
+    retrieved: "2026-11-08"
+  - id: source:ferrero-arlon-restart-2022
+    url: https://www.ferrero.com/uk/en/news-stories/news/ferrero-plant-in-arlon-authorized-to-restart-production
+    title: "Ferrero plant in Arlon authorized to restart production"
+    publisher: "Ferrero"
+    published: "2022-06-17"
+    retrieved: "2026-11-08"

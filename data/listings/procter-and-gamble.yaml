@@ -1,0 +1,23 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:procter-and-gamble
+evidence:
+  - criterion: criterion:competition
+    status: found
+    date: "2011-04-13"
+    summary: >-
+      The European Commission fined Procter & Gamble €211.2 million for
+      operating a cartel with Henkel and Unilever in household laundry
+      powder detergents in eight EU countries between 2002 and 2005. P&G
+      acknowledged its liability and settled the case, which reduced the
+      fine.
+    sources: [source:ec-detergents-cartel-2011]
+  - criterion: criterion:russia
+    status: admitted
+    date: "2026-08-04"
+    summary: >-
+      In its annual report for the year to June 2026, Procter & Gamble
+      described its operations in Russia as continuing, saying it may
+      reduce further or discontinue them because of sanctions and other
+      pressures.
+    sources: [source:pg-10k-2026]

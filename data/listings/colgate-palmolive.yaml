@@ -1,0 +1,13 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:colgate-palmolive
+evidence:
+  - criterion: criterion:russia
+    status: admitted
+    date: "2026-02-23"
+    summary: >-
+      In its annual report for 2025, Colgate-Palmolive described its
+      Russian operations as continuing. It said it has no manufacturing
+      facilities in Russia, and that its Eurasia region made up about 1%
+      of its net sales.
+    sources: [source:colgate-10k-2025]

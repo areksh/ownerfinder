@@ -1,0 +1,22 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:nestle
+evidence:
+  - criterion: criterion:consumer-protection
+    status: admitted
+    date: "2024-01"
+    summary: >-
+      Nestlé Waters said it had treated some of its French mineral
+      waters, including Perrier and Vittel, with ultraviolet light and
+      activated carbon filters, which French rules on natural mineral
+      water do not allow. It said all the brands concerned now meet
+      French requirements. French prosecutors opened an investigation.
+    sources: [source:france24-nestle-waters-2024]
+  - criterion: criterion:russia
+    status: admitted
+    date: "2022-04-21"
+    summary: >-
+      Nestlé said in April 2022 that it had decided to focus on
+      providing essential food in Russia, where trading conditions were
+      significantly disrupted.
+    sources: [source:nestle-three-month-sales-2022]

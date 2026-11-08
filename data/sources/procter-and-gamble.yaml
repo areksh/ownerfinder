@@ -4,3 +4,16 @@ sources:
     title: "Brands"
     publisher: "The Procter & Gamble Company"
     retrieved: "2026-11-07"
+  # Also cited by Unilever's listing.
+  - id: source:ec-detergents-cartel-2011
+    url: https://ec.europa.eu/commission/presscorner/detail/en/ip_11_473
+    title: "Antitrust: Commission fines producers of washing powder € 315.2 million in cartel settlement case"
+    publisher: "European Commission"
+    published: "2011-04-13"
+    retrieved: "2026-11-08"
+  - id: source:pg-10k-2026
+    url: https://www.sec.gov/Archives/edgar/data/80424/000008042426000103/pg-20260630.htm
+    title: "The Procter & Gamble Company, Form 10-K for the fiscal year ended June 30, 2026"
+    publisher: "The Procter & Gamble Company"
+    published: "2026-08-04"
+    retrieved: "2026-11-08"

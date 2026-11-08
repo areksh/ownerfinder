@@ -4,3 +4,9 @@ sources:
     title: "Our Brands"
     publisher: "Colgate-Palmolive Company"
     retrieved: "2026-11-07"
+  - id: source:colgate-10k-2025
+    url: https://www.sec.gov/Archives/edgar/data/21665/000002166526000006/cl-20251231.htm
+    title: "Colgate-Palmolive Company, Form 10-K for the fiscal year ended December 31, 2025"
+    publisher: "Colgate-Palmolive Company"
+    published: "2026-02-23"
+    retrieved: "2026-11-08"

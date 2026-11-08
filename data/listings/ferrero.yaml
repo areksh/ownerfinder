@@ -1,0 +1,15 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:ferrero
+evidence:
+  - criterion: criterion:consumer-protection
+    status: found
+    date: "2022-04-08"
+    summary: >-
+      During a European salmonellosis outbreak linked to Kinder
+      products, the Belgian authorities withdrew the production
+      authorisation of Ferrero's factory in Arlon, after finding that
+      information Ferrero had provided was incomplete, and all Kinder
+      products made there were recalled. The factory was conditionally
+      authorised to restart in June 2022.
+    sources: [source:spf-kinder-arlon-2022, source:ferrero-arlon-restart-2022]
