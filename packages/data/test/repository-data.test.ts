@@ -96,6 +96,12 @@ describe("answers that depend on the country", () => {
     expect(chains("brand:black-magic", "FR", "2026-11-08")).toEqual([]);
   });
 
+  it("Aashirvaad is ITC's in India, in which BAT holds a stake", () => {
+    expect(chains("brand:aashirvaad", "IN", "2026-11-08")).toEqual([
+      "stake: entity:itc > entity:british-american-tobacco",
+    ]);
+  });
+
   it("Marmite is recorded as Unilever's only in the UK, where its brand page lists it", () => {
     expect(chains("brand:marmite", "GB", "2026-11-08")).toEqual(["owned: entity:unilever"]);
     expect(chains("brand:marmite", "US", "2026-11-08")).toEqual([]);

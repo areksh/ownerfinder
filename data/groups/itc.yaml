@@ -1,0 +1,458 @@
+# ITC Limited's brands, from its own business pages, read on 2026-11-08. BAT's stake in ITC is recorded with BAT's US chain.
+
+entities:
+  - { id: entity:itc, name: "ITC Limited" }
+
+brands:
+  - { id: brand:aashirvaad, name: "Aashirvaad" }
+  - { id: brand:sunrise-itc, name: "Sunrise (ITC foods)" }
+  - { id: brand:bingo, name: "Bingo!" }
+  - { id: brand:sunfeast, name: "Sunfeast" }
+  - { id: brand:fabelle, name: "Fabelle" }
+  - { id: brand:sunbean, name: "Sunbean" }
+  - { id: brand:yippee, name: "Yippee!" }
+  - { id: brand:kitchens-of-india, name: "Kitchens of India" }
+  - { id: brand:b-natural, name: "B Natural" }
+  - { id: brand:itc-master-chef, name: "ITC Master Chef" }
+  - { id: brand:farmland-itc, name: "Farmland (ITC foods)" }
+  - { id: brand:mint-o, name: "mint-o" }
+  - { id: brand:candyman, name: "Candyman" }
+  - { id: brand:jelimals, name: "Jelimals" }
+  - { id: brand:gumon, name: "GumOn" }
+  - { id: brand:edw-essenza, name: "EDW Essenza" }
+  - { id: brand:dermafique, name: "Dermafique" }
+  - { id: brand:fiama, name: "Fiama" }
+  - { id: brand:vivel, name: "Vivel" }
+  - { id: brand:engage, name: "Engage" }
+  - { id: brand:savlon, name: "Savlon" }
+  - { id: brand:charmis, name: "Charmis" }
+  - { id: brand:shower-to-shower, name: "Shower to Shower" }
+  - { id: brand:nimyle, name: "Nimyle" }
+  - { id: brand:nimwash, name: "Nimwash" }
+  - { id: brand:nimeasy, name: "Nimeasy" }
+  - { id: brand:superia, name: "Superia" }
+  - { id: brand:insignia, name: "Insignia" }
+  - { id: brand:india-kings, name: "India Kings" }
+  - { id: brand:classic-itc, name: "Classic (ITC cigarettes)" }
+  - { id: brand:gold-flake, name: "Gold Flake" }
+  - { id: brand:american-club, name: "American Club" }
+  - { id: brand:wills-navy-cut, name: "Wills Navy Cut" }
+  - { id: brand:players, name: "Players" }
+  - { id: brand:scissors, name: "Scissors" }
+  - { id: brand:capstan, name: "Capstan" }
+  - { id: brand:berkeley, name: "Berkeley" }
+  - { id: brand:bristol-itc, name: "Bristol (ITC cigarettes)" }
+  - { id: brand:flake-itc, name: "Flake (ITC cigarettes)" }
+  - { id: brand:silk-cut, name: "Silk Cut" }
+  - { id: brand:duke-and-royal, name: "Duke & Royal" }
+  - { id: brand:armenteros, name: "Armenteros" }
+  - { id: brand:classmate, name: "Classmate" }
+  - { id: brand:paperkraft, name: "Paperkraft" }
+  - { id: brand:aim-itc, name: "AIM (ITC safety matches)" }
+  - { id: brand:homelites, name: "Homelites" }
+  - { id: brand:ship-itc, name: "Ship (ITC safety matches)" }
+  - { id: brand:cheeta-fight, name: "Cheeta Fight" }
+  - { id: brand:kapas, name: "Kapas" }
+  - { id: brand:mangaldeep, name: "Mangaldeep" }
+
+relationships:
+  - id: relationship:itc-aashirvaad
+    type: owns_brand
+    from: entity:itc
+    to: brand:aashirvaad
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-foods]
+  - id: relationship:itc-sunrise-itc
+    type: owns_brand
+    from: entity:itc
+    to: brand:sunrise-itc
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-foods]
+  - id: relationship:itc-bingo
+    type: owns_brand
+    from: entity:itc
+    to: brand:bingo
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-foods]
+  - id: relationship:itc-sunfeast
+    type: owns_brand
+    from: entity:itc
+    to: brand:sunfeast
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-foods]
+  - id: relationship:itc-fabelle
+    type: owns_brand
+    from: entity:itc
+    to: brand:fabelle
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-foods]
+  - id: relationship:itc-sunbean
+    type: owns_brand
+    from: entity:itc
+    to: brand:sunbean
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-foods]
+  - id: relationship:itc-yippee
+    type: owns_brand
+    from: entity:itc
+    to: brand:yippee
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-foods]
+  - id: relationship:itc-kitchens-of-india
+    type: owns_brand
+    from: entity:itc
+    to: brand:kitchens-of-india
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-foods]
+  - id: relationship:itc-b-natural
+    type: owns_brand
+    from: entity:itc
+    to: brand:b-natural
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-foods]
+  - id: relationship:itc-itc-master-chef
+    type: owns_brand
+    from: entity:itc
+    to: brand:itc-master-chef
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-foods]
+  - id: relationship:itc-farmland-itc
+    type: owns_brand
+    from: entity:itc
+    to: brand:farmland-itc
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-foods]
+  - id: relationship:itc-mint-o
+    type: owns_brand
+    from: entity:itc
+    to: brand:mint-o
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-foods]
+  - id: relationship:itc-candyman
+    type: owns_brand
+    from: entity:itc
+    to: brand:candyman
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-foods]
+  - id: relationship:itc-jelimals
+    type: owns_brand
+    from: entity:itc
+    to: brand:jelimals
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-foods]
+  - id: relationship:itc-gumon
+    type: owns_brand
+    from: entity:itc
+    to: brand:gumon
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-foods]
+  - id: relationship:itc-edw-essenza
+    type: owns_brand
+    from: entity:itc
+    to: brand:edw-essenza
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-personal-care]
+  - id: relationship:itc-dermafique
+    type: owns_brand
+    from: entity:itc
+    to: brand:dermafique
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-personal-care]
+  - id: relationship:itc-fiama
+    type: owns_brand
+    from: entity:itc
+    to: brand:fiama
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-personal-care]
+  - id: relationship:itc-vivel
+    type: owns_brand
+    from: entity:itc
+    to: brand:vivel
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-personal-care]
+  - id: relationship:itc-engage
+    type: owns_brand
+    from: entity:itc
+    to: brand:engage
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-personal-care]
+  - id: relationship:itc-savlon
+    type: owns_brand
+    from: entity:itc
+    to: brand:savlon
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-personal-care]
+  - id: relationship:itc-charmis
+    type: owns_brand
+    from: entity:itc
+    to: brand:charmis
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-personal-care]
+  - id: relationship:itc-shower-to-shower
+    type: owns_brand
+    from: entity:itc
+    to: brand:shower-to-shower
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-personal-care]
+  - id: relationship:itc-nimyle
+    type: owns_brand
+    from: entity:itc
+    to: brand:nimyle
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-personal-care]
+  - id: relationship:itc-nimwash
+    type: owns_brand
+    from: entity:itc
+    to: brand:nimwash
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-personal-care]
+  - id: relationship:itc-nimeasy
+    type: owns_brand
+    from: entity:itc
+    to: brand:nimeasy
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-personal-care]
+  - id: relationship:itc-superia
+    type: owns_brand
+    from: entity:itc
+    to: brand:superia
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-personal-care]
+  - id: relationship:itc-insignia
+    type: owns_brand
+    from: entity:itc
+    to: brand:insignia
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's cigarette brands in India; the same name may belong to another company elsewhere, and other markets are not recorded here."
+    sources: [source:itc-cigarettes]
+  - id: relationship:itc-india-kings
+    type: owns_brand
+    from: entity:itc
+    to: brand:india-kings
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's cigarette brands in India; the same name may belong to another company elsewhere, and other markets are not recorded here."
+    sources: [source:itc-cigarettes]
+  - id: relationship:itc-classic-itc
+    type: owns_brand
+    from: entity:itc
+    to: brand:classic-itc
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's cigarette brands in India; the same name may belong to another company elsewhere, and other markets are not recorded here."
+    sources: [source:itc-cigarettes]
+  - id: relationship:itc-gold-flake
+    type: owns_brand
+    from: entity:itc
+    to: brand:gold-flake
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's cigarette brands in India; the same name may belong to another company elsewhere, and other markets are not recorded here."
+    sources: [source:itc-cigarettes]
+  - id: relationship:itc-american-club
+    type: owns_brand
+    from: entity:itc
+    to: brand:american-club
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's cigarette brands in India; the same name may belong to another company elsewhere, and other markets are not recorded here."
+    sources: [source:itc-cigarettes]
+  - id: relationship:itc-wills-navy-cut
+    type: owns_brand
+    from: entity:itc
+    to: brand:wills-navy-cut
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's cigarette brands in India; the same name may belong to another company elsewhere, and other markets are not recorded here."
+    sources: [source:itc-cigarettes]
+  - id: relationship:itc-players
+    type: owns_brand
+    from: entity:itc
+    to: brand:players
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's cigarette brands in India; the same name may belong to another company elsewhere, and other markets are not recorded here."
+    sources: [source:itc-cigarettes]
+  - id: relationship:itc-scissors
+    type: owns_brand
+    from: entity:itc
+    to: brand:scissors
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's cigarette brands in India; the same name may belong to another company elsewhere, and other markets are not recorded here."
+    sources: [source:itc-cigarettes]
+  - id: relationship:itc-capstan
+    type: owns_brand
+    from: entity:itc
+    to: brand:capstan
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's cigarette brands in India; the same name may belong to another company elsewhere, and other markets are not recorded here."
+    sources: [source:itc-cigarettes]
+  - id: relationship:itc-berkeley
+    type: owns_brand
+    from: entity:itc
+    to: brand:berkeley
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's cigarette brands in India; the same name may belong to another company elsewhere, and other markets are not recorded here."
+    sources: [source:itc-cigarettes]
+  - id: relationship:itc-bristol-itc
+    type: owns_brand
+    from: entity:itc
+    to: brand:bristol-itc
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's cigarette brands in India; the same name may belong to another company elsewhere, and other markets are not recorded here."
+    sources: [source:itc-cigarettes]
+  - id: relationship:itc-flake-itc
+    type: owns_brand
+    from: entity:itc
+    to: brand:flake-itc
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's cigarette brands in India; the same name may belong to another company elsewhere, and other markets are not recorded here."
+    sources: [source:itc-cigarettes]
+  - id: relationship:itc-silk-cut
+    type: owns_brand
+    from: entity:itc
+    to: brand:silk-cut
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's cigarette brands in India; the same name may belong to another company elsewhere, and other markets are not recorded here."
+    sources: [source:itc-cigarettes]
+  - id: relationship:itc-duke-and-royal
+    type: owns_brand
+    from: entity:itc
+    to: brand:duke-and-royal
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's cigarette brands in India; the same name may belong to another company elsewhere, and other markets are not recorded here."
+    sources: [source:itc-cigarettes]
+  - id: relationship:itc-armenteros
+    type: owns_brand
+    from: entity:itc
+    to: brand:armenteros
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's cigarette brands in India; the same name may belong to another company elsewhere, and other markets are not recorded here."
+    sources: [source:itc-cigarettes]
+  - id: relationship:itc-classmate
+    type: owns_brand
+    from: entity:itc
+    to: brand:classmate
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-stationery]
+  - id: relationship:itc-paperkraft
+    type: owns_brand
+    from: entity:itc
+    to: brand:paperkraft
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-stationery]
+  - id: relationship:itc-aim-itc
+    type: owns_brand
+    from: entity:itc
+    to: brand:aim-itc
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-safety-matches]
+  - id: relationship:itc-homelites
+    type: owns_brand
+    from: entity:itc
+    to: brand:homelites
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-safety-matches]
+  - id: relationship:itc-ship-itc
+    type: owns_brand
+    from: entity:itc
+    to: brand:ship-itc
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-safety-matches]
+  - id: relationship:itc-cheeta-fight
+    type: owns_brand
+    from: entity:itc
+    to: brand:cheeta-fight
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-safety-matches]
+  - id: relationship:itc-kapas
+    type: owns_brand
+    from: entity:itc
+    to: brand:kapas
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-safety-matches]
+  - id: relationship:itc-mangaldeep
+    type: owns_brand
+    from: entity:itc
+    to: brand:mangaldeep
+    validFrom: "2026-11-08"
+    scope: { include: [IN] }
+    note: "Listed among ITC's brands on its Indian business pages; other markets are not recorded here."
+    sources: [source:itc-agarbatti]

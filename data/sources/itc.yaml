@@ -1,0 +1,33 @@
+# ITC Limited's own pages.
+
+sources:
+  - id: source:itc-foods
+    url: https://itcportal.com/itc-businesses/fmcg/food.html
+    title: "Food"
+    publisher: "ITC Limited"
+    retrieved: "2026-11-08"
+  - id: source:itc-personal-care
+    url: https://itcportal.com/itc-businesses/fmcg/Personal-care.html
+    title: "Personal Care"
+    publisher: "ITC Limited"
+    retrieved: "2026-11-08"
+  - id: source:itc-cigarettes
+    url: https://itcportal.com/itc-businesses/fmcg/cigarette.html
+    title: "Cigarettes"
+    publisher: "ITC Limited"
+    retrieved: "2026-11-08"
+  - id: source:itc-stationery
+    url: https://itcportal.com/itc-businesses/fmcg/education-and-stationery.html
+    title: "Education and Stationery"
+    publisher: "ITC Limited"
+    retrieved: "2026-11-08"
+  - id: source:itc-safety-matches
+    url: https://itcportal.com/itc-businesses/fmcg/safety-matches.html
+    title: "Safety Matches"
+    publisher: "ITC Limited"
+    retrieved: "2026-11-08"
+  - id: source:itc-agarbatti
+    url: https://itcportal.com/itc-businesses/fmcg/aagarbatti.html
+    title: "Agarbattis and Dhoop"
+    publisher: "ITC Limited"
+    retrieved: "2026-11-08"

@@ -7,7 +7,6 @@ entities:
   - { id: entity:modoral-brands, name: "Modoral Brands Inc." }
   - { id: entity:santa-fe-natural-tobacco, name: "Santa Fe Natural Tobacco Company, Inc." }
   - { id: entity:american-snuff, name: "American Snuff Company, LLC" }
-  - { id: entity:itc, name: "ITC Limited" }
   - { id: entity:organigram, name: "Organigram Global Inc." }
   - { id: entity:kamaran, name: "Kamaran Industry & Investment Company" }
 
