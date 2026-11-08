@@ -1,0 +1,13 @@
+sources:
+  - id: source:bayer-annual-report-2025
+    url: https://www.bayer.com/annualreport
+    title: "Bayer Annual Report 2025"
+    publisher: "Bayer AG"
+    published: "2026-03-04"
+    retrieved: "2026-11-08"
+  - id: source:bayer-roundup-preliminary-approval-2026
+    url: https://www.bayer.com/en-us/united-states/news-and-stories/2026/preliminary-approval-of-rounduptm-class-settlement
+    title: "Missouri court grants preliminary approval of Roundup class settlement to resolve current and future claims"
+    publisher: "Bayer AG"
+    published: "2026-03-04"
+    retrieved: "2026-11-08"

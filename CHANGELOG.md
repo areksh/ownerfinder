@@ -21,11 +21,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   request form that opens GitHub issues once its keys are set.
 - Public JSON API: `/search`, `/lookup/<id>`, `/nodes/<id>` and `/criteria`,
   answering by date and country with a source for every link.
-- The list: twelve criteria and listings for 30 companies, each piece of
+- The list: twelve criteria and listings for 31 companies, each piece of
   evidence cited and worded to how established it is (found, settled,
   admitted or alleged). Linked answers say why each listed company is on
   the list, and readers choose which criteria count.
-- Ownership data for 19 more groups: Philip Morris
+- Ownership data for 20 more groups: Philip Morris
   International, British American Tobacco, Japan Tobacco, JBS, Tyson Foods, Amazon, Meta,
-  Alphabet, PDD, Booking, Shein, Shell, ExxonMobil, BP, Chevron, Barclays and 3M,
+  Alphabet, PDD, Booking, Shein, Bayer, Shell, ExxonMobil, BP, Chevron, Barclays and 3M,
   with Altria and Keurig Dr Pepper as US owners of Marlboro and 7UP.

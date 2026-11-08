@@ -1,0 +1,17 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:bayer
+evidence:
+  - criterion: criterion:public-health
+    status: settled
+    date: "2026-02"
+    summary: >-
+      In February 2026 Bayer's subsidiary Monsanto agreed a proposed US
+      nationwide class settlement of current and future claims alleging
+      that exposure to Roundup caused non-Hodgkin lymphoma, with
+      payments of up to US$7.25 billion over up to 21 years, and a
+      separate settlement of certain other Roundup claims. The
+      agreements contain no admission of liability or wrongdoing. A
+      Missouri court granted the class settlement preliminary approval
+      in March 2026.
+    sources: [source:bayer-annual-report-2025, source:bayer-roundup-preliminary-approval-2026]

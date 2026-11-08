@@ -1,0 +1,97 @@
+# Bayer. Brands from its Annual Report 2025, which names Monsanto Company as its subsidiary.
+
+entities:
+  - { id: entity:bayer, name: "Bayer AG" }
+  - { id: entity:monsanto, name: "Monsanto Company" }
+
+brands:
+  - { id: brand:aspirin, name: "Aspirin" }
+  - { id: brand:aleve, name: "Aleve" }
+  - { id: brand:bepanthen, name: "Bepanthen" }
+  - { id: brand:canesten, name: "Canesten" }
+  - { id: brand:berocca, name: "Berocca" }
+  - { id: brand:claritin, name: "Claritin" }
+  - { id: brand:alka-seltzer, name: "Alka-Seltzer" }
+  - { id: brand:rennie, name: "Rennie" }
+  - { id: brand:supradyn, name: "Supradyn" }
+  - { id: brand:roundup, name: "Roundup" }
+
+relationships:
+  - id: relationship:bayer-monsanto
+    type: owns
+    from: entity:bayer
+    to: entity:monsanto
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    note: "The report calls Monsanto Bayer's subsidiary without giving the share."
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-aspirin
+    type: owns_brand
+    from: entity:bayer
+    to: brand:aspirin
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-aleve
+    type: owns_brand
+    from: entity:bayer
+    to: brand:aleve
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-bepanthen
+    type: owns_brand
+    from: entity:bayer
+    to: brand:bepanthen
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-canesten
+    type: owns_brand
+    from: entity:bayer
+    to: brand:canesten
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-berocca
+    type: owns_brand
+    from: entity:bayer
+    to: brand:berocca
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-claritin
+    type: owns_brand
+    from: entity:bayer
+    to: brand:claritin
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-alka-seltzer
+    type: owns_brand
+    from: entity:bayer
+    to: brand:alka-seltzer
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-rennie
+    type: owns_brand
+    from: entity:bayer
+    to: brand:rennie
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-supradyn
+    type: owns_brand
+    from: entity:bayer
+    to: brand:supradyn
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-roundup
+    type: owns_brand
+    from: entity:bayer
+    to: brand:roundup
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    sources: [source:bayer-annual-report-2025]
