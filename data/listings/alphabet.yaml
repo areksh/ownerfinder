@@ -1,0 +1,23 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:alphabet
+evidence:
+  - criterion: criterion:competition
+    status: found
+    date: "2024-08"
+    summary: >-
+      In a lawsuit brought by the US Department of Justice and state
+      attorneys general over Google's search and search advertising
+      practices, a US federal court in Washington, DC, ruled against
+      Google in August 2024 and in December 2025 entered a final
+      judgment imposing remedies. Google and the plaintiffs have both
+      appealed.
+    sources: [source:alphabet-10k-2025]
+  - criterion: criterion:competition
+    status: found
+    date: "2017-06"
+    summary: >-
+      The European Commission fined Google €2.4 billion in 2017,
+      deciding that its display and ranking of shopping search results
+      and ads infringed EU antitrust law. Google paid the fine in 2024.
+    sources: [source:alphabet-10k-2025]

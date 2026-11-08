@@ -1,0 +1,24 @@
+# PDD Holdings. Platforms from its 20-F for 2025.
+
+entities:
+  - { id: entity:pdd-holdings, name: "PDD Holdings Inc." }
+
+brands:
+  - { id: brand:temu, name: "Temu" }
+  - { id: brand:pinduoduo, name: "Pinduoduo" }
+
+relationships:
+  - id: relationship:pdd-holdings-temu
+    type: owns_brand
+    from: entity:pdd-holdings
+    to: brand:temu
+    validFrom: "2026-04-29"
+    scope: { include: world }
+    sources: [source:pdd-20f-2025]
+  - id: relationship:pdd-holdings-pinduoduo
+    type: owns_brand
+    from: entity:pdd-holdings
+    to: brand:pinduoduo
+    validFrom: "2026-04-29"
+    scope: { include: world }
+    sources: [source:pdd-20f-2025]

@@ -1,0 +1,105 @@
+# Amazon. Brands from its 10-K for 2025; Whole Foods Market from the 8-K completing its purchase.
+
+entities:
+  - { id: entity:amazon, name: "Amazon.com, Inc." }
+  - { id: entity:whole-foods-market, name: "Whole Foods Market, Inc." }
+
+brands:
+  - { id: brand:amazon, name: "Amazon" }
+  - { id: brand:amazon-prime, name: "Amazon Prime" }
+  - { id: brand:prime-video, name: "Prime Video" }
+  - { id: brand:kindle, name: "Kindle" }
+  - { id: brand:fire-tv, name: "Fire TV" }
+  - { id: brand:echo, name: "Echo" }
+  - { id: brand:alexa, name: "Alexa" }
+  - { id: brand:ring, name: "Ring" }
+  - { id: brand:blink, name: "Blink" }
+  - { id: brand:eero, name: "eero" }
+  - { id: brand:whole-foods-market, name: "Whole Foods Market" }
+
+relationships:
+  - id: relationship:amazon-whole-foods-market
+    type: owns
+    from: entity:amazon
+    to: entity:whole-foods-market
+    validFrom: "2017-08-28"
+    stakePct: 100
+    scope: { include: world }
+    sources: [source:amazon-whole-foods-8k-2017]
+  - id: relationship:whole-foods-market-brand
+    type: owns_brand
+    from: entity:whole-foods-market
+    to: brand:whole-foods-market
+    validFrom: "2017-08-28"
+    scope: { include: world }
+    sources: [source:amazon-whole-foods-8k-2017]
+  - id: relationship:amazon-amazon
+    type: owns_brand
+    from: entity:amazon
+    to: brand:amazon
+    validFrom: "2026-02-06"
+    scope: { include: world }
+    sources: [source:amazon-10k-2025]
+  - id: relationship:amazon-amazon-prime
+    type: owns_brand
+    from: entity:amazon
+    to: brand:amazon-prime
+    validFrom: "2026-02-06"
+    scope: { include: world }
+    sources: [source:amazon-10k-2025]
+  - id: relationship:amazon-prime-video
+    type: owns_brand
+    from: entity:amazon
+    to: brand:prime-video
+    validFrom: "2026-02-06"
+    scope: { include: world }
+    sources: [source:amazon-10k-2025]
+  - id: relationship:amazon-kindle
+    type: owns_brand
+    from: entity:amazon
+    to: brand:kindle
+    validFrom: "2026-02-06"
+    scope: { include: world }
+    sources: [source:amazon-10k-2025]
+  - id: relationship:amazon-fire-tv
+    type: owns_brand
+    from: entity:amazon
+    to: brand:fire-tv
+    validFrom: "2026-02-06"
+    scope: { include: world }
+    sources: [source:amazon-10k-2025]
+  - id: relationship:amazon-echo
+    type: owns_brand
+    from: entity:amazon
+    to: brand:echo
+    validFrom: "2026-02-06"
+    scope: { include: world }
+    sources: [source:amazon-10k-2025]
+  - id: relationship:amazon-alexa
+    type: owns_brand
+    from: entity:amazon
+    to: brand:alexa
+    validFrom: "2026-02-06"
+    scope: { include: world }
+    sources: [source:amazon-10k-2025]
+  - id: relationship:amazon-ring
+    type: owns_brand
+    from: entity:amazon
+    to: brand:ring
+    validFrom: "2026-02-06"
+    scope: { include: world }
+    sources: [source:amazon-10k-2025]
+  - id: relationship:amazon-blink
+    type: owns_brand
+    from: entity:amazon
+    to: brand:blink
+    validFrom: "2026-02-06"
+    scope: { include: world }
+    sources: [source:amazon-10k-2025]
+  - id: relationship:amazon-eero
+    type: owns_brand
+    from: entity:amazon
+    to: brand:eero
+    validFrom: "2026-02-06"
+    scope: { include: world }
+    sources: [source:amazon-10k-2025]

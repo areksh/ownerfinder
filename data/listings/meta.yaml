@@ -1,0 +1,25 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:meta
+evidence:
+  - criterion: criterion:privacy
+    status: found
+    date: "2023-05"
+    summary: >-
+      Ireland's Data Protection Commission fined Meta Platforms Ireland
+      €1.2 billion in May 2023, concluding that its transfers of
+      European Facebook users' data to the United States under standard
+      contractual clauses did not comply with the GDPR, and ordered
+      those transfers suspended. Meta is appealing, and the decision is
+      stayed by the Irish High Court.
+    sources: [source:meta-10k-2025]
+  - criterion: criterion:privacy
+    status: settled
+    date: "2019-07"
+    summary: >-
+      In July 2019 Meta, then Facebook, entered into a settlement and
+      modified consent order with the US Federal Trade Commission to
+      resolve an inquiry into its user data practices and the misuse of
+      data by a developer, which required it to strengthen its privacy
+      compliance and oversight.
+    sources: [source:meta-10k-2025]

@@ -1,0 +1,13 @@
+sources:
+  - id: source:booking-10k-2025
+    url: https://www.sec.gov/Archives/edgar/data/1075531/000107553126000009/bkng-20251231.htm
+    title: "Booking Holdings Inc., Form 10-K for the fiscal year ended December 31, 2025"
+    publisher: "Booking Holdings Inc."
+    published: "2026-02-18"
+    retrieved: "2026-11-08"
+  - id: source:ohchr-settlements-database-2026
+    url: https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/sessions-regular/session63/advance-versions/a-hrc-63-20-aev.pdf
+    title: "Database of all business enterprises involved in the activities detailed in paragraph 96 of the report of the independent international fact-finding mission (A/HRC/63/20, advance edited version)"
+    publisher: "Office of the United Nations High Commissioner for Human Rights"
+    published: "2026-09-25"
+    retrieved: "2026-11-08"

@@ -1,0 +1,26 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:booking-holdings
+evidence:
+  - criterion: criterion:competition
+    status: found
+    date: "2024"
+    summary: >-
+      In 2024 Spain's competition authority (CNMC) fined Booking.com and
+      restricted some of its business practices, including contractual
+      parity provisions and the criteria it uses to rank hotels.
+      Booking.com disagrees and has appealed; in February 2025 Spain's
+      National Court suspended the decision, including payment of the
+      fine, until the appeal is decided.
+    sources: [source:booking-10k-2025]
+  - criterion: criterion:israeli-settlements
+    status: found
+    date: "2026-09-25"
+    summary: >-
+      The UN human rights office's database of business enterprises
+      involved in activities relating to Israeli settlements in the
+      occupied Palestinian territory, updated in September 2026, lists
+      Booking Holdings and Booking.com among enterprises involved in
+      providing services that support the maintenance and existence of
+      settlements.
+    sources: [source:ohchr-settlements-database-2026]

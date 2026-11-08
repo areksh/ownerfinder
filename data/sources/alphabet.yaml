@@ -1,0 +1,7 @@
+sources:
+  - id: source:alphabet-10k-2025
+    url: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm
+    title: "Alphabet Inc., Form 10-K for the fiscal year ended December 31, 2025"
+    publisher: "Alphabet Inc."
+    published: "2026-02-05"
+    retrieved: "2026-11-08"

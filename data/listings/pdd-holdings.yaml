@@ -1,0 +1,15 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:pdd-holdings
+evidence:
+  - criterion: criterion:consumer-protection
+    status: alleged
+    date: "2025-07"
+    summary: >-
+      In July 2025 the European Commission preliminarily found that Temu
+      had breached the EU Digital Services Act by failing to properly
+      assess the risks of illegal products being sold on its
+      marketplace. The finding is not a final decision; in April 2026
+      PDD said it was engaging with the Commission, whose investigation
+      was continuing.
+    sources: [source:pdd-20f-2025]

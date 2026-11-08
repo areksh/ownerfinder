@@ -1,0 +1,72 @@
+# Alphabet. Brands from its 10-K for 2025.
+
+entities:
+  - { id: entity:alphabet, name: "Alphabet Inc." }
+
+brands:
+  - { id: brand:google, name: "Google" }
+  - { id: brand:youtube, name: "YouTube" }
+  - { id: brand:android, name: "Android" }
+  - { id: brand:chrome, name: "Chrome" }
+  - { id: brand:gmail, name: "Gmail" }
+  - { id: brand:google-maps, name: "Google Maps" }
+  - { id: brand:google-play, name: "Google Play" }
+  - { id: brand:waymo, name: "Waymo" }
+
+relationships:
+  - id: relationship:alphabet-google
+    type: owns_brand
+    from: entity:alphabet
+    to: brand:google
+    validFrom: "2026-02-05"
+    scope: { include: world }
+    sources: [source:alphabet-10k-2025]
+  - id: relationship:alphabet-youtube
+    type: owns_brand
+    from: entity:alphabet
+    to: brand:youtube
+    validFrom: "2026-02-05"
+    scope: { include: world }
+    sources: [source:alphabet-10k-2025]
+  - id: relationship:alphabet-android
+    type: owns_brand
+    from: entity:alphabet
+    to: brand:android
+    validFrom: "2026-02-05"
+    scope: { include: world }
+    sources: [source:alphabet-10k-2025]
+  - id: relationship:alphabet-chrome
+    type: owns_brand
+    from: entity:alphabet
+    to: brand:chrome
+    validFrom: "2026-02-05"
+    scope: { include: world }
+    sources: [source:alphabet-10k-2025]
+  - id: relationship:alphabet-gmail
+    type: owns_brand
+    from: entity:alphabet
+    to: brand:gmail
+    validFrom: "2026-02-05"
+    scope: { include: world }
+    sources: [source:alphabet-10k-2025]
+  - id: relationship:alphabet-google-maps
+    type: owns_brand
+    from: entity:alphabet
+    to: brand:google-maps
+    validFrom: "2026-02-05"
+    scope: { include: world }
+    sources: [source:alphabet-10k-2025]
+  - id: relationship:alphabet-google-play
+    type: owns_brand
+    from: entity:alphabet
+    to: brand:google-play
+    validFrom: "2026-02-05"
+    scope: { include: world }
+    sources: [source:alphabet-10k-2025]
+  - id: relationship:alphabet-waymo
+    type: owns_brand
+    from: entity:alphabet
+    to: brand:waymo
+    validFrom: "2026-02-05"
+    scope: { include: world }
+    sources: [source:alphabet-10k-2025]

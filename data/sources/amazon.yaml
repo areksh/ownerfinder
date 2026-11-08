@@ -1,0 +1,19 @@
+sources:
+  - id: source:amazon-10k-2025
+    url: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm
+    title: "Amazon.com, Inc., Form 10-K for the fiscal year ended December 31, 2025"
+    publisher: "Amazon.com, Inc."
+    published: "2026-02-06"
+    retrieved: "2026-11-08"
+  - id: source:amazon-whole-foods-8k-2017
+    url: https://www.sec.gov/Archives/edgar/data/1018724/000119312517269093/d448689d8k.htm
+    title: "Amazon.com, Inc., Form 8-K: completion of the acquisition of Whole Foods Market"
+    publisher: "Amazon.com, Inc."
+    published: "2017-08-28"
+    retrieved: "2026-11-08"
+  - id: source:ftc-amazon-prime-2025
+    url: https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-secures-historic-25-billion-settlement-against-amazon
+    title: "FTC Secures Historic $2.5 Billion Settlement Against Amazon"
+    publisher: "US Federal Trade Commission"
+    published: "2025-09-25"
+    retrieved: "2026-11-08"

@@ -1,0 +1,56 @@
+# Meta. Brands from its 10-K for 2025.
+
+entities:
+  - { id: entity:meta, name: "Meta Platforms, Inc." }
+
+brands:
+  - { id: brand:facebook, name: "Facebook" }
+  - { id: brand:instagram, name: "Instagram" }
+  - { id: brand:messenger, name: "Messenger" }
+  - { id: brand:whatsapp, name: "WhatsApp" }
+  - { id: brand:threads, name: "Threads" }
+  - { id: brand:meta-quest, name: "Meta Quest" }
+
+relationships:
+  - id: relationship:meta-facebook
+    type: owns_brand
+    from: entity:meta
+    to: brand:facebook
+    validFrom: "2026-01-29"
+    scope: { include: world }
+    sources: [source:meta-10k-2025]
+  - id: relationship:meta-instagram
+    type: owns_brand
+    from: entity:meta
+    to: brand:instagram
+    validFrom: "2026-01-29"
+    scope: { include: world }
+    sources: [source:meta-10k-2025]
+  - id: relationship:meta-messenger
+    type: owns_brand
+    from: entity:meta
+    to: brand:messenger
+    validFrom: "2026-01-29"
+    scope: { include: world }
+    sources: [source:meta-10k-2025]
+  - id: relationship:meta-whatsapp
+    type: owns_brand
+    from: entity:meta
+    to: brand:whatsapp
+    validFrom: "2026-01-29"
+    scope: { include: world }
+    sources: [source:meta-10k-2025]
+  - id: relationship:meta-threads
+    type: owns_brand
+    from: entity:meta
+    to: brand:threads
+    validFrom: "2026-01-29"
+    scope: { include: world }
+    sources: [source:meta-10k-2025]
+  - id: relationship:meta-meta-quest
+    type: owns_brand
+    from: entity:meta
+    to: brand:meta-quest
+    validFrom: "2026-01-29"
+    scope: { include: world }
+    sources: [source:meta-10k-2025]

@@ -1,0 +1,25 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:amazon
+evidence:
+  - criterion: criterion:privacy
+    status: found
+    date: "2021-07"
+    summary: >-
+      Luxembourg's data protection authority (CNPD) fined Amazon Europe
+      Core €746 million in July 2021, finding that Amazon's processing
+      of personal data did not comply with the EU General Data
+      Protection Regulation, and ordered changes to its practices. A
+      Luxembourg administrative court dismissed Amazon's appeal in March
+      2025; Amazon, which says the decision is without merit, has
+      appealed again.
+    sources: [source:amazon-10k-2025]
+  - criterion: criterion:consumer-protection
+    status: settled
+    date: "2025-09-25"
+    summary: >-
+      Amazon agreed to pay a $1 billion civil penalty and $1.5 billion
+      in refunds to settle a US Federal Trade Commission lawsuit
+      alleging that it enrolled millions of consumers in Prime without
+      their consent and made it difficult to cancel.
+    sources: [source:ftc-amazon-prime-2025, source:amazon-10k-2025]

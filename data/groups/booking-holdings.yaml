@@ -1,0 +1,48 @@
+# Booking Holdings. Brands from its 10-K for 2025.
+
+entities:
+  - { id: entity:booking-holdings, name: "Booking Holdings Inc." }
+
+brands:
+  - { id: brand:booking-com, name: "Booking.com" }
+  - { id: brand:priceline, name: "Priceline" }
+  - { id: brand:agoda, name: "Agoda" }
+  - { id: brand:kayak, name: "KAYAK" }
+  - { id: brand:opentable, name: "OpenTable" }
+
+relationships:
+  - id: relationship:booking-holdings-booking-com
+    type: owns_brand
+    from: entity:booking-holdings
+    to: brand:booking-com
+    validFrom: "2026-02-18"
+    scope: { include: world }
+    sources: [source:booking-10k-2025]
+  - id: relationship:booking-holdings-priceline
+    type: owns_brand
+    from: entity:booking-holdings
+    to: brand:priceline
+    validFrom: "2026-02-18"
+    scope: { include: world }
+    sources: [source:booking-10k-2025]
+  - id: relationship:booking-holdings-agoda
+    type: owns_brand
+    from: entity:booking-holdings
+    to: brand:agoda
+    validFrom: "2026-02-18"
+    scope: { include: world }
+    sources: [source:booking-10k-2025]
+  - id: relationship:booking-holdings-kayak
+    type: owns_brand
+    from: entity:booking-holdings
+    to: brand:kayak
+    validFrom: "2026-02-18"
+    scope: { include: world }
+    sources: [source:booking-10k-2025]
+  - id: relationship:booking-holdings-opentable
+    type: owns_brand
+    from: entity:booking-holdings
+    to: brand:opentable
+    validFrom: "2026-02-18"
+    scope: { include: world }
+    sources: [source:booking-10k-2025]
