@@ -110,10 +110,21 @@ export function linkSentence(link: Link): string {
   }
 }
 
-export function when(link: Pick<Link, "validFrom" | "validTo">): string {
+/**
+ * When a link held. "Since" is said only when a source gives the start;
+ * otherwise the date is just the earliest one it is known to have held
+ * (docs/data-model.md).
+ */
+export function when(link: Pick<Link, "validFrom" | "validTo" | "startKnown">): string {
+  const from = partialDate(link.validFrom);
+  if (link.startKnown === true) {
+    return link.validTo === undefined
+      ? `since ${from}`
+      : `from ${from} until ${partialDate(link.validTo)}`;
+  }
   return link.validTo === undefined
-    ? `since ${partialDate(link.validFrom)}`
-    : `from ${partialDate(link.validFrom)} until ${partialDate(link.validTo)}`;
+    ? `known from ${from}; when it began is not recorded`
+    : `known from ${from} until ${partialDate(link.validTo)}`;
 }
 
 export function where(scope: Scope): string {
@@ -126,8 +137,16 @@ export function where(scope: Scope): string {
   return `in ${and.format(places.map(countryName))}`;
 }
 
-export function unknownExplanation(name: string, country: string, date: string): string {
-  return `Nothing is recorded for ${name} in ${countryName(country)} on ${partialDate(date)}. If you know who owns it, you can request it be added.`;
+export function unknownExplanation(
+  name: string,
+  country: string,
+  date: string,
+  earliestRecord?: string,
+): string {
+  const nothing = `Nothing is recorded for ${name} in ${countryName(country)} on ${partialDate(date)}.`;
+  return earliestRecord === undefined
+    ? `${nothing} If you know who owns it, you can request it be added.`
+    : `${nothing} Our earliest record of who holds it there is from ${partialDate(earliestRecord)}, which may be later than when that began. If you know who owned it then, you can request it be added.`;
 }
 
 export function chain(names: string[]): string {

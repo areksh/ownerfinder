@@ -33,6 +33,8 @@ export interface LookupAnswer {
   approximate: boolean;
   paths: LookupPath[];
   listings: Listing[];
+  /** On an unknown answer: the earliest later date anything holds the node there. */
+  earliestRecord?: string;
   sources: Record<string, Source>;
 }
 

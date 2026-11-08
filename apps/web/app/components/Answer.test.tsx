@@ -69,7 +69,7 @@ const linked = answer({
       ],
       links: [
         link({ type: "owns_brand", from: kellanova, to: kelloggs }),
-        link({ type: "owns", from: mars, to: kellanova, validFrom: "2025-12" }),
+        link({ type: "owns", from: mars, to: kellanova, validFrom: "2025-12", startKnown: true }),
       ],
     },
     {
@@ -87,7 +87,14 @@ const linked = answer({
           scope: { include: ["US", "CA"] },
           coverage: "Exclusive, perpetual licence in North America.",
         }),
-        link({ type: "owns", from: ferrero, to: wk, stakePct: 100, validFrom: "2025-09-26" }),
+        link({
+          type: "owns",
+          from: ferrero,
+          to: wk,
+          stakePct: 100,
+          validFrom: "2025-09-26",
+          startKnown: true,
+        }),
       ],
     },
   ],
@@ -242,6 +249,22 @@ describe("Answer", () => {
     render(<Answer answer={answer({ outcome: "unknown", paths: [], sources: {} })} />);
     expect(screen.getByRole("heading", { level: 2, name: "Not in our records" })).toBeTruthy();
     expect(document.body.textContent).toContain("in the United States on 7 November 2026");
+  });
+
+  it("points to the earliest later record on an unknown answer", () => {
+    render(
+      <Answer
+        answer={answer({
+          outcome: "unknown",
+          paths: [],
+          sources: {},
+          earliestRecord: "2026-11-07",
+        })}
+      />,
+    );
+    expect(document.body.textContent).toContain(
+      "Our earliest record of who holds it there is from 7 November 2026",
+    );
   });
 
   it("warns when a date in the sources is only known to the month or year", () => {

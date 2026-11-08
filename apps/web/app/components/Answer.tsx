@@ -39,7 +39,7 @@ export function Answer({
       <h2 id="outcome">{outcome.headline}</h2>
       <p>
         {answer.outcome === "unknown"
-          ? unknownExplanation(name, answer.query.country, answer.query.date)
+          ? unknownExplanation(name, answer.query.country, answer.query.date, answer.earliestRecord)
           : outcome.explanation}
       </p>
       {listed.length > 0 && (

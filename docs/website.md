@@ -54,7 +54,11 @@ Each link is described in plain words from its type: owns, holds a stake
 of N% in, controls the board of, owns the brand, makes or sells it under
 licence, distributes it. Licence coverage and curator notes are shown
 beside the link. Approximate answers say that a date in the sources is
-only known to the month or year.
+only known to the month or year. A link whose start is sourced
+(`startKnown`) is "since" its date; any other is "known from" its date,
+"when it began is not recorded". An unknown answer that has a later
+record says so: "Our earliest record of who holds it there is from ...,
+which may be later than when that began."
 
 All interface text lives in one module (`app/copy.ts`) so it can be
 translated later; English (British) only for now.
