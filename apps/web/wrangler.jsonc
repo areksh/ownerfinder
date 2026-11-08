@@ -11,5 +11,5 @@
   "services": [{ "binding": "API", "service": "ecf-api" }],
   // The request form (docs/website.md). It stays closed until the site key
   // here and the secrets TURNSTILE_SECRET_KEY and GITHUB_TOKEN are set.
-  "vars": { "GITHUB_REPO": "areksh/ownerfinder", "TURNSTILE_SITE_KEY": "" }
+  "vars": { "GITHUB_REPO": "areksh/ownerfinder", "TURNSTILE_SITE_KEY": "0x4AAAAAAF4OeDh0EPUVGn8g" }
 }
