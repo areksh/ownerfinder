@@ -1,0 +1,221 @@
+# Procter & Gamble's major brands, from the table in its 10-K for the year to June 2026.
+
+brands:
+  - { id: brand:herbal-essences, name: "Herbal Essences" }
+  - { id: brand:rejoice, name: "Rejoice" }
+  - { id: brand:native, name: "Native" }
+  - { id: brand:old-spice, name: "Old Spice" }
+  - { id: brand:safeguard, name: "Safeguard" }
+  - { id: brand:secret, name: "Secret" }
+  - { id: brand:sk-ii, name: "SK-II" }
+  - { id: brand:braun, name: "Braun" }
+  - { id: brand:venus, name: "Venus" }
+  - { id: brand:crest, name: "Crest" }
+  - { id: brand:metamucil, name: "Metamucil" }
+  - { id: brand:neurobion, name: "Neurobion" }
+  - { id: brand:pepto-bismol, name: "Pepto-Bismol" }
+  - { id: brand:vicks, name: "Vicks" }
+  - { id: brand:downy, name: "Downy" }
+  - { id: brand:gain, name: "Gain" }
+  - { id: brand:cascade, name: "Cascade" }
+  - { id: brand:dawn, name: "Dawn" }
+  - { id: brand:fairy, name: "Fairy" }
+  - { id: brand:febreze, name: "Febreze" }
+  - { id: brand:mr-clean, name: "Mr. Clean" }
+  - { id: brand:swiffer, name: "Swiffer" }
+  - { id: brand:luvs, name: "Luvs" }
+  - { id: brand:always-discreet, name: "Always Discreet" }
+  - { id: brand:tampax, name: "Tampax" }
+  - { id: brand:bounty, name: "Bounty" }
+  - { id: brand:puffs, name: "Puffs" }
+
+relationships:
+  - id: relationship:procter-and-gamble-herbal-essences
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:herbal-essences
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-rejoice
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:rejoice
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-native
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:native
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-old-spice
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:old-spice
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-safeguard
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:safeguard
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-secret
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:secret
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-sk-ii
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:sk-ii
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-braun
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:braun
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-venus
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:venus
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-crest
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:crest
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-metamucil
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:metamucil
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-neurobion
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:neurobion
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-pepto-bismol
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:pepto-bismol
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-vicks
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:vicks
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-downy
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:downy
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-gain
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:gain
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-cascade
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:cascade
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-dawn
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:dawn
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-fairy
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:fairy
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-febreze
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:febreze
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-mr-clean
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:mr-clean
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-swiffer
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:swiffer
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-luvs
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:luvs
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-always-discreet
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:always-discreet
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-tampax
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:tampax
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-bounty
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:bounty
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]
+  - id: relationship:procter-and-gamble-puffs
+    type: owns_brand
+    from: entity:procter-and-gamble
+    to: brand:puffs
+    validFrom: "2026-08-04"
+    scope: { include: world }
+    sources: [source:pg-10k-2026]

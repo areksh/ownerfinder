@@ -1,0 +1,37 @@
+# Mondelez's core brands, from its 10-K for 2025.
+
+brands:
+  - { id: brand:lu, name: "LU" }
+  - { id: brand:clif-bar, name: "Clif Bar" }
+  - { id: brand:tates-bake-shop, name: "Tate's Bake Shop" }
+  - { id: brand:cadbury-dairy-milk, name: "Cadbury Dairy Milk" }
+
+relationships:
+  - id: relationship:mondelez-lu
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:lu
+    validFrom: "2026-02-04"
+    scope: { include: world }
+    sources: [source:mondelez-10k-2025]
+  - id: relationship:mondelez-clif-bar
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:clif-bar
+    validFrom: "2026-02-04"
+    scope: { include: world }
+    sources: [source:mondelez-10k-2025]
+  - id: relationship:mondelez-tates-bake-shop
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:tates-bake-shop
+    validFrom: "2026-02-04"
+    scope: { include: world }
+    sources: [source:mondelez-10k-2025]
+  - id: relationship:mondelez-cadbury-dairy-milk
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:cadbury-dairy-milk
+    validFrom: "2026-02-04"
+    scope: { include: world }
+    sources: [source:mondelez-10k-2025]

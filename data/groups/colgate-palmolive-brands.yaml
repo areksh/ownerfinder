@@ -1,0 +1,165 @@
+# Colgate-Palmolive's principal global and regional trademarks, from its 10-K for 2025.
+
+brands:
+  - { id: brand:darlie, name: "Darlie" }
+  - { id: brand:hello, name: "hello" }
+  - { id: brand:meridol, name: "meridol" }
+  - { id: brand:sorriso, name: "Sorriso" }
+  - { id: brand:eltamd, name: "EltaMD" }
+  - { id: brand:filorga, name: "Filorga" }
+  - { id: brand:irish-spring, name: "Irish Spring" }
+  - { id: brand:lady-speed-stick, name: "Lady Speed Stick" }
+  - { id: brand:pca-skin, name: "PCA SKIN" }
+  - { id: brand:protex, name: "Protex" }
+  - { id: brand:speed-stick, name: "Speed Stick" }
+  - { id: brand:ajax, name: "Ajax" }
+  - { id: brand:axion, name: "Axion" }
+  - { id: brand:fabuloso, name: "Fabuloso" }
+  - { id: brand:murphy, name: "Murphy" }
+  - { id: brand:soupline, name: "Soupline" }
+  - { id: brand:suavitel, name: "Suavitel" }
+  - { id: brand:hills-science-diet, name: "Hill's Science Diet" }
+  - { id: brand:hills-prescription-diet, name: "Hill's Prescription Diet" }
+  - { id: brand:prime100, name: "Prime100" }
+
+relationships:
+  - id: relationship:colgate-palmolive-darlie
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:darlie
+    validFrom: "2026-02-23"
+    scope: { include: world }
+    sources: [source:colgate-10k-2025]
+  - id: relationship:colgate-palmolive-hello
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:hello
+    validFrom: "2026-02-23"
+    scope: { include: world }
+    sources: [source:colgate-10k-2025]
+  - id: relationship:colgate-palmolive-meridol
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:meridol
+    validFrom: "2026-02-23"
+    scope: { include: world }
+    sources: [source:colgate-10k-2025]
+  - id: relationship:colgate-palmolive-sorriso
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:sorriso
+    validFrom: "2026-02-23"
+    scope: { include: world }
+    sources: [source:colgate-10k-2025]
+  - id: relationship:colgate-palmolive-eltamd
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:eltamd
+    validFrom: "2026-02-23"
+    scope: { include: world }
+    sources: [source:colgate-10k-2025]
+  - id: relationship:colgate-palmolive-filorga
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:filorga
+    validFrom: "2026-02-23"
+    scope: { include: world }
+    sources: [source:colgate-10k-2025]
+  - id: relationship:colgate-palmolive-irish-spring
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:irish-spring
+    validFrom: "2026-02-23"
+    scope: { include: world }
+    sources: [source:colgate-10k-2025]
+  - id: relationship:colgate-palmolive-lady-speed-stick
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:lady-speed-stick
+    validFrom: "2026-02-23"
+    scope: { include: world }
+    sources: [source:colgate-10k-2025]
+  - id: relationship:colgate-palmolive-pca-skin
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:pca-skin
+    validFrom: "2026-02-23"
+    scope: { include: world }
+    sources: [source:colgate-10k-2025]
+  - id: relationship:colgate-palmolive-protex
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:protex
+    validFrom: "2026-02-23"
+    scope: { include: world }
+    sources: [source:colgate-10k-2025]
+  - id: relationship:colgate-palmolive-speed-stick
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:speed-stick
+    validFrom: "2026-02-23"
+    scope: { include: world }
+    sources: [source:colgate-10k-2025]
+  - id: relationship:colgate-palmolive-ajax
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:ajax
+    validFrom: "2026-02-23"
+    scope: { include: world }
+    sources: [source:colgate-10k-2025]
+  - id: relationship:colgate-palmolive-axion
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:axion
+    validFrom: "2026-02-23"
+    scope: { include: world }
+    sources: [source:colgate-10k-2025]
+  - id: relationship:colgate-palmolive-fabuloso
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:fabuloso
+    validFrom: "2026-02-23"
+    scope: { include: world }
+    sources: [source:colgate-10k-2025]
+  - id: relationship:colgate-palmolive-murphy
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:murphy
+    validFrom: "2026-02-23"
+    scope: { include: world }
+    sources: [source:colgate-10k-2025]
+  - id: relationship:colgate-palmolive-soupline
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:soupline
+    validFrom: "2026-02-23"
+    scope: { include: world }
+    sources: [source:colgate-10k-2025]
+  - id: relationship:colgate-palmolive-suavitel
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:suavitel
+    validFrom: "2026-02-23"
+    scope: { include: world }
+    sources: [source:colgate-10k-2025]
+  - id: relationship:colgate-palmolive-hills-science-diet
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:hills-science-diet
+    validFrom: "2026-02-23"
+    scope: { include: world }
+    sources: [source:colgate-10k-2025]
+  - id: relationship:colgate-palmolive-hills-prescription-diet
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:hills-prescription-diet
+    validFrom: "2026-02-23"
+    scope: { include: world }
+    sources: [source:colgate-10k-2025]
+  - id: relationship:colgate-palmolive-prime100
+    type: owns_brand
+    from: entity:colgate-palmolive
+    to: brand:prime100
+    validFrom: "2026-02-23"
+    scope: { include: world }
+    sources: [source:colgate-10k-2025]
