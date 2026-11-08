@@ -46,6 +46,13 @@ describe("answers that depend on the country", () => {
     ]);
   });
 
+  it("Fridge Raiders is JBS's, used by its majority-owned Pilgrim's Pride", () => {
+    expect(chains("brand:fridge-raiders", "GB", "2026-11-08")).toEqual([
+      "owned: entity:jbs",
+      "distributed: entity:pilgrims-pride-corporation > entity:jbs",
+    ]);
+  });
+
   it("Montego is Vector's, and Japan Tobacco's from the merger on 7 October 2024", () => {
     expect(chains("brand:montego", "US", "2024-06-01")).toEqual([
       "owned: entity:vector-group",

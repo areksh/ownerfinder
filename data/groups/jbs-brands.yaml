@@ -1,0 +1,397 @@
+# JBS's other brands by market, from its 20-F for 2025, and the trademarks Pilgrim's Pride uses, from its 10-K for 2025.
+
+brands:
+  - { id: brand:1855-beef, name: "1855 (beef)" }
+  - { id: brand:grass-run-farms, name: "Grass Run Farms" }
+  - { id: brand:mantiqueira, name: "Mantiqueira" }
+  - { id: brand:principe-jbs, name: "Principe (JBS)" }
+  - { id: brand:sampco, name: "Sampco" }
+  - { id: brand:sunnyvalley, name: "Sunnyvalley" }
+  - { id: brand:imperial-american-wagyu-beef, name: "Imperial American Wagyu Beef" }
+  - { id: brand:la-herencia, name: "La Herencia" }
+  - { id: brand:maturatta, name: "Maturatta" }
+  - { id: brand:massa-leve, name: "Massa Leve" }
+  - { id: brand:marba, name: "Marba" }
+  - { id: brand:doriana, name: "Doriana" }
+  - { id: brand:delicia-jbs, name: "Delícia (JBS)" }
+  - { id: brand:primor, name: "Primor" }
+  - { id: brand:incrivel, name: "Incrível" }
+  - { id: brand:rezende, name: "Rezende" }
+  - { id: brand:hans-jbs, name: "Hans (JBS)" }
+  - { id: brand:eder, name: "Eder" }
+  - { id: brand:great-southern, name: "Great Southern" }
+  - { id: brand:rollover, name: "Rollover" }
+  - { id: brand:oak-house-foods, name: "Oak House Foods" }
+  - { id: brand:just-bare, name: "Just Bare" }
+  - { id: brand:gold-n-plump, name: "Gold'n Plump" }
+  - { id: brand:gold-kist, name: "Gold Kist" }
+  - { id: brand:del-dia, name: "Del Dia" }
+  - { id: brand:richmond-pilgrims, name: "Richmond (Pilgrim's)" }
+  - { id: brand:fridge-raiders, name: "Fridge Raiders" }
+  - { id: brand:denny-pilgrims, name: "Denny (Pilgrim's)" }
+  - { id: brand:country-pride, name: "Country Pride" }
+  - { id: brand:pierce-chicken, name: "Pierce Chicken" }
+  - { id: brand:to-ricos, name: "To-Ricos" }
+  - { id: brand:mattesons, name: "Matteson's" }
+
+relationships:
+  - id: relationship:jbs-1855-beef
+    type: owns_brand
+    from: entity:jbs
+    to: brand:1855-beef
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in North America; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-grass-run-farms
+    type: owns_brand
+    from: entity:jbs
+    to: brand:grass-run-farms
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in North America; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-mantiqueira
+    type: owns_brand
+    from: entity:jbs
+    to: brand:mantiqueira
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in North America; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-principe-jbs
+    type: owns_brand
+    from: entity:jbs
+    to: brand:principe-jbs
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in North America; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-sampco
+    type: owns_brand
+    from: entity:jbs
+    to: brand:sampco
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in North America; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-sunnyvalley
+    type: owns_brand
+    from: entity:jbs
+    to: brand:sunnyvalley
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in North America; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-imperial-american-wagyu-beef
+    type: owns_brand
+    from: entity:jbs
+    to: brand:imperial-american-wagyu-beef
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in North America; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-la-herencia
+    type: owns_brand
+    from: entity:jbs
+    to: brand:la-herencia
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in North America; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-maturatta
+    type: owns_brand
+    from: entity:jbs
+    to: brand:maturatta
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in Brazil; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-massa-leve
+    type: owns_brand
+    from: entity:jbs
+    to: brand:massa-leve
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in Brazil; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-marba
+    type: owns_brand
+    from: entity:jbs
+    to: brand:marba
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in Brazil; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-doriana
+    type: owns_brand
+    from: entity:jbs
+    to: brand:doriana
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in Brazil; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-delicia-jbs
+    type: owns_brand
+    from: entity:jbs
+    to: brand:delicia-jbs
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in Brazil; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-primor
+    type: owns_brand
+    from: entity:jbs
+    to: brand:primor
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in Brazil; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-incrivel
+    type: owns_brand
+    from: entity:jbs
+    to: brand:incrivel
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in Brazil; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-rezende
+    type: owns_brand
+    from: entity:jbs
+    to: brand:rezende
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in Brazil; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-hans-jbs
+    type: owns_brand
+    from: entity:jbs
+    to: brand:hans-jbs
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in Brazil; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-eder
+    type: owns_brand
+    from: entity:jbs
+    to: brand:eder
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in Brazil; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-great-southern
+    type: owns_brand
+    from: entity:jbs
+    to: brand:great-southern
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in Australia; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-rollover
+    type: owns_brand
+    from: entity:jbs
+    to: brand:rollover
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in Europe; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-oak-house-foods
+    type: owns_brand
+    from: entity:jbs
+    to: brand:oak-house-foods
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in Europe; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:jbs-just-bare
+    type: owns_brand
+    from: entity:jbs
+    to: brand:just-bare
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in North America or Europe; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025, source:pilgrims-10k-2025]
+  - id: relationship:jbs-gold-n-plump
+    type: owns_brand
+    from: entity:jbs
+    to: brand:gold-n-plump
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in North America or Europe; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025, source:pilgrims-10k-2025]
+  - id: relationship:jbs-gold-kist
+    type: owns_brand
+    from: entity:jbs
+    to: brand:gold-kist
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in North America or Europe; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025, source:pilgrims-10k-2025]
+  - id: relationship:jbs-del-dia
+    type: owns_brand
+    from: entity:jbs
+    to: brand:del-dia
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in North America or Europe; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025, source:pilgrims-10k-2025]
+  - id: relationship:jbs-richmond-pilgrims
+    type: owns_brand
+    from: entity:jbs
+    to: brand:richmond-pilgrims
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in North America or Europe; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025, source:pilgrims-10k-2025]
+  - id: relationship:jbs-fridge-raiders
+    type: owns_brand
+    from: entity:jbs
+    to: brand:fridge-raiders
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in North America or Europe; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025, source:pilgrims-10k-2025]
+  - id: relationship:jbs-denny-pilgrims
+    type: owns_brand
+    from: entity:jbs
+    to: brand:denny-pilgrims
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the brands JBS says its food products are marketed under in North America or Europe; which group company owns the trademark is not stated."
+    sources: [source:jbs-20f-2025, source:pilgrims-10k-2025]
+  - id: relationship:jbs-country-pride
+    type: owns_brand
+    from: entity:jbs
+    to: brand:country-pride
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the trademarks Pilgrim's Pride, JBS's majority-owned subsidiary, says it or its affiliates own or license; which group company owns it is not stated."
+    sources: [source:pilgrims-10k-2025]
+  - id: relationship:jbs-pierce-chicken
+    type: owns_brand
+    from: entity:jbs
+    to: brand:pierce-chicken
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the trademarks Pilgrim's Pride, JBS's majority-owned subsidiary, says it or its affiliates own or license; which group company owns it is not stated."
+    sources: [source:pilgrims-10k-2025]
+  - id: relationship:jbs-to-ricos
+    type: owns_brand
+    from: entity:jbs
+    to: brand:to-ricos
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the trademarks Pilgrim's Pride, JBS's majority-owned subsidiary, says it or its affiliates own or license; which group company owns it is not stated."
+    sources: [source:pilgrims-10k-2025]
+  - id: relationship:jbs-mattesons
+    type: owns_brand
+    from: entity:jbs
+    to: brand:mattesons
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "One of the trademarks Pilgrim's Pride, JBS's majority-owned subsidiary, says it or its affiliates own or license; which group company owns it is not stated."
+    sources: [source:pilgrims-10k-2025]
+  - id: relationship:pilgrims-pride-uses-just-bare
+    type: distributes
+    from: entity:pilgrims-pride-corporation
+    to: brand:just-bare
+    validFrom: "2026-02-12"
+    scope: { include: world }
+    note: "Pilgrim's Pride lists it among the significant trademarks used by it or its affiliates, owned or licensed."
+    sources: [source:pilgrims-10k-2025]
+  - id: relationship:pilgrims-pride-uses-gold-n-plump
+    type: distributes
+    from: entity:pilgrims-pride-corporation
+    to: brand:gold-n-plump
+    validFrom: "2026-02-12"
+    scope: { include: world }
+    note: "Pilgrim's Pride lists it among the significant trademarks used by it or its affiliates, owned or licensed."
+    sources: [source:pilgrims-10k-2025]
+  - id: relationship:pilgrims-pride-uses-gold-kist
+    type: distributes
+    from: entity:pilgrims-pride-corporation
+    to: brand:gold-kist
+    validFrom: "2026-02-12"
+    scope: { include: world }
+    note: "Pilgrim's Pride lists it among the significant trademarks used by it or its affiliates, owned or licensed."
+    sources: [source:pilgrims-10k-2025]
+  - id: relationship:pilgrims-pride-uses-del-dia
+    type: distributes
+    from: entity:pilgrims-pride-corporation
+    to: brand:del-dia
+    validFrom: "2026-02-12"
+    scope: { include: world }
+    note: "Pilgrim's Pride lists it among the significant trademarks used by it or its affiliates, owned or licensed."
+    sources: [source:pilgrims-10k-2025]
+  - id: relationship:pilgrims-pride-uses-richmond-pilgrims
+    type: distributes
+    from: entity:pilgrims-pride-corporation
+    to: brand:richmond-pilgrims
+    validFrom: "2026-02-12"
+    scope: { include: world }
+    note: "Pilgrim's Pride lists it among the significant trademarks used by it or its affiliates, owned or licensed."
+    sources: [source:pilgrims-10k-2025]
+  - id: relationship:pilgrims-pride-uses-fridge-raiders
+    type: distributes
+    from: entity:pilgrims-pride-corporation
+    to: brand:fridge-raiders
+    validFrom: "2026-02-12"
+    scope: { include: world }
+    note: "Pilgrim's Pride lists it among the significant trademarks used by it or its affiliates, owned or licensed."
+    sources: [source:pilgrims-10k-2025]
+  - id: relationship:pilgrims-pride-uses-denny-pilgrims
+    type: distributes
+    from: entity:pilgrims-pride-corporation
+    to: brand:denny-pilgrims
+    validFrom: "2026-02-12"
+    scope: { include: world }
+    note: "Pilgrim's Pride lists it among the significant trademarks used by it or its affiliates, owned or licensed."
+    sources: [source:pilgrims-10k-2025]
+  - id: relationship:pilgrims-pride-uses-country-pride
+    type: distributes
+    from: entity:pilgrims-pride-corporation
+    to: brand:country-pride
+    validFrom: "2026-02-12"
+    scope: { include: world }
+    note: "Pilgrim's Pride lists it among the significant trademarks used by it or its affiliates, owned or licensed."
+    sources: [source:pilgrims-10k-2025]
+  - id: relationship:pilgrims-pride-uses-pierce-chicken
+    type: distributes
+    from: entity:pilgrims-pride-corporation
+    to: brand:pierce-chicken
+    validFrom: "2026-02-12"
+    scope: { include: world }
+    note: "Pilgrim's Pride lists it among the significant trademarks used by it or its affiliates, owned or licensed."
+    sources: [source:pilgrims-10k-2025]
+  - id: relationship:pilgrims-pride-uses-to-ricos
+    type: distributes
+    from: entity:pilgrims-pride-corporation
+    to: brand:to-ricos
+    validFrom: "2026-02-12"
+    scope: { include: world }
+    note: "Pilgrim's Pride lists it among the significant trademarks used by it or its affiliates, owned or licensed."
+    sources: [source:pilgrims-10k-2025]
+  - id: relationship:pilgrims-pride-uses-mattesons
+    type: distributes
+    from: entity:pilgrims-pride-corporation
+    to: brand:mattesons
+    validFrom: "2026-02-12"
+    scope: { include: world }
+    note: "Pilgrim's Pride lists it among the significant trademarks used by it or its affiliates, owned or licensed."
+    sources: [source:pilgrims-10k-2025]
+  - id: relationship:pilgrims-pride-uses-pilgrims-pride
+    type: distributes
+    from: entity:pilgrims-pride-corporation
+    to: brand:pilgrims-pride
+    validFrom: "2026-02-12"
+    scope: { include: world }
+    note: "Pilgrim's Pride lists it among the significant trademarks used by it or its affiliates, owned or licensed."
+    sources: [source:pilgrims-10k-2025]
+  - id: relationship:pilgrims-pride-uses-moy-park
+    type: distributes
+    from: entity:pilgrims-pride-corporation
+    to: brand:moy-park
+    validFrom: "2026-02-12"
+    scope: { include: world }
+    note: "Pilgrim's Pride lists it among the significant trademarks used by it or its affiliates, owned or licensed."
+    sources: [source:pilgrims-10k-2025]
