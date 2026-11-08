@@ -96,6 +96,15 @@ describe("answers that depend on the country", () => {
     expect(chains("brand:black-magic", "FR", "2026-11-08")).toEqual([]);
   });
 
+  it("Horlicks is Unilever's in the Asian markets it bought in 2020, not everywhere", () => {
+    expect(chains("brand:horlicks", "IN", "2026-11-08")).toEqual([
+      "owned: entity:unilever",
+      "distributed: entity:hindustan-unilever > entity:unilever",
+    ]);
+    expect(chains("brand:horlicks", "IN", "2020-03-31")).toEqual([]);
+    expect(chains("brand:horlicks", "GB", "2026-11-08")).toEqual([]);
+  });
+
   it("Aashirvaad is ITC's in India, in which BAT holds a stake", () => {
     expect(chains("brand:aashirvaad", "IN", "2026-11-08")).toEqual([
       "stake: entity:itc > entity:british-american-tobacco",

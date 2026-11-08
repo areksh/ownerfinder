@@ -82,9 +82,11 @@ relationships:
     type: owns_brand
     from: entity:unilever
     to: brand:liquid-iv
-    validFrom: "2026-03-12"
+    validFrom: "2020-10-01"
+    startKnown: true
     scope: { include: world }
-    sources: [source:unilever-20f-2025]
+    note: "Acquired on 1 October 2020."
+    sources: [source:unilever-20f-2025, source:unilever-20f-2020]
   - id: relationship:unilever-hellmanns
     type: owns_brand
     from: entity:unilever

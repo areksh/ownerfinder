@@ -189,10 +189,11 @@ relationships:
     type: owns_brand
     from: entity:unilever
     to: brand:boost-hul
-    validFrom: "2026-11-08"
+    validFrom: "2020-04-01"
+    startKnown: true
     scope: { include: [IN] }
-    note: "Listed on Hindustan Unilever's Indian brands page; the page does not say which group company owns the brand, or where else Unilever owns it."
-    sources: [source:hul-brands]
+    note: "Part of GlaxoSmithKline's Health Food Drinks portfolio, which Unilever acquired in India on 1 April 2020."
+    sources: [source:hul-brands, source:unilever-20f-2020]
   - id: relationship:unilever-brooke-bond-3-roses
     type: owns_brand
     from: entity:unilever

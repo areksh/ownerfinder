@@ -76,3 +76,33 @@ sources:
     publisher: "Unilever PLC"
     published: "2026-03-31"
     retrieved: "2026-11-08"
+  - id: source:unilever-20f-2017
+    url: https://www.sec.gov/Archives/edgar/data/217410/000119312518062395/d458042d20f.htm
+    title: "Annual Report on Form 20-F 2017"
+    publisher: "Unilever PLC"
+    published: "2018-02-28"
+    retrieved: "2026-11-08"
+  - id: source:unilever-20f-2020
+    url: https://www.sec.gov/Archives/edgar/data/217410/000119312521075770/d14846d20f.htm
+    title: "Annual Report on Form 20-F 2020"
+    publisher: "Unilever PLC"
+    published: "2021-03-10"
+    retrieved: "2026-11-08"
+  - id: source:unilever-20f-2021
+    url: https://www.sec.gov/Archives/edgar/data/217410/000021741022000009/ul-20211231.htm
+    title: "Annual Report on Form 20-F 2021"
+    publisher: "Unilever PLC"
+    published: "2022-03-09"
+    retrieved: "2026-11-08"
+  - id: source:unilever-20f-2022
+    url: https://www.sec.gov/Archives/edgar/data/217410/000021741023000016/ul-20221231.htm
+    title: "Annual Report on Form 20-F 2022"
+    publisher: "Unilever PLC"
+    published: "2023-03-13"
+    retrieved: "2026-11-08"
+  - id: source:unilever-20f-2024
+    url: https://www.sec.gov/Archives/edgar/data/217410/000021741025000015/ul-20241231.htm
+    title: "Annual Report on Form 20-F 2024"
+    publisher: "Unilever PLC"
+    published: "2025-03-13"
+    retrieved: "2026-11-08"

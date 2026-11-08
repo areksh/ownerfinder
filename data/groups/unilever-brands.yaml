@@ -56,16 +56,20 @@ relationships:
     type: owns_brand
     from: entity:unilever
     to: brand:hourglass
-    validFrom: "2026-03"
+    validFrom: "2017"
+    startKnown: true
     scope: { include: world }
-    sources: [source:unilever-20f-2025]
+    note: "Acquired in 2017."
+    sources: [source:unilever-20f-2025, source:unilever-20f-2017]
   - id: relationship:unilever-k18
     type: owns_brand
     from: entity:unilever
     to: brand:k18
-    validFrom: "2026-03"
+    validFrom: "2024-02"
+    startKnown: true
     scope: { include: world }
-    sources: [source:unilever-20f-2025]
+    note: "Acquired in February 2024."
+    sources: [source:unilever-20f-2025, source:unilever-20f-2024]
   - id: relationship:unilever-nexxus
     type: owns_brand
     from: entity:unilever
@@ -77,9 +81,11 @@ relationships:
     type: owns_brand
     from: entity:unilever
     to: brand:nutrafol
-    validFrom: "2026-03"
+    validFrom: "2022"
+    startKnown: true
     scope: { include: world }
-    sources: [source:unilever-20f-2025]
+    note: "Unilever acquired a majority stake in Nutrafol in 2022 and held all of its company at 31 December 2025."
+    sources: [source:unilever-20f-2025, source:unilever-20f-2022]
   - id: relationship:unilever-olly
     type: owns_brand
     from: entity:unilever
@@ -91,9 +97,11 @@ relationships:
     type: owns_brand
     from: entity:unilever
     to: brand:paulas-choice
-    validFrom: "2026-03"
+    validFrom: "2021"
+    startKnown: true
     scope: { include: world }
-    sources: [source:unilever-20f-2025]
+    note: "Acquired in 2021."
+    sources: [source:unilever-20f-2025, source:unilever-20f-2021]
   - id: relationship:unilever-ponds
     type: owns_brand
     from: entity:unilever
@@ -175,9 +183,20 @@ relationships:
     type: owns_brand
     from: entity:unilever
     to: brand:horlicks
-    validFrom: "2026-03"
-    scope: { include: world }
-    sources: [source:unilever-20f-2025]
+    validFrom: "2020-04-01"
+    startKnown: true
+    scope: { include: [IN] }
+    note: "Unilever acquired GlaxoSmithKline's Health Food Drinks portfolio, Horlicks included, in India and 20 other predominantly Asian markets on 1 April 2020, and Horlicks Bangladesh on 30 June 2020. The other markets are not named, and Horlicks elsewhere is not Unilever's."
+    sources: [source:unilever-20f-2025, source:unilever-20f-2020]
+  - id: relationship:unilever-horlicks-bangladesh
+    type: owns_brand
+    from: entity:unilever
+    to: brand:horlicks
+    validFrom: "2020-06-30"
+    startKnown: true
+    scope: { include: [BD] }
+    note: "Unilever acquired Horlicks Bangladesh on 30 June 2020."
+    sources: [source:unilever-20f-2020]
   - id: relationship:unilever-dr-squatch
     type: owns_brand
     from: entity:unilever
@@ -232,11 +251,12 @@ relationships:
     type: owns
     from: entity:unilever
     to: entity:the-liv-group
-    validFrom: "2025-12-31"
+    validFrom: "2020-10-01"
+    startKnown: true
     stakePct: 100
     scope: { include: world }
-    note: "Unilever's aggregate direct and indirect share at 31 December 2025; the companies in between are not named."
-    sources: [source:unilever-20f-2025]
+    note: "Acquired on 1 October 2020; 100% is Unilever's aggregate share at 31 December 2025, and the companies in between are not named."
+    sources: [source:unilever-20f-2025, source:unilever-20f-2020]
   - id: relationship:unilever-owns-nutraceutical-wellness
     type: owns
     from: entity:unilever
@@ -250,11 +270,12 @@ relationships:
     type: owns
     from: entity:unilever
     to: entity:paulas-choice-inc
-    validFrom: "2025-12-31"
+    validFrom: "2021"
+    startKnown: true
     stakePct: 100
     scope: { include: world }
-    note: "Unilever's aggregate direct and indirect share at 31 December 2025; the companies in between are not named."
-    sources: [source:unilever-20f-2025]
+    note: "Acquired in 2021; 100% is Unilever's aggregate share at 31 December 2025, and the companies in between are not named."
+    sources: [source:unilever-20f-2025, source:unilever-20f-2021]
   - id: relationship:unilever-owns-yeti-parent-holdings
     type: owns
     from: entity:unilever
