@@ -58,3 +58,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   moved Air Wick, Calgon, Cillit Bang and others to an Advent company
   on 31 December 2025; and Kellanova's trademarks, with the cereal
   brands WK Kellogg Co makes under licence in North America.
+- Mars's A-Z brand list (80 more brands, including its pet care and
+  veterinary businesses); PMI's and Altria's other brands, split at the
+  US border; and Anheuser-Busch InBev, with its controlling shareholder,
+  main subsidiaries, brands, Constellation Brands' US rights to Corona
+  and Altria's 8.2% stake.
