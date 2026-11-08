@@ -51,9 +51,12 @@ describe("answers that depend on the country", () => {
     ]);
   });
 
-  it("Camel is Japan Tobacco's outside the US, and not yet recorded inside it", () => {
-    expect(chains("brand:camel", "GB")).toEqual(["owned: entity:japan-tobacco"]);
-    expect(chains("brand:camel", "US")).toEqual([]);
+  it("Camel is Japan Tobacco's outside the US, and BAT's inside it, made by R.J. Reynolds", () => {
+    expect(chains("brand:camel", "GB", "2026-11-08")).toEqual(["owned: entity:japan-tobacco"]);
+    expect(chains("brand:camel", "US", "2026-11-08")).toEqual([
+      "owned: entity:british-american-tobacco",
+      "distributed: entity:rj-reynolds-tobacco > entity:reynolds-american > entity:british-american-tobacco",
+    ]);
   });
 
   it("DiGiorno shows Nestle's ownership and every company it is sold through in the US", () => {

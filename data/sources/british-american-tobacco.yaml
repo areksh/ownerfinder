@@ -11,3 +11,19 @@ sources:
     publisher: "British American Tobacco p.l.c."
     published: "2026-07-30"
     retrieved: "2026-11-08"
+  - id: source:bat-20f-2025-ex8
+    url: https://www.sec.gov/Archives/edgar/data/1303523/000130352326000017/a2025fy-ex8xsubsidiariesun.htm
+    title: "British American Tobacco p.l.c. Form 20-F 2025, Exhibit 8: subsidiary undertakings"
+    publisher: "British American Tobacco p.l.c."
+    published: "2026-02-13"
+    retrieved: "2026-11-08"
+  - id: source:rai-brands
+    url: https://www.reynoldsamerican.com/building-brands/
+    title: "Brands"
+    publisher: "Reynolds American Inc."
+    retrieved: "2026-11-08"
+  - id: source:rai-who-we-are
+    url: https://www.reynoldsamerican.com/who-we-are/
+    title: "Who We Are"
+    publisher: "Reynolds American Inc."
+    retrieved: "2026-11-08"

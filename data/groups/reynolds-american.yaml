@@ -1,0 +1,253 @@
+# BAT's US chain (Reynolds American and its operating companies), more of its brands, and its stakes, from its 2025 20-F, Exhibit 8 and Reynolds American's pages.
+
+entities:
+  - { id: entity:reynolds-american, name: "Reynolds American Inc." }
+  - { id: entity:rj-reynolds-tobacco, name: "R. J. Reynolds Tobacco Company" }
+  - { id: entity:rj-reynolds-vapor, name: "R. J. Reynolds Vapor Company" }
+  - { id: entity:modoral-brands, name: "Modoral Brands Inc." }
+  - { id: entity:santa-fe-natural-tobacco, name: "Santa Fe Natural Tobacco Company, Inc." }
+  - { id: entity:american-snuff, name: "American Snuff Company, LLC" }
+  - { id: entity:itc, name: "ITC Limited" }
+  - { id: entity:organigram, name: "Organigram Global Inc." }
+  - { id: entity:kamaran, name: "Kamaran Industry & Investment Company" }
+
+brands:
+  - { id: brand:pall-mall, name: "Pall Mall" }
+  - { id: brand:rothmans, name: "Rothmans" }
+  - { id: brand:camel-snus, name: "Camel Snus" }
+  - { id: brand:natural-american-spirit, name: "Natural American Spirit" }
+  - { id: brand:grizzly, name: "Grizzly" }
+  - { id: brand:kodiak, name: "Kodiak" }
+  - { id: brand:cougar, name: "Cougar" }
+  - { id: brand:garrett-scotch-snuff, name: "Garrett Scotch Snuff" }
+
+relationships:
+  - id: relationship:british-american-tobacco-stake-reynolds-american
+    type: holds_stake
+    from: entity:british-american-tobacco
+    to: entity:reynolds-american
+    validFrom: "2004"
+    startKnown: true
+    validTo: "2017"
+    stakePct: 42
+    scope: { include: world }
+    note: "About 42%, held through BAT's wholly owned subsidiary Brown & Williamson after its US business was combined with RJR Tobacco Company to form Reynolds American; kept at that level when Reynolds American bought Lorillard in 2015. Ended when BAT bought the rest in 2017."
+    sources: [source:bat-20f-2025]
+  - id: relationship:british-american-tobacco-owns-reynolds-american
+    type: owns
+    from: entity:british-american-tobacco
+    to: entity:reynolds-american
+    validFrom: "2017"
+    startKnown: true
+    scope: { include: world }
+    note: "BAT bought the remaining 57.8% in 2017; Reynolds American is an indirect, wholly owned subsidiary, held through sub-holding companies that are not named."
+    sources: [source:bat-20f-2025, source:rai-who-we-are]
+  - id: relationship:reynolds-american-owns-rj-reynolds-tobacco
+    type: owns
+    from: entity:reynolds-american
+    to: entity:rj-reynolds-tobacco
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Named by Reynolds American as one of its operating companies; BAT's subsidiary list shows it wholly owned by the group through sub-holding companies. Whether Reynolds American holds it directly is not stated."
+    sources: [source:rai-brands, source:bat-20f-2025-ex8]
+  - id: relationship:reynolds-american-owns-rj-reynolds-vapor
+    type: owns
+    from: entity:reynolds-american
+    to: entity:rj-reynolds-vapor
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Named by Reynolds American as one of its operating companies; BAT's subsidiary list shows it wholly owned by the group through sub-holding companies. Whether Reynolds American holds it directly is not stated."
+    sources: [source:rai-brands, source:bat-20f-2025-ex8]
+  - id: relationship:reynolds-american-owns-modoral-brands
+    type: owns
+    from: entity:reynolds-american
+    to: entity:modoral-brands
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Named by Reynolds American as one of its operating companies; BAT's subsidiary list shows it wholly owned by the group through sub-holding companies. Whether Reynolds American holds it directly is not stated."
+    sources: [source:rai-brands, source:bat-20f-2025-ex8]
+  - id: relationship:reynolds-american-owns-santa-fe-natural-tobacco
+    type: owns
+    from: entity:reynolds-american
+    to: entity:santa-fe-natural-tobacco
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Named by Reynolds American as one of its operating companies; BAT's subsidiary list shows it wholly owned by the group through sub-holding companies. Whether Reynolds American holds it directly is not stated."
+    sources: [source:rai-brands, source:bat-20f-2025-ex8]
+  - id: relationship:reynolds-american-owns-american-snuff
+    type: owns
+    from: entity:reynolds-american
+    to: entity:american-snuff
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Named by Reynolds American as one of its operating companies; BAT's subsidiary list shows it wholly owned by the group through sub-holding companies. Whether Reynolds American holds it directly is not stated."
+    sources: [source:rai-brands, source:bat-20f-2025-ex8]
+  - id: relationship:british-american-tobacco-camel
+    type: owns_brand
+    from: entity:british-american-tobacco
+    to: brand:camel
+    validFrom: "2026-02-13"
+    scope: { include: [US] }
+    note: "The 20-F lists Camel among the group's brands for the US only; outside the US, Camel is Japan Tobacco's."
+    sources: [source:bat-20f-2025, source:rai-brands]
+  - id: relationship:british-american-tobacco-pall-mall
+    type: owns_brand
+    from: entity:british-american-tobacco
+    to: brand:pall-mall
+    validFrom: "2026-02-13"
+    scope: { include: world }
+    sources: [source:bat-20f-2025]
+  - id: relationship:british-american-tobacco-rothmans
+    type: owns_brand
+    from: entity:british-american-tobacco
+    to: brand:rothmans
+    validFrom: "2026-02-13"
+    scope: { include: world }
+    sources: [source:bat-20f-2025]
+  - id: relationship:british-american-tobacco-natural-american-spirit
+    type: owns_brand
+    from: entity:british-american-tobacco
+    to: brand:natural-american-spirit
+    validFrom: "2026-02-13"
+    scope: { include: [US] }
+    note: "The 20-F lists Natural American Spirit among the group's brands for the US only; other markets are not recorded here."
+    sources: [source:bat-20f-2025, source:rai-brands]
+  - id: relationship:british-american-tobacco-camel-snus
+    type: owns_brand
+    from: entity:british-american-tobacco
+    to: brand:camel-snus
+    validFrom: "2026-02-13"
+    scope: { include: [US] }
+    note: "Listed among the products the group sells in the US; other markets are not recorded here."
+    sources: [source:bat-20f-2025, source:rai-brands]
+  - id: relationship:british-american-tobacco-grizzly
+    type: owns_brand
+    from: entity:british-american-tobacco
+    to: brand:grizzly
+    validFrom: "2026-02-13"
+    scope: { include: [US] }
+    note: "Listed among the products the group sells in the US; other markets are not recorded here."
+    sources: [source:bat-20f-2025, source:rai-brands]
+  - id: relationship:british-american-tobacco-kodiak
+    type: owns_brand
+    from: entity:british-american-tobacco
+    to: brand:kodiak
+    validFrom: "2026-02-13"
+    scope: { include: [US] }
+    note: "Listed among the products the group sells in the US; other markets are not recorded here."
+    sources: [source:bat-20f-2025, source:rai-brands]
+  - id: relationship:british-american-tobacco-cougar
+    type: owns_brand
+    from: entity:british-american-tobacco
+    to: brand:cougar
+    validFrom: "2026-11-08"
+    scope: { include: [US] }
+    note: "Listed among Reynolds American's operating companies' brands; which company owns it, and other markets, are not recorded here."
+    sources: [source:rai-brands]
+  - id: relationship:american-snuff-garrett-scotch-snuff
+    type: owns_brand
+    from: entity:american-snuff
+    to: brand:garrett-scotch-snuff
+    validFrom: "2026-11-08"
+    scope: { include: [US] }
+    note: "Reynolds American says American Snuff Company owns the Garrett Scotch Snuff trademark, issued by the US Patent and Trademark Office in 1870."
+    sources: [source:rai-brands]
+  - id: relationship:rj-reynolds-tobacco-sells-newport
+    type: distributes
+    from: entity:rj-reynolds-tobacco
+    to: brand:newport
+    validFrom: "2026-11-08"
+    scope: { include: [US] }
+    note: "Reynolds American says this company makes Newport in the US."
+    sources: [source:rai-brands]
+  - id: relationship:rj-reynolds-tobacco-sells-camel
+    type: distributes
+    from: entity:rj-reynolds-tobacco
+    to: brand:camel
+    validFrom: "2026-11-08"
+    scope: { include: [US] }
+    note: "Reynolds American says this company makes Camel in the US."
+    sources: [source:rai-brands]
+  - id: relationship:rj-reynolds-tobacco-sells-pall-mall
+    type: distributes
+    from: entity:rj-reynolds-tobacco
+    to: brand:pall-mall
+    validFrom: "2026-11-08"
+    scope: { include: [US] }
+    note: "Reynolds American says this company makes Pall Mall in the US."
+    sources: [source:rai-brands]
+  - id: relationship:rj-reynolds-tobacco-sells-lucky-strike
+    type: distributes
+    from: entity:rj-reynolds-tobacco
+    to: brand:lucky-strike
+    validFrom: "2026-11-08"
+    scope: { include: [US] }
+    note: "Reynolds American says this company makes Lucky Strike in the US."
+    sources: [source:rai-brands]
+  - id: relationship:rj-reynolds-tobacco-sells-camel-snus
+    type: distributes
+    from: entity:rj-reynolds-tobacco
+    to: brand:camel-snus
+    validFrom: "2026-11-08"
+    scope: { include: [US] }
+    note: "Reynolds American says this company distributes Camel Snus in the US."
+    sources: [source:rai-brands]
+  - id: relationship:rj-reynolds-vapor-sells-vuse
+    type: distributes
+    from: entity:rj-reynolds-vapor
+    to: brand:vuse
+    validFrom: "2026-11-08"
+    scope: { include: [US] }
+    note: "Reynolds American says this company offers Vuse in the US."
+    sources: [source:rai-brands]
+  - id: relationship:modoral-brands-sells-velo
+    type: distributes
+    from: entity:modoral-brands
+    to: brand:velo
+    validFrom: "2026-11-08"
+    scope: { include: [US] }
+    note: "Reynolds American says this company offers Velo nicotine pouches and lozenges in the US."
+    sources: [source:rai-brands]
+  - id: relationship:santa-fe-natural-tobacco-sells-natural-american-spirit
+    type: distributes
+    from: entity:santa-fe-natural-tobacco
+    to: brand:natural-american-spirit
+    validFrom: "2026-11-08"
+    scope: { include: [US] }
+    note: "Reynolds American says this company is the manufacturer and marketer of Natural American Spirit."
+    sources: [source:rai-brands]
+  - id: relationship:american-snuff-sells-grizzly
+    type: distributes
+    from: entity:american-snuff
+    to: brand:grizzly
+    validFrom: "2026-11-08"
+    scope: { include: [US] }
+    note: "Reynolds American calls Grizzly this company's flagship brand."
+    sources: [source:rai-brands]
+  - id: relationship:british-american-tobacco-stake-itc
+    type: holds_stake
+    from: entity:british-american-tobacco
+    to: entity:itc
+    validFrom: "2025-12-31"
+    stakePct: 22.91
+    scope: { include: world }
+    note: "BAT's share at 31 December 2025, down from 25.45% a year earlier; ITC is accounted for as an associate."
+    sources: [source:bat-20f-2025]
+  - id: relationship:british-american-tobacco-stake-organigram
+    type: holds_stake
+    from: entity:british-american-tobacco
+    to: entity:organigram
+    validFrom: "2025"
+    stakePct: 36.8
+    scope: { include: world }
+    note: "The equity stake after the final tranche of BAT's investment in 2025; its voting rights are restricted to 30%."
+    sources: [source:bat-20f-2025]
+  - id: relationship:british-american-tobacco-stake-kamaran
+    type: holds_stake
+    from: entity:british-american-tobacco
+    to: entity:kamaran
+    validFrom: "2026-02-13"
+    stakePct: 31
+    scope: { include: world }
+    note: "A Yemen-based company sanctioned by the United States on 11 September 2025. BAT says it sold it cut rag tobacco and cigarette wrapping materials until 2022, when it ceased business activities in Yemen."
+    sources: [source:bat-20f-2025-ex8]
