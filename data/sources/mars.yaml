@@ -10,3 +10,10 @@ sources:
     title: "Our Brands"
     publisher: "Mars, Incorporated"
     retrieved: "2026-11-07"
+  - id: source:mars-russia-2022
+    url: https://www.mars.com/news-and-stories/press-releases-statements/mars-update-russia-and-ukraine
+    title: "Mars update on Russia and Ukraine"
+    publisher: "Mars, Incorporated"
+    published: "2022-03-10"
+    retrieved: "2026-11-08"
+    archiveUrl: https://web.archive.org/web/20220311005057/https://www.mars.com/news-and-stories/press-releases-statements/mars-update-russia-and-ukraine

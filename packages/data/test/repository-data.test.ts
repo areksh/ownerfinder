@@ -51,6 +51,11 @@ describe("answers that depend on the country", () => {
     ]);
   });
 
+  it("Camel is Japan Tobacco's outside the US, and not yet recorded inside it", () => {
+    expect(chains("brand:camel", "GB")).toEqual(["owned: entity:japan-tobacco"]);
+    expect(chains("brand:camel", "US")).toEqual([]);
+  });
+
   it("Persil is Unilever's in France and Henkel's in Germany", () => {
     expect(chains("brand:persil", "FR")).toEqual(["owned: entity:unilever"]);
     expect(chains("brand:persil", "DE")).toEqual(["owned: entity:henkel"]);

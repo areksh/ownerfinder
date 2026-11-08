@@ -39,3 +39,9 @@ sources:
     publisher: "Ben & Jerry's Homemade, Inc."
     published: "2000-07-06"
     retrieved: "2026-11-08"
+  - id: source:unilever-russia-statement-2022
+    url: https://www.unilever.com/news/news-search/2022/updated-unilever-statement-on-the-war-in-ukraine/
+    title: "Updated Unilever statement on the war in Ukraine"
+    publisher: "Unilever PLC"
+    published: "2022-03-08"
+    retrieved: "2026-11-08"

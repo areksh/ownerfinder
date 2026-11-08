@@ -1,0 +1,13 @@
+sources:
+  - id: source:jt-integrated-report-2026
+    url: https://www.jti.com/assets/f/266538/x/bae1857058/jtg-integratedreport2026.pdf
+    title: "Japan Tobacco Inc. Integrated Report 2026"
+    publisher: "Japan Tobacco Inc."
+    published: "2026"
+    retrieved: "2026-11-08"
+  - id: source:jt-results-2025
+    url: https://www.jt.com/investors/results/forecast/pdf/2025/Full_Year/20260212_04.pdf
+    title: "Consolidated Financial Results for the Fiscal Year Ended December 31, 2025"
+    publisher: "Japan Tobacco Inc."
+    published: "2026-02-12"
+    retrieved: "2026-11-08"

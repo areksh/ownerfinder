@@ -19,3 +19,12 @@ evidence:
       Unilever owned a business in Russia, with four factories, until 8
       October 2024, when it sold it to Arnest Group.
     sources: [source:unilever-20f-2025]
+  - criterion: criterion:russia
+    status: admitted
+    date: "2022-03-08"
+    summary: >-
+      Unilever said in March 2022 that it would continue to supply
+      everyday essential food and hygiene products made in Russia to
+      people in the country, while suspending imports and exports, media
+      and advertising spending and further investment there.
+    sources: [source:unilever-russia-statement-2022]

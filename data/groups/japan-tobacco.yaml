@@ -1,0 +1,50 @@
+# Japan Tobacco. Brands from its Integrated Report 2026; it acquired Winston and Camel with RJR Nabisco's non-US tobacco business in 1999.
+
+entities:
+  - { id: entity:japan-tobacco, name: "Japan Tobacco Inc." }
+
+brands:
+  - { id: brand:camel, name: "Camel" }
+  - { id: brand:winston, name: "Winston" }
+  - { id: brand:mevius, name: "MEVIUS" }
+  - { id: brand:ld, name: "LD" }
+  - { id: brand:ploom, name: "Ploom" }
+
+relationships:
+  - id: relationship:japan-tobacco-camel
+    type: owns_brand
+    from: entity:japan-tobacco
+    to: brand:camel
+    validFrom: "1999"
+    scope: { include: world, exclude: [US] }
+    note: "Acquired with RJR Nabisco's non-US tobacco business; the US rights stayed with the US business."
+    sources: [source:jt-integrated-report-2026]
+  - id: relationship:japan-tobacco-winston
+    type: owns_brand
+    from: entity:japan-tobacco
+    to: brand:winston
+    validFrom: "1999"
+    scope: { include: world, exclude: [US] }
+    note: "Acquired with RJR Nabisco's non-US tobacco business; the US rights stayed with the US business."
+    sources: [source:jt-integrated-report-2026]
+  - id: relationship:japan-tobacco-mevius
+    type: owns_brand
+    from: entity:japan-tobacco
+    to: brand:mevius
+    validFrom: "2026"
+    scope: { include: world }
+    sources: [source:jt-integrated-report-2026]
+  - id: relationship:japan-tobacco-ld
+    type: owns_brand
+    from: entity:japan-tobacco
+    to: brand:ld
+    validFrom: "2026"
+    scope: { include: world }
+    sources: [source:jt-integrated-report-2026]
+  - id: relationship:japan-tobacco-ploom
+    type: owns_brand
+    from: entity:japan-tobacco
+    to: brand:ploom
+    validFrom: "2026"
+    scope: { include: world }
+    sources: [source:jt-integrated-report-2026]
