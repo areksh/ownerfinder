@@ -127,6 +127,15 @@ describe("graphSchema", () => {
     });
   });
 
+  it("accepts a relationship whose start date is known, and only as true or false", () => {
+    const g = validGraph();
+    g.relationships[0] = { ...g.relationships[0], startKnown: true } as never;
+    expect(graphSchema.safeParse(g).success).toBe(true);
+    rejects((h) => {
+      h.relationships[0] = { ...h.relationships[0], startKnown: "yes" } as never;
+    });
+  });
+
   it("rejects fields the model does not define", () => {
     rejects((g) => {
       g.entities[1] = { ...g.entities[1], owner: "entity:holder" } as never;

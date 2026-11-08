@@ -75,16 +75,17 @@ holds (`to`).
 
 Every relationship also has:
 
-| Field       | Required | Meaning                                                                                                     |
-| ----------- | -------- | ----------------------------------------------------------------------------------------------------------- |
-| `id`        | yes      | `relationship:` id.                                                                                         |
-| `validFrom` | yes      | Partial date the relationship began.                                                                        |
-| `validTo`   | no       | Partial date it ended; absent means still in force. The relationship holds up to, not including, this date. |
-| `scope`     | yes      | Where it applies (below).                                                                                   |
-| `sources`   | yes      | One or more source ids.                                                                                     |
-| `passive`   | no       | `holds_stake` only: an index-fund or similar holding with no influence. Default `false`.                    |
-| `coverage`  | no       | Plain-language limits, for example which products a licence covers. Shown to the user, never parsed.        |
-| `note`      | no       | Curator's note, for example that a percentage is a lower bound.                                             |
+| Field        | Required | Meaning                                                                                                       |
+| ------------ | -------- | ------------------------------------------------------------------------------------------------------------- |
+| `id`         | yes      | `relationship:` id.                                                                                           |
+| `validFrom`  | yes      | Partial date the relationship began, or the earliest date it is known to have been in force.                  |
+| `startKnown` | no       | `true` when a source gives the date it began. Absent or `false`: `validFrom` is only the earliest date known. |
+| `validTo`    | no       | Partial date it ended; absent means still in force. The relationship holds up to, not including, this date.   |
+| `scope`      | yes      | Where it applies (below).                                                                                     |
+| `sources`    | yes      | One or more source ids.                                                                                       |
+| `passive`    | no       | `holds_stake` only: an index-fund or similar holding with no influence. Default `false`.                      |
+| `coverage`   | no       | Plain-language limits, for example which products a licence covers. Shown to the user, never parsed.          |
+| `note`       | no       | Curator's note, for example that a percentage is a lower bound.                                               |
 
 **Partial dates** are `YYYY`, `YYYY-MM` or `YYYY-MM-DD`, and the
 precision is kept. A partial date stands for the first day of its period

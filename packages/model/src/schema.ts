@@ -83,6 +83,9 @@ export const relationshipSchema = z.strictObject({
   stakePct: z.number().finite().optional(),
   passive: z.boolean().optional(),
   validFrom: partialDate,
+  /** True when a source gives the date the relationship began; otherwise
+   * `validFrom` is only the earliest date it is known to have been in force. */
+  startKnown: z.boolean().optional(),
   validTo: partialDate.optional(),
   scope: scopeSchema,
   sources: z.array(reference),

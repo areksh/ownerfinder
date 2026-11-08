@@ -57,11 +57,13 @@ relationships:
 ## Recording conventions
 
 - **Start dates.** `validFrom` is when the relationship began if a cited
-  source says so. Otherwise it is the date of the earliest cited source
-  that shows the relationship in force, such as an annual report's filing
-  date or, for an undated web page, the day it was read. A lookup before
-  that date says the relationship is unknown rather than guessing.
-  Finding the real start date is always welcome.
+  source says so, and then `startKnown: true` is set. Otherwise it is the
+  date of the earliest cited source that shows the relationship in force,
+  such as an annual report's filing date or, for an undated web page, the
+  day it was read, and `startKnown` is left out. The website then says
+  "known from" that date rather than "since". A lookup before that date
+  says the relationship is unknown rather than guessing, and points to the
+  earliest later record. Finding the real start date is always welcome.
 - **Brand owners.** A brand is recorded against its group's parent
   company unless a source names the subsidiary that owns it (Costa
   Coffee under Costa Limited, Kellogg's under Kellanova).
