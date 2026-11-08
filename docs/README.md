@@ -6,6 +6,8 @@
   rules and how a lookup is answered.
 - [Data files](data-files.md): how the curated data is laid out, checked,
   built and proposed.
+- [The list](listings.md): who is listed, the criteria, and how evidence
+  is worded.
 - [API](api.md): the public JSON endpoints and how D1 is loaded.
 - [Website](website.md): the pages, their wording and the request form.
 - [Architecture decision records](adr/README.md): why the system is built

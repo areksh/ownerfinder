@@ -1,0 +1,40 @@
+# Listing criteria. What each one means and how evidence under it is
+# worded: docs/listings.md.
+
+criteria:
+  - id: criterion:labour-rights
+    name: Labour rights
+    description: "Child labour, forced labour, or unsafe or unlawful working conditions in the company's operations or supply chain."
+  - id: criterion:environment
+    name: Environment
+    description: "Deforestation, pollution or other environmental damage linked to the company's operations, products or supply chain."
+  - id: criterion:climate
+    name: Climate
+    description: "Producing or financing fossil fuels on a large scale, or lobbying against climate policy."
+  - id: criterion:public-health
+    name: Public health
+    description: "Selling products that harm health, or marketing them in breach of health law or codes, such as tobacco or breast-milk substitutes."
+  - id: criterion:consumer-protection
+    name: Consumer protection
+    description: "Misleading claims, unsafe products or unfair treatment of customers."
+  - id: criterion:competition
+    name: Competition
+    description: "Cartels, price fixing, or abuse of a dominant market position."
+  - id: criterion:bribery
+    name: Bribery and corruption
+    description: "Bribery, corruption, or fraud against public bodies."
+  - id: criterion:privacy
+    name: Privacy
+    description: "Breaches of privacy or data protection law, or unlawful collection or use of personal data."
+  - id: criterion:tax
+    name: Tax
+    description: "Underpaying tax, as found or alleged by a tax authority, court or legislature."
+  - id: criterion:sanctions
+    name: Sanctions
+    description: "Trading in breach of international sanctions."
+  - id: criterion:russia
+    name: Business in Russia
+    description: "Continuing to operate or sell in Russia after its full-scale invasion of Ukraine in February 2022."
+  - id: criterion:israeli-settlements
+    name: Israeli settlements
+    description: "Business activity in Israeli settlements in the occupied Palestinian territory, as listed by the UN human rights office or alleged by others."
