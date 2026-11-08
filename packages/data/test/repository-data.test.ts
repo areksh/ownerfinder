@@ -96,6 +96,13 @@ describe("answers that depend on the country", () => {
     expect(chains("brand:black-magic", "FR", "2026-11-08")).toEqual([]);
   });
 
+  it("Monsanto is Bayer's from the merger on 7 June 2018", () => {
+    expect(chains("entity:monsanto", "US", "2018-06-06")).toEqual(["undefined: entity:monsanto"]);
+    expect(chains("entity:monsanto", "US", "2018-06-07")).toEqual([
+      "owned: entity:monsanto > entity:bayer",
+    ]);
+  });
+
   it("Horlicks is Unilever's in the Asian markets it bought in 2020, not everywhere", () => {
     expect(chains("brand:horlicks", "IN", "2026-11-08")).toEqual([
       "owned: entity:unilever",

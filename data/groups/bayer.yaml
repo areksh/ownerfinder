@@ -21,10 +21,11 @@ relationships:
     type: owns
     from: entity:bayer
     to: entity:monsanto
-    validFrom: "2026-03-04"
+    validFrom: "2018-06-07"
+    startKnown: true
     scope: { include: world }
-    note: "The report calls Monsanto Bayer's subsidiary without giving the share."
-    sources: [source:bayer-annual-report-2025]
+    note: "Monsanto merged with a Bayer subsidiary on 7 June 2018 and became a wholly owned subsidiary of Bayer; Bayer's 2025 report still calls it a subsidiary."
+    sources: [source:monsanto-8k-2018, source:bayer-annual-report-2025]
   - id: relationship:bayer-aspirin
     type: owns_brand
     from: entity:bayer

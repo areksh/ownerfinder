@@ -11,3 +11,9 @@ sources:
     publisher: "Bayer AG"
     published: "2026-03-04"
     retrieved: "2026-11-08"
+  - id: source:monsanto-8k-2018
+    url: https://www.sec.gov/Archives/edgar/data/1110783/000119312518188226/d587681d8k.htm
+    title: "Monsanto Company, Form 8-K: completion of the merger with Bayer"
+    publisher: "Monsanto Company"
+    published: "2018-06-08"
+    retrieved: "2026-11-08"

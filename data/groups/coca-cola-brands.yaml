@@ -181,7 +181,8 @@ relationships:
     type: owns
     from: entity:coca-cola
     to: entity:fairlife-llc
-    validFrom: "2026-02"
+    validFrom: "2020"
+    startKnown: true
     scope: { include: world }
-    note: "A subsidiary through which Coca-Cola earns most of its dairy revenue; the filing does not give the share."
+    note: "The 10-K refers to Coca-Cola's acquisition of fairlife in 2020 and calls it a subsidiary through which Coca-Cola earns most of its dairy revenue; it does not give the share."
     sources: [source:coca-cola-10k-2025, source:coca-cola-exhibit-21-2025]
