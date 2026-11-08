@@ -11,3 +11,15 @@ sources:
     publisher: "Japan Tobacco Inc."
     published: "2026-02-12"
     retrieved: "2026-11-08"
+  - id: source:vector-8k-merger-2024
+    url: https://www.sec.gov/Archives/edgar/data/59440/000110465924106511/tm2425647d16_8k.htm
+    title: "Vector Group Ltd., Form 8-K: completion of the merger with JTI (US) Holding"
+    publisher: "Vector Group Ltd."
+    published: "2024-10-07"
+    retrieved: "2026-11-08"
+  - id: source:vector-10k-2023
+    url: https://www.sec.gov/Archives/edgar/data/59440/000005944024000006/vgr-20231231.htm
+    title: "Vector Group Ltd., Form 10-K for 2023"
+    publisher: "Vector Group Ltd."
+    published: "2024-02-16"
+    retrieved: "2026-11-08"

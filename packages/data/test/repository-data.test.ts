@@ -46,6 +46,17 @@ describe("answers that depend on the country", () => {
     ]);
   });
 
+  it("Montego is Vector's, and Japan Tobacco's from the merger on 7 October 2024", () => {
+    expect(chains("brand:montego", "US", "2024-06-01")).toEqual([
+      "owned: entity:vector-group",
+      "distributed: entity:liggett-group > entity:vector-group",
+    ]);
+    expect(chains("brand:montego", "US", "2024-10-07")).toEqual([
+      "owned: entity:vector-group > entity:jti-us-holding > entity:japan-tobacco",
+      "distributed: entity:liggett-group > entity:vector-group > entity:jti-us-holding > entity:japan-tobacco",
+    ]);
+  });
+
   it("Corona is ABI's outside the US, and Constellation's licence inside it", () => {
     expect(chains("brand:corona", "MX", "2026-11-08")).toEqual([
       "stake: entity:anheuser-busch-inbev > entity:altria",

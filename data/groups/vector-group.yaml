@@ -1,0 +1,129 @@
+# Vector Group, Japan Tobacco's US cigarette business since October 2024, and its brands, from Vector's last 10-K and its merger 8-K.
+
+entities:
+  - { id: entity:vector-group, name: "Vector Group Ltd." }
+  - { id: entity:liggett-group, name: "Liggett Group LLC" }
+
+brands:
+  - { id: brand:eagle-20s, name: "Eagle 20's" }
+  - { id: brand:montego, name: "Montego" }
+  - { id: brand:pyramid-cigarettes, name: "Pyramid (cigarettes)" }
+  - { id: brand:grand-prix-cigarettes, name: "Grand Prix (cigarettes)" }
+  - { id: brand:liggett-select, name: "Liggett Select" }
+  - { id: brand:eve-cigarettes, name: "Eve (cigarettes)" }
+
+relationships:
+  - id: relationship:jti-us-holding-owns-vector-group
+    type: owns
+    from: entity:jti-us-holding
+    to: entity:vector-group
+    validFrom: "2024-10-07"
+    startKnown: true
+    stakePct: 100
+    scope: { include: world }
+    note: "Vector merged with a JTI (US) Holding subsidiary after a tender offer that expired on 4 October 2024, becoming its wholly owned subsidiary; the 8-K reporting it is dated 7 October 2024."
+    sources: [source:vector-8k-merger-2024, source:jt-integrated-report-2026]
+  - id: relationship:vector-group-owns-liggett-group
+    type: owns
+    from: entity:vector-group
+    to: entity:liggett-group
+    validFrom: "2024-02-16"
+    scope: { include: world }
+    note: "Vector calls Liggett Group its subsidiary; the share and any companies in between are not given."
+    sources: [source:vector-10k-2023]
+  - id: relationship:vector-group-eagle-20s
+    type: owns_brand
+    from: entity:vector-group
+    to: brand:eagle-20s
+    validFrom: "2024-02-16"
+    scope: { include: [US] }
+    note: "One of the discount cigarette brands Vector sold in the US; which group company owns the trademark is not stated."
+    sources: [source:vector-10k-2023]
+  - id: relationship:liggett-group-sells-eagle-20s
+    type: distributes
+    from: entity:liggett-group
+    to: brand:eagle-20s
+    validFrom: "2024-02-16"
+    scope: { include: [US] }
+    note: "Vector sold its cigarettes in the US through Liggett Group and Vector Tobacco."
+    sources: [source:vector-10k-2023]
+  - id: relationship:vector-group-montego
+    type: owns_brand
+    from: entity:vector-group
+    to: brand:montego
+    validFrom: "2024-02-16"
+    scope: { include: [US] }
+    note: "One of the discount cigarette brands Vector sold in the US; which group company owns the trademark is not stated."
+    sources: [source:vector-10k-2023]
+  - id: relationship:liggett-group-sells-montego
+    type: distributes
+    from: entity:liggett-group
+    to: brand:montego
+    validFrom: "2024-02-16"
+    scope: { include: [US] }
+    note: "Vector sold its cigarettes in the US through Liggett Group and Vector Tobacco."
+    sources: [source:vector-10k-2023]
+  - id: relationship:vector-group-pyramid-cigarettes
+    type: owns_brand
+    from: entity:vector-group
+    to: brand:pyramid-cigarettes
+    validFrom: "2024-02-16"
+    scope: { include: [US] }
+    note: "One of the discount cigarette brands Vector sold in the US; which group company owns the trademark is not stated."
+    sources: [source:vector-10k-2023]
+  - id: relationship:liggett-group-sells-pyramid-cigarettes
+    type: distributes
+    from: entity:liggett-group
+    to: brand:pyramid-cigarettes
+    validFrom: "2024-02-16"
+    scope: { include: [US] }
+    note: "Vector sold its cigarettes in the US through Liggett Group and Vector Tobacco."
+    sources: [source:vector-10k-2023]
+  - id: relationship:vector-group-grand-prix-cigarettes
+    type: owns_brand
+    from: entity:vector-group
+    to: brand:grand-prix-cigarettes
+    validFrom: "2024-02-16"
+    scope: { include: [US] }
+    note: "One of the discount cigarette brands Vector sold in the US; which group company owns the trademark is not stated."
+    sources: [source:vector-10k-2023]
+  - id: relationship:liggett-group-sells-grand-prix-cigarettes
+    type: distributes
+    from: entity:liggett-group
+    to: brand:grand-prix-cigarettes
+    validFrom: "2024-02-16"
+    scope: { include: [US] }
+    note: "Vector sold its cigarettes in the US through Liggett Group and Vector Tobacco."
+    sources: [source:vector-10k-2023]
+  - id: relationship:vector-group-liggett-select
+    type: owns_brand
+    from: entity:vector-group
+    to: brand:liggett-select
+    validFrom: "2024-02-16"
+    scope: { include: [US] }
+    note: "One of the discount cigarette brands Vector sold in the US; which group company owns the trademark is not stated."
+    sources: [source:vector-10k-2023]
+  - id: relationship:liggett-group-sells-liggett-select
+    type: distributes
+    from: entity:liggett-group
+    to: brand:liggett-select
+    validFrom: "2024-02-16"
+    scope: { include: [US] }
+    note: "Vector sold its cigarettes in the US through Liggett Group and Vector Tobacco."
+    sources: [source:vector-10k-2023]
+  - id: relationship:vector-group-eve-cigarettes
+    type: owns_brand
+    from: entity:vector-group
+    to: brand:eve-cigarettes
+    validFrom: "2024-02-16"
+    scope: { include: [US] }
+    note: "One of the discount cigarette brands Vector sold in the US; which group company owns the trademark is not stated."
+    sources: [source:vector-10k-2023]
+  - id: relationship:liggett-group-sells-eve-cigarettes
+    type: distributes
+    from: entity:liggett-group
+    to: brand:eve-cigarettes
+    validFrom: "2024-02-16"
+    scope: { include: [US] }
+    note: "Vector sold its cigarettes in the US through Liggett Group and Vector Tobacco."
+    sources: [source:vector-10k-2023]
