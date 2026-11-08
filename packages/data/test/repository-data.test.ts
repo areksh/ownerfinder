@@ -46,6 +46,10 @@ describe("answers that depend on the country", () => {
     ]);
   });
 
+  it("Hotel Chocolat is on Mars's own brand list", () => {
+    expect(chains("brand:hotel-chocolat", "GB", "2026-11-08")).toEqual(["owned: entity:mars"]);
+  });
+
   it("Froot Loops is Kellanova's, licensed to WK Kellogg in North America", () => {
     expect(chains("brand:froot-loops", "GB", "2026-11-08")).toEqual([
       "owned: entity:kellanova > entity:acquiror-10vb8 > entity:mars",

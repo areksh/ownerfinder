@@ -1,0 +1,651 @@
+# Mars's own brands, pet care services and businesses, from its A-Z brand list read on 2026-11-08. Kellanova's brands are in kellanova.yaml and kellanova-brands.yaml.
+
+brands:
+  - { id: brand:3-musketeers, name: "3 Musketeers" }
+  - { id: brand:5-gum, name: "5 Gum" }
+  - { id: brand:abu-siouf, name: "Abu Siouf" }
+  - { id: brand:acana, name: "Acana" }
+  - { id: brand:airwaves, name: "Airwaves" }
+  - { id: brand:altoids, name: "Altoids" }
+  - { id: brand:american-heritage, name: "American Heritage" }
+  - { id: brand:anicura, name: "AniCura" }
+  - { id: brand:antech, name: "Antech" }
+  - { id: brand:api-mars, name: "API (Mars)" }
+  - { id: brand:aquarian, name: "Aquarian" }
+  - { id: brand:asia-veterinary-diagnostics, name: "Asia Veterinary Diagnostics (AVD)" }
+  - { id: brand:balisto, name: "Balisto" }
+  - { id: brand:banfield-pet-hospital, name: "Banfield Pet Hospital" }
+  - { id: brand:big-red, name: "Big Red" }
+  - { id: brand:bluepearl, name: "BluePearl" }
+  - { id: brand:buckeye-nutrition, name: "Buckeye Nutrition" }
+  - { id: brand:catsan, name: "Catsan" }
+  - { id: brand:celebrations-mars, name: "Celebrations (Mars)" }
+  - { id: brand:cesar, name: "Cesar" }
+  - { id: brand:chappie, name: "Chappie" }
+  - { id: brand:cocoavia, name: "CocoaVia" }
+  - { id: brand:combos-mars, name: "Combos (Mars)" }
+  - { id: brand:crave-mars, name: "Crave (Mars)" }
+  - { id: brand:dolmio, name: "Dolmio" }
+  - { id: brand:doublemint, name: "Doublemint" }
+  - { id: brand:dreamies, name: "Dreamies" }
+  - { id: brand:eclipse-mars, name: "Eclipse (Mars)" }
+  - { id: brand:ethel-m, name: "Ethel M" }
+  - { id: brand:eukanuba, name: "Eukanuba" }
+  - { id: brand:fluffygo, name: "FluffyGo" }
+  - { id: brand:greenies, name: "Greenies" }
+  - { id: brand:hotel-chocolat, name: "Hotel Chocolat" }
+  - { id: brand:hubba-bubba, name: "Hubba Bubba" }
+  - { id: brand:iams, name: "Iams" }
+  - { id: brand:james-wellbeloved, name: "James Wellbeloved" }
+  - { id: brand:juicy-fruit, name: "Juicy Fruit" }
+  - { id: brand:kan-tong, name: "Kan Tong" }
+  - { id: brand:kevins-natural-foods, name: "Kevin's Natural Foods" }
+  - { id: brand:kind-mars, name: "KIND (Mars)" }
+  - { id: brand:kitekat, name: "Kitekat" }
+  - { id: brand:life-savers, name: "Life Savers" }
+  - { id: brand:linneaus, name: "Linneaus" }
+  - { id: brand:lovebug-mars, name: "Lovebug (Mars)" }
+  - { id: brand:mars-veterinary-health, name: "Mars Veterinary Health" }
+  - { id: brand:masterfoods, name: "Masterfoods" }
+  - { id: brand:milky-way, name: "Milky Way" }
+  - { id: brand:miracoli, name: "Mirácoli" }
+  - { id: brand:misfits-mars, name: "Misfits (Mars)" }
+  - { id: brand:mount-pleasant-veterinary-group, name: "Mount Pleasant Veterinary Group" }
+  - { id: brand:my-cat-dna, name: "My Cat DNA" }
+  - { id: brand:my-dog-dna, name: "My Dog DNA" }
+  - { id: brand:natures-bakery, name: "Nature's Bakery" }
+  - { id: brand:natusan, name: "Natusan" }
+  - { id: brand:nom-nom, name: "Nom Nom" }
+  - { id: brand:nutro, name: "Nutro" }
+  - { id: brand:orbit-mars, name: "Orbit (Mars)" }
+  - { id: brand:orijen, name: "Orijen" }
+  - { id: brand:pamesello, name: "Pamesello" }
+  - { id: brand:peawee, name: "Peawee" }
+  - { id: brand:perfect-fit, name: "Perfect Fit" }
+  - { id: brand:prettylitter, name: "PrettyLitter" }
+  - { id: brand:royco, name: "Royco" }
+  - { id: brand:schmackos, name: "Schmackos" }
+  - { id: brand:seeds-of-change, name: "Seeds of Change" }
+  - { id: brand:spillers, name: "Spillers" }
+  - { id: brand:starburst, name: "Starburst" }
+  - { id: brand:suzi-wan, name: "Suzi Wan" }
+  - { id: brand:tasty-bite, name: "Tasty Bite" }
+  - { id: brand:temptations-mars, name: "Temptations (Mars)" }
+  - { id: brand:thomas-mars, name: "Thomas (Mars)" }
+  - { id: brand:tru-fru, name: "Tru Fru" }
+  - { id: brand:vca-animal-hospitals, name: "VCA Animal Hospitals" }
+  - {
+      id: brand:ves-hospital-singapore,
+      name: "Veterinary Emergency & Specialty (VES) Hospital Singapore",
+    }
+  - {
+      id: brand:veterinary-specialty-hospital-hong-kong,
+      name: "Veterinary Specialty Hospital of Hong Kong",
+    }
+  - { id: brand:vetinsight, name: "Vetinsight" }
+  - { id: brand:winergy-equilibrium, name: "Winergy Equilibrium" }
+  - { id: brand:winterfresh, name: "Winterfresh" }
+  - { id: brand:wisdom-panel, name: "Wisdom Panel" }
+  - { id: brand:wrigleys-spearmint, name: "Wrigley's Spearmint" }
+
+relationships:
+  - id: relationship:mars-3-musketeers
+    type: owns_brand
+    from: entity:mars
+    to: brand:3-musketeers
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-5-gum
+    type: owns_brand
+    from: entity:mars
+    to: brand:5-gum
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-abu-siouf
+    type: owns_brand
+    from: entity:mars
+    to: brand:abu-siouf
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-acana
+    type: owns_brand
+    from: entity:mars
+    to: brand:acana
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-airwaves
+    type: owns_brand
+    from: entity:mars
+    to: brand:airwaves
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-altoids
+    type: owns_brand
+    from: entity:mars
+    to: brand:altoids
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-american-heritage
+    type: owns_brand
+    from: entity:mars
+    to: brand:american-heritage
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-anicura
+    type: owns_brand
+    from: entity:mars
+    to: brand:anicura
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-antech
+    type: owns_brand
+    from: entity:mars
+    to: brand:antech
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-api-mars
+    type: owns_brand
+    from: entity:mars
+    to: brand:api-mars
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-aquarian
+    type: owns_brand
+    from: entity:mars
+    to: brand:aquarian
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-asia-veterinary-diagnostics
+    type: owns_brand
+    from: entity:mars
+    to: brand:asia-veterinary-diagnostics
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-balisto
+    type: owns_brand
+    from: entity:mars
+    to: brand:balisto
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-banfield-pet-hospital
+    type: owns_brand
+    from: entity:mars
+    to: brand:banfield-pet-hospital
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-big-red
+    type: owns_brand
+    from: entity:mars
+    to: brand:big-red
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-bluepearl
+    type: owns_brand
+    from: entity:mars
+    to: brand:bluepearl
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-buckeye-nutrition
+    type: owns_brand
+    from: entity:mars
+    to: brand:buckeye-nutrition
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-catsan
+    type: owns_brand
+    from: entity:mars
+    to: brand:catsan
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-celebrations-mars
+    type: owns_brand
+    from: entity:mars
+    to: brand:celebrations-mars
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-cesar
+    type: owns_brand
+    from: entity:mars
+    to: brand:cesar
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-chappie
+    type: owns_brand
+    from: entity:mars
+    to: brand:chappie
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-cocoavia
+    type: owns_brand
+    from: entity:mars
+    to: brand:cocoavia
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-combos-mars
+    type: owns_brand
+    from: entity:mars
+    to: brand:combos-mars
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-crave-mars
+    type: owns_brand
+    from: entity:mars
+    to: brand:crave-mars
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-dolmio
+    type: owns_brand
+    from: entity:mars
+    to: brand:dolmio
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-doublemint
+    type: owns_brand
+    from: entity:mars
+    to: brand:doublemint
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-dreamies
+    type: owns_brand
+    from: entity:mars
+    to: brand:dreamies
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-eclipse-mars
+    type: owns_brand
+    from: entity:mars
+    to: brand:eclipse-mars
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-ethel-m
+    type: owns_brand
+    from: entity:mars
+    to: brand:ethel-m
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-eukanuba
+    type: owns_brand
+    from: entity:mars
+    to: brand:eukanuba
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-fluffygo
+    type: owns_brand
+    from: entity:mars
+    to: brand:fluffygo
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-greenies
+    type: owns_brand
+    from: entity:mars
+    to: brand:greenies
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-hotel-chocolat
+    type: owns_brand
+    from: entity:mars
+    to: brand:hotel-chocolat
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-hubba-bubba
+    type: owns_brand
+    from: entity:mars
+    to: brand:hubba-bubba
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-iams
+    type: owns_brand
+    from: entity:mars
+    to: brand:iams
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-james-wellbeloved
+    type: owns_brand
+    from: entity:mars
+    to: brand:james-wellbeloved
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-juicy-fruit
+    type: owns_brand
+    from: entity:mars
+    to: brand:juicy-fruit
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-kan-tong
+    type: owns_brand
+    from: entity:mars
+    to: brand:kan-tong
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-kevins-natural-foods
+    type: owns_brand
+    from: entity:mars
+    to: brand:kevins-natural-foods
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-kind-mars
+    type: owns_brand
+    from: entity:mars
+    to: brand:kind-mars
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-kitekat
+    type: owns_brand
+    from: entity:mars
+    to: brand:kitekat
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-life-savers
+    type: owns_brand
+    from: entity:mars
+    to: brand:life-savers
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-linneaus
+    type: owns_brand
+    from: entity:mars
+    to: brand:linneaus
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-lovebug-mars
+    type: owns_brand
+    from: entity:mars
+    to: brand:lovebug-mars
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-mars-veterinary-health
+    type: owns_brand
+    from: entity:mars
+    to: brand:mars-veterinary-health
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-masterfoods
+    type: owns_brand
+    from: entity:mars
+    to: brand:masterfoods
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-milky-way
+    type: owns_brand
+    from: entity:mars
+    to: brand:milky-way
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-miracoli
+    type: owns_brand
+    from: entity:mars
+    to: brand:miracoli
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-misfits-mars
+    type: owns_brand
+    from: entity:mars
+    to: brand:misfits-mars
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-mount-pleasant-veterinary-group
+    type: owns_brand
+    from: entity:mars
+    to: brand:mount-pleasant-veterinary-group
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-my-cat-dna
+    type: owns_brand
+    from: entity:mars
+    to: brand:my-cat-dna
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-my-dog-dna
+    type: owns_brand
+    from: entity:mars
+    to: brand:my-dog-dna
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-natures-bakery
+    type: owns_brand
+    from: entity:mars
+    to: brand:natures-bakery
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-natusan
+    type: owns_brand
+    from: entity:mars
+    to: brand:natusan
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-nom-nom
+    type: owns_brand
+    from: entity:mars
+    to: brand:nom-nom
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-nutro
+    type: owns_brand
+    from: entity:mars
+    to: brand:nutro
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-orbit-mars
+    type: owns_brand
+    from: entity:mars
+    to: brand:orbit-mars
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-orijen
+    type: owns_brand
+    from: entity:mars
+    to: brand:orijen
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-pamesello
+    type: owns_brand
+    from: entity:mars
+    to: brand:pamesello
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-peawee
+    type: owns_brand
+    from: entity:mars
+    to: brand:peawee
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-perfect-fit
+    type: owns_brand
+    from: entity:mars
+    to: brand:perfect-fit
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-prettylitter
+    type: owns_brand
+    from: entity:mars
+    to: brand:prettylitter
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-royco
+    type: owns_brand
+    from: entity:mars
+    to: brand:royco
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-schmackos
+    type: owns_brand
+    from: entity:mars
+    to: brand:schmackos
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-seeds-of-change
+    type: owns_brand
+    from: entity:mars
+    to: brand:seeds-of-change
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-spillers
+    type: owns_brand
+    from: entity:mars
+    to: brand:spillers
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-starburst
+    type: owns_brand
+    from: entity:mars
+    to: brand:starburst
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-suzi-wan
+    type: owns_brand
+    from: entity:mars
+    to: brand:suzi-wan
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-tasty-bite
+    type: owns_brand
+    from: entity:mars
+    to: brand:tasty-bite
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-temptations-mars
+    type: owns_brand
+    from: entity:mars
+    to: brand:temptations-mars
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-thomas-mars
+    type: owns_brand
+    from: entity:mars
+    to: brand:thomas-mars
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-tru-fru
+    type: owns_brand
+    from: entity:mars
+    to: brand:tru-fru
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-vca-animal-hospitals
+    type: owns_brand
+    from: entity:mars
+    to: brand:vca-animal-hospitals
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-ves-hospital-singapore
+    type: owns_brand
+    from: entity:mars
+    to: brand:ves-hospital-singapore
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-veterinary-specialty-hospital-hong-kong
+    type: owns_brand
+    from: entity:mars
+    to: brand:veterinary-specialty-hospital-hong-kong
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-vetinsight
+    type: owns_brand
+    from: entity:mars
+    to: brand:vetinsight
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-winergy-equilibrium
+    type: owns_brand
+    from: entity:mars
+    to: brand:winergy-equilibrium
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-winterfresh
+    type: owns_brand
+    from: entity:mars
+    to: brand:winterfresh
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-wisdom-panel
+    type: owns_brand
+    from: entity:mars
+    to: brand:wisdom-panel
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]
+  - id: relationship:mars-wrigleys-spearmint
+    type: owns_brand
+    from: entity:mars
+    to: brand:wrigleys-spearmint
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    sources: [source:mars-brands-a-z]

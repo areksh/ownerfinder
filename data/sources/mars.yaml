@@ -29,3 +29,8 @@ sources:
     publisher: "Kellanova"
     published: "2025-02-21"
     retrieved: "2026-11-08"
+  - id: source:mars-brands-a-z
+    url: https://www.mars.com/our-brands/all-brands
+    title: "Mars Brands: A-Z"
+    publisher: "Mars, Incorporated"
+    retrieved: "2026-11-08"
