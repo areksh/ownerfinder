@@ -1,0 +1,963 @@
+# Ferrero Group's brands, the WK Kellogg cereals it makes and sells in North America, and the brands of Ferrero-affiliated companies outside the group, from Ferrero's pages read on 2026-11-08.
+
+entities:
+  - {
+      id: entity:ferrero-affiliated-companies,
+      name: "Ferrero-affiliated companies (outside the Ferrero Group)",
+    }
+  - { id: entity:foxs-biscuits, name: "Fox's Biscuits" }
+  - { id: entity:burtons-biscuit-company, name: "Burton's Biscuit Company" }
+
+brands:
+  - { id: brand:100-grand, name: "100 Grand" }
+  - { id: brand:baby-ruth, name: "Baby Ruth" }
+  - { id: brand:blue-bunny, name: "Blue Bunny" }
+  - { id: brand:blue-ribbon-classics, name: "Blue Ribbon Classics" }
+  - { id: brand:bold-ferrero, name: "Bold (Ferrero)" }
+  - { id: brand:bomb-pop, name: "Bomb Pop" }
+  - { id: brand:butterfinger, name: "Butterfinger" }
+  - { id: brand:chunky, name: "Chunky" }
+  - { id: brand:duplo, name: "Duplo" }
+  - { id: brand:eat-natural, name: "Eat Natural" }
+  - { id: brand:estathe, name: "Estathè" }
+  - { id: brand:famous-amos, name: "Famous Amos" }
+  - { id: brand:fannie-may, name: "Fannie May" }
+  - { id: brand:ferrero-brioss, name: "Ferrero Brioss" }
+  - { id: brand:ferrero-kuesschen, name: "Ferrero Küsschen" }
+  - { id: brand:ferrero-tronky, name: "Ferrero Tronky" }
+  - { id: brand:fiesta-ferrero, name: "Fiesta (Ferrero)" }
+  - { id: brand:fulfil, name: "Fulfil" }
+  - { id: brand:giotto, name: "Giotto" }
+  - { id: brand:goobers, name: "Goobers" }
+  - { id: brand:halo-top, name: "Halo Top" }
+  - { id: brand:hanuta, name: "Hanuta" }
+  - { id: brand:keebler, name: "Keebler" }
+  - { id: brand:little-brownie-bakers, name: "Little Brownie Bakers" }
+  - { id: brand:mon-cheri, name: "Mon Chéri" }
+  - { id: brand:mothers-ferrero, name: "Mother's (Ferrero)" }
+  - { id: brand:murray-ferrero, name: "Murray (Ferrero)" }
+  - { id: brand:oh-henry, name: "Oh Henry" }
+  - { id: brand:pocket-coffee, name: "Pocket Coffee" }
+  - { id: brand:power-crunch, name: "Power Crunch" }
+  - { id: brand:raffaello, name: "Raffaello" }
+  - { id: brand:raisinets, name: "Raisinets" }
+  - { id: brand:snocaps, name: "SnoCaps" }
+  - { id: brand:thorntons, name: "Thorntons" }
+  - { id: brand:yogurette, name: "Yogurette" }
+  - { id: brand:all-bran, name: "All-Bran" }
+  - { id: brand:apple-jacks, name: "Apple Jacks" }
+  - { id: brand:corn-flakes, name: "Corn Flakes" }
+  - { id: brand:corn-pops, name: "Corn Pops" }
+  - { id: brand:cracklin-oat-bran, name: "Cracklin' Oat Bran" }
+  - { id: brand:crispix, name: "Crispix" }
+  - { id: brand:frosted-mini-wheats, name: "Frosted Mini-Wheats" }
+  - { id: brand:honey-smacks, name: "Honey Smacks" }
+  - { id: brand:raisin-bran, name: "Raisin Bran" }
+  - { id: brand:vector-cereal, name: "Vector (cereal)" }
+  - { id: brand:foxs-fabulous, name: "Fox's Fabulous" }
+  - { id: brand:rocky-biscuits, name: "Rocky (biscuits)" }
+  - { id: brand:maryland-cookies, name: "Maryland Cookies" }
+  - { id: brand:jammie-dodgers, name: "Jammie Dodgers" }
+  - { id: brand:wagon-wheels, name: "Wagon Wheels" }
+  - { id: brand:patersons, name: "Paterson's" }
+  - { id: brand:thomas-fudges, name: "Thomas Fudge's" }
+  - { id: brand:atomic-fireballs, name: "Atomic Fireballs" }
+  - { id: brand:black-forest-candy, name: "Black Forest (sweets)" }
+  - { id: brand:bolete, name: "Bolete" }
+  - { id: brand:boston-baked-beans, name: "Boston Baked Beans" }
+  - { id: brand:bottle-caps, name: "Bottle Caps" }
+  - { id: brand:brachs, name: "Brach's" }
+  - { id: brand:carambar, name: "Carambar" }
+  - { id: brand:chuckles, name: "Chuckles" }
+  - { id: brand:crunch-creams, name: "Crunch Creams" }
+  - { id: brand:delacre, name: "Delacre" }
+  - { id: brand:delichoc, name: "Délichoc" }
+  - { id: brand:deliket, name: "Deliket" }
+  - { id: brand:disqueti, name: "Disqueti" }
+  - { id: brand:dori, name: "Dori" }
+  - { id: brand:funables, name: "Funables" }
+  - { id: brand:fundip, name: "FunDip" }
+  - { id: brand:gobstopper, name: "Gobstopper" }
+  - { id: brand:gomets, name: "Gomets" }
+  - { id: brand:jelly-belly, name: "Jelly Belly" }
+  - { id: brand:jubes, name: "Jubes" }
+  - { id: brand:jujyfruits, name: "Jujyfruits" }
+  - { id: brand:kjeldsens, name: "Kjeldsens" }
+  - { id: brand:krema, name: "Krema" }
+  - { id: brand:laffy-taffy, name: "Laffy Taffy" }
+  - { id: brand:la-pie-qui-chante, name: "La Pie Qui Chante" }
+  - { id: brand:lemonhead, name: "Lemonhead" }
+  - { id: brand:lua-cheia, name: "Lua Cheia" }
+  - { id: brand:lutti, name: "Lutti" }
+  - { id: brand:michoko, name: "Michoko" }
+  - { id: brand:nerds, name: "Nerds" }
+  - { id: brand:nonnis, name: "Nonni's" }
+  - { id: brand:now-and-later, name: "Now and Later" }
+  - { id: brand:party-rings, name: "Party Rings" }
+  - { id: brand:pettiz, name: "Pettiz" }
+  - { id: brand:pixy-stix, name: "Pixy Stix" }
+  - { id: brand:poulain, name: "Poulain" }
+  - { id: brand:red-hots, name: "Red Hots" }
+  - { id: brand:royal-dansk, name: "Royal Dansk" }
+  - { id: brand:runts, name: "Runts" }
+  - { id: brand:skinny-cookies, name: "Skinny Cookies" }
+  - { id: brand:spree, name: "Spree" }
+  - { id: brand:stretch-island, name: "Stretch Island" }
+  - { id: brand:suchard, name: "Suchard" }
+  - { id: brand:sweetarts, name: "SweeTARTS" }
+  - { id: brand:terrys, name: "Terry's" }
+  - { id: brand:trolli, name: "Trolli" }
+  - { id: brand:vichy-sweets, name: "Vichy (sweets)" }
+  - { id: brand:yogurte-100-original, name: "Yogurte 100 Original" }
+
+relationships:
+  - id: relationship:ferrero-100-grand
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:100-grand
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-baby-ruth
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:baby-ruth
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-blue-bunny
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:blue-bunny
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-blue-ribbon-classics
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:blue-ribbon-classics
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-bold-ferrero
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:bold-ferrero
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-bomb-pop
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:bomb-pop
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-butterfinger
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:butterfinger
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-chunky
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:chunky
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-duplo
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:duplo
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-eat-natural
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:eat-natural
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-estathe
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:estathe
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-famous-amos
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:famous-amos
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-fannie-may
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:fannie-may
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-ferrero-brioss
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:ferrero-brioss
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-ferrero-kuesschen
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:ferrero-kuesschen
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-ferrero-tronky
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:ferrero-tronky
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-fiesta-ferrero
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:fiesta-ferrero
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-fulfil
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:fulfil
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-giotto
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:giotto
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-goobers
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:goobers
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-halo-top
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:halo-top
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-hanuta
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:hanuta
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-keebler
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:keebler
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-little-brownie-bakers
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:little-brownie-bakers
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-mon-cheri
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:mon-cheri
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-mothers-ferrero
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:mothers-ferrero
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-murray-ferrero
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:murray-ferrero
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-oh-henry
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:oh-henry
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-pocket-coffee
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:pocket-coffee
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-power-crunch
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:power-crunch
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-raffaello
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:raffaello
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-raisinets
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:raisinets
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-snocaps
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:snocaps
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-thorntons
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:thorntons
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-yogurette
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:yogurette
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed among the Ferrero Group's brands; which group company owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-crunch
+    type: owns_brand
+    from: entity:ferrero
+    to: brand:crunch
+    validFrom: "2026-11-08"
+    scope: { include: world, exclude: [GB, IE] }
+    note: "Listed among the Ferrero Group's brands. Nestlé lists Crunch on its UK and Ireland brand pages, so Ferrero is not recorded there; where else each owns it is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:wk-kellogg-co-sells-all-bran
+    type: distributes
+    from: entity:wk-kellogg-co
+    to: brand:all-bran
+    validFrom: "2026-11-08"
+    scope: { include: [US, CA] }
+    note: "Ferrero says its group makes, markets and distributes WK Kellogg Co's cereals in the United States, Canada and the Caribbean; the Caribbean is not recorded here. Who owns the trademark is recorded separately where a source says."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:wk-kellogg-co-sells-apple-jacks
+    type: distributes
+    from: entity:wk-kellogg-co
+    to: brand:apple-jacks
+    validFrom: "2026-11-08"
+    scope: { include: [US, CA] }
+    note: "Ferrero says its group makes, markets and distributes WK Kellogg Co's cereals in the United States, Canada and the Caribbean; the Caribbean is not recorded here. Who owns the trademark is recorded separately where a source says."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:wk-kellogg-co-sells-corn-flakes
+    type: distributes
+    from: entity:wk-kellogg-co
+    to: brand:corn-flakes
+    validFrom: "2026-11-08"
+    scope: { include: [US, CA] }
+    note: "Ferrero says its group makes, markets and distributes WK Kellogg Co's cereals in the United States, Canada and the Caribbean; the Caribbean is not recorded here. Who owns the trademark is recorded separately where a source says."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:wk-kellogg-co-sells-corn-pops
+    type: distributes
+    from: entity:wk-kellogg-co
+    to: brand:corn-pops
+    validFrom: "2026-11-08"
+    scope: { include: [US, CA] }
+    note: "Ferrero says its group makes, markets and distributes WK Kellogg Co's cereals in the United States, Canada and the Caribbean; the Caribbean is not recorded here. Who owns the trademark is recorded separately where a source says."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:wk-kellogg-co-sells-cracklin-oat-bran
+    type: distributes
+    from: entity:wk-kellogg-co
+    to: brand:cracklin-oat-bran
+    validFrom: "2026-11-08"
+    scope: { include: [US, CA] }
+    note: "Ferrero says its group makes, markets and distributes WK Kellogg Co's cereals in the United States, Canada and the Caribbean; the Caribbean is not recorded here. Who owns the trademark is recorded separately where a source says."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:wk-kellogg-co-sells-crispix
+    type: distributes
+    from: entity:wk-kellogg-co
+    to: brand:crispix
+    validFrom: "2026-11-08"
+    scope: { include: [US, CA] }
+    note: "Ferrero says its group makes, markets and distributes WK Kellogg Co's cereals in the United States, Canada and the Caribbean; the Caribbean is not recorded here. Who owns the trademark is recorded separately where a source says."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:wk-kellogg-co-sells-frosted-mini-wheats
+    type: distributes
+    from: entity:wk-kellogg-co
+    to: brand:frosted-mini-wheats
+    validFrom: "2026-11-08"
+    scope: { include: [US, CA] }
+    note: "Ferrero says its group makes, markets and distributes WK Kellogg Co's cereals in the United States, Canada and the Caribbean; the Caribbean is not recorded here. Who owns the trademark is recorded separately where a source says."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:wk-kellogg-co-sells-honey-smacks
+    type: distributes
+    from: entity:wk-kellogg-co
+    to: brand:honey-smacks
+    validFrom: "2026-11-08"
+    scope: { include: [US, CA] }
+    note: "Ferrero says its group makes, markets and distributes WK Kellogg Co's cereals in the United States, Canada and the Caribbean; the Caribbean is not recorded here. Who owns the trademark is recorded separately where a source says."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:wk-kellogg-co-sells-raisin-bran
+    type: distributes
+    from: entity:wk-kellogg-co
+    to: brand:raisin-bran
+    validFrom: "2026-11-08"
+    scope: { include: [US, CA] }
+    note: "Ferrero says its group makes, markets and distributes WK Kellogg Co's cereals in the United States, Canada and the Caribbean; the Caribbean is not recorded here. Who owns the trademark is recorded separately where a source says."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:wk-kellogg-co-sells-vector-cereal
+    type: distributes
+    from: entity:wk-kellogg-co
+    to: brand:vector-cereal
+    validFrom: "2026-11-08"
+    scope: { include: [US, CA] }
+    note: "Ferrero says its group makes, markets and distributes WK Kellogg Co's cereals in the United States, Canada and the Caribbean; the Caribbean is not recorded here. Who owns the trademark is recorded separately where a source says."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:wk-kellogg-co-sells-kashi
+    type: distributes
+    from: entity:wk-kellogg-co
+    to: brand:kashi
+    validFrom: "2026-11-08"
+    scope: { include: [US, CA] }
+    note: "Ferrero says its group makes, markets and distributes WK Kellogg Co's cereals in the United States, Canada and the Caribbean; the Caribbean is not recorded here. Who owns the trademark is recorded separately where a source says."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:wk-kellogg-co-sells-krave
+    type: distributes
+    from: entity:wk-kellogg-co
+    to: brand:krave
+    validFrom: "2026-11-08"
+    scope: { include: [US, CA] }
+    note: "Ferrero says its group makes, markets and distributes WK Kellogg Co's cereals in the United States, Canada and the Caribbean; the Caribbean is not recorded here. Who owns the trademark is recorded separately where a source says."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:foxs-biscuits-foxs-fabulous
+    type: owns_brand
+    from: entity:foxs-biscuits
+    to: brand:foxs-fabulous
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Named by Ferrero among the brands its affiliated companies acquired with this company."
+    sources: [source:ferrero-affiliated-companies, source:ferrero-all-brands]
+  - id: relationship:foxs-biscuits-rocky-biscuits
+    type: owns_brand
+    from: entity:foxs-biscuits
+    to: brand:rocky-biscuits
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Named by Ferrero among the brands its affiliated companies acquired with this company."
+    sources: [source:ferrero-affiliated-companies, source:ferrero-all-brands]
+  - id: relationship:burtons-biscuit-company-maryland-cookies
+    type: owns_brand
+    from: entity:burtons-biscuit-company
+    to: brand:maryland-cookies
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Named by Ferrero among the brands its affiliated companies acquired with this company."
+    sources: [source:ferrero-affiliated-companies, source:ferrero-all-brands]
+  - id: relationship:burtons-biscuit-company-jammie-dodgers
+    type: owns_brand
+    from: entity:burtons-biscuit-company
+    to: brand:jammie-dodgers
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Named by Ferrero among the brands its affiliated companies acquired with this company."
+    sources: [source:ferrero-affiliated-companies, source:ferrero-all-brands]
+  - id: relationship:burtons-biscuit-company-wagon-wheels
+    type: owns_brand
+    from: entity:burtons-biscuit-company
+    to: brand:wagon-wheels
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Named by Ferrero among the brands its affiliated companies acquired with this company."
+    sources: [source:ferrero-affiliated-companies, source:ferrero-all-brands]
+  - id: relationship:burtons-biscuit-company-patersons
+    type: owns_brand
+    from: entity:burtons-biscuit-company
+    to: brand:patersons
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Named by Ferrero among the brands its affiliated companies acquired with this company."
+    sources: [source:ferrero-affiliated-companies, source:ferrero-all-brands]
+  - id: relationship:burtons-biscuit-company-thomas-fudges
+    type: owns_brand
+    from: entity:burtons-biscuit-company
+    to: brand:thomas-fudges
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Named by Ferrero among the brands its affiliated companies acquired with this company."
+    sources: [source:ferrero-affiliated-companies, source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-owns-foxs-biscuits
+    type: owns
+    from: entity:ferrero-affiliated-companies
+    to: entity:foxs-biscuits
+    validFrom: "2020"
+    startKnown: true
+    scope: { include: world }
+    note: "Acquired by a Ferrero-affiliated company in 2020. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-affiliated-companies]
+  - id: relationship:ferrero-affiliated-companies-owns-burtons-biscuit-company
+    type: owns
+    from: entity:ferrero-affiliated-companies
+    to: entity:burtons-biscuit-company
+    validFrom: "2021"
+    startKnown: true
+    scope: { include: world }
+    note: "Acquired by a Ferrero-affiliated company in 2021. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-affiliated-companies]
+  - id: relationship:ferrero-affiliated-companies-atomic-fireballs
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:atomic-fireballs
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-black-forest-candy
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:black-forest-candy
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-bolete
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:bolete
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-boston-baked-beans
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:boston-baked-beans
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-bottle-caps
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:bottle-caps
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-brachs
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:brachs
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-carambar
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:carambar
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-chuckles
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:chuckles
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-crunch-creams
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:crunch-creams
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-delacre
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:delacre
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-delichoc
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:delichoc
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-deliket
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:deliket
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-disqueti
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:disqueti
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-dori
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:dori
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-funables
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:funables
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-fundip
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:fundip
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-gobstopper
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:gobstopper
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-gomets
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:gomets
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-jelly-belly
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:jelly-belly
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-jubes
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:jubes
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-jujyfruits
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:jujyfruits
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-kjeldsens
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:kjeldsens
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-krema
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:krema
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-laffy-taffy
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:laffy-taffy
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-la-pie-qui-chante
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:la-pie-qui-chante
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-lemonhead
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:lemonhead
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-lua-cheia
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:lua-cheia
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-lutti
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:lutti
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-michoko
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:michoko
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-nerds
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:nerds
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-nonnis
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:nonnis
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-now-and-later
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:now-and-later
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-party-rings
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:party-rings
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-pettiz
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:pettiz
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-pixy-stix
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:pixy-stix
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-poulain
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:poulain
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-red-hots
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:red-hots
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-royal-dansk
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:royal-dansk
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-runts
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:runts
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-skinny-cookies
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:skinny-cookies
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-spree
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:spree
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-stretch-island
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:stretch-island
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-suchard
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:suchard
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-sweetarts
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:sweetarts
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-terrys
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:terrys
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-trolli
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:trolli
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-vichy-sweets
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:vichy-sweets
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-yogurte-100-original
+    type: owns_brand
+    from: entity:ferrero-affiliated-companies
+    to: brand:yogurte-100-original
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Listed by Ferrero among its affiliated brands; which affiliated company owns it is not stated. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands]
+  - id: relationship:ferrero-affiliated-companies-owns-michel-et-augustin-company
+    type: owns
+    from: entity:ferrero-affiliated-companies
+    to: entity:michel-et-augustin-company
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Danone sold Michel et Augustin on 29 February 2024 without naming the buyer here; Ferrero now lists Michel & Augustin among its affiliated brands, so the company is recorded under the affiliated companies from the date that page was read. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
+    sources: [source:ferrero-all-brands, source:danone-urd-2025]

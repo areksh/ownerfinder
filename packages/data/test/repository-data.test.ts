@@ -46,6 +46,16 @@ describe("answers that depend on the country", () => {
     ]);
   });
 
+  it("Ferrero's own brands, its affiliates' brands and WK Kellogg's cereals are told apart", () => {
+    expect(chains("brand:butterfinger", "US", "2026-11-08")).toEqual(["owned: entity:ferrero"]);
+    expect(chains("brand:nerds", "US", "2026-11-08")).toEqual([
+      "owned: entity:ferrero-affiliated-companies",
+    ]);
+    expect(chains("brand:apple-jacks", "US", "2026-11-08")).toEqual([
+      "distributed: entity:wk-kellogg-co > entity:ferrero",
+    ]);
+  });
+
   it("Fridge Raiders is JBS's, used by its majority-owned Pilgrim's Pride", () => {
     expect(chains("brand:fridge-raiders", "GB", "2026-11-08")).toEqual([
       "owned: entity:jbs",

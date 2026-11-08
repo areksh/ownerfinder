@@ -22,3 +22,13 @@ sources:
     publisher: "Ferrero"
     published: "2022-06-17"
     retrieved: "2026-11-08"
+  - id: source:ferrero-all-brands
+    url: https://www.ferrero.com/int/en/our-brands/all-ferrero-brands
+    title: "All Ferrero Brands"
+    publisher: "Ferrero International S.A."
+    retrieved: "2026-11-08"
+  - id: source:ferrero-affiliated-companies
+    url: https://www.ferrero.com/uk/en/about-us/ferrero-affiliated-companies
+    title: "Ferrero-Affiliated Companies"
+    publisher: "Ferrero International S.A."
+    retrieved: "2026-11-08"
