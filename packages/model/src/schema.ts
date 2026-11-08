@@ -73,6 +73,7 @@ export const RELATIONSHIP_TYPES = [
   "owns_brand",
   "licenses_brand",
   "distributes",
+  "affiliated_with",
 ] as const;
 
 export const relationshipSchema = z.strictObject({

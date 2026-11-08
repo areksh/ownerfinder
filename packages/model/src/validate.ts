@@ -46,6 +46,7 @@ const TARGET_KIND: Record<RelationshipType, Kind> = {
   owns_brand: "brand",
   licenses_brand: "brand",
   distributes: "brand",
+  affiliated_with: "entity",
 };
 
 export function validateGraph(input: unknown): Issue[] {

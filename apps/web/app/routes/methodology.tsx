@@ -30,6 +30,10 @@ export default function Methodology() {
         </li>
         <li>{GRADE.licensed}: the brand is made or sold under licence.</li>
         <li>{GRADE.distributed}: the products are distributed.</li>
+        <li>
+          {GRADE.related}: a company under common ownership with a listed one, as a source states,
+          but not owned by it.
+        </li>
       </ul>
       <h2>What the answers mean</h2>
       <dl>

@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { CHECK, unknownExplanation, when } from "./copy";
+import type { Link } from "./api.server";
+import { CHECK, GRADE, linkSentence, unknownExplanation, when } from "./copy";
 
 describe("CHECK.asked", () => {
   it("names the country as it reads in a sentence", () => {
@@ -37,5 +38,27 @@ describe("unknownExplanation", () => {
     expect(unknownExplanation("Newport", "GB", "2026-11-08")).toBe(
       "Nothing is recorded for Newport in the United Kingdom on 8 November 2026. If you know who owns it, you can request it be added.",
     );
+  });
+});
+
+describe("an affiliation", () => {
+  const link = {
+    id: "relationship:x",
+    type: "affiliated_with",
+    from: { id: "entity:ferrero", name: "Ferrero International S.A." },
+    to: { id: "entity:affiliates", name: "Ferrero-affiliated companies" },
+    validFrom: "2026-11-08",
+    scope: { include: "world" },
+    sources: ["source:x"],
+  } as Link;
+
+  it("says the companies are related without saying either owns the other", () => {
+    expect(linkSentence(link)).toBe(
+      "Ferrero-affiliated companies: related to Ferrero International S.A., but not owned by it",
+    );
+  });
+
+  it("labels a chain through it as a related company", () => {
+    expect(GRADE.related).toBe("Related company");
   });
 });

@@ -30,6 +30,7 @@ export const GRADE: Record<NonNullable<LookupAnswer["paths"][number]["grade"]>, 
   stake: "Shareholding",
   licensed: "Licence",
   distributed: "Distribution",
+  related: "Related company",
 };
 
 /** How established a piece of evidence is (docs/listings.md). */
@@ -107,6 +108,8 @@ export function linkSentence(link: Link): string {
       return `${from.name} makes or sells ${to.name} under licence`;
     case "distributes":
       return `${from.name} distributes ${to.name}`;
+    case "affiliated_with":
+      return `${to.name}: related to ${from.name}, but not owned by it`;
   }
 }
 

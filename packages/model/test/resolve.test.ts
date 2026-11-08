@@ -93,6 +93,17 @@ describe("resolve", () => {
       expect(ask(g, D).paths[0]).toMatchObject({ grade: "stake", effectiveSharePct: 24 });
     });
 
+    it("gives no share for a path through an affiliation", () => {
+      const g = graph({
+        entities: [A, C, D],
+        relationships: [rel("affiliated_with", C, D), rel("holds_stake", A, C, { stakePct: 40 })],
+        listed: [A],
+      });
+      const path = ask(g, D).paths[0];
+      expect(path?.grade).toBe("related");
+      expect(path?.effectiveSharePct).toBeUndefined();
+    });
+
     it("gives no share for a path through board control", () => {
       const g = graph({
         entities: [A, C, D],
@@ -119,6 +130,24 @@ describe("resolve", () => {
       });
       expect(ask(g, X).paths[0]?.grade).toBe("licensed");
       expect(ask(g, C).paths[0]?.grade).toBe("controlled");
+    });
+
+    it("grades a path through an affiliation as related, the weakest grade", () => {
+      const g = graph({
+        entities: [A, B, C],
+        brands: [X],
+        relationships: [
+          rel("owns_brand", B, X),
+          rel("affiliated_with", A, B),
+          rel("distributes", C, X),
+          rel("owns", A, C),
+        ],
+        listed: [A],
+      });
+      expect(ask(g, X).paths.map((p) => [p.grade, p.entities])).toEqual([
+        ["distributed", [C, A]],
+        ["related", [B, A]],
+      ]);
     });
 
     it("returns both the owner and the licensee of a brand, strongest first", () => {

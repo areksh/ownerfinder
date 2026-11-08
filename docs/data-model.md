@@ -64,14 +64,15 @@ licensed and distributed by companies.
 A directed link from the **holder** (`from`, always an entity) to what it
 holds (`to`).
 
-| Type             | `to`   | Meaning                                                                             | `stakePct`                    |
-| ---------------- | ------ | ----------------------------------------------------------------------------------- | ----------------------------- |
-| `owns`           | entity | Controlling ownership.                                                              | optional, above 50            |
-| `holds_stake`    | entity | A non-controlling shareholding.                                                     | required, above 0, at most 50 |
-| `controls_board` | entity | Can appoint or control the board without majority ownership.                        | not allowed                   |
-| `owns_brand`     | brand  | Owns the brand (the trade mark).                                                    | not allowed                   |
-| `licenses_brand` | brand  | Makes or sells under the brand by licence; `coverage` says what the licence covers. | not allowed                   |
-| `distributes`    | brand  | Distributes the brand's products.                                                   | not allowed                   |
+| Type              | `to`   | Meaning                                                                                                                                       | `stakePct`                    |
+| ----------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| `owns`            | entity | Controlling ownership.                                                                                                                        | optional, above 50            |
+| `holds_stake`     | entity | A non-controlling shareholding.                                                                                                               | required, above 0, at most 50 |
+| `controls_board`  | entity | Can appoint or control the board without majority ownership.                                                                                  | not allowed                   |
+| `owns_brand`      | brand  | Owns the brand (the trade mark).                                                                                                              | not allowed                   |
+| `licenses_brand`  | brand  | Makes or sells under the brand by licence; `coverage` says what the licence covers.                                                           | not allowed                   |
+| `distributes`     | brand  | Distributes the brand's products.                                                                                                             | not allowed                   |
+| `affiliated_with` | entity | A company under common ownership with the holder, where neither owns the other, as a source states ([ADR 12](adr/0012-affiliation-links.md)). | not allowed                   |
 
 Every relationship also has:
 
@@ -203,6 +204,7 @@ relationship type has a strength, strongest first:
 3. `stake`: `holds_stake`.
 4. `licensed`: `licenses_brand`.
 5. `distributed`: `distributes`.
+6. `related`: `affiliated_with`.
 
 A path is graded by its weakest link. A brand licensed to a company that
 is wholly owned by a listed group is `licensed`; a brand owned by a
@@ -211,7 +213,7 @@ company in which a listed group holds a stake is `stake`.
 A path that includes a stake also carries an **indicative effective
 share**: the product of the percentages along it, treating an `owns` link
 with no percentage as 100. Brand links do not count, and a path through
-board control has no share, since control carries none. It is labelled
+board control or an affiliation has no share, since neither carries one. It is labelled
 indicative because it ignores voting rights and share classes.
 
 A path is **approximate** when the query date falls inside the period of

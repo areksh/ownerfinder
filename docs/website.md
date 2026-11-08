@@ -52,7 +52,8 @@ criterion, so nothing is listed.
 
 Each link is described in plain words from its type: owns, holds a stake
 of N% in, controls the board of, owns the brand, makes or sells it under
-licence, distributes it. Licence coverage and curator notes are shown
+licence, distributes it, or, for an affiliation, "related to ..., but not owned
+by it" under the grade "Related company". Licence coverage and curator notes are shown
 beside the link. Approximate answers say that a date in the sources is
 only known to the month or year. A link whose start is sourced
 (`startKnown`) is "since" its date; any other is "known from" its date,

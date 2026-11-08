@@ -12,7 +12,7 @@ export interface NodeRef {
 export type Link = Omit<Relationship, "from" | "to"> & { from: NodeRef; to: NodeRef };
 
 export interface LookupPath {
-  grade?: "owned" | "controlled" | "stake" | "licensed" | "distributed";
+  grade?: "owned" | "controlled" | "stake" | "licensed" | "distributed" | "related";
   effectiveSharePct?: number;
   approximate: boolean;
   entities: Array<NodeRef & { listed: boolean }>;

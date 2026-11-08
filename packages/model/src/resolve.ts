@@ -23,7 +23,7 @@ export interface Query {
   includePassive?: boolean;
 }
 
-export type Grade = "owned" | "controlled" | "stake" | "licensed" | "distributed";
+export type Grade = "owned" | "controlled" | "stake" | "licensed" | "distributed" | "related";
 
 export interface Path {
   /** Relationships walked, from the node outwards. */
@@ -56,9 +56,17 @@ const GRADE_OF: Record<RelationshipType, Grade> = {
   holds_stake: "stake",
   licenses_brand: "licensed",
   distributes: "distributed",
+  affiliated_with: "related",
 };
 
-const GRADES: readonly Grade[] = ["owned", "controlled", "stake", "licensed", "distributed"];
+const GRADES: readonly Grade[] = [
+  "owned",
+  "controlled",
+  "stake",
+  "licensed",
+  "distributed",
+  "related",
+];
 
 export function resolve(graph: Graph, query: Query): Resolution {
   const day = checkedDay(query);
@@ -168,14 +176,14 @@ function weakest(links: Relationship[]): Grade | undefined {
 /**
  * The product of the shares along the path's company links, as a
  * percentage. Indicative only: it ignores voting rights and share
- * classes. Undefined without a stake, or through board control, which
- * carries no share.
+ * classes. Undefined without a stake, or through board control or an
+ * affiliation, which carry no share.
  */
 function effectiveShare(links: Relationship[]): number | undefined {
   if (!links.some((r) => r.type === "holds_stake")) return undefined;
   let share = 1;
   for (const r of links) {
-    if (r.type === "controls_board") return undefined;
+    if (r.type === "controls_board" || r.type === "affiliated_with") return undefined;
     if (r.type === "owns" || r.type === "holds_stake") share *= (r.stakePct ?? 100) / 100;
   }
   return Math.round(share * 10_000) / 100;

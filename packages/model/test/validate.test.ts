@@ -99,6 +99,11 @@ describe("validateGraph", () => {
     expect(codes(base([rel("licenses_brand", A, B)]))).toEqual(["wrong-target-kind"]);
   });
 
+  it("accepts an affiliation between two companies and refuses one to a brand", () => {
+    expect(codes(base([rel("affiliated_with", A, B)]))).toEqual([]);
+    expect(codes(base([rel("affiliated_with", A, X)]))).toEqual(["wrong-target-kind"]);
+  });
+
   it("reports a relationship from a holder to itself", () => {
     expect(codes(base([rel("controls_board", A, A)]))).toEqual(["self-reference"]);
   });
@@ -111,6 +116,7 @@ describe("validateGraph", () => {
     ["owns above 100", rel("owns", A, B, { stakePct: 101 })],
     ["a percentage on a brand", rel("owns_brand", A, X, { stakePct: 100 })],
     ["a percentage on board control", rel("controls_board", A, B, { stakePct: 30 })],
+    ["a percentage on an affiliation", rel("affiliated_with", A, B, { stakePct: 30 })],
   ])("reports %s", (_name, relationship) => {
     expect(codes(base([relationship]))).toEqual(["stake-out-of-range"]);
   });
