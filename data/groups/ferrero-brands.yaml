@@ -961,3 +961,11 @@ relationships:
     scope: { include: world }
     note: "Danone sold Michel et Augustin on 29 February 2024 without naming the buyer here; Ferrero now lists Michel & Augustin among its affiliated brands, so the company is recorded under the affiliated companies from the date that page was read. Ferrero says its affiliated companies are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance; who owns them is not stated."
     sources: [source:ferrero-all-brands, source:danone-urd-2025]
+  - id: relationship:ferrero-affiliated-with-ferrero-affiliated-companies
+    type: affiliated_with
+    from: entity:ferrero
+    to: entity:ferrero-affiliated-companies
+    validFrom: "2026-11-08"
+    scope: { include: world }
+    note: "Ferrero calls these Ferrero-affiliated companies and lists their brands beside its own, but says they are not in Ferrero International's consolidated accounts and do not fall under Ferrero Group governance."
+    sources: [source:ferrero-affiliated-companies, source:ferrero-all-brands]

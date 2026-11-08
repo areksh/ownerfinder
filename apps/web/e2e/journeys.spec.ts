@@ -67,6 +67,20 @@ test("a listed company's profile gives its reasons with their sources", async ({
   );
 });
 
+test("a brand of a related company is linked without being called owned", async ({ page }) => {
+  await page.goto("/check/brand%3Anerds?country=US");
+  await expect(
+    page.getByRole("heading", { level: 2, name: "Linked to a listed company" }),
+  ).toBeVisible();
+  await expect(page.getByRole("heading", { level: 3, name: /^Related company: / })).toBeVisible();
+  await expect(
+    page.getByText(/related to Ferrero International S\.A\., but not owned by it/),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("region", { name: "Why Ferrero International S.A. is on the list" }),
+  ).toBeVisible();
+});
+
 test("a brand not recorded in a country says so", async ({ page }) => {
   await page.goto("/check/brand%3Anewport?country=GB");
   await expect(page.getByRole("heading", { level: 2, name: "Not in our records" })).toBeVisible();

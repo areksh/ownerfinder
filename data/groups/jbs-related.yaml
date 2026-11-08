@@ -1,0 +1,23 @@
+# Companies related to JBS through its controlling shareholders, from JBS's 20-F for 2025.
+
+entities:
+  - { id: entity:j-and-f, name: "J&F S.A." }
+  - { id: entity:flora, name: "Flora Produtos de Higiene e Limpeza S.A." }
+
+relationships:
+  - id: relationship:jbs-affiliated-with-j-and-f
+    type: affiliated_with
+    from: entity:jbs
+    to: entity:j-and-f
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "JBS says J&F (formerly J&F Investimentos) is controlled by JBS's ultimate controlling shareholders; neither company owns the other."
+    sources: [source:jbs-20f-2025]
+  - id: relationship:j-and-f-owns-flora
+    type: owns
+    from: entity:j-and-f
+    to: entity:flora
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "JBS says Flora, a Brazilian maker of soaps, is controlled by J&F; the share is not given. JBS sold Flora its hygiene and beauty business on 31 December 2025, without naming the brands."
+    sources: [source:jbs-20f-2025]

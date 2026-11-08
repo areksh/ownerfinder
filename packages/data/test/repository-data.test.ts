@@ -53,10 +53,16 @@ describe("answers that depend on the country", () => {
   it("Ferrero's own brands, its affiliates' brands and WK Kellogg's cereals are told apart", () => {
     expect(chains("brand:butterfinger", "US", "2026-11-08")).toEqual(["owned: entity:ferrero"]);
     expect(chains("brand:nerds", "US", "2026-11-08")).toEqual([
-      "owned: entity:ferrero-affiliated-companies",
+      "related: entity:ferrero-affiliated-companies > entity:ferrero",
     ]);
     expect(chains("brand:apple-jacks", "US", "2026-11-08")).toEqual([
       "distributed: entity:wk-kellogg-co > entity:ferrero",
+    ]);
+  });
+
+  it("Flora is J&F's, a company related to JBS through their shared controlling shareholders", () => {
+    expect(chains("entity:flora", "BR", "2026-11-08")).toEqual([
+      "related: entity:flora > entity:j-and-f > entity:jbs",
     ]);
   });
 
