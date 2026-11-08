@@ -11,6 +11,8 @@ brands:
   - { id: brand:wright, name: "Wright" }
   - { id: brand:state-fair, name: "State Fair" }
   - { id: brand:aidells, name: "Aidells" }
+  - { id: brand:gallo-salame, name: "Gallo Salame" }
+  - { id: brand:ibp, name: "ibp" }
 
 relationships:
   - id: relationship:tyson-foods-tyson
@@ -59,6 +61,20 @@ relationships:
     type: owns_brand
     from: entity:tyson-foods
     to: brand:aidells
+    validFrom: "2025-11-10"
+    scope: { include: world }
+    sources: [source:tyson-10k-2025]
+  - id: relationship:tyson-foods-gallo-salame
+    type: owns_brand
+    from: entity:tyson-foods
+    to: brand:gallo-salame
+    validFrom: "2025-11-10"
+    scope: { include: world }
+    sources: [source:tyson-10k-2025]
+  - id: relationship:tyson-foods-ibp
+    type: owns_brand
+    from: entity:tyson-foods
+    to: brand:ibp
     validFrom: "2025-11-10"
     scope: { include: world }
     sources: [source:tyson-10k-2025]
