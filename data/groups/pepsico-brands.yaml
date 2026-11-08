@@ -938,6 +938,7 @@ relationships:
     from: entity:pepsico
     to: entity:sabra-dipping-company
     validFrom: "2024-12"
+    startKnown: true
     stakePct: 100
     scope: { include: world }
     note: "Wholly owned after PepsiCo bought the Strauss Group's 50% in December 2024; it was a 50:50 joint venture before."
@@ -947,6 +948,7 @@ relationships:
     from: entity:pepsico
     to: entity:garza-food-ventures
     validFrom: "2025-01-17"
+    startKnown: true
     stakePct: 100
     scope: { include: world }
     sources: [source:pepsico-10k-2025]
@@ -955,6 +957,7 @@ relationships:
     from: entity:pepsico
     to: entity:vngr-beverage
     validFrom: "2025-05-19"
+    startKnown: true
     stakePct: 100
     scope: { include: world }
     sources: [source:pepsico-10k-2025]
@@ -963,6 +966,7 @@ relationships:
     from: entity:celsius-holdings
     to: brand:rockstar
     validFrom: "2025-08-28"
+    startKnown: true
     scope: { include: [US, CA] }
     note: "PepsiCo transferred the Rockstar brand in the US and Canada to Celsius on 28 August 2025."
     sources: [source:pepsico-10k-2025]
