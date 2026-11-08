@@ -63,3 +63,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   US border; and Anheuser-Busch InBev, with its controlling shareholder,
   main subsidiaries, brands, Constellation Brands' US rights to Corona
   and Altria's 8.2% stake.
+- Related companies: a company under common ownership with a listed
+  one, where neither owns the other, is now linked as "Related
+  company", never as ownership. Ferrero's affiliated brands (Nerds,
+  Trolli, Jelly Belly, Fox's and others) now reach Ferrero this way, and
+  J&F, which shares JBS's controlling shareholders, reaches JBS. Also
+  recorded: Ferrero's group brands and the WK Kellogg cereals it makes
+  in North America, Mondelez's own brand list, Japan Tobacco's US
+  business through Vector Group, and more JBS and Tyson brands.
