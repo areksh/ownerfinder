@@ -28,29 +28,52 @@ relationships:
     type: owns
     from: entity:nestle
     to: entity:garden-of-life
-    validFrom: "2026-02"
+    validFrom: "2018-03"
+    startKnown: true
     stakePct: 100
     scope: { include: world }
-    note: "Nestlé agreed on 5 December 2017 to buy Atrium Innovations, whose brands included Garden of Life, expecting to close in the first quarter of 2018; the completion date is not recorded. Held indirectly; Nestlé's list of group companies gives the ultimate shareholding at the end of 2025 but not the companies in between."
-    sources: [source:nestle-financial-statements-2025, source:nestle-atrium-2017]
+    note: "Came with Atrium Innovations, of which Nestlé acquired 100% in March 2018, after agreeing the purchase on 5 December 2017. Held indirectly; Nestlé's list of group companies gives the ultimate shareholding but not the companies in between."
+    sources:
+      [
+        source:nestle-financial-statements-2025,
+        source:nestle-atrium-2017,
+        source:nestle-financial-statements-2018,
+      ]
   - id: relationship:nestle-owns-pure-encapsulations
     type: owns
     from: entity:nestle
     to: entity:pure-encapsulations
-    validFrom: "2026-02"
+    validFrom: "2018-03"
+    startKnown: true
     stakePct: 100
     scope: { include: world }
-    note: "Nestlé agreed on 5 December 2017 to buy Atrium Innovations, whose brands included Pure Encapsulations, expecting to close in the first quarter of 2018; the completion date is not recorded. Held indirectly; Nestlé's list of group companies gives the ultimate shareholding at the end of 2025 but not the companies in between."
-    sources: [source:nestle-financial-statements-2025, source:nestle-atrium-2017]
+    note: "Came with Atrium Innovations, of which Nestlé acquired 100% in March 2018, after agreeing the purchase on 5 December 2017. Held indirectly; Nestlé's list of group companies gives the ultimate shareholding but not the companies in between."
+    sources:
+      [
+        source:nestle-financial-statements-2025,
+        source:nestle-atrium-2017,
+        source:nestle-financial-statements-2018,
+      ]
+  - id: relationship:nestle-owns-vital-proteins-2020
+    type: owns
+    from: entity:nestle
+    to: entity:vital-proteins
+    validFrom: "2020"
+    startKnown: true
+    validTo: "2021"
+    stakePct: 70
+    scope: { include: world }
+    note: "Acquired in 2020; Nestlé's share at the end of 2020 was 70%, and 100% a year later. When in 2021 it rose is not recorded."
+    sources: [source:nestle-financial-statements-2020, source:nestle-financial-statements-2021]
   - id: relationship:nestle-owns-vital-proteins
     type: owns
     from: entity:nestle
     to: entity:vital-proteins
-    validFrom: "2026-02"
+    validFrom: "2021-12-31"
     stakePct: 100
     scope: { include: world }
-    note: "Held indirectly; Nestlé's list of group companies gives the ultimate shareholding but not the companies in between."
-    sources: [source:nestle-financial-statements-2025]
+    note: "100% at the end of 2021 and since. Held indirectly; Nestlé's list of group companies gives the ultimate shareholding but not the companies in between."
+    sources: [source:nestle-financial-statements-2025, source:nestle-financial-statements-2021]
   - id: relationship:nestle-owns-vitaflo
     type: owns
     from: entity:nestle
@@ -61,50 +84,86 @@ relationships:
     scope: { include: world }
     note: "Nestlé announced on 2 August 2010 that it had completed the acquisition. Held indirectly; Nestlé's list of group companies gives the ultimate shareholding at the end of 2025 but not the companies in between."
     sources: [source:nestle-financial-statements-2025, source:nestle-vitaflo-2010]
+  - id: relationship:nestle-owns-orgain-2022
+    type: owns
+    from: entity:nestle
+    to: entity:orgain
+    validFrom: "2022-04-01"
+    startKnown: true
+    validTo: "2025"
+    stakePct: 51
+    scope: { include: world }
+    note: "Nestlé bought a majority stake on 1 April 2022, after agreeing it on 2 February 2022; the founder and Butterfly Equity kept the rest. 51% at the end of 2022, 2023 and 2024."
+    sources:
+      [
+        source:nestle-financial-statements-2022,
+        source:nestle-financial-statements-2024,
+        source:nestle-orgain-2022,
+      ]
   - id: relationship:nestle-owns-orgain
     type: owns
     from: entity:nestle
     to: entity:orgain
-    validFrom: "2026-02"
+    validFrom: "2025-12-31"
     stakePct: 91.1
     scope: { include: world }
-    note: "Nestlé Health Science agreed on 2 February 2022 to buy a majority stake, with the founder and Butterfly Equity keeping minority stakes; the completion date is not recorded. Held indirectly; Nestlé's list of group companies gives the ultimate shareholding at the end of 2025 but not the companies in between."
+    note: "Nestlé's share at the end of 2025. When in 2025 it rose from 51% is not recorded. Held indirectly; Nestlé's list of group companies gives the ultimate shareholding but not the companies in between."
     sources: [source:nestle-financial-statements-2025, source:nestle-orgain-2022]
   - id: relationship:nestle-garden-of-life
     type: owns_brand
     from: entity:nestle
     to: brand:garden-of-life
-    validFrom: "2026-11-08"
+    validFrom: "2018-03"
+    startKnown: true
     scope: { include: world }
-    sources: [source:nestle-health-science-brands]
+    note: "Came with Atrium Innovations, acquired in March 2018."
+    sources:
+      [
+        source:nestle-health-science-brands,
+        source:nestle-financial-statements-2018,
+        source:nestle-atrium-2017,
+      ]
   - id: relationship:nestle-pure-encapsulations
     type: owns_brand
     from: entity:nestle
     to: brand:pure-encapsulations
-    validFrom: "2026-11-08"
+    validFrom: "2018-03"
+    startKnown: true
     scope: { include: world }
-    sources: [source:nestle-health-science-brands]
+    note: "Came with Atrium Innovations, acquired in March 2018."
+    sources:
+      [
+        source:nestle-health-science-brands,
+        source:nestle-financial-statements-2018,
+        source:nestle-atrium-2017,
+      ]
   - id: relationship:nestle-vital-proteins
     type: owns_brand
     from: entity:nestle
     to: brand:vital-proteins
-    validFrom: "2026-11-08"
+    validFrom: "2020"
+    startKnown: true
     scope: { include: world }
-    sources: [source:nestle-health-science-brands]
+    note: "Acquired in 2020."
+    sources: [source:nestle-health-science-brands, source:nestle-financial-statements-2020]
   - id: relationship:nestle-vitaflo
     type: owns_brand
     from: entity:nestle
     to: brand:vitaflo
-    validFrom: "2026-11-08"
+    validFrom: "2010-08-02"
+    startKnown: true
     scope: { include: world }
-    sources: [source:nestle-health-science-brands]
+    note: "Nestlé announced on 2 August 2010 that it had completed the acquisition of Vitaflo."
+    sources: [source:nestle-health-science-brands, source:nestle-vitaflo-2010]
   - id: relationship:nestle-orgain
     type: owns_brand
     from: entity:nestle
     to: brand:orgain
-    validFrom: "2026-11-08"
+    validFrom: "2022-04-01"
+    startKnown: true
     scope: { include: world }
-    sources: [source:nestle-health-science-brands]
+    note: "Nestlé bought a majority stake in Orgain on 1 April 2022."
+    sources: [source:nestle-health-science-brands, source:nestle-financial-statements-2022]
   - id: relationship:nestle-peptamen
     type: owns_brand
     from: entity:nestle

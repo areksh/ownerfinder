@@ -128,3 +128,33 @@ sources:
     publisher: "Nestlé S.A."
     published: "2022-02-02"
     retrieved: "2026-11-08"
+  - id: source:nestle-financial-statements-2018
+    url: https://www.nestle.com/sites/default/files/asset-library/documents/library/documents/financial_statements/2018-financial-statements-en.pdf
+    title: "Consolidated Financial Statements of the Nestlé Group 2018"
+    publisher: "Nestlé S.A."
+    published: "2019-02"
+    retrieved: "2026-11-08"
+  - id: source:nestle-financial-statements-2020
+    url: https://www.nestle.com/sites/default/files/2021-02/2020-financial-statements-en.pdf
+    title: "Consolidated Financial Statements of the Nestlé Group 2020"
+    publisher: "Nestlé S.A."
+    published: "2021-02"
+    retrieved: "2026-11-08"
+  - id: source:nestle-financial-statements-2021
+    url: https://www.nestle.com/sites/default/files/2022-02/2021-financial-statements-en.pdf
+    title: "Consolidated Financial Statements of the Nestlé Group 2021"
+    publisher: "Nestlé S.A."
+    published: "2022-02"
+    retrieved: "2026-11-08"
+  - id: source:nestle-financial-statements-2022
+    url: https://www.nestle.com/sites/default/files/2023-02/2022-financial-statements-en.pdf
+    title: "Consolidated Financial Statements of the Nestlé Group 2022"
+    publisher: "Nestlé S.A."
+    published: "2023-02"
+    retrieved: "2026-11-08"
+  - id: source:nestle-financial-statements-2024
+    url: https://www.nestle.com/sites/default/files/2025-02/2024-financial-statements-en.pdf
+    title: "Consolidated Financial Statements of the Nestlé Group 2024"
+    publisher: "Nestlé S.A."
+    published: "2025-02"
+    retrieved: "2026-11-08"

@@ -110,6 +110,13 @@ describe("answers that depend on the country", () => {
     ]);
   });
 
+  it("Orgain is Nestle's from its majority purchase on 1 April 2022", () => {
+    expect(chains("entity:orgain", "US", "2022-03-31")).toEqual(["undefined: entity:orgain"]);
+    expect(chains("entity:orgain", "US", "2023-06-01")).toEqual([
+      "owned: entity:orgain > entity:nestle",
+    ]);
+  });
+
   it("Horlicks is Unilever's in the Asian markets it bought in 2020, not everywhere", () => {
     expect(chains("brand:horlicks", "IN", "2026-11-08")).toEqual([
       "owned: entity:unilever",
