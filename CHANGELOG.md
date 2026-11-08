@@ -41,3 +41,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   in depth: its Power Brands, its 2025 purchases, its main subsidiaries
   and the brands on its UK, US and Hindustan Unilever pages, each scoped
   to the market its page covers.
+- BAT in depth: its US chain through Reynolds American and the
+  operating companies that make Camel, Newport, Natural American
+  Spirit, Grizzly, Vuse and Velo, and its 22.91% stake in ITC, with
+  about 50 of ITC's Indian brands such as Aashirvaad, Sunfeast,
+  Bingo!, Classmate and Gold Flake.
