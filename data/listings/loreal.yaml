@@ -1,0 +1,14 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:loreal
+evidence:
+  - criterion: criterion:competition
+    status: found
+    date: "2014-12-18"
+    summary: >-
+      France's competition authority fined L'Oréal €189 million in 2014
+      for taking part in a cartel in which personal care manufacturers
+      aligned their pricing and commercial policies. The decision was
+      upheld on appeal, and in October 2023 France's Cour de cassation
+      dismissed L'Oréal's last challenge to the amount of the fine.
+    sources: [source:lexblog-loreal-cassation-2023]

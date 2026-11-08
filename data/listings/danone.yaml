@@ -1,0 +1,16 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:danone
+evidence:
+  - criterion: criterion:environment
+    status: settled
+    date: "2025-02-21"
+    summary: >-
+      In January 2023 ClientEarth, Surfrider Foundation Europe and Zero
+      Waste France sued Danone, alleging that it had not complied with
+      France's duty of vigilance law in relation to plastic. The case
+      ended in February 2025 with an agreement reached through court-
+      ordered mediation, under which Danone updated its vigilance plan
+      to set out the risks of its plastic use and made further
+      commitments.
+    sources: [source:clientearth-danone-2025]

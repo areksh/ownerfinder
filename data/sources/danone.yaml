@@ -4,3 +4,9 @@ sources:
     title: "Brands"
     publisher: "Danone S.A."
     retrieved: "2026-11-07"
+  - id: source:clientearth-danone-2025
+    url: https://www.clientearth.org/latest/press-office/press-releases/due-diligence-and-plastics-ngos-and-danone-reach-an-agreement-after-mediation/
+    title: "Due diligence and plastics: NGOs and Danone reach an agreement after mediation"
+    publisher: "ClientEarth"
+    published: "2025-02-21"
+    retrieved: "2026-11-08"

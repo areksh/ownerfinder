@@ -1,0 +1,16 @@
+# Why this company is listed; wording rules: docs/listings.md.
+
+entity: entity:inditex
+evidence:
+  - criterion: criterion:labour-rights
+    status: alleged
+    date: "2023-05-17"
+    summary: >-
+      Sherpa, the Éthique sur l'étiquette collective, the European
+      Uyghur Institute and a Uyghur woman who had been held in a camp in
+      Xinjiang filed a complaint in France alleging that clothing groups
+      including Inditex profit from the forced labour of Uyghurs in
+      China. An earlier complaint, on which French prosecutors opened an
+      investigation in 2021, was dropped in April 2023 for lack of
+      jurisdiction. Inditex has strongly denied the accusations.
+    sources: [source:bhrrc-uyghur-complaint-2023, source:businesslive-uyghur-probe-2021]

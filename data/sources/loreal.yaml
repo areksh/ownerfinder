@@ -5,3 +5,9 @@ sources:
     publisher: "L'Oréal"
     published: "2025"
     retrieved: "2026-11-07"
+  - id: source:lexblog-loreal-cassation-2023
+    url: https://www.lexblog.com/2023/10/18/the-french-cour-de-cassation-dismisses-loreals-action-against-the-189-million-euro-fine-imposed-by-the-french-competition-authority-in-2014-for-alleged-price-fixing/
+    title: "The French Cour de cassation dismisses L'Oréal's action against the 189 million euro fine imposed by the French Competition Authority in 2014 for alleged price fixing"
+    publisher: "LexBlog"
+    published: "2023-10-18"
+    retrieved: "2026-11-08"

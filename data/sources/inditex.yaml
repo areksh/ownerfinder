@@ -4,3 +4,15 @@ sources:
     title: "Brands"
     publisher: "Industria de Diseño Textil, S.A."
     retrieved: "2026-11-07"
+  - id: source:bhrrc-uyghur-complaint-2023
+    url: https://business-humanrights.org/en/latest-news/france-investigating-judge-to-examine-connection-between-fashion-groups-and-uyghur-forced-labour
+    title: "France: NGOs ask investigating judge to open judicial investigation to clarify responsibilities of multinational garment companies allegedly profiting from Uyghurs forced labour"
+    publisher: "Business & Human Rights Resource Centre (AFP)"
+    published: "2023-05-17"
+    retrieved: "2026-11-08"
+  - id: source:businesslive-uyghur-probe-2021
+    url: https://www.businesslive.co.za/bd/companies/2021-07-02-france-probes-brands-for-alleged-forced-labour-of-uyghur-in-china/
+    title: "France probes brands for alleged forced labour of Uyghur in China"
+    publisher: "BusinessLIVE (Bloomberg)"
+    published: "2021-07-02"
+    retrieved: "2026-11-08"
