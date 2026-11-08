@@ -1,10 +1,4 @@
 sources:
-  - id: source:wikipedia-tropicana
-    url: https://en.wikipedia.org/wiki/Tropicana_Products
-    title: "Tropicana Products"
-    publisher: "Wikipedia"
-    retrieved: "2026-11-07"
-    licence: CC BY-SA 4.0
   - id: source:pai-tropicana-2021
     url: https://paipartners.com/wp-content/uploads/2021/08/press-release-pai-partners-tropicana-pepsi-3-august-2021.pdf
     title: "PAI Partners to acquire Tropicana, Naked and other select juice brands from PepsiCo"
@@ -23,3 +17,9 @@ sources:
     publisher: "PepsiCo, Inc."
     published: "2026-02-03"
     retrieved: "2026-11-07"
+  - id: source:pepsico-10k-1998
+    url: https://www.sec.gov/Archives/edgar/data/77476/0000077476-99-000013.txt
+    title: "PepsiCo, Inc., Form 10-K for the fiscal year ended December 26, 1998"
+    publisher: "PepsiCo, Inc."
+    published: "1999-03-24"
+    retrieved: "2026-11-08"

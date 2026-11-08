@@ -11,6 +11,7 @@ relationships:
     type: owns_brand
     from: entity:starbucks
     to: brand:starbucks
-    validFrom: "1971"
+    validFrom: "1996-12-26"
     scope: { include: world }
-    sources: [source:wikipedia-starbucks]
+    note: "Starbucks Corporation was formed in 1985 and may have held the brand earlier; this is the earliest filing cited."
+    sources: [source:starbucks-10k-1996]

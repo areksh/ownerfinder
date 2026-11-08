@@ -1,7 +1,7 @@
 sources:
-  - id: source:wikipedia-starbucks
-    url: https://en.wikipedia.org/wiki/Starbucks
-    title: "Starbucks"
-    publisher: "Wikipedia"
-    retrieved: "2026-11-07"
-    licence: CC BY-SA 4.0
+  - id: source:starbucks-10k-1996
+    url: https://www.sec.gov/Archives/edgar/data/829224/0000887557-96-000023.txt
+    title: "Starbucks Corporation, Form 10-K for the fiscal year ended September 29, 1996"
+    publisher: "Starbucks Corporation"
+    published: "1996-12-26"
+    retrieved: "2026-11-08"

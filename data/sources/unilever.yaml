@@ -27,3 +27,15 @@ sources:
     publisher: "Unilever PLC"
     published: "2026-03-12"
     retrieved: "2026-11-07"
+  - id: source:ben-and-jerrys-tender-offer-2000
+    url: https://www.sec.gov/Archives/edgar/data/768384/0000950157-00-000229.txt
+    title: "Schedule TO, Amendment No. 5 (final amendment): tender offer for Ben & Jerry's Homemade, Inc."
+    publisher: "Unilever N.V. and Conopco, Inc."
+    published: "2000-05-19"
+    retrieved: "2026-11-08"
+  - id: source:ben-and-jerrys-merger-proxy-2000
+    url: https://www.sec.gov/Archives/edgar/data/768384/0000912057-00-030913.txt
+    title: "Ben & Jerry's Homemade, Inc., definitive merger proxy statement"
+    publisher: "Ben & Jerry's Homemade, Inc."
+    published: "2000-07-06"
+    retrieved: "2026-11-08"

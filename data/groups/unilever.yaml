@@ -29,10 +29,16 @@ relationships:
     type: owns
     from: entity:unilever
     to: entity:ben-and-jerrys-homemade
-    validFrom: "2000-04"
+    validFrom: "2000-05-16"
     validTo: "2025-12-06"
     scope: { include: world }
-    sources: [source:wikipedia-ben-and-jerrys]
+    note: "Unilever's purchaser bought about 91% in its tender offer, accepted on 16 May 2000; the merger that followed was the second and final step."
+    sources:
+      [
+        source:ben-and-jerrys-tender-offer-2000,
+        source:ben-and-jerrys-merger-proxy-2000,
+        source:the-star-tmicc-demerger-2025,
+      ]
   - id: relationship:unilever-tmicc
     type: holds_stake
     from: entity:unilever

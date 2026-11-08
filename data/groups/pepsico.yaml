@@ -22,10 +22,10 @@ relationships:
     type: owns_brand
     from: entity:pepsico
     to: brand:tropicana
-    validFrom: "1998"
+    validFrom: "1998-08"
     validTo: "2022-01"
     scope: { include: world }
-    sources: [source:wikipedia-tropicana]
+    sources: [source:pepsico-10k-1998, source:tropicana-brands-group-2022]
   - id: relationship:pepsico-tbg
     type: holds_stake
     from: entity:pepsico
