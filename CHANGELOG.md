@@ -29,3 +29,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   International, British American Tobacco, Japan Tobacco, JBS, Tyson Foods, Amazon, Meta,
   Alphabet, PDD, Booking, Shein, Bayer, Shell, ExxonMobil, BP, Chevron, Barclays and 3M,
   with Altria and Keurig Dr Pepper as US owners of Marlboro and 7UP.
+- Answers say "since" a date only when a source gives the start; other
+  dates read "known from", and a question about an earlier date points
+  to the earliest later record.
+- Nestle in depth: its US holding chain, its trademark company, about 100
+  more brands, and its joint ventures, Cereal Partners Worldwide and
+  Froneri, with General Mills as owner of the brands they make under
+  licence.
