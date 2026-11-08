@@ -71,3 +71,15 @@ sources:
     publisher: "L'Oréal"
     published: "2026-07-07"
     retrieved: "2026-11-08"
+  - id: source:loreal-urd-2025-pdf
+    url: https://www.loreal-finance.com/sites/default/files/2026-03/LOREAL_DEU_2025_EN.pdf
+    title: "2025 Universal Registration Document (PDF)"
+    publisher: "L'Oréal"
+    published: "2026-03"
+    retrieved: "2026-11-08"
+  - id: source:loreal-fy2025-results
+    url: https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/press-releases/finance/2026/prfy25en.pdf?rev=-1
+    title: "2025 Annual Results"
+    publisher: "L'Oréal"
+    published: "2026-02-12"
+    retrieved: "2026-11-08"

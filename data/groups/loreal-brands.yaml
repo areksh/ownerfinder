@@ -13,6 +13,8 @@ entities:
   - { id: entity:jacquemus, name: "Jacquemus" }
 
 brands:
+  - { id: brand:mugler, name: "Mugler" }
+  - { id: brand:azzaro, name: "Azzaro" }
   - { id: brand:biotherm, name: "Biotherm" }
   - { id: brand:redken, name: "Redken" }
   - { id: brand:matrix, name: "Matrix" }
@@ -49,6 +51,34 @@ brands:
   - { id: brand:amouage, name: "Amouage" }
 
 relationships:
+  - id: relationship:loreal-stake-galderma-2026
+    type: holds_stake
+    from: entity:loreal
+    to: entity:galderma
+    validFrom: "2026-02-10"
+    startKnown: true
+    stakePct: 20
+    scope: { include: world }
+    note: "L'Oréal announced on 8 December 2025 that it was buying another 10%, bringing its stake to 20%; the purchase closed on 10 February 2026."
+    sources: [source:loreal-fy2025-results, source:loreal-urd-2025-commitments]
+  - id: relationship:loreal-mugler
+    type: owns_brand
+    from: entity:loreal
+    to: brand:mugler
+    validFrom: "2020"
+    startKnown: true
+    scope: { include: world }
+    note: "L'Oréal's timeline lists the Mugler and Azzaro brands among its 2020 acquisitions, investments or licences, without marking them as licences as it does for others."
+    sources: [source:loreal-urd-2025-pdf, source:loreal-urd-2025-divisions]
+  - id: relationship:loreal-azzaro
+    type: owns_brand
+    from: entity:loreal
+    to: brand:azzaro
+    validFrom: "2020"
+    startKnown: true
+    scope: { include: world }
+    note: "L'Oréal's timeline lists the Mugler and Azzaro brands among its 2020 acquisitions, investments or licences, without marking them as licences as it does for others."
+    sources: [source:loreal-urd-2025-pdf, source:loreal-urd-2025-divisions]
   - id: relationship:loreal-biotherm
     type: owns_brand
     from: entity:loreal
@@ -439,9 +469,10 @@ relationships:
     to: entity:galderma
     validFrom: "2024-08-05"
     startKnown: true
+    validTo: "2026-02-10"
     stakePct: 10
     scope: { include: world }
-    note: "L'Oréal announced on 5 August 2024 that it had acquired 10%, and still held 10.0% at 31 December 2025. On 8 December 2025 it announced buying another 10%, to 20%; its completion is not recorded here."
+    note: "L'Oréal announced on 5 August 2024 that it had acquired 10%, and still held 10.0% at 31 December 2025."
     sources: [source:loreal-urd-2025-galderma-2024, source:loreal-urd-2025-financial-assets]
   - id: relationship:loreal-stake-sanofi
     type: holds_stake
