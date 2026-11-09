@@ -76,3 +76,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   markets for Chevron, Texaco and Caltex, its Hess, GS Caltex and CPChem
   interests; ExxonMobil's 69.6% of Imperial Oil and Mobil 1; and Shell's
   Pennzoil-Quaker State, 44% of Raízen and Nature Energy.
+- The remaining groups in depth: Amazon's purchases with their dates
+  (Audible, Zappos, Twitch, Ring, MGM, One Medical); Google's Waze and
+  Nest, which reach Alphabet only from its 2015 reorganisation, and
+  Fitbit and Mandiant; Booking's and SHEIN's other brands; PDD's
+  companies, including the contract-controlled company behind
+  Pinduoduo; Barclays' principal subsidiaries, Kensington and Tesco
+  Bank; 3M's brands and its falling stake in Solventum; Bayer's and
+  Henkel's main brands; Japan Tobacco's main subsidiaries; Hershey's
+  brands and licences, so York, Almond Joy, Caramello and Rolo reach
+  Mondelez or Nestlé; and Esso and Mobil sold in Canada by Imperial Oil.
