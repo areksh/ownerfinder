@@ -1,0 +1,368 @@
+# Hershey's own brands and the brands it makes under licence, from its 10-K for 2025.
+
+entities:
+  - { id: entity:iconic-ip-interests, name: "Iconic IP Interests, LLC" }
+
+brands:
+  - { id: brand:hersheys, name: "Hershey's" }
+  - { id: brand:reeses, name: "Reese's" }
+  - { id: brand:hersheys-kisses, name: "Kisses" }
+  - { id: brand:twizzlers, name: "Twizzlers" }
+  - { id: brand:brookside, name: "Brookside" }
+  - { id: brand:barkthins, name: "barkTHINS" }
+  - { id: brand:sour-strips, name: "Sour Strips" }
+  - { id: brand:one-bar, name: "ONE" }
+  - { id: brand:ice-breakers, name: "Ice Breakers" }
+  - { id: brand:breath-savers, name: "Breath Savers" }
+  - { id: brand:bubble-yum, name: "Bubble Yum" }
+  - { id: brand:lilys, name: "Lily's" }
+  - { id: brand:skinnypop, name: "SkinnyPop" }
+  - { id: brand:lesserevil, name: "LesserEvil" }
+  - { id: brand:pirates-booty, name: "Pirates Booty" }
+  - { id: brand:dots-pretzels, name: "Dot's Homestyle Pretzels" }
+  - { id: brand:pelon-pelo-rico, name: "Pelon Pelo Rico" }
+  - { id: brand:sofit, name: "Sofit" }
+  - { id: brand:good-and-plenty, name: "Good & Plenty" }
+  - { id: brand:heath, name: "Heath" }
+  - { id: brand:jolly-rancher, name: "Jolly Rancher" }
+  - { id: brand:milk-duds, name: "Milk Duds" }
+  - { id: brand:payday, name: "Payday" }
+  - { id: brand:whoppers, name: "Whoppers" }
+  - { id: brand:york, name: "York" }
+  - { id: brand:almond-joy, name: "Almond Joy" }
+  - { id: brand:mounds, name: "Mounds" }
+  - { id: brand:caramello, name: "Caramello" }
+
+relationships:
+  - id: relationship:hershey-hersheys
+    type: owns_brand
+    from: entity:hershey
+    to: brand:hersheys
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named among Hershey's brands in its 10-K for 2025; its licensed brands are recorded separately."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-reeses
+    type: owns_brand
+    from: entity:hershey
+    to: brand:reeses
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named among Hershey's brands in its 10-K for 2025; its licensed brands are recorded separately."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-hersheys-kisses
+    type: owns_brand
+    from: entity:hershey
+    to: brand:hersheys-kisses
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named among Hershey's brands in its 10-K for 2025; its licensed brands are recorded separately."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-twizzlers
+    type: owns_brand
+    from: entity:hershey
+    to: brand:twizzlers
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named among Hershey's brands in its 10-K for 2025; its licensed brands are recorded separately."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-brookside
+    type: owns_brand
+    from: entity:hershey
+    to: brand:brookside
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named among Hershey's brands in its 10-K for 2025; its licensed brands are recorded separately."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-barkthins
+    type: owns_brand
+    from: entity:hershey
+    to: brand:barkthins
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named among Hershey's brands in its 10-K for 2025; its licensed brands are recorded separately."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-sour-strips
+    type: owns_brand
+    from: entity:hershey
+    to: brand:sour-strips
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named among Hershey's brands in its 10-K for 2025; its licensed brands are recorded separately."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-one-bar
+    type: owns_brand
+    from: entity:hershey
+    to: brand:one-bar
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named among Hershey's brands in its 10-K for 2025; its licensed brands are recorded separately."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-ice-breakers
+    type: owns_brand
+    from: entity:hershey
+    to: brand:ice-breakers
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named among Hershey's brands in its 10-K for 2025; its licensed brands are recorded separately."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-breath-savers
+    type: owns_brand
+    from: entity:hershey
+    to: brand:breath-savers
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named among Hershey's brands in its 10-K for 2025; its licensed brands are recorded separately."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-bubble-yum
+    type: owns_brand
+    from: entity:hershey
+    to: brand:bubble-yum
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named among Hershey's brands in its 10-K for 2025; its licensed brands are recorded separately."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-lilys
+    type: owns_brand
+    from: entity:hershey
+    to: brand:lilys
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named among Hershey's brands in its 10-K for 2025; its licensed brands are recorded separately."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-skinnypop
+    type: owns_brand
+    from: entity:hershey
+    to: brand:skinnypop
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named among Hershey's brands in its 10-K for 2025; its licensed brands are recorded separately."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-lesserevil
+    type: owns_brand
+    from: entity:hershey
+    to: brand:lesserevil
+    validFrom: "2025-11-18"
+    startKnown: true
+    scope: { include: world }
+    note: "Hershey completed its purchase of LesserEvil, LLC on 18 November 2025."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-pirates-booty
+    type: owns_brand
+    from: entity:hershey
+    to: brand:pirates-booty
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named among Hershey's brands in its 10-K for 2025; its licensed brands are recorded separately."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-dots-pretzels
+    type: owns_brand
+    from: entity:hershey
+    to: brand:dots-pretzels
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named among Hershey's brands in its 10-K for 2025; its licensed brands are recorded separately."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-pelon-pelo-rico
+    type: owns_brand
+    from: entity:hershey
+    to: brand:pelon-pelo-rico
+    validFrom: "2026-02-17"
+    scope: { include: [MX] }
+    note: "A confectionery brand marketed regionally in Mexico."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-sofit
+    type: owns_brand
+    from: entity:hershey
+    to: brand:sofit
+    validFrom: "2026-02-17"
+    scope: { include: [IN] }
+    note: "A beverage brand marketed regionally in India."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:iconic-ip-interests-good-and-plenty
+    type: owns_brand
+    from: entity:iconic-ip-interests
+    to: brand:good-and-plenty
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named by Hershey as the licensor, worldwide; who owns Iconic IP Interests is not stated."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-good-and-plenty-licence
+    type: licenses_brand
+    from: entity:hershey
+    to: brand:good-and-plenty
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    coverage: "Worldwide."
+    note: "Hershey makes and sells it under one of its most significant licence agreements, extendible long term at its option."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:iconic-ip-interests-heath
+    type: owns_brand
+    from: entity:iconic-ip-interests
+    to: brand:heath
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named by Hershey as the licensor, worldwide; who owns Iconic IP Interests is not stated."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-heath-licence
+    type: licenses_brand
+    from: entity:hershey
+    to: brand:heath
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    coverage: "Worldwide."
+    note: "Hershey makes and sells it under one of its most significant licence agreements, extendible long term at its option."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:iconic-ip-interests-jolly-rancher
+    type: owns_brand
+    from: entity:iconic-ip-interests
+    to: brand:jolly-rancher
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named by Hershey as the licensor, worldwide; who owns Iconic IP Interests is not stated."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-jolly-rancher-licence
+    type: licenses_brand
+    from: entity:hershey
+    to: brand:jolly-rancher
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    coverage: "Worldwide."
+    note: "Hershey makes and sells it under one of its most significant licence agreements, extendible long term at its option."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:iconic-ip-interests-milk-duds
+    type: owns_brand
+    from: entity:iconic-ip-interests
+    to: brand:milk-duds
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named by Hershey as the licensor, worldwide; who owns Iconic IP Interests is not stated."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-milk-duds-licence
+    type: licenses_brand
+    from: entity:hershey
+    to: brand:milk-duds
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    coverage: "Worldwide."
+    note: "Hershey makes and sells it under one of its most significant licence agreements, extendible long term at its option."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:iconic-ip-interests-payday
+    type: owns_brand
+    from: entity:iconic-ip-interests
+    to: brand:payday
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named by Hershey as the licensor, worldwide; who owns Iconic IP Interests is not stated."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-payday-licence
+    type: licenses_brand
+    from: entity:hershey
+    to: brand:payday
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    coverage: "Worldwide."
+    note: "Hershey makes and sells it under one of its most significant licence agreements, extendible long term at its option."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:iconic-ip-interests-whoppers
+    type: owns_brand
+    from: entity:iconic-ip-interests
+    to: brand:whoppers
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Named by Hershey as the licensor, worldwide; who owns Iconic IP Interests is not stated."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-whoppers-licence
+    type: licenses_brand
+    from: entity:hershey
+    to: brand:whoppers
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    coverage: "Worldwide."
+    note: "Hershey makes and sells it under one of its most significant licence agreements, extendible long term at its option."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:mondelez-york
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:york
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Hershey names Kraft Foods Ireland Intellectual Property Limited and Cadbury UK Limited, both on Mondelez's subsidiaries list, as the licensors; which of the two owns the trademark is not stated."
+    sources: [source:hershey-10k-2025, source:mondelez-ex21-2025]
+  - id: relationship:hershey-york-licence
+    type: licenses_brand
+    from: entity:hershey
+    to: brand:york
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    coverage: "Worldwide."
+    note: "Hershey makes and sells it under one of its most significant licence agreements, extendible long term at its option."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:mondelez-almond-joy
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:almond-joy
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Hershey names Kraft Foods Ireland Intellectual Property Limited and Cadbury UK Limited, both on Mondelez's subsidiaries list, as the licensors; which of the two owns the trademark is not stated."
+    sources: [source:hershey-10k-2025, source:mondelez-ex21-2025]
+  - id: relationship:hershey-almond-joy-licence
+    type: licenses_brand
+    from: entity:hershey
+    to: brand:almond-joy
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    coverage: "Worldwide."
+    note: "Hershey makes and sells it under one of its most significant licence agreements, extendible long term at its option."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:mondelez-mounds
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:mounds
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    note: "Hershey names Kraft Foods Ireland Intellectual Property Limited and Cadbury UK Limited, both on Mondelez's subsidiaries list, as the licensors; which of the two owns the trademark is not stated."
+    sources: [source:hershey-10k-2025, source:mondelez-ex21-2025]
+  - id: relationship:hershey-mounds-licence
+    type: licenses_brand
+    from: entity:hershey
+    to: brand:mounds
+    validFrom: "2026-02-17"
+    scope: { include: world }
+    coverage: "Worldwide."
+    note: "Hershey makes and sells it under one of its most significant licence agreements, extendible long term at its option."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:mondelez-caramello-us
+    type: owns_brand
+    from: entity:mondelez
+    to: brand:caramello
+    validFrom: "2026-02-17"
+    scope: { include: [US] }
+    note: "Hershey names Cadbury UK Limited, on Mondelez's subsidiaries list, as the licensor in the United States; where else Mondelez owns it is not recorded here."
+    sources: [source:hershey-10k-2025, source:mondelez-ex21-2025]
+  - id: relationship:hershey-caramello-licence
+    type: licenses_brand
+    from: entity:hershey
+    to: brand:caramello
+    validFrom: "2026-02-17"
+    scope: { include: [US] }
+    coverage: "Makes and sells Caramello in the United States under licence from Cadbury UK Limited."
+    note: "Hershey makes and sells it under one of its most significant licence agreements, extendible long term at its option. Its minimum sales requirement was exceeded in 2025."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:hershey-rolo-licence
+    type: licenses_brand
+    from: entity:hershey
+    to: brand:rolo
+    validFrom: "2026-02-17"
+    scope: { include: [US] }
+    coverage: "Makes and sells Rolo in the United States under licence from Société des Produits Nestlé SA."
+    note: "Hershey makes and sells it under one of its most significant licence agreements, extendible long term at its option. Minimum unit volumes were exceeded in 2025."
+    sources: [source:hershey-10k-2025]
+  - id: relationship:societe-des-produits-nestle-rolo-us
+    type: owns_brand
+    from: entity:societe-des-produits-nestle
+    to: brand:rolo
+    validFrom: "2026-02-17"
+    scope: { include: [US] }
+    note: "Named by Hershey as the licensor of Rolo in the United States."
+    sources: [source:hershey-10k-2025]

@@ -5,3 +5,9 @@ sources:
     publisher: "Exxon Mobil Corporation"
     published: "2026-02-18"
     retrieved: "2026-11-08"
+  - id: source:imperial-oil-10k-2025
+    url: https://www.sec.gov/Archives/edgar/data/49938/000004993826000009/imo-20251231.htm
+    title: "Imperial Oil Limited, Form 10-K for the fiscal year ended December 31, 2025"
+    publisher: "Imperial Oil Limited"
+    published: "2026-02-18"
+    retrieved: "2026-11-09"

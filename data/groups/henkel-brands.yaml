@@ -1,0 +1,122 @@
+# Henkel's other brands, from its annual report for 2025.
+
+brands:
+  - { id: brand:perwoll, name: "Perwoll" }
+  - { id: brand:weisser-riese, name: "Weißer Riese" }
+  - { id: brand:spee, name: "Spee" }
+  - { id: brand:gliss, name: "Gliss" }
+  - { id: brand:dial, name: "Dial" }
+  - { id: brand:pritt, name: "Pritt" }
+  - { id: brand:pattex, name: "Pattex" }
+  - { id: brand:ceresit, name: "Ceresit" }
+  - { id: brand:technomelt, name: "Technomelt" }
+  - { id: brand:bonderite, name: "Bonderite" }
+  - { id: brand:teroson, name: "Teroson" }
+  - { id: brand:aquence, name: "Aquence" }
+  - { id: brand:vidal-sassoon, name: "Vidal Sassoon" }
+
+relationships:
+  - id: relationship:henkel-perwoll
+    type: owns_brand
+    from: entity:henkel
+    to: brand:perwoll
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "A core laundry brand."
+    sources: [source:henkel-annual-report-2025]
+  - id: relationship:henkel-weisser-riese
+    type: owns_brand
+    from: entity:henkel
+    to: brand:weisser-riese
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "Named among its well-known brands in Europe."
+    sources: [source:henkel-annual-report-2025]
+  - id: relationship:henkel-spee
+    type: owns_brand
+    from: entity:henkel
+    to: brand:spee
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "Named among its well-known brands in Europe."
+    sources: [source:henkel-annual-report-2025]
+  - id: relationship:henkel-gliss
+    type: owns_brand
+    from: entity:henkel
+    to: brand:gliss
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "A hair brand named among its well-known brands in Europe."
+    sources: [source:henkel-annual-report-2025]
+  - id: relationship:henkel-dial
+    type: owns_brand
+    from: entity:henkel
+    to: brand:dial
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "A liquid hand soap brand in North America."
+    sources: [source:henkel-annual-report-2025]
+  - id: relationship:henkel-pritt
+    type: owns_brand
+    from: entity:henkel
+    to: brand:pritt
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "A global core brand for consumers and craftsmen."
+    sources: [source:henkel-annual-report-2025]
+  - id: relationship:henkel-pattex
+    type: owns_brand
+    from: entity:henkel
+    to: brand:pattex
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "A global core brand for consumers and craftsmen."
+    sources: [source:henkel-annual-report-2025]
+  - id: relationship:henkel-ceresit
+    type: owns_brand
+    from: entity:henkel
+    to: brand:ceresit
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "A global core brand for consumers and craftsmen."
+    sources: [source:henkel-annual-report-2025]
+  - id: relationship:henkel-technomelt
+    type: owns_brand
+    from: entity:henkel
+    to: brand:technomelt
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "A technology brand for industrial customers."
+    sources: [source:henkel-annual-report-2025]
+  - id: relationship:henkel-bonderite
+    type: owns_brand
+    from: entity:henkel
+    to: brand:bonderite
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "A technology brand for industrial customers."
+    sources: [source:henkel-annual-report-2025]
+  - id: relationship:henkel-teroson
+    type: owns_brand
+    from: entity:henkel
+    to: brand:teroson
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "A technology brand for industrial customers."
+    sources: [source:henkel-annual-report-2025]
+  - id: relationship:henkel-aquence
+    type: owns_brand
+    from: entity:henkel
+    to: brand:aquence
+    validFrom: "2026-03"
+    scope: { include: world }
+    note: "A technology brand for industrial customers."
+    sources: [source:henkel-annual-report-2025]
+  - id: relationship:henkel-vidal-sassoon
+    type: owns_brand
+    from: entity:henkel
+    to: brand:vidal-sassoon
+    validFrom: "2026-03"
+    scope: { include: [CN] }
+    note: "Henkel acquired the Vidal Sassoon brand and the related consumer hair care business in China; the date and other markets are not given here."
+    sources: [source:henkel-annual-report-2025]

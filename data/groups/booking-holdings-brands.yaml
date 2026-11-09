@@ -1,0 +1,77 @@
+# Booking Holdings' other brands, from its brands page.
+
+brands:
+  - { id: brand:rentalcars-com, name: "Rentalcars.com" }
+  - { id: brand:rocketmiles, name: "Rocketmiles" }
+  - { id: brand:fareharbor, name: "FareHarbor" }
+  - { id: brand:hotelscombined, name: "HotelsCombined" }
+  - { id: brand:cheapflights, name: "Cheapflights" }
+  - { id: brand:momondo, name: "momondo" }
+  - { id: brand:lola, name: "lola" }
+  - { id: brand:vayo, name: "Vayo" }
+
+relationships:
+  - id: relationship:booking-holdings-rentalcars-com
+    type: owns_brand
+    from: entity:booking-holdings
+    to: brand:rentalcars-com
+    validFrom: "2026-11-09"
+    scope: { include: world }
+    note: "Listed on Booking Holdings' brands page; which group company owns the brand is not stated."
+    sources: [source:booking-holdings-brands]
+  - id: relationship:booking-holdings-rocketmiles
+    type: owns_brand
+    from: entity:booking-holdings
+    to: brand:rocketmiles
+    validFrom: "2026-11-09"
+    scope: { include: world }
+    note: "Listed on Booking Holdings' brands page; which group company owns the brand is not stated."
+    sources: [source:booking-holdings-brands]
+  - id: relationship:booking-holdings-fareharbor
+    type: owns_brand
+    from: entity:booking-holdings
+    to: brand:fareharbor
+    validFrom: "2026-11-09"
+    scope: { include: world }
+    note: "Listed on Booking Holdings' brands page; which group company owns the brand is not stated."
+    sources: [source:booking-holdings-brands]
+  - id: relationship:booking-holdings-hotelscombined
+    type: owns_brand
+    from: entity:booking-holdings
+    to: brand:hotelscombined
+    validFrom: "2026-11-09"
+    scope: { include: world }
+    note: "Listed on Booking Holdings' brands page; which group company owns the brand is not stated."
+    sources: [source:booking-holdings-brands]
+  - id: relationship:booking-holdings-cheapflights
+    type: owns_brand
+    from: entity:booking-holdings
+    to: brand:cheapflights
+    validFrom: "2026-11-09"
+    scope: { include: world }
+    note: "Listed on Booking Holdings' brands page; which group company owns the brand is not stated."
+    sources: [source:booking-holdings-brands]
+  - id: relationship:booking-holdings-momondo
+    type: owns_brand
+    from: entity:booking-holdings
+    to: brand:momondo
+    validFrom: "2026-11-09"
+    scope: { include: world }
+    note: "Listed on Booking Holdings' brands page; which group company owns the brand is not stated."
+    sources: [source:booking-holdings-brands]
+  - id: relationship:booking-holdings-lola
+    type: owns_brand
+    from: entity:booking-holdings
+    to: brand:lola
+    validFrom: "2026-11-09"
+    scope: { include: world }
+    note: "Listed on Booking Holdings' brands page; which group company owns the brand is not stated."
+    sources: [source:booking-holdings-brands]
+  - id: relationship:booking-holdings-vayo
+    type: owns_brand
+    from: entity:booking-holdings
+    to: brand:vayo
+    validFrom: "2026-11-09"
+    scope: { include: world }
+    note: "Listed on Booking Holdings' brands page; which group company owns the brand is not stated."
+    sources: [source:booking-holdings-brands]

@@ -1,0 +1,68 @@
+# SHEIN's other in-house brands, from the SHEIN Group brands page.
+
+brands:
+  - { id: brand:dazy, name: "Dazy" }
+  - { id: brand:romwe, name: "ROMWE" }
+  - { id: brand:motf, name: "MOTF" }
+  - { id: brand:anewsta, name: "Anewsta" }
+  - { id: brand:musera, name: "Musera" }
+  - { id: brand:glowmode, name: "Glowmode" }
+  - { id: brand:aralina, name: "Aralina" }
+
+relationships:
+  - id: relationship:roadget-business-dazy
+    type: owns_brand
+    from: entity:roadget-business
+    to: brand:dazy
+    validFrom: "2026-11-09"
+    scope: { include: world }
+    note: "Listed among SHEIN's in-house brands on the SHEIN Group site; which group company owns the trademark is not stated."
+    sources: [source:shein-group-brands]
+  - id: relationship:roadget-business-romwe
+    type: owns_brand
+    from: entity:roadget-business
+    to: brand:romwe
+    validFrom: "2026-11-09"
+    scope: { include: world }
+    note: "Listed among SHEIN's in-house brands on the SHEIN Group site; which group company owns the trademark is not stated."
+    sources: [source:shein-group-brands]
+  - id: relationship:roadget-business-motf
+    type: owns_brand
+    from: entity:roadget-business
+    to: brand:motf
+    validFrom: "2026-11-09"
+    scope: { include: world }
+    note: "Listed among SHEIN's in-house brands on the SHEIN Group site; which group company owns the trademark is not stated."
+    sources: [source:shein-group-brands]
+  - id: relationship:roadget-business-anewsta
+    type: owns_brand
+    from: entity:roadget-business
+    to: brand:anewsta
+    validFrom: "2026-11-09"
+    scope: { include: world }
+    note: "Listed among SHEIN's in-house brands on the SHEIN Group site; which group company owns the trademark is not stated."
+    sources: [source:shein-group-brands]
+  - id: relationship:roadget-business-musera
+    type: owns_brand
+    from: entity:roadget-business
+    to: brand:musera
+    validFrom: "2026-11-09"
+    scope: { include: world }
+    note: "Listed among SHEIN's in-house brands on the SHEIN Group site; which group company owns the trademark is not stated."
+    sources: [source:shein-group-brands]
+  - id: relationship:roadget-business-glowmode
+    type: owns_brand
+    from: entity:roadget-business
+    to: brand:glowmode
+    validFrom: "2026-11-09"
+    scope: { include: world }
+    note: "Listed among SHEIN's in-house brands on the SHEIN Group site; which group company owns the trademark is not stated."
+    sources: [source:shein-group-brands]
+  - id: relationship:roadget-business-aralina
+    type: owns_brand
+    from: entity:roadget-business
+    to: brand:aralina
+    validFrom: "2026-11-09"
+    scope: { include: world }
+    note: "Listed among SHEIN's in-house brands on the SHEIN Group site; which group company owns the trademark is not stated."
+    sources: [source:shein-group-brands]

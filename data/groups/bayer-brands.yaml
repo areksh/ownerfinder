@@ -1,0 +1,189 @@
+# Bayer's main products and brands by division, from its annual report for 2025.
+
+entities:
+  - { id: entity:natsana, name: "Natsana GmbH" }
+
+brands:
+  - { id: brand:dekalb, name: "DEKALB" }
+  - { id: brand:asgrow, name: "Asgrow" }
+  - { id: brand:deltapine, name: "Deltapine" }
+  - { id: brand:seminis, name: "Seminis" }
+  - { id: brand:deruiter, name: "DeRuiter" }
+  - { id: brand:climate-fieldview, name: "Climate FieldView" }
+  - { id: brand:xarelto, name: "Xarelto" }
+  - { id: brand:nubeqa, name: "Nubeqa" }
+  - { id: brand:kerendia, name: "Kerendia" }
+  - { id: brand:mirena, name: "Mirena" }
+  - { id: brand:yaz, name: "YAZ" }
+  - { id: brand:adalat, name: "Adalat" }
+  - { id: brand:elevit, name: "Elevit" }
+  - { id: brand:one-a-day, name: "One A Day" }
+  - { id: brand:redoxon, name: "Redoxon" }
+  - { id: brand:iberogast, name: "Iberogast" }
+  - { id: brand:miralax, name: "MiraLAX" }
+  - { id: brand:talcid, name: "Talcid" }
+  - { id: brand:afrin, name: "Afrin" }
+
+relationships:
+  - id: relationship:bayer-dekalb
+    type: owns_brand
+    from: entity:bayer
+    to: brand:dekalb
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    note: "Listed among Bayer's main products and brands. Crop Science: corn seed and traits, and oilseed rape. Partners that sell it under licence in some countries are not recorded here."
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-asgrow
+    type: owns_brand
+    from: entity:bayer
+    to: brand:asgrow
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    note: "Listed among Bayer's main products and brands. Crop Science: soybean seed. Partners that sell it under licence in some countries are not recorded here."
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-deltapine
+    type: owns_brand
+    from: entity:bayer
+    to: brand:deltapine
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    note: "Listed among Bayer's main products and brands. Crop Science: cotton seed. Partners that sell it under licence in some countries are not recorded here."
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-seminis
+    type: owns_brand
+    from: entity:bayer
+    to: brand:seminis
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    note: "Listed among Bayer's main products and brands. Crop Science: vegetable seeds. Partners that sell it under licence in some countries are not recorded here."
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-deruiter
+    type: owns_brand
+    from: entity:bayer
+    to: brand:deruiter
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    note: "Listed among Bayer's main products and brands. Crop Science: vegetable seeds. Partners that sell it under licence in some countries are not recorded here."
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-climate-fieldview
+    type: owns_brand
+    from: entity:bayer
+    to: brand:climate-fieldview
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    note: "Listed among Bayer's main products and brands. Crop Science: digital farming. Partners that sell it under licence in some countries are not recorded here."
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-xarelto
+    type: owns_brand
+    from: entity:bayer
+    to: brand:xarelto
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    note: "Listed among Bayer's main products and brands. Pharmaceuticals: cardiology. Partners that sell it under licence in some countries are not recorded here."
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-nubeqa
+    type: owns_brand
+    from: entity:bayer
+    to: brand:nubeqa
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    note: "Listed among Bayer's main products and brands. Pharmaceuticals: oncology. Partners that sell it under licence in some countries are not recorded here."
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-kerendia
+    type: owns_brand
+    from: entity:bayer
+    to: brand:kerendia
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    note: "Listed among Bayer's main products and brands. Pharmaceuticals: cardiology and kidney disease. Partners that sell it under licence in some countries are not recorded here."
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-mirena
+    type: owns_brand
+    from: entity:bayer
+    to: brand:mirena
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    note: "Listed among Bayer's main products and brands. Pharmaceuticals: women's healthcare. Partners that sell it under licence in some countries are not recorded here."
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-yaz
+    type: owns_brand
+    from: entity:bayer
+    to: brand:yaz
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    note: "Listed among Bayer's main products and brands. Pharmaceuticals: women's healthcare. Partners that sell it under licence in some countries are not recorded here."
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-adalat
+    type: owns_brand
+    from: entity:bayer
+    to: brand:adalat
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    note: "Listed among Bayer's main products and brands. Pharmaceuticals: cardiology. Partners that sell it under licence in some countries are not recorded here."
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-elevit
+    type: owns_brand
+    from: entity:bayer
+    to: brand:elevit
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    note: "Listed among Bayer's main products and brands. Consumer Health: nutritionals. Partners that sell it under licence in some countries are not recorded here."
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-one-a-day
+    type: owns_brand
+    from: entity:bayer
+    to: brand:one-a-day
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    note: "Listed among Bayer's main products and brands. Consumer Health: nutritionals. Partners that sell it under licence in some countries are not recorded here."
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-redoxon
+    type: owns_brand
+    from: entity:bayer
+    to: brand:redoxon
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    note: "Listed among Bayer's main products and brands. Consumer Health: nutritionals. Partners that sell it under licence in some countries are not recorded here."
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-iberogast
+    type: owns_brand
+    from: entity:bayer
+    to: brand:iberogast
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    note: "Listed among Bayer's main products and brands. Consumer Health: digestive health. Partners that sell it under licence in some countries are not recorded here."
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-miralax
+    type: owns_brand
+    from: entity:bayer
+    to: brand:miralax
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    note: "Listed among Bayer's main products and brands. Consumer Health: digestive health. Partners that sell it under licence in some countries are not recorded here."
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-talcid
+    type: owns_brand
+    from: entity:bayer
+    to: brand:talcid
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    note: "Listed among Bayer's main products and brands. Consumer Health: digestive health. Partners that sell it under licence in some countries are not recorded here."
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-afrin
+    type: owns_brand
+    from: entity:bayer
+    to: brand:afrin
+    validFrom: "2026-03-04"
+    scope: { include: world }
+    note: "Listed among Bayer's main products and brands. Consumer Health: allergy and cold. Partners that sell it under licence in some countries are not recorded here."
+    sources: [source:bayer-annual-report-2025]
+  - id: relationship:bayer-owns-natsana
+    type: owns
+    from: entity:bayer
+    to: entity:natsana
+    validFrom: "2025-01-22"
+    startKnown: true
+    stakePct: 100
+    scope: { include: world }
+    note: "Bayer acquired the remaining 70% of this German online supplier of natural supplements on 22 January 2025."
+    sources: [source:bayer-annual-report-2025]

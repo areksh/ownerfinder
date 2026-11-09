@@ -1,0 +1,51 @@
+# PDD's main companies and the contract-controlled company behind Pinduoduo, from its 20-F for 2025.
+
+entities:
+  - { id: entity:hangzhou-weimi, name: "Hangzhou Weimi Network Technology Co., Ltd." }
+  - { id: entity:hangzhou-aimi, name: "Hangzhou Aimi Network Technology Co., Ltd." }
+  - { id: entity:shanghai-xunmeng, name: "Shanghai Xunmeng Information Technology Co., Ltd." }
+  - { id: entity:whaleco-inc, name: "Whaleco Inc." }
+  - { id: entity:whaleco-technology, name: "Whaleco Technology Limited" }
+
+relationships:
+  - id: relationship:pdd-holdings-owns-hangzhou-weimi
+    type: owns
+    from: entity:pdd-holdings
+    to: entity:hangzhou-weimi
+    validFrom: "2026-04-29"
+    stakePct: 100
+    scope: { include: world }
+    note: "Called PDD's wholly owned subsidiary in the 20-F; companies in between are not stated."
+    sources: [source:pdd-20f-2025, source:pdd-ex8-2025]
+  - id: relationship:hangzhou-weimi-controls-hangzhou-aimi
+    type: controls_board
+    from: entity:hangzhou-weimi
+    to: entity:hangzhou-aimi
+    validFrom: "2025-01-03"
+    scope: { include: world }
+    note: "A variable interest entity: PDD holds none of its shares, which two employees hold (86.6% and 13.4%). Contracts dated 3 January 2025, including a voting rights proxy that lets Hangzhou Weimi nominate and appoint its directors, give PDD control and substantially all of its economic benefits. PDD runs its Chinese businesses that need value-added telecoms licences through it."
+    sources: [source:pdd-20f-2025, source:pdd-ex8-2025]
+  - id: relationship:hangzhou-aimi-owns-shanghai-xunmeng
+    type: owns
+    from: entity:hangzhou-aimi
+    to: entity:shanghai-xunmeng
+    validFrom: "2026-04-29"
+    scope: { include: world }
+    note: "The VIE's principal subsidiary, which holds the telecoms licences; the share is not stated."
+    sources: [source:pdd-20f-2025, source:pdd-ex8-2025]
+  - id: relationship:pdd-holdings-owns-whaleco-inc
+    type: owns
+    from: entity:pdd-holdings
+    to: entity:whaleco-inc
+    validFrom: "2026-04-29"
+    scope: { include: world }
+    note: "Listed as a principal subsidiary (Delaware); the share and any companies in between are not stated."
+    sources: [source:pdd-ex8-2025]
+  - id: relationship:pdd-holdings-owns-whaleco-technology
+    type: owns
+    from: entity:pdd-holdings
+    to: entity:whaleco-technology
+    validFrom: "2026-04-29"
+    scope: { include: world }
+    note: "Listed as a principal subsidiary (Ireland); the share and any companies in between are not stated."
+    sources: [source:pdd-ex8-2025]

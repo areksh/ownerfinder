@@ -1,0 +1,153 @@
+# Alphabet's purchases and other products, from its and Google's 10-Ks.
+
+entities:
+  - { id: entity:google, name: "Google (Google Inc., now Google LLC)" }
+  - { id: entity:waze-mobile, name: "Waze Mobile Ltd." }
+  - { id: entity:nest-labs, name: "Nest Labs, Inc." }
+  - { id: entity:fitbit, name: "Fitbit, Inc." }
+  - { id: entity:mandiant, name: "Mandiant, Inc." }
+
+brands:
+  - { id: brand:waze, name: "Waze" }
+  - { id: brand:nest, name: "Nest" }
+  - { id: brand:fitbit, name: "Fitbit" }
+  - { id: brand:mandiant, name: "Mandiant" }
+  - { id: brand:pixel, name: "Pixel" }
+  - { id: brand:google-cloud, name: "Google Cloud" }
+  - { id: brand:google-workspace, name: "Google Workspace" }
+  - { id: brand:gemini, name: "Gemini" }
+  - { id: brand:google-one, name: "Google One" }
+  - { id: brand:youtube-tv, name: "YouTube TV" }
+  - { id: brand:youtube-music, name: "YouTube Music" }
+
+relationships:
+  - id: relationship:alphabet-owns-google
+    type: owns
+    from: entity:alphabet
+    to: entity:google
+    validFrom: "2015-10-02"
+    startKnown: true
+    stakePct: 100
+    scope: { include: world }
+    note: "On 2 October 2015 a reorganisation made Alphabet the holding company, whose only significant assets were the outstanding equity interests in Google. Before that date Google Inc. was the top company."
+    sources: [source:alphabet-10k-2015]
+  - id: relationship:google-owns-waze-mobile
+    type: owns
+    from: entity:google
+    to: entity:waze-mobile
+    validFrom: "2013-06"
+    startKnown: true
+    scope: { include: world }
+    note: "Google completed its acquisition of Waze Limited in June 2013; Waze's terms now name Waze Mobile Ltd. 'including its Google affiliates and subsidiaries'. The share is not stated."
+    sources: [source:google-10k-2013, source:waze-terms]
+  - id: relationship:google-waze
+    type: owns_brand
+    from: entity:google
+    to: brand:waze
+    validFrom: "2013-06"
+    startKnown: true
+    scope: { include: world }
+    note: "Came with the Waze company; which group company owns the trademark is not stated."
+    sources: [source:google-10k-2013, source:waze-terms]
+  - id: relationship:google-owns-nest-labs
+    type: owns
+    from: entity:google
+    to: entity:nest-labs
+    validFrom: "2014-02"
+    startKnown: true
+    scope: { include: world }
+    note: "Google completed the acquisition in February 2014, having held about 12% before; the share after is not stated."
+    sources: [source:google-10k-2014]
+  - id: relationship:google-nest
+    type: owns_brand
+    from: entity:google
+    to: brand:nest
+    validFrom: "2014-02"
+    startKnown: true
+    scope: { include: world }
+    note: "Came with Nest Labs; Google now sells the products as Google Nest."
+    sources: [source:google-10k-2014]
+  - id: relationship:alphabet-owns-fitbit
+    type: owns
+    from: entity:alphabet
+    to: entity:fitbit
+    validFrom: "2021-01"
+    startKnown: true
+    scope: { include: world }
+    note: "Alphabet closed the acquisition in January 2021 for $2.1 billion; the share is not stated."
+    sources: [source:alphabet-10k-2021]
+  - id: relationship:alphabet-fitbit
+    type: owns_brand
+    from: entity:alphabet
+    to: brand:fitbit
+    validFrom: "2021-01"
+    startKnown: true
+    scope: { include: world }
+    sources: [source:alphabet-10k-2021]
+  - id: relationship:alphabet-owns-mandiant
+    type: owns
+    from: entity:alphabet
+    to: entity:mandiant
+    validFrom: "2022-09"
+    startKnown: true
+    scope: { include: world }
+    note: "Alphabet closed the acquisition in September 2022; the share is not stated."
+    sources: [source:alphabet-10k-2022]
+  - id: relationship:alphabet-mandiant
+    type: owns_brand
+    from: entity:alphabet
+    to: brand:mandiant
+    validFrom: "2022-09"
+    startKnown: true
+    scope: { include: world }
+    sources: [source:alphabet-10k-2022]
+  - id: relationship:alphabet-pixel
+    type: owns_brand
+    from: entity:alphabet
+    to: brand:pixel
+    validFrom: "2026-02-05"
+    scope: { include: world }
+    sources: [source:alphabet-10k-2025]
+  - id: relationship:alphabet-google-cloud
+    type: owns_brand
+    from: entity:alphabet
+    to: brand:google-cloud
+    validFrom: "2026-02-05"
+    scope: { include: world }
+    note: "Alphabet's cloud business. Its agreement to buy Wiz, the cloud security company, was expected to close in 2026; its completion is not recorded here."
+    sources: [source:alphabet-10k-2025]
+  - id: relationship:alphabet-google-workspace
+    type: owns_brand
+    from: entity:alphabet
+    to: brand:google-workspace
+    validFrom: "2026-02-05"
+    scope: { include: world }
+    sources: [source:alphabet-10k-2025]
+  - id: relationship:alphabet-gemini
+    type: owns_brand
+    from: entity:alphabet
+    to: brand:gemini
+    validFrom: "2026-02-05"
+    scope: { include: world }
+    sources: [source:alphabet-10k-2025]
+  - id: relationship:alphabet-google-one
+    type: owns_brand
+    from: entity:alphabet
+    to: brand:google-one
+    validFrom: "2026-02-05"
+    scope: { include: world }
+    sources: [source:alphabet-10k-2025]
+  - id: relationship:alphabet-youtube-tv
+    type: owns_brand
+    from: entity:alphabet
+    to: brand:youtube-tv
+    validFrom: "2026-02-05"
+    scope: { include: world }
+    sources: [source:alphabet-10k-2025]
+  - id: relationship:alphabet-youtube-music
+    type: owns_brand
+    from: entity:alphabet
+    to: brand:youtube-music
+    validFrom: "2026-02-05"
+    scope: { include: world }
+    sources: [source:alphabet-10k-2025]

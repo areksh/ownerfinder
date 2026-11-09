@@ -1,0 +1,153 @@
+# Amazon's purchases and other businesses, from its 10-Ks and its group companies' own pages.
+
+entities:
+  - { id: entity:audible, name: "Audible, Inc." }
+  - { id: entity:zappos, name: "Zappos.com LLC" }
+  - { id: entity:twitch-interactive, name: "Twitch Interactive, Inc." }
+  - { id: entity:ring-inc, name: "Ring Inc." }
+  - { id: entity:pillpack, name: "PillPack, Inc." }
+  - { id: entity:mgm-holdings, name: "MGM Holdings Inc." }
+  - { id: entity:1life-healthcare, name: "1Life Healthcare, Inc." }
+  - { id: entity:amazon-web-services, name: "Amazon Web Services, Inc." }
+
+brands:
+  - { id: brand:audible, name: "Audible" }
+  - { id: brand:zappos, name: "Zappos" }
+  - { id: brand:twitch, name: "Twitch" }
+  - { id: brand:one-medical, name: "One Medical" }
+  - { id: brand:woot, name: "Woot!" }
+  - { id: brand:aws, name: "Amazon Web Services (AWS)" }
+  - { id: brand:amazon-leo, name: "Amazon Leo" }
+
+relationships:
+  - id: relationship:amazon-owns-audible
+    type: owns
+    from: entity:amazon
+    to: entity:audible
+    validFrom: "2008-03"
+    startKnown: true
+    scope: { include: world }
+    note: "Amazon's 10-K for 2008 calls Audible 'our subsidiary acquired in March 2008'; Amazon's privacy certification page still lists Audible, Inc. among its group companies. The share is not stated."
+    sources: [source:amazon-10k-2008, source:amazon-group-companies]
+  - id: relationship:amazon-audible
+    type: owns_brand
+    from: entity:amazon
+    to: brand:audible
+    validFrom: "2008-03"
+    startKnown: true
+    scope: { include: world }
+    note: "Came with Audible, Inc.; which group company owns the trademark is not stated."
+    sources: [source:amazon-10k-2008, source:amazon-group-companies]
+  - id: relationship:amazon-owns-zappos
+    type: owns
+    from: entity:amazon
+    to: entity:zappos
+    validFrom: "2009-11-01"
+    startKnown: true
+    stakePct: 100
+    scope: { include: world }
+    note: "Amazon acquired 100% of Zappos.com, Inc. on 1 November 2009; Zappos's site now says Zappos.com LLC is a subsidiary of Amazon.com, Inc."
+    sources: [source:amazon-10k-2009, source:zappos-about]
+  - id: relationship:amazon-zappos
+    type: owns_brand
+    from: entity:amazon
+    to: brand:zappos
+    validFrom: "2009-11-01"
+    startKnown: true
+    scope: { include: world }
+    sources: [source:amazon-10k-2009, source:zappos-about]
+  - id: relationship:amazon-owns-twitch-interactive
+    type: owns
+    from: entity:amazon
+    to: entity:twitch-interactive
+    validFrom: "2014-09-25"
+    startKnown: true
+    scope: { include: world }
+    note: "Acquired on 25 September 2014; Amazon's 10-K for 2025 still names its programmes for Twitch streamers. The share is not stated."
+    sources: [source:amazon-10k-2014, source:amazon-10k-2025]
+  - id: relationship:amazon-twitch
+    type: owns_brand
+    from: entity:amazon
+    to: brand:twitch
+    validFrom: "2014-09-25"
+    startKnown: true
+    scope: { include: world }
+    sources: [source:amazon-10k-2014, source:amazon-10k-2025]
+  - id: relationship:amazon-owns-ring-inc
+    type: owns
+    from: entity:amazon
+    to: entity:ring-inc
+    validFrom: "2018-04-12"
+    startKnown: true
+    scope: { include: world }
+    note: "Acquired on 12 April 2018; the share is not stated. The Ring brand is recorded as Amazon's from its 10-K for 2025."
+    sources: [source:amazon-10k-2018]
+  - id: relationship:amazon-owns-pillpack
+    type: owns
+    from: entity:amazon
+    to: entity:pillpack
+    validFrom: "2018-09-11"
+    startKnown: true
+    scope: { include: world }
+    note: "Acquired on 11 September 2018; the share is not stated."
+    sources: [source:amazon-10k-2018]
+  - id: relationship:amazon-owns-mgm-holdings
+    type: owns
+    from: entity:amazon
+    to: entity:mgm-holdings
+    validFrom: "2022-03-17"
+    startKnown: true
+    scope: { include: world }
+    note: "Acquired on 17 March 2022 'to provide more digital media content options'. MGM Resorts, the hotel company, is a separate business and is not part of this."
+    sources: [source:amazon-10k-2022]
+  - id: relationship:amazon-owns-1life-healthcare
+    type: owns
+    from: entity:amazon
+    to: entity:1life-healthcare
+    validFrom: "2023-02-22"
+    startKnown: true
+    scope: { include: world }
+    note: "Acquired on 22 February 2023 as One Medical; the share is not stated."
+    sources: [source:amazon-10k-2025]
+  - id: relationship:amazon-one-medical
+    type: owns_brand
+    from: entity:amazon
+    to: brand:one-medical
+    validFrom: "2023-02-22"
+    startKnown: true
+    scope: { include: world }
+    note: "Came with 1Life Healthcare, Inc.; Amazon sells it as Amazon One Medical."
+    sources: [source:amazon-10k-2025]
+  - id: relationship:amazon-woot
+    type: owns_brand
+    from: entity:amazon
+    to: brand:woot
+    validFrom: "2010"
+    startKnown: true
+    scope: { include: world }
+    note: "Woot says it was 'snatched up by Amazon in 2010'."
+    sources: [source:woot-about]
+  - id: relationship:amazon-owns-amazon-web-services
+    type: owns
+    from: entity:amazon
+    to: entity:amazon-web-services
+    validFrom: "2026-02-06"
+    stakePct: 100
+    scope: { include: world }
+    note: "Listed as a significant subsidiary, 100% owned."
+    sources: [source:amazon-ex21-2025]
+  - id: relationship:amazon-aws
+    type: owns_brand
+    from: entity:amazon
+    to: brand:aws
+    validFrom: "2026-02-06"
+    scope: { include: world }
+    sources: [source:amazon-10k-2025]
+  - id: relationship:amazon-amazon-leo
+    type: owns_brand
+    from: entity:amazon
+    to: brand:amazon-leo
+    validFrom: "2026-02-06"
+    scope: { include: world }
+    note: "Amazon's satellite broadband business, named in its 10-K for 2025."
+    sources: [source:amazon-10k-2025]

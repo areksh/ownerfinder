@@ -19,3 +19,9 @@ sources:
     title: "Henkel history"
     publisher: "Henkel AG & Co. KGaA"
     retrieved: "2026-11-08"
+  - id: source:henkel-annual-report-2025
+    url: https://www.henkel.com/resource/blob/2131544/eae43b38b5da9c89268a532af1dfbe4f/data/2025-annual-report.pdf
+    title: "Henkel Annual Report 2025"
+    publisher: "Henkel AG & Co. KGaA"
+    published: "2026-03"
+    retrieved: "2026-11-09"

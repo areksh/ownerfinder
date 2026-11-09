@@ -5,3 +5,8 @@ sources:
     publisher: "Commission nationale de l'informatique et des libertés (CNIL)"
     published: "2025-09-01"
     retrieved: "2026-11-08"
+  - id: source:shein-group-brands
+    url: https://www.sheingroup.com/brands
+    title: "Brands"
+    publisher: "SHEIN Group"
+    retrieved: "2026-11-09"

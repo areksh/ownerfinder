@@ -21,3 +21,9 @@ sources:
     title: "Our Brands"
     publisher: "Mondelez International, Inc."
     retrieved: "2026-11-08"
+  - id: source:mondelez-ex21-2025
+    url: https://www.sec.gov/Archives/edgar/data/1103982/000162828026005345/ex211_123125.htm
+    title: "Mondelez International, Inc., Exhibit 21.1: Subsidiaries list, December 31, 2025"
+    publisher: "Mondelez International, Inc."
+    published: "2026-02-04"
+    retrieved: "2026-11-09"

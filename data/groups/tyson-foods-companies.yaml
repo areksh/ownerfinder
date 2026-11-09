@@ -1,0 +1,15 @@
+# Tyson's breeding stock company, from its 10-K for fiscal 2025.
+
+entities:
+  - { id: entity:cobb-vantress, name: "Cobb-Vantress" }
+
+relationships:
+  - id: relationship:tyson-foods-owns-cobb-vantress
+    type: owns
+    from: entity:tyson-foods
+    to: entity:cobb-vantress
+    validFrom: "2025-11-10"
+    stakePct: 100
+    scope: { include: world }
+    note: "Tyson's wholly owned chicken breeding stock subsidiary, with business interests in a dozen countries."
+    sources: [source:tyson-10k-2025]

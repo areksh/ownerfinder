@@ -1,0 +1,60 @@
+# Japan Tobacco's main subsidiaries, from its Integrated Report 2026.
+
+entities:
+  - { id: entity:jt-international, name: "JT International S.A." }
+  - { id: entity:gallaher, name: "Gallaher Group Plc" }
+  - { id: entity:jti-macdonald, name: "JTI-Macdonald Corp." }
+  - { id: entity:tablemark, name: "TableMark Co., Ltd." }
+  - { id: entity:fuji-foods, name: "Fuji Foods Corporation" }
+  - { id: entity:ts-network, name: "TS Network" }
+
+relationships:
+  - id: relationship:japan-tobacco-owns-jt-international
+    type: owns
+    from: entity:japan-tobacco
+    to: entity:jt-international
+    validFrom: "2026"
+    scope: { include: world }
+    note: "JT's international tobacco business, named among its major subsidiaries; the share is not stated."
+    sources: [source:jt-integrated-report-2026]
+  - id: relationship:japan-tobacco-owns-gallaher
+    type: owns
+    from: entity:japan-tobacco
+    to: entity:gallaher
+    validFrom: "2007"
+    startKnown: true
+    scope: { include: world }
+    note: "JT acquired the UK-based Gallaher Group Plc in 2007; where it now sits in the group is not stated."
+    sources: [source:jt-integrated-report-2026]
+  - id: relationship:japan-tobacco-owns-jti-macdonald
+    type: owns
+    from: entity:japan-tobacco
+    to: entity:jti-macdonald
+    validFrom: "2026"
+    scope: { include: world }
+    note: "JT's local subsidiary in Canada; the share and companies in between are not stated."
+    sources: [source:jt-integrated-report-2026]
+  - id: relationship:japan-tobacco-owns-tablemark
+    type: owns
+    from: entity:japan-tobacco
+    to: entity:tablemark
+    validFrom: "2026"
+    scope: { include: world }
+    note: "The centre of JT's processed food business (frozen and ambient foods), formerly Katokichi Co., Ltd., named among its major subsidiaries."
+    sources: [source:jt-integrated-report-2026]
+  - id: relationship:japan-tobacco-owns-fuji-foods
+    type: owns
+    from: entity:japan-tobacco
+    to: entity:fuji-foods
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Part of JT's processed food business, with TableMark; the share is not stated."
+    sources: [source:jt-integrated-report-2026]
+  - id: relationship:japan-tobacco-owns-ts-network
+    type: owns
+    from: entity:japan-tobacco
+    to: entity:ts-network
+    validFrom: "2026"
+    scope: { include: world }
+    note: "Named among JT's major subsidiaries; the share is not stated."
+    sources: [source:jt-integrated-report-2026]

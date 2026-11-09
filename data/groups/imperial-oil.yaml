@@ -1,0 +1,19 @@
+# Imperial Oil's brands in Canada, from its own 10-K for 2025.
+
+relationships:
+  - id: relationship:imperial-oil-esso
+    type: distributes
+    from: entity:imperial-oil
+    to: brand:esso
+    validFrom: "2026-02-18"
+    scope: { include: [CA] }
+    note: "Imperial markets petroleum products throughout Canada under the Esso and Mobil names; at the end of 2025 about 2,600 sites ran under a branded wholesaler model in which Imperial supplies fuel to independent third parties. The 10-K does not say who owns the Esso trademark in Canada."
+    sources: [source:imperial-oil-10k-2025]
+  - id: relationship:imperial-oil-mobil
+    type: distributes
+    from: entity:imperial-oil
+    to: brand:mobil
+    validFrom: "2026-02-18"
+    scope: { include: [CA] }
+    note: "Imperial markets petroleum products throughout Canada under the Esso and Mobil names; at the end of 2025 about 2,600 sites ran under a branded wholesaler model in which Imperial supplies fuel to independent third parties. The 10-K does not say who owns the Mobil trademark in Canada."
+    sources: [source:imperial-oil-10k-2025]

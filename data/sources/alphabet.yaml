@@ -5,3 +5,38 @@ sources:
     publisher: "Alphabet Inc."
     published: "2026-02-05"
     retrieved: "2026-11-08"
+  - id: source:google-10k-2013
+    url: https://www.sec.gov/Archives/edgar/data/1288776/000128877614000020/goog2013123110-k.htm
+    title: "Google Inc., Form 10-K for the fiscal year ended December 31, 2013"
+    publisher: "Google Inc."
+    published: "2014-02-12"
+    retrieved: "2026-11-09"
+  - id: source:google-10k-2014
+    url: https://www.sec.gov/Archives/edgar/data/1288776/000128877615000008/goog2014123110-k.htm
+    title: "Google Inc., Form 10-K for the fiscal year ended December 31, 2014"
+    publisher: "Google Inc."
+    published: "2015-02-09"
+    retrieved: "2026-11-09"
+  - id: source:alphabet-10k-2015
+    url: https://www.sec.gov/Archives/edgar/data/1652044/000165204416000012/goog10-k2015.htm
+    title: "Alphabet Inc., Form 10-K for the fiscal year ended December 31, 2015"
+    publisher: "Alphabet Inc."
+    published: "2016-02-11"
+    retrieved: "2026-11-09"
+  - id: source:alphabet-10k-2021
+    url: https://www.sec.gov/Archives/edgar/data/1652044/000165204422000019/goog-20211231.htm
+    title: "Alphabet Inc., Form 10-K for the fiscal year ended December 31, 2021"
+    publisher: "Alphabet Inc."
+    published: "2022-02-02"
+    retrieved: "2026-11-09"
+  - id: source:alphabet-10k-2022
+    url: https://www.sec.gov/Archives/edgar/data/1652044/000165204423000016/goog-20221231.htm
+    title: "Alphabet Inc., Form 10-K for the fiscal year ended December 31, 2022"
+    publisher: "Alphabet Inc."
+    published: "2023-02-03"
+    retrieved: "2026-11-09"
+  - id: source:waze-terms
+    url: https://www.waze.com/legal/tos
+    title: "Waze Terms of Service"
+    publisher: "Google"
+    retrieved: "2026-11-09"

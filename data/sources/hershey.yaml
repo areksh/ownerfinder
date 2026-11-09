@@ -11,3 +11,9 @@ sources:
     publisher: "Confectionery News"
     published: "2026-03-12"
     retrieved: "2026-11-07"
+  - id: source:hershey-10k-2025
+    url: https://www.sec.gov/Archives/edgar/data/47111/000162828026008586/hsy-20251231.htm
+    title: "The Hershey Company, Form 10-K for the fiscal year ended December 31, 2025"
+    publisher: "The Hershey Company"
+    published: "2026-02-17"
+    retrieved: "2026-11-09"

@@ -1,0 +1,32 @@
+# Meta's other products, from its 10-K for 2025.
+
+brands:
+  - { id: brand:meta-horizon, name: "Meta Horizon" }
+  - { id: brand:ray-ban-meta, name: "Ray-Ban Meta" }
+  - { id: brand:oakley-meta, name: "Oakley Meta" }
+
+relationships:
+  - id: relationship:meta-meta-horizon
+    type: owns_brand
+    from: entity:meta
+    to: brand:meta-horizon
+    validFrom: "2026-01-29"
+    scope: { include: world }
+    note: "Listed among the trademarks the 10-K calls the property of Meta Platforms."
+    sources: [source:meta-10k-2025]
+  - id: relationship:meta-ray-ban-meta
+    type: distributes
+    from: entity:meta
+    to: brand:ray-ban-meta
+    validFrom: "2026-01-29"
+    scope: { include: world }
+    note: "One of Meta's current AI glasses. Meta sells them; the 10-K does not say who owns the Ray-Ban name, which it does not list among Meta's own trademarks."
+    sources: [source:meta-10k-2025]
+  - id: relationship:meta-oakley-meta
+    type: distributes
+    from: entity:meta
+    to: brand:oakley-meta
+    validFrom: "2026-01-29"
+    scope: { include: world }
+    note: "One of Meta's current AI glasses. Meta sells them; the 10-K does not say who owns the Oakley name, which it does not list among Meta's own trademarks."
+    sources: [source:meta-10k-2025]

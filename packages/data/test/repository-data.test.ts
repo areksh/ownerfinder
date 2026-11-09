@@ -282,3 +282,60 @@ describe("answers that depend on the country", () => {
     expect(chains("brand:persil", "GB", "2026-11-08")).toEqual(["owned: entity:unilever"]);
   });
 });
+
+describe("the remaining groups, company by company", () => {
+  function shares(node: string, country: string, date: string) {
+    if (graph === undefined) throw new Error("data/ is invalid");
+    return resolve(graph, { node, date, country }).paths.map((p) => p.effectiveSharePct);
+  }
+
+  it("Waze was Google's before Alphabet existed, and reaches Alphabet from 2 October 2015", () => {
+    expect(chains("brand:waze", "US", "2013-05-31")).toEqual([]);
+    expect(chains("brand:waze", "US", "2014-01-01")).toEqual(["owned: entity:google"]);
+    expect(chains("brand:waze", "US", "2016-01-01")).toEqual([
+      "owned: entity:google > entity:alphabet",
+    ]);
+  });
+
+  it("Zappos has been Amazon's since 1 November 2009", () => {
+    expect(chains("brand:zappos", "US", "2009-10-31")).toEqual([]);
+    expect(chains("brand:zappos", "US", "2026-11-09")).toEqual(["owned: entity:amazon"]);
+  });
+
+  it("3M's Solventum stake fell from 19.9% to about 15% in August 2025", () => {
+    expect(chains("entity:solventum", "US", "2024-03-31")).toEqual(["undefined: entity:solventum"]);
+    expect(shares("entity:solventum", "US", "2025-01-01")).toEqual([19.9]);
+    expect(shares("entity:solventum", "US", "2026-11-09")).toEqual([15]);
+  });
+
+  it("York and Rolo reach Mondelez and Nestle through Hershey's US licences", () => {
+    expect(chains("brand:york", "US", "2026-11-09")).toEqual([
+      "owned: entity:mondelez",
+      "licensed: entity:hershey",
+    ]);
+    expect(chains("brand:rolo", "US", "2026-11-09")).toEqual([
+      "owned: entity:societe-des-produits-nestle > entity:nestle",
+      "licensed: entity:hershey",
+    ]);
+  });
+
+  it("Tesco Bank is sold by Barclays from 1 November 2024, its owner unrecorded", () => {
+    expect(chains("brand:tesco-bank", "GB", "2024-10-31")).toEqual([]);
+    expect(chains("brand:tesco-bank", "GB", "2026-11-09")).toEqual([
+      "distributed: entity:barclays",
+    ]);
+  });
+
+  it("Pinduoduo's licensed company is PDD's through contracts, not shares", () => {
+    expect(chains("entity:shanghai-xunmeng", "CN", "2026-11-09")).toEqual([
+      "controlled: entity:shanghai-xunmeng > entity:hangzhou-aimi > entity:hangzhou-weimi > entity:pdd-holdings",
+    ]);
+  });
+
+  it("Esso in Canada is sold by Imperial Oil, which ExxonMobil owns 69.6% of", () => {
+    expect(chains("brand:esso", "CA", "2026-11-09")).toEqual([
+      "owned: entity:exxonmobil",
+      "distributed: entity:imperial-oil > entity:exxonmobil",
+    ]);
+  });
+});

@@ -1,0 +1,127 @@
+# Barclays' principal subsidiaries and its UK purchases, from its 20-F for 2025.
+
+entities:
+  - { id: entity:barclays-bank, name: "Barclays Bank PLC" }
+  - { id: entity:barclays-bank-uk, name: "Barclays Bank UK PLC" }
+  - { id: entity:barclays-bank-ireland, name: "Barclays Bank Ireland PLC" }
+  - { id: entity:barclays-execution-services, name: "Barclays Execution Services Limited" }
+  - { id: entity:barclays-capital, name: "Barclays Capital Inc." }
+  - { id: entity:barclays-capital-securities, name: "Barclays Capital Securities Limited" }
+  - { id: entity:barclays-securities-japan, name: "Barclays Securities Japan Limited" }
+  - { id: entity:barclays-us, name: "Barclays US LLC" }
+  - { id: entity:barclays-bank-delaware, name: "Barclays Bank Delaware" }
+  - { id: entity:kensington-mortgage-company, name: "Kensington Mortgage Company Limited" }
+
+brands:
+  - { id: brand:kensington-mortgages, name: "Kensington Mortgages" }
+  - { id: brand:tesco-bank, name: "Tesco Bank" }
+
+relationships:
+  - id: relationship:barclays-owns-barclays-bank
+    type: owns
+    from: entity:barclays
+    to: entity:barclays-bank
+    validFrom: "2026-02-10"
+    stakePct: 100
+    scope: { include: world }
+    note: "Banking and holding company; about 1% of its ownership interests are held outside the group through non-voting equity. A principal subsidiary with 100% of voting rights held, directly or through intermediate holding companies that are not named."
+    sources: [source:barclays-20f-2025]
+  - id: relationship:barclays-owns-barclays-bank-uk
+    type: owns
+    from: entity:barclays
+    to: entity:barclays-bank-uk
+    validFrom: "2026-02-10"
+    stakePct: 100
+    scope: { include: world }
+    note: "Banking and holding company (the UK ring-fenced bank). A principal subsidiary with 100% of voting rights held, directly or through intermediate holding companies that are not named."
+    sources: [source:barclays-20f-2025]
+  - id: relationship:barclays-owns-barclays-bank-ireland
+    type: owns
+    from: entity:barclays
+    to: entity:barclays-bank-ireland
+    validFrom: "2026-02-10"
+    stakePct: 100
+    scope: { include: world }
+    note: "Banking; known as Barclays Europe. A principal subsidiary with 100% of voting rights held, directly or through intermediate holding companies that are not named."
+    sources: [source:barclays-20f-2025]
+  - id: relationship:barclays-owns-barclays-execution-services
+    type: owns
+    from: entity:barclays
+    to: entity:barclays-execution-services
+    validFrom: "2026-02-10"
+    stakePct: 100
+    scope: { include: world }
+    note: "The group service company. A principal subsidiary with 100% of voting rights held, directly or through intermediate holding companies that are not named."
+    sources: [source:barclays-20f-2025]
+  - id: relationship:barclays-owns-barclays-capital
+    type: owns
+    from: entity:barclays
+    to: entity:barclays-capital
+    validFrom: "2026-02-10"
+    stakePct: 100
+    scope: { include: world }
+    note: "Securities dealing in the United States. A principal subsidiary with 100% of voting rights held, directly or through intermediate holding companies that are not named."
+    sources: [source:barclays-20f-2025]
+  - id: relationship:barclays-owns-barclays-capital-securities
+    type: owns
+    from: entity:barclays
+    to: entity:barclays-capital-securities
+    validFrom: "2026-02-10"
+    stakePct: 100
+    scope: { include: world }
+    note: "Securities dealing in the UK. A principal subsidiary with 100% of voting rights held, directly or through intermediate holding companies that are not named."
+    sources: [source:barclays-20f-2025]
+  - id: relationship:barclays-owns-barclays-securities-japan
+    type: owns
+    from: entity:barclays
+    to: entity:barclays-securities-japan
+    validFrom: "2026-02-10"
+    stakePct: 100
+    scope: { include: world }
+    note: "Securities dealing in Japan. A principal subsidiary with 100% of voting rights held, directly or through intermediate holding companies that are not named."
+    sources: [source:barclays-20f-2025]
+  - id: relationship:barclays-owns-barclays-us
+    type: owns
+    from: entity:barclays
+    to: entity:barclays-us
+    validFrom: "2026-02-10"
+    stakePct: 100
+    scope: { include: world }
+    note: "US holding company. A principal subsidiary with 100% of voting rights held, directly or through intermediate holding companies that are not named."
+    sources: [source:barclays-20f-2025]
+  - id: relationship:barclays-owns-barclays-bank-delaware
+    type: owns
+    from: entity:barclays
+    to: entity:barclays-bank-delaware
+    validFrom: "2026-02-10"
+    stakePct: 100
+    scope: { include: world }
+    note: "US credit card issuer. A principal subsidiary with 100% of voting rights held, directly or through intermediate holding companies that are not named."
+    sources: [source:barclays-20f-2025]
+  - id: relationship:barclays-owns-kensington-mortgage-company
+    type: owns
+    from: entity:barclays
+    to: entity:kensington-mortgage-company
+    validFrom: "2023-04-01"
+    startKnown: true
+    scope: { include: world }
+    note: "Barclays UK acquired Kensington Mortgage Company on 1 April 2023; the share and the owning company are not stated."
+    sources: [source:barclays-20f-2025]
+  - id: relationship:barclays-kensington-mortgages
+    type: owns_brand
+    from: entity:barclays
+    to: brand:kensington-mortgages
+    validFrom: "2023-04-01"
+    startKnown: true
+    scope: { include: [GB] }
+    note: "Named in Barclays UK's multi-brand proposition."
+    sources: [source:barclays-20f-2025]
+  - id: relationship:barclays-tesco-bank
+    type: distributes
+    from: entity:barclays
+    to: brand:tesco-bank
+    validFrom: "2024-11-01"
+    startKnown: true
+    scope: { include: [GB] }
+    note: "Barclays acquired the Tesco Bank retail banking business (credit cards, personal loans and savings) from Tesco Personal Finance plc on 1 November 2024 and lists Tesco Bank among its brands. The 20-F does not say who owns the Tesco Bank name."
+    sources: [source:barclays-20f-2025]

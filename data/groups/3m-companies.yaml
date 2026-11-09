@@ -1,0 +1,110 @@
+# 3M's other brands and its stake in Solventum, from its 10-K for 2025.
+
+entities:
+  - { id: entity:solventum, name: "Solventum Corporation" }
+
+brands:
+  - { id: brand:meguiars, name: "Meguiar's" }
+  - { id: brand:nexcare, name: "Nexcare" }
+  - { id: brand:thinsulate, name: "Thinsulate" }
+  - { id: brand:peltor, name: "Peltor" }
+  - { id: brand:scotchlite, name: "Scotchlite" }
+  - { id: brand:vhb, name: "VHB" }
+  - { id: brand:cubitron, name: "Cubitron" }
+  - { id: brand:dbi-sala, name: "DBI-Sala" }
+  - { id: brand:scott-breathing-apparatus, name: "Scott (breathing apparatus)" }
+
+relationships:
+  - id: relationship:3m-meguiars
+    type: owns_brand
+    from: entity:3m
+    to: brand:meguiars
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    note: "Named among 3M's example brands in its 10-K for 2025."
+    sources: [source:3m-10k-2025]
+  - id: relationship:3m-nexcare
+    type: owns_brand
+    from: entity:3m
+    to: brand:nexcare
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    note: "Named among 3M's example brands in its 10-K for 2025."
+    sources: [source:3m-10k-2025]
+  - id: relationship:3m-thinsulate
+    type: owns_brand
+    from: entity:3m
+    to: brand:thinsulate
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    note: "Named among 3M's example brands in its 10-K for 2025."
+    sources: [source:3m-10k-2025]
+  - id: relationship:3m-peltor
+    type: owns_brand
+    from: entity:3m
+    to: brand:peltor
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    note: "Named among 3M's example brands in its 10-K for 2025."
+    sources: [source:3m-10k-2025]
+  - id: relationship:3m-scotchlite
+    type: owns_brand
+    from: entity:3m
+    to: brand:scotchlite
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    note: "Named among 3M's example brands in its 10-K for 2025."
+    sources: [source:3m-10k-2025]
+  - id: relationship:3m-vhb
+    type: owns_brand
+    from: entity:3m
+    to: brand:vhb
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    note: "Named among 3M's example brands in its 10-K for 2025."
+    sources: [source:3m-10k-2025]
+  - id: relationship:3m-cubitron
+    type: owns_brand
+    from: entity:3m
+    to: brand:cubitron
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    note: "Named among 3M's example brands in its 10-K for 2025."
+    sources: [source:3m-10k-2025]
+  - id: relationship:3m-dbi-sala
+    type: owns_brand
+    from: entity:3m
+    to: brand:dbi-sala
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    note: "Named among 3M's example brands in its 10-K for 2025."
+    sources: [source:3m-10k-2025]
+  - id: relationship:3m-scott-breathing-apparatus
+    type: owns_brand
+    from: entity:3m
+    to: brand:scott-breathing-apparatus
+    validFrom: "2026-02-03"
+    scope: { include: world }
+    note: "Named among 3M's example brands in its 10-K for 2025."
+    sources: [source:3m-10k-2025]
+  - id: relationship:3m-stake-solventum-spin-off
+    type: holds_stake
+    from: entity:3m
+    to: entity:solventum
+    validFrom: "2024-04-01"
+    startKnown: true
+    validTo: "2025-08"
+    stakePct: 19.9
+    scope: { include: world }
+    note: "On 1 April 2024 3M spun off its health care business as Solventum Corporation, distributing 80.1% of the shares to its own shareholders and keeping the rest. 3M intends to sell the stake within five years."
+    sources: [source:3m-10k-2025]
+  - id: relationship:3m-stake-solventum
+    type: holds_stake
+    from: entity:3m
+    to: entity:solventum
+    validFrom: "2025-08"
+    startKnown: true
+    stakePct: 15
+    scope: { include: world }
+    note: "3M sold part of its holding in August 2025 and owned approximately 15% of Solventum's common stock at the end of 2025."
+    sources: [source:3m-10k-2025]

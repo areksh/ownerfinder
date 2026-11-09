@@ -17,3 +17,54 @@ sources:
     publisher: "US Federal Trade Commission"
     published: "2025-09-25"
     retrieved: "2026-11-08"
+  - id: source:amazon-10k-2008
+    url: https://www.sec.gov/Archives/edgar/data/1018724/000119312509014406/d10k.htm
+    title: "Amazon.com, Inc., Form 10-K for the fiscal year ended December 31, 2008"
+    publisher: "Amazon.com, Inc."
+    published: "2009-01-30"
+    retrieved: "2026-11-09"
+  - id: source:amazon-10k-2009
+    url: https://www.sec.gov/Archives/edgar/data/1018724/000119312510016098/d10k.htm
+    title: "Amazon.com, Inc., Form 10-K for the fiscal year ended December 31, 2009"
+    publisher: "Amazon.com, Inc."
+    published: "2010-01-29"
+    retrieved: "2026-11-09"
+  - id: source:amazon-10k-2014
+    url: https://www.sec.gov/Archives/edgar/data/1018724/000101872415000006/amzn-20141231x10k.htm
+    title: "Amazon.com, Inc., Form 10-K for the fiscal year ended December 31, 2014"
+    publisher: "Amazon.com, Inc."
+    published: "2015-01-30"
+    retrieved: "2026-11-09"
+  - id: source:amazon-10k-2018
+    url: https://www.sec.gov/Archives/edgar/data/1018724/000101872419000004/amzn-20181231x10k.htm
+    title: "Amazon.com, Inc., Form 10-K for the fiscal year ended December 31, 2018"
+    publisher: "Amazon.com, Inc."
+    published: "2019-02-01"
+    retrieved: "2026-11-09"
+  - id: source:amazon-10k-2022
+    url: https://www.sec.gov/Archives/edgar/data/1018724/000101872423000004/amzn-20221231.htm
+    title: "Amazon.com, Inc., Form 10-K for the fiscal year ended December 31, 2022"
+    publisher: "Amazon.com, Inc."
+    published: "2023-02-03"
+    retrieved: "2026-11-09"
+  - id: source:amazon-ex21-2025
+    url: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231xex211.htm
+    title: "Amazon.com, Inc., Exhibit 21.1: List of significant subsidiaries (Form 10-K for 2025)"
+    publisher: "Amazon.com, Inc."
+    published: "2026-02-06"
+    retrieved: "2026-11-09"
+  - id: source:amazon-group-companies
+    url: https://www.amazon.com/gp/help/customer/display.html?nodeId=202137190
+    title: "Amazon Group Companies"
+    publisher: "Amazon.com, Inc."
+    retrieved: "2026-11-09"
+  - id: source:zappos-about
+    url: https://www.zappos.com/about
+    title: "About Zappos"
+    publisher: "Zappos.com LLC"
+    retrieved: "2026-11-09"
+  - id: source:woot-about
+    url: https://www.woot.com/about
+    title: "Who the Heck is Woot?"
+    publisher: "Woot, Inc."
+    retrieved: "2026-11-09"

@@ -11,3 +11,8 @@ sources:
     publisher: "Office of the United Nations High Commissioner for Human Rights"
     published: "2026-09-25"
     retrieved: "2026-11-08"
+  - id: source:booking-holdings-brands
+    url: https://www.bookingholdings.com/brands/
+    title: "Brands"
+    publisher: "Booking Holdings Inc."
+    retrieved: "2026-11-09"

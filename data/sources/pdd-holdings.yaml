@@ -5,3 +5,9 @@ sources:
     publisher: "PDD Holdings Inc."
     published: "2026-04-29"
     retrieved: "2026-11-08"
+  - id: source:pdd-ex8-2025
+    url: https://www.sec.gov/Archives/edgar/data/1737806/000110465926050727/pdd-20251231xex8d1.htm
+    title: "PDD Holdings Inc., Exhibit 8.1: List of principal subsidiaries and consolidated variable interest entity (Form 20-F for 2025)"
+    publisher: "PDD Holdings Inc."
+    published: "2026-04-29"
+    retrieved: "2026-11-09"
